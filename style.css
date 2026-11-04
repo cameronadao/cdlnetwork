@@ -1775,6 +1775,74 @@ img {
 }
 
 
+
+/* =========================================
+   CDL NETWORK — SCROLL REVEAL
+========================================= */
+
+/* Animations enabled only when JavaScript is active */
+
+.js .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.js .reveal-left {
+    opacity: 0;
+    transform: translateX(-28px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.js .reveal-right {
+    opacity: 0;
+    transform: translateX(28px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Visible state */
+
+.js .reveal.is-visible,
+.js .reveal-left.is-visible,
+.js .reveal-right.is-visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+/* Staggered delays */
+
+.js .reveal-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.js .reveal-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.js .reveal-delay-3 {
+    transition-delay: 0.3s;
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+    .js .reveal,
+    .js .reveal-left,
+    .js .reveal-right {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+
+
 /* =========================================
    RESPONSIVE — TABLETS & SMALL LAPTOPS
 ========================================= */

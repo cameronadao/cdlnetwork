@@ -308,3 +308,59 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("CDL Network — Website initialized successfully.");
 
 });
+
+
+
+/* =========================================
+   CDL NETWORK — SCROLL REVEAL
+========================================= */
+
+document.documentElement.classList.add("js");
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const elements = document.querySelectorAll(
+        ".reveal, .reveal-left, .reveal-right"
+    );
+
+    // Respect accessibility preferences
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        elements.forEach(element => {
+            element.classList.add("is-visible");
+        });
+        return;
+    }
+
+    // Browser compatibility fallback
+    if (!("IntersectionObserver" in window)) {
+        elements.forEach(element => {
+            element.classList.add("is-visible");
+        });
+        return;
+    }
+
+    const observer = new IntersectionObserver((entries, observer) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("is-visible");
+
+                observer.unobserve(entry.target);
+
+            }
+
+        });
+
+    }, {
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px"
+    });
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+
+});
+
