@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 — Page Not Found | CDL Network</title>
+
+    <meta name="description"
+        content="The page you are looking for could not be found. Return to CDL Network and explore our digital products and creative services.">
+
+    <meta name="robots" content="noindex, follow">
+
+    <meta name="theme-color" content="#080808">
+
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 24px;
+            background: #080808;
+            color: #fff;
+            text-align: center;
+        }
+
+        .error-content {
+            width: 100%;
+            max-width: 680px;
+        }
+
+        .error-label {
+            display: inline-block;
+            margin-bottom: 28px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #929292;
+        }
+
+        .error-number {
+            margin: 0;
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(100px, 22vw, 210px);
+            font-weight: 800;
+            line-height: 0.9;
+            letter-spacing: -12px;
+            color: #fff;
+        }
+
+        .error-title {
+            margin: 35px 0 15px;
+            font-family: 'Manrope', sans-serif;
+            font-size: clamp(24px, 4vw, 38px);
+            font-weight: 600;
+            letter-spacing: -1px;
+        }
+
+        .error-description {
+            max-width: 470px;
+            margin: 0 auto;
+            color: #999;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .error-actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 38px;
+        }
+
+        .error-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+            padding: 0 26px;
+            border: 1px solid #fff;
+            background: #fff;
+            color: #080808;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .error-button:hover {
+            background: transparent;
+            color: #fff;
+        }
+
+        .error-button-secondary {
+            background: transparent;
+            color: #fff;
+            border-color: #444;
+        }
+
+        .error-button-secondary:hover {
+            background: #fff;
+            color: #080808;
+        }
+
+        .error-footer {
+            margin-top: 90px;
+            padding-top: 22px;
+            border-top: 1px solid #242424;
+            color: #686868;
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .error-footer a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .error-footer a:hover {
+            color: #fff;
+        }
+
+        @media (max-width: 480px) {
+            .error-number {
+                letter-spacing: -6px;
+            }
+
+            .error-actions {
+                flex-direction: column;
+            }
+
+            .error-button {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .error-footer {
+                margin-top: 65px;
+                line-height: 2;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="error-page">
+
+        <div class="error-content">
+
+            <span class="error-label">
+                CDL NETWORK — ERROR 404
+            </span>
+
+            <h1 class="error-number">404</h1>
+
+            <h2 class="error-title">
+                Lost in the wrong direction?
+            </h2>
+
+            <p class="error-description">
+                The page you're looking for may have been moved,
+                removed, or never existed.
+                Let's get you back on track.
+            </p>
+
+            <div class="error-actions">
+
+                <a href="/" class="error-button">
+                    Back to Homepage
+                </a>
+
+                <a href="/#contact" class="error-button error-button-secondary">
+                    Contact Us
+                </a>
+
+            </div>
+
+            <div class="error-footer">
+                © <span id="current-year"></span> CDL NETWORK.
+                ALL RIGHTS RESERVED.
+            </div>
+
+        </div>
+
+    </main>
+
+    <script>
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
