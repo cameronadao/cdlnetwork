@@ -3385,3 +3385,196 @@ img {
     }
 
 }
+
+
+/* =========================================
+   DIGITAL STORE — PRODUCT SHOWCASE
+========================================= */
+
+.products {
+    padding: 130px 0;
+    background: #080808;
+}
+
+.products .section-heading {
+    max-width: 760px;
+    margin-bottom: 65px;
+}
+
+.products .section-heading h2 {
+    color: #f2f2f2;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.12;
+    letter-spacing: -0.055em;
+}
+
+.products .section-heading h2 span {
+    color: #777;
+}
+
+.products .section-heading p {
+    max-width: 620px;
+    margin-top: 20px;
+    color: #999;
+    line-height: 1.85;
+}
+
+/* PRODUCT GRID */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-top: 1px solid #292929;
+    border-left: 1px solid #292929;
+}
+
+.product-card {
+    display: flex;
+    gap: 28px;
+    min-height: 235px;
+    padding: 35px;
+    border-right: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    transition: background 0.3s ease;
+}
+
+.product-card:hover {
+    background: #101010;
+}
+
+.product-number {
+    flex-shrink: 0;
+    color: #777;
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+}
+
+.product-category {
+    display: block;
+    margin-bottom: 15px;
+    color: #888;
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.product-card h3 {
+    margin-bottom: 14px;
+    color: #f2f2f2;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.35rem;
+    letter-spacing: -0.035em;
+}
+
+.product-card p {
+    max-width: 390px;
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.85;
+}
+
+/* SALES PLATFORMS */
+
+.store-platforms {
+    margin-top: 100px;
+    padding-top: 45px;
+    border-top: 1px solid #292929;
+}
+
+.store-platforms-heading {
+    margin-bottom: 35px;
+}
+
+.store-platforms-heading h3 {
+    color: #f2f2f2;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    letter-spacing: -0.04em;
+}
+
+.platform-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid #292929;
+    border-left: 1px solid #292929;
+}
+
+.platform-links a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 85px;
+    padding: 22px;
+    color: #eee;
+    text-decoration: none;
+    border-right: 1px solid #292929;
+    border-bottom: 1px solid #292929;
+    transition: background 0.3s ease;
+}
+
+.platform-links a:hover {
+    background: #151515;
+}
+
+.platform-links a > span:first-child {
+    color: #777;
+    font-size: 0.7rem;
+}
+
+.platform-links strong {
+    flex: 1;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.95rem;
+}
+
+.platform-arrow {
+    color: #999;
+    transition: transform 0.3s ease;
+}
+
+.platform-links a:hover .platform-arrow {
+    transform: translate(3px, -3px);
+}
+
+.store-note {
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.8rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-links {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .products {
+        padding: 85px 0;
+    }
+
+    .product-card {
+        min-height: auto;
+        gap: 20px;
+        padding: 28px 22px;
+    }
+
+    .product-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .store-platforms {
+        margin-top: 70px;
+    }
+
+}
