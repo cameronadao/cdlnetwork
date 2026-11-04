@@ -364,3 +364,92 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+/* =========================================
+   CDL NETWORK — MOBILE NAVIGATION
+========================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const menuButton = document.querySelector("#menu-toggle");
+    const navMenu = document.querySelector("#primary-navigation");
+    const dropdown = document.querySelector(".nav-dropdown");
+    const dropdownButton = document.querySelector(".dropdown-toggle");
+
+    if (!menuButton || !navMenu || !dropdown || !dropdownButton) {
+        return;
+    }
+
+    const isMobile = () => window.innerWidth <= 900;
+
+    function closeDropdown() {
+        dropdown.classList.remove("is-open");
+        dropdownButton.setAttribute("aria-expanded", "false");
+    }
+
+    function closeMenu() {
+        navMenu.classList.remove("is-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Open navigation menu");
+        document.body.classList.remove("menu-open");
+        closeDropdown();
+    }
+
+    function toggleMenu() {
+        const isOpen = navMenu.classList.toggle("is-open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+
+        document.body.classList.toggle("menu-open", isOpen);
+
+        if (!isOpen) {
+            closeDropdown();
+        }
+    }
+
+    menuButton.addEventListener("click", toggleMenu);
+
+    dropdownButton.addEventListener("click", () => {
+        const isOpen = dropdown.classList.toggle("is-open");
+
+        dropdownButton.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            if (isMobile()) {
+                closeMenu();
+            }
+        });
+    });
+
+    document.addEventListener("click", event => {
+        if (
+            isMobile() &&
+            navMenu.classList.contains("is-open") &&
+            !navMenu.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            closeMenu();
+            menuButton.focus();
+        }
+    });
+
+    window.addEventListener("resize", () => {
+        if (!isMobile()) {
+            closeMenu();
+        }
+    });
+
+});
+

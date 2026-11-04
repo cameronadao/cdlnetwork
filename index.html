@@ -44,37 +44,77 @@
                 <span class="brand-name">CDL NETWORK</span>
             </a>
 
-            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            
+<button
+    class="menu-toggle"
+    id="menu-toggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="primary-navigation"
+    type="button"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 
-            <label for="menu-toggle" class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+<nav class="nav-menu" id="primary-navigation">
 
-            <nav class="nav-menu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#products" class="nav-link">Digital Products</a>
-                <a href="#services" class="nav-link">Web Design</a>
-                <a href="#portfolio" class="nav-link">Portfolio</a>
-                <a href="#resources" class="nav-link">Resources</a>
-                <a href="#about" class="nav-link">About</a>
-                <li class="nav-item nav-dropdown">
-    <button class="nav-link dropdown-toggle"
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="#products" class="nav-link">Digital Products</a>
+    <a href="#services" class="nav-link">Web Design</a>
+    <a href="#portfolio" class="nav-link">Portfolio</a>
+    <a href="#resources" class="nav-link">Resources</a>
+    <a href="#about" class="nav-link">About</a>
+
+    <div class="nav-item nav-dropdown">
+
+        <button
+            class="nav-link dropdown-toggle"
+            type="button"
             aria-expanded="false"
-            aria-haspopup="true">Shop
-        <span class="dropdown-arrow">⌄</span>
-    </button>
+            aria-haspopup="true"
+        >
+            Shop
+            <span class="dropdown-arrow">⌄</span>
+        </button>
 
-    <ul class="dropdown-menu">
-        <li><a href="https://kdp.amazon.com/" target="_blank" rel="noopener noreferrer">Amazon KDP</a></li>
-        <li><a href="https://books.apple.com/us/author/cdl-network/id6802080396" target="_blank" rel="noopener noreferrer">Apple Books</a></li>
-        <li><a href="https://www.etsy.com/shop/CDLNetwork" target="_blank" rel="noopener noreferrer">Etsy</a></li>
-        <li><a href="https://payhip.com/cdlnetwork" target="_blank" rel="noopener noreferrer">Payhip</a></li>
-    </ul>
-</li>
-                <a href="#contact" class="nav-cta">Let's Talk <span>↗</span></a>
-            </nav>
+        <ul class="dropdown-menu">
+
+            <li>
+                <a href="https://kdp.amazon.com/"
+                   target="_blank"
+                   rel="noopener noreferrer">Amazon KDP</a>
+            </li>
+
+            <li>
+                <a href="https://books.apple.com/us/author/cdl-network/id6802080396"
+                   target="_blank"
+                   rel="noopener noreferrer">Apple Books</a>
+            </li>
+
+            <li>
+                <a href="https://www.etsy.com/shop/CDLNetwork"
+                   target="_blank"
+                   rel="noopener noreferrer">Etsy</a>
+            </li>
+
+            <li>
+                <a href="https://payhip.com/cdlnetwork"
+                   target="_blank"
+                   rel="noopener noreferrer">Payhip</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <a href="#contact" class="nav-cta">
+        Let's Talk <span>↗</span>
+    </a>
+
+</nav>
+
 
         </div>
     </header>
