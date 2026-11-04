@@ -3241,3 +3241,147 @@ img {
     }
 
 }
+
+
+/* =========================================
+   LEGAL PAGES
+========================================= */
+
+.legal-page {
+    min-height: 100vh;
+    background: #080808;
+    color: #f2f2f2;
+}
+
+.legal-container {
+    width: min(100% - 48px, 900px);
+    margin: 0 auto;
+    padding: 70px 0 120px;
+}
+
+.legal-back {
+    display: inline-block;
+    margin-bottom: 80px;
+    color: #999;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-back:hover {
+    color: #fff;
+}
+
+.legal-header {
+    padding-bottom: 55px;
+    border-bottom: 1px solid #292929;
+}
+
+.legal-header .section-tag {
+    display: block;
+    margin-bottom: 25px;
+    color: #999;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+}
+
+.legal-header h1 {
+    margin-bottom: 20px;
+    font-family: "Manrope", sans-serif;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.1;
+    letter-spacing: -0.055em;
+}
+
+.legal-header h1 span {
+    color: #777;
+}
+
+.legal-header p {
+    color: #777;
+    font-size: 0.85rem;
+}
+
+.legal-content {
+    padding-top: 35px;
+}
+
+.legal-block {
+    padding: 30px 0;
+    border-bottom: 1px solid #202020;
+}
+
+.legal-block h2 {
+    margin-bottom: 20px;
+    color: #f2f2f2;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.legal-block p,
+.legal-block li {
+    color: #999;
+    font-size: 0.93rem;
+    line-height: 1.9;
+}
+
+.legal-block p + p {
+    margin-top: 15px;
+}
+
+.legal-block ul {
+    padding-left: 22px;
+    margin-top: 15px;
+}
+
+.legal-block li {
+    padding-left: 5px;
+    margin-bottom: 8px;
+}
+
+.legal-block strong {
+    color: #ddd;
+    font-weight: 600;
+}
+
+.legal-block a {
+    color: #eee;
+    text-decoration: underline;
+    text-decoration-color: #555;
+    text-underline-offset: 4px;
+    transition: color 0.3s ease;
+}
+
+.legal-block a:hover {
+    color: #999;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .legal-container {
+        width: calc(100% - 36px);
+        padding: 45px 0 80px;
+    }
+
+    .legal-back {
+        margin-bottom: 55px;
+    }
+
+    .legal-header {
+        padding-bottom: 35px;
+    }
+
+    .legal-block {
+        padding: 25px 0;
+    }
+
+    .legal-block p,
+    .legal-block li {
+        font-size: 0.88rem;
+    }
+
+}
