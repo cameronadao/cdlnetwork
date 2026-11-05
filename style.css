@@ -3578,3 +3578,89 @@ img {
     }
 
 }
+
+
+
+/* ================================
+   NEWSLETTER SECTION
+================================ */
+
+.newsletter {
+    background: #080808;
+    padding: 110px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.newsletter-content {
+    max-width: 760px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.newsletter-content .section-tag {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #999;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.newsletter-content h2 {
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 22px;
+}
+
+.newsletter-content h2 span {
+    color: #888;
+}
+
+.newsletter-content p {
+    max-width: 570px;
+    margin: 0 auto 35px;
+    color: #999;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.newsletter-form {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.newsletter-form iframe {
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    height: 305px;
+    margin: 0 auto;
+    border: none;
+    background: transparent;
+}
+
+.newsletter-note {
+    display: block;
+    margin-top: 12px;
+    color: #777;
+    font-size: 11px;
+}
+
+@media (max-width: 600px) {
+    .newsletter {
+        padding: 75px 0;
+    }
+
+    .newsletter-content p {
+        font-size: 14px;
+    }
+
+    .newsletter-form iframe {
+        height: 340px;
+    }
+}
