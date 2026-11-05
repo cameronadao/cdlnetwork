@@ -3664,3 +3664,168 @@ img {
         height: 340px;
     }
 }
+
+
+/* ================================
+   PROJECT INQUIRY FORM
+================================ */
+
+.project-form-wrapper {
+    width: 100%;
+    max-width: 850px;
+    margin: 70px auto 0;
+    padding: 55px;
+    background: #101010;
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 4px;
+}
+
+.project-form-heading {
+    margin-bottom: 40px;
+}
+
+.project-form-heading h3 {
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+    font-size: clamp(30px, 4vw, 42px);
+    margin: 15px 0;
+}
+
+.project-form-heading h3 span {
+    color: #888;
+}
+
+.project-form-heading p {
+    color: #999;
+    line-height: 1.7;
+}
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    color: #ddd;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 15px 16px;
+    background: #181818;
+    border: 1px solid #303030;
+    border-radius: 3px;
+    color: #fff;
+    font: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #888;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #666;
+}
+
+.form-group select {
+    color: #aaa;
+    cursor: pointer;
+}
+
+.form-group select:valid {
+    color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.form-consent input {
+    margin-top: 4px;
+    accent-color: #fff;
+}
+
+.form-consent label {
+    color: #999;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.form-consent a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.project-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 17px 22px;
+    background: #fff;
+    color: #080808;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+.project-submit:hover {
+    background: #ccc;
+}
+
+.project-submit span {
+    font-size: 18px;
+}
+
+.form-required-note {
+    color: #666;
+    font-size: 11px;
+    margin-top: -12px;
+}
+
+.hidden-field {
+    display: none;
+}
+
+@media (max-width: 650px) {
+    .project-form-wrapper {
+        padding: 28px 20px;
+        margin-top: 45px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
