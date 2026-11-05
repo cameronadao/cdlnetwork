@@ -1,0 +1,57 @@
+(function () {
+  const target = document.getElementById('product-detail-content');
+  if (!target) return;
+
+  const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  })[char]);
+
+  const showState = (title, message) => {
+    target.innerHTML = `<div class="product-detail-state" role="status"><p class="eyebrow">CDL Network · Digital store</p><h1>${escapeHtml(title)}</h1><p>${escapeHtml(message)}</p></div>`;
+    document.title = `${title} | CDL Network`;
+  };
+
+  async function loadProduct() {
+    const id = new URLSearchParams(window.location.search).get('id');
+    if (!id) {
+      showState('Product not found', 'This product link is missing an identifier. Return to the digital products collection and choose a product.');
+      return;
+    }
+
+    let products;
+    try {
+      const response = await fetch('/data/products.json', { headers: { Accept: 'application/json' } });
+      if (!response.ok) throw new Error(`Product data returned ${response.status}`);
+      products = await response.json();
+      if (!Array.isArray(products)) throw new Error('Product data must be a JSON array');
+    } catch (error) {
+      console.error('Unable to load product data:', error);
+      showState('Product information unavailable', 'We could not load the product catalogue. Please try again later.');
+      return;
+    }
+
+    const product = products.find((item) => item && item.id === id);
+    if (!product) {
+      showState('Product not found', 'We could not find a product with this identifier.');
+      return;
+    }
+    if (product.status !== 'published') {
+      showState('Product not published', 'This product is not currently available to the public.');
+      return;
+    }
+
+    const title = escapeHtml(product.title);
+    const description = escapeHtml(product.description || 'Product information will be added soon.');
+    const cover = product.cover ? `<img class="product-detail-cover" src="${escapeHtml(product.cover)}" alt="Cover of ${title}">` : '';
+    const fields = [
+      ['Category', product.category], ['Format', Array.isArray(product.formats) ? product.formats.join(', ') : product.format],
+      ['Author', product.author], ['Price', product.price]
+    ].filter(([, value]) => value !== undefined && value !== null && value !== '');
+    const metadata = fields.length ? `<dl class="product-detail-meta">${fields.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>` : '';
+
+    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">CDL Network · Digital store</p><h1>${title}</h1><p>${description}</p>${metadata}</div></article>`;
+    document.title = `${title} | CDL Network`;
+  }
+
+  loadProduct();
+})();

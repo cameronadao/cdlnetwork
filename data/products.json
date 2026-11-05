@@ -1,2 +1,12 @@
-
-[]
+[
+  {
+    "id": "the-bible-explained-a-complete-guide-to-the-66-books",
+    "title": "The Bible Explained: A Complete Guide to the 66 Books",
+    "author": "Daily Grace Room",
+    "description": "Understanding the Bible: The Ultimate Guide to the Old and New Testament.",
+    "category": "Religion et spiritualité",
+    "formats": ["EPUB"],
+    "cover": "/assets/images/the-bible-explained-cover.png",
+    "status": "draft"
+  }
+]
