@@ -1,0 +1,214 @@
+
+/* =========================================
+   CDL NETWORK — SHOP PAGE
+========================================= */
+
+.shop-page {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 6%;
+}
+
+.shop-header {
+    max-width: 760px;
+    margin-bottom: 90px;
+}
+
+.shop-header h1 {
+    font-family: var(--font-heading, 'Manrope', sans-serif);
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.08;
+    letter-spacing: -0.05em;
+    margin: 20px 0;
+}
+
+.shop-header > p:last-child {
+    max-width: 580px;
+    color: var(--gray-dark, #777);
+    line-height: 1.8;
+}
+
+.shop-catalog-heading {
+    margin-bottom: 35px;
+}
+
+.shop-catalog-heading h2 {
+    font-family: var(--font-heading, 'Manrope', sans-serif);
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: -0.04em;
+    margin: 12px 0;
+}
+
+.shop-catalog-heading > p:last-child {
+    color: var(--gray-dark, #777);
+    line-height: 1.7;
+}
+
+/* FILTERS */
+
+.shop-filters {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 35px;
+}
+
+.filter-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.filter-field label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+}
+
+.filter-field select,
+.filter-field input {
+    width: 100%;
+    min-height: 52px;
+    padding: 0 15px;
+    border: 1px solid var(--border, #e5e5e5);
+    border-radius: 0;
+    background: var(--white, #fff);
+    color: var(--black, #080808);
+    font: inherit;
+    font-size: 13px;
+}
+
+.filter-field select:focus,
+.filter-field input:focus {
+    outline: 2px solid var(--black, #080808);
+    outline-offset: 2px;
+}
+
+.search-field {
+    grid-column: 1 / -1;
+}
+
+/* RESULTS HEADER */
+
+.shop-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border, #e5e5e5);
+    border-bottom: 1px solid var(--border, #e5e5e5);
+    margin-bottom: 30px;
+}
+
+.shop-results-header p {
+    font-size: 13px;
+    margin: 0;
+}
+
+#reset-filters {
+    border: none;
+    background: transparent;
+    color: var(--black, #080808);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+/* PRODUCT GRID */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px 25px;
+}
+
+.products-grid .product-card {
+    min-width: 0;
+}
+
+.products-grid .product-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: var(--gray, #f5f5f5);
+    margin-bottom: 20px;
+}
+
+.products-grid .product-card h3 {
+    font-family: var(--font-heading, 'Manrope', sans-serif);
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+
+.products-grid .product-card > p {
+    color: var(--gray-dark, #777);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.products-grid .product-card .product-price {
+    color: var(--black, #080808);
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.products-grid .product-card a {
+    display: inline-block;
+    color: var(--black, #080808);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.catalog-message {
+    grid-column: 1 / -1;
+    padding: 55px 20px;
+    background: var(--gray, #f5f5f5);
+    color: var(--gray-dark, #777);
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .products-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .shop-page {
+        padding: 70px 5%;
+    }
+
+    .shop-header {
+        margin-bottom: 65px;
+    }
+
+    .shop-filters {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .search-field {
+        grid-column: auto;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .shop-results-header {
+        align-items: flex-start;
+    }
+}

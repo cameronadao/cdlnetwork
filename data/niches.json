@@ -1,0 +1,225 @@
+
+[
+  {
+    "id": "affiliate-marketing",
+    "name": "Affiliate Marketing",
+    "categoryId": "business-builder",
+    "order": 1
+  },
+  {
+    "id": "audiobooks",
+    "name": "Audiobooks",
+    "categoryId": "specialists",
+    "order": 2
+  },
+  {
+    "id": "blogging",
+    "name": "Blogging",
+    "categoryId": "digital-creators",
+    "order": 3
+  },
+  {
+    "id": "bonus-collections",
+    "name": "Bonus Collections",
+    "categoryId": "specialists",
+    "order": 4
+  },
+  {
+    "id": "business-money",
+    "name": "Business & Money",
+    "categoryId": "business-builder",
+    "order": 5
+  },
+  {
+    "id": "coloring-books-pages",
+    "name": "Coloring Books & Pages",
+    "categoryId": "family-niches-market",
+    "order": 6
+  },
+  {
+    "id": "computer-technology",
+    "name": "Computer & Technology",
+    "categoryId": "specialists",
+    "order": 7
+  },
+  {
+    "id": "cooking-recipes",
+    "name": "Cooking & Recipes",
+    "categoryId": "lifestyle-hobbyist",
+    "order": 8
+  },
+  {
+    "id": "crafts-hobbies",
+    "name": "Crafts & Hobbies",
+    "categoryId": "lifestyle-hobbyist",
+    "order": 9
+  },
+  {
+    "id": "email-marketing",
+    "name": "Email Marketing",
+    "categoryId": "business-builder",
+    "order": 10
+  },
+  {
+    "id": "entertainment",
+    "name": "Entertainment",
+    "categoryId": "family-niches-market",
+    "order": 11
+  },
+  {
+    "id": "fashion-beauty",
+    "name": "Fashion & Beauty",
+    "categoryId": "lifestyle-hobbyist",
+    "order": 12
+  },
+  {
+    "id": "freelance",
+    "name": "Freelance",
+    "categoryId": "business-builder",
+    "order": 13
+  },
+  {
+    "id": "health-fitness-ebooks",
+    "name": "Health & Fitness E-books",
+    "categoryId": "personal-growth-coach",
+    "order": 14
+  },
+  {
+    "id": "health-fitness-videos",
+    "name": "Health & Fitness Videos",
+    "categoryId": "personal-growth-coach",
+    "order": 15
+  },
+  {
+    "id": "holidays",
+    "name": "Holidays",
+    "categoryId": "family-niches-market",
+    "order": 16
+  },
+  {
+    "id": "home-garden",
+    "name": "Home & Garden",
+    "categoryId": "lifestyle-hobbyist",
+    "order": 17
+  },
+  {
+    "id": "internet",
+    "name": "Internet",
+    "categoryId": "specialists",
+    "order": 18
+  },
+  {
+    "id": "internet-marketing-ebooks",
+    "name": "Internet Marketing E-books",
+    "categoryId": "business-builder",
+    "order": 19
+  },
+  {
+    "id": "internet-marketing-video",
+    "name": "Internet Marketing Video",
+    "categoryId": "business-builder",
+    "order": 20
+  },
+  {
+    "id": "language-learning",
+    "name": "Language Learning",
+    "categoryId": "specialists",
+    "order": 21
+  },
+  {
+    "id": "love-relationships",
+    "name": "Love & Relationships",
+    "categoryId": "love-relationships",
+    "order": 22
+  },
+  {
+    "id": "marketing",
+    "name": "Marketing",
+    "categoryId": "business-builder",
+    "order": 23
+  },
+  {
+    "id": "money-finance",
+    "name": "Money & Finance",
+    "categoryId": "business-builder",
+    "order": 24
+  },
+  {
+    "id": "new-age",
+    "name": "New Age",
+    "categoryId": "daily-grace-room",
+    "order": 25
+  },
+  {
+    "id": "parenting-family",
+    "name": "Parenting & Family",
+    "categoryId": "family-niches-market",
+    "order": 26
+  },
+  {
+    "id": "pets-animals",
+    "name": "Pets & Animals",
+    "categoryId": "family-niches-market",
+    "order": 27
+  },
+  {
+    "id": "plr-print-on-demand",
+    "name": "PLR & Print on Demand",
+    "categoryId": "business-builder",
+    "order": 28
+  },
+  {
+    "id": "reference-learning",
+    "name": "Reference & Learning",
+    "categoryId": "specialists",
+    "order": 29
+  },
+  {
+    "id": "self-help-personal-development-ebooks",
+    "name": "Self-help & Personal Development E-books",
+    "categoryId": "personal-growth-coach",
+    "order": 30
+  },
+  {
+    "id": "self-help-personal-development-videos",
+    "name": "Self-help & Personal Development Videos",
+    "categoryId": "personal-growth-coach",
+    "order": 31
+  },
+  {
+    "id": "social-media-ebooks",
+    "name": "Social Media E-books",
+    "categoryId": "digital-creators",
+    "order": 32
+  },
+  {
+    "id": "social-media-videos",
+    "name": "Social Media Videos",
+    "categoryId": "digital-creators",
+    "order": 33
+  },
+  {
+    "id": "sports-outdoors",
+    "name": "Sports & Outdoors",
+    "categoryId": "lifestyle-hobbyist",
+    "order": 34
+  },
+  {
+    "id": "traffic-seo",
+    "name": "Traffic & SEO",
+    "categoryId": "digital-creators",
+    "order": 35
+  },
+  {
+    "id": "travel",
+    "name": "Travel",
+    "categoryId": "lifestyle-hobbyist",
+    "order": 36
+  },
+  {
+    "id": "writing-publishing",
+    "name": "Writing & Publishing",
+    "categoryId": "digital-creators",
+    "order": 37
+  }
+]

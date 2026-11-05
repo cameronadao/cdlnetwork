@@ -1,0 +1,51 @@
+
+[
+  {
+    "id": "business-builder",
+    "name": "Business Builder",
+    "description": "Digital resources for entrepreneurs, freelancers and online business owners.",
+    "order": 1
+  },
+  {
+    "id": "family-niches-market",
+    "name": "Family & Niches Market",
+    "description": "Digital products for families, parents, pet lovers and specialized interests.",
+    "order": 2
+  },
+  {
+    "id": "lifestyle-hobbyist",
+    "name": "Lifestyle & Hobbyist",
+    "description": "Resources for everyday living, hobbies, creativity, travel and personal interests.",
+    "order": 3
+  },
+  {
+    "id": "digital-creators",
+    "name": "Digital Creators",
+    "description": "Tools and resources for bloggers, writers, publishers and content creators.",
+    "order": 4
+  },
+  {
+    "id": "specialists",
+    "name": "Specialists",
+    "description": "Specialized digital resources, technical tools and professional learning materials.",
+    "order": 5
+  },
+  {
+    "id": "personal-growth-coach",
+    "name": "Personal Growth Coach",
+    "description": "Resources for self-improvement, personal development, health and fitness.",
+    "order": 6
+  },
+  {
+    "id": "love-relationships",
+    "name": "Love & Relationships",
+    "description": "Digital resources dedicated to relationships, love and emotional connection.",
+    "order": 7
+  },
+  {
+    "id": "daily-grace-room",
+    "name": "Daily Grace Room (Spirituality)",
+    "description": "Inspirational and spiritual resources for reflection, faith and daily growth.",
+    "order": 8
+  }
+]

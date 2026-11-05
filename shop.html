@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>All Digital Products | CDL Network</title>
+
+    <meta name="description" content="Explore the CDL Network digital product collection. Discover practical resources, templates, guides and tools.">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="/css/shop.css">
+
+    <script>
+        document.addEventListener("cdlCatalogReady", function (event) {
+
+            const data = event.detail;
+
+            const totalTypes = data.productTypes.reduce(
+                (total, family) => total + family.types.length,
+                0
+            );
+
+            document.getElementById("catalog-status").textContent =
+                "Catalog loaded successfully.";
+
+            document.getElementById("categories-count").textContent =
+                data.categories.length;
+
+            document.getElementById("niches-count").textContent =
+                data.niches.length;
+
+            document.getElementById("families-count").textContent =
+                data.productTypes.length;
+
+            document.getElementById("types-count").textContent =
+                totalTypes;
+
+            document.getElementById("products-count").textContent =
+                data.products.length;
+
+        });
+
+        document.addEventListener("cdlCatalogError", function (event) {
+
+            document.getElementById("catalog-status").textContent =
+                "Unable to load the catalog. Please check the JSON files.";
+
+            console.error(event.detail);
+
+        });
+    </script>
+
+    <script src="/js/products.js" defer></script>
+</head>
+
+<body>
+
+    <main class="shop-page">
+
+        <section class="shop-header">
+
+            <p class="section-label">CDL NETWORK / DIGITAL STORE</p>
+
+            <h1>All Digital Products</h1>
+
+            <p>
+                Discover practical digital resources, tools,
+                templates and learning materials.
+            </p>
+
+        </section>
+
+        
+<section class="shop-catalog">
+
+    <div class="shop-catalog-heading">
+        <p class="section-label">EXPLORE THE COLLECTION</p>
+        <h2>Find Your Next Resource</h2>
+        <p>Explore our digital products by category, niche or product type.</p>
+    </div>
+
+    <div class="shop-filters">
+
+        <div class="filter-field">
+            <label for="category-filter">Main Category</label>
+            <select id="category-filter">
+                <option value="">All Categories</option>
+            </select>
+        </div>
+
+        <div class="filter-field">
+            <label for="niche-filter">Niche</label>
+            <select id="niche-filter">
+                <option value="">All Niches</option>
+            </select>
+        </div>
+
+        <div class="filter-field">
+            <label for="type-filter">Product Type</label>
+            <select id="type-filter">
+                <option value="">All Product Types</option>
+            </select>
+        </div>
+
+        <div class="filter-field search-field">
+            <label for="product-search">Search</label>
+            <input
+                type="search"
+                id="product-search"
+                placeholder="Search digital products..."
+            >
+        </div>
+
+    </div>
+
+    <div class="shop-results-header">
+        <p id="results-count">Loading products...</p>
+
+        <button type="button" id="reset-filters">
+            Reset Filters
+        </button>
+    </div>
+
+    <div id="products-grid" class="products-grid">
+
+        <p class="catalog-message">Loading catalog...</p>
+
+    </div>
+
+</section>
+
+
+    </main>
+<script src="/js/filters.js" defer></script>
+</body>
+</html>

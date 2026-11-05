@@ -1,0 +1,190 @@
+
+[
+  {
+    "id": "learning-guides",
+    "name": "Learning & Guides",
+    "order": 1,
+    "types": [
+      { "id": "workbooks", "name": "Workbooks" },
+      { "id": "cheat-sheets", "name": "Cheat Sheets" },
+      { "id": "handbook", "name": "Handbook" },
+      { "id": "manual", "name": "Manual" },
+      { "id": "field-guide", "name": "Field Guide" },
+      { "id": "guidebook", "name": "Guidebook" },
+      { "id": "pocket-guide", "name": "Pocket Guide" },
+      { "id": "quick-start-guide", "name": "Quick Start Guide" },
+      { "id": "study-guide", "name": "Study Guide" },
+      { "id": "companion-guide", "name": "Companion Guide" },
+      { "id": "action-guide", "name": "Action Guide" },
+      { "id": "survival-guide", "name": "Survival Guide" },
+      { "id": "reference-guide", "name": "Reference Guide" },
+      { "id": "desk-guide", "name": "Desk Guide" }
+    ]
+  },
+  {
+    "id": "planning-tracking",
+    "name": "Planning & Tracking",
+    "order": 2,
+    "types": [
+      { "id": "journals", "name": "Journals" },
+      { "id": "planners", "name": "Planners" },
+      { "id": "trackers", "name": "Trackers" },
+      { "id": "roadmaps", "name": "Roadmaps" },
+      { "id": "calendars", "name": "Calendars" },
+      { "id": "rituals", "name": "Rituals" },
+      { "id": "logbook", "name": "Logbook" },
+      { "id": "timeline", "name": "Timeline" },
+      { "id": "schedule", "name": "Schedule" },
+      { "id": "log-sheet", "name": "Log Sheet" },
+      { "id": "routine", "name": "Routine" },
+      { "id": "sequence", "name": "Sequence" }
+    ]
+  },
+  {
+    "id": "templates-documents",
+    "name": "Templates & Documents",
+    "order": 3,
+    "types": [
+      { "id": "cards", "name": "Cards" },
+      { "id": "checklists", "name": "Checklists" },
+      { "id": "templates", "name": "Templates" },
+      { "id": "worksheets", "name": "Worksheets" },
+      { "id": "script-bank", "name": "Script Bank" },
+      { "id": "draft-starters", "name": "Draft Starters" },
+      { "id": "fill-in-the-blank", "name": "Fill-in-the-Blank" },
+      { "id": "plug-and-play", "name": "Plug-and-Play" },
+      { "id": "done-for-you", "name": "Done-for-You" },
+      { "id": "message-templates", "name": "Message Templates" },
+      { "id": "skeleton-files", "name": "Skeleton Files" },
+      { "id": "boilerplate-collection", "name": "Boilerplate Collection" },
+      { "id": "framework-templates", "name": "Framework Templates" }
+    ]
+  },
+  {
+    "id": "ai-digital-tools",
+    "name": "AI & Digital Tools",
+    "order": 4,
+    "types": [
+      { "id": "calculators", "name": "Calculators" },
+      { "id": "claude-skills", "name": "Claude Skills" },
+      { "id": "prompts-library", "name": "Prompts Library" }
+    ]
+  },
+  {
+    "id": "systems-operations",
+    "name": "Systems & Operations",
+    "order": 5,
+    "types": [
+      { "id": "protocols", "name": "Protocols" },
+      { "id": "sops", "name": "SOPs" },
+      { "id": "system", "name": "System" },
+      { "id": "workflow", "name": "Workflow" },
+      { "id": "protocol", "name": "Protocol" },
+      { "id": "process", "name": "Process" },
+      { "id": "procedure", "name": "Procedure" }
+    ]
+  },
+  {
+    "id": "courses-training",
+    "name": "Courses & Training",
+    "order": 6,
+    "types": [
+      { "id": "mini-course", "name": "Mini Course" },
+      { "id": "workshop", "name": "Workshop" },
+      { "id": "masterclass", "name": "Masterclass" },
+      { "id": "bootcamp", "name": "Bootcamp" },
+      { "id": "challenge", "name": "Challenge" },
+      { "id": "tutorial-library", "name": "Tutorial Library" },
+      { "id": "crash-course", "name": "Crash Course" },
+      { "id": "deep-dive", "name": "Deep Dive" },
+      { "id": "walkthrough", "name": "Walkthrough" },
+      { "id": "clinic", "name": "Clinic" },
+      { "id": "training-series", "name": "Training Series" },
+      { "id": "lesson-library", "name": "Lesson Library" },
+      { "id": "demo-vault", "name": "Demo Vault" },
+      { "id": "audio-series", "name": "Audio Series" },
+      { "id": "intensive", "name": "Intensive" }
+    ]
+  },
+  {
+    "id": "strategy-frameworks",
+    "name": "Strategy & Frameworks",
+    "order": 7,
+    "types": [
+      { "id": "blueprint", "name": "Blueprint" },
+      { "id": "method", "name": "Method" },
+      { "id": "framework", "name": "Framework" },
+      { "id": "playbook", "name": "Playbook" },
+      { "id": "strategy", "name": "Strategy" },
+      { "id": "model", "name": "Model" },
+      { "id": "formula", "name": "Formula" },
+      { "id": "methodology", "name": "Methodology" }
+    ]
+  },
+  {
+    "id": "data-organization",
+    "name": "Data & Organization",
+    "order": 8,
+    "types": [
+      { "id": "assessment-sheet", "name": "Assessment Sheet" },
+      { "id": "dashboard", "name": "Dashboard" },
+      { "id": "scorecard", "name": "Scorecard" },
+      { "id": "matrix", "name": "Matrix" },
+      { "id": "flowchart", "name": "Flowchart" },
+      { "id": "map", "name": "Map" },
+      { "id": "grid", "name": "Grid" },
+      { "id": "directory", "name": "Directory" },
+      { "id": "database", "name": "Database" },
+      { "id": "index", "name": "Index" },
+      { "id": "catalog", "name": "Catalog" },
+      { "id": "rolodex", "name": "Rolodex" }
+    ]
+  },
+  {
+    "id": "libraries-collections",
+    "name": "Libraries & Collections",
+    "order": 9,
+    "types": [
+      { "id": "idea-banks", "name": "Idea Banks" },
+      { "id": "qa-vault", "name": "Q and A Vault" },
+      { "id": "swipe-file", "name": "Swipe File" },
+      { "id": "outline-bank", "name": "Outline Bank" },
+      { "id": "copy-bank", "name": "Copy Bank" },
+      { "id": "response-bank", "name": "Response Bank" },
+      { "id": "resource-library", "name": "Resource Library" },
+      { "id": "vault", "name": "Vault" },
+      { "id": "example-library", "name": "Example Library" },
+      { "id": "case-study-collection", "name": "Case Study Collection" },
+      { "id": "inspiration-gallery", "name": "Inspiration Gallery" },
+      { "id": "archive", "name": "Archive" },
+      { "id": "repository", "name": "Repository" },
+      { "id": "compilation", "name": "Compilation" },
+      { "id": "anthology", "name": "Anthology" },
+      { "id": "stack", "name": "Stack" },
+      { "id": "best-of-collection", "name": "Best Of Collection" }
+    ]
+  },
+  {
+    "id": "kits-bundles",
+    "name": "Kits & Bundles",
+    "order": 10,
+    "types": [
+      { "id": "toolkits", "name": "Toolkits" },
+      { "id": "starter-set", "name": "Starter Set" },
+      { "id": "starter-kit", "name": "Starter Kit" },
+      { "id": "survival-kit", "name": "Survival Kit" },
+      { "id": "power-pack", "name": "Power Pack" },
+      { "id": "complete-kit", "name": "Complete Kit" },
+      { "id": "essentials-kit", "name": "Essentials Kit" },
+      { "id": "all-in-one-kit", "name": "All-in-One Kit" },
+      { "id": "quick-win-kit", "name": "Quick Win Kit" },
+      { "id": "emergency-kit", "name": "Emergency Kit" },
+      { "id": "fast-start-bundle", "name": "Fast Start Bundle" },
+      { "id": "beginner-bundle", "name": "Beginner Bundle" },
+      { "id": "foundation-kit", "name": "Foundation Kit" },
+      { "id": "accelerator-pack", "name": "Accelerator Pack" },
+      { "id": "launch-kit", "name": "Launch Kit" },
+      { "id": "success-kit", "name": "Success Kit" }
+    ]
+  }
+]
