@@ -4420,3 +4420,38 @@ img {
 
 }
 
+/* =========================================
+   DIGITAL STORE — CATEGORY LINKS
+========================================= */
+
+.products-grid .product-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.products-grid .product-card h3,
+.products-grid .product-card p {
+    color: inherit;
+}
+
+.product-explore {
+    display: inline-block;
+    margin-top: 22px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: opacity 0.3s ease,
+                transform 0.3s ease;
+}
+
+.product-card:hover .product-explore {
+    opacity: 0.65;
+    transform: translateX(4px);
+}
+
+.products-grid .product-card:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 5px;
+}
