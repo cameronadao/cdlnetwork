@@ -4639,6 +4639,13 @@ img {
     place-items: center;
 }
 
+.catalog-card-cover {
+    display: block;
+    height: 340px;
+    padding: 14px;
+    aspect-ratio: auto;
+}
+
 .catalog-card-placeholder {
     font: 800 44px/1 var(--font-heading, Manrope, sans-serif);
     letter-spacing: -.08em;
@@ -4733,6 +4740,10 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .catalog-card-cover {
+        height: 300px;
+    }
+
     .catalog-intro {
         padding-bottom: 36px;
     }
@@ -4767,7 +4778,8 @@ img {
 
 .product-detail-cover {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    max-width: 360px;
+    aspect-ratio: 5 / 8;
     object-fit: contain;
     background: #e9e5dc;
 }
