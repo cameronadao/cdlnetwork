@@ -127,5 +127,27 @@
     "cover": "/assets/images/the-resonance-blueprint-cover.png",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=s59kM"
+  },
+  {
+    "id": "cdl-master-library-400000-digital-products",
+    "title": "CDL Master Library: 400,000+ Digital Products",
+    "shortDescription": "Why build from scratch when you can own the vault?",
+    "description": "Why build from scratch when you can own the vault? The CDL Master Library is the ultimate \"Business-in-a-Box,\" giving you instant access to over 400,000 premium digital assets across 25+ high-demand niches.\n\nWhether you are looking for E-books, Canva Planners, Faceless Videos, or Mindset Trainings, everything is here and ready to be monetized.\n\nWhat’s Inside the Vault:\n\n- ✅ **400,000+ Digital Products**: E-books, Video Courses, Graphics, and Templates.\n- ✅ **Full Resell Rights (MRR & PLR)**: Rebrand them, claim them as your own, and keep 100% of every sale.\n- ✅ **Massive Niche Variety**: Business, Health, Tech, Lifestyle, Parenting, and more.\n- ✅ **Lifetime Access**: Secure cloud hosting with instant, one-click downloads.\n\n**Stop trading time for content creation.** Use these professional resources to fuel your Instagram, launch your store, and start generating passive income today.",
+    "category": "Libraries & Collections",
+    "subcategory": "PLR & PRINT ON DEMAND",
+    "productGroup": "Libraries & Collections",
+    "audience": "Business Builder",
+    "language": ["en", "fr"],
+    "price": 4.99,
+    "currency": "USD",
+    "formats": ["PDF"],
+    "publishedAt": "2026-11-06T23:30:32+01:00",
+    "cover": "/assets/images/cdl-master-library-cover-en.png",
+    "covers": {
+      "en": "/assets/images/cdl-master-library-cover-en.png",
+      "fr": "/assets/images/cdl-master-library-cover-fr.png"
+    },
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=CloX2"
   }
 ]
