@@ -6,6 +6,36 @@
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   })[char]);
   const t = (value, replacements) => window.CDL_I18N ? window.CDL_I18N.t(value, replacements) : value;
+  const asValues = (value) => Array.isArray(value) ? value : (value ? [value] : []);
+  const renderDescription = (value) => {
+    const blocks = [];
+    let paragraph = [];
+    let list = [];
+    const inline = (text) => escapeHtml(text).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    const flushParagraph = () => {
+      if (!paragraph.length) return;
+      const text = paragraph.join(' ').trim();
+      const markdownHeading = text.match(/^#{1,6}\s+(.+)$/);
+      const boldHeading = /^\*\*.+\*\*$/.test(text);
+      const heading = Boolean(markdownHeading || boldHeading);
+      const content = markdownHeading ? markdownHeading[1] : (boldHeading ? text.slice(2, -2) : text);
+      blocks.push(heading ? `<h2>${inline(t(content))}</h2>` : `<p>${inline(t(text))}</p>`);
+      paragraph = [];
+    };
+    const flushList = () => {
+      if (!list.length) return;
+      blocks.push(`<ul>${list.map((item) => `<li>${inline(t(item))}</li>`).join('')}</ul>`);
+      list = [];
+    };
+    for (const line of String(value || '').split('\n')) {
+      if (!line.trim()) { flushParagraph(); flushList(); }
+      else if (line.startsWith('- ')) { flushParagraph(); list.push(line.slice(2)); }
+      else { flushList(); paragraph.push(line.trim()); }
+    }
+    flushParagraph();
+    flushList();
+    return blocks.join('');
+  };
   const formatPrice = (amount, currency) => {
     const numericAmount = Number(amount);
     if (!Number.isFinite(numericAmount) || !currency) return escapeHtml(amount);
@@ -53,11 +83,14 @@
 
     const rawTitle = product.title || 'Untitled product';
     const title = escapeHtml(t(rawTitle));
-    const description = escapeHtml(t(product.description || 'Product information will be added soon.'));
-    const cover = product.cover ? `<img class="product-detail-cover" src="${escapeHtml(product.cover)}" alt="${escapeHtml(t('Cover of {title}', { title: rawTitle }))}">` : '';
+    const coverPath = product.covers?.[window.CDL_I18N?.language] || product.cover;
+    const description = product.description
+      ? `<div class="product-detail-description">${renderDescription(product.description)}</div>`
+      : `<p>${escapeHtml(t('Product information will be added soon.'))}</p>`;
+    const cover = coverPath ? `<img class="product-detail-cover" src="${escapeHtml(coverPath)}" alt="${escapeHtml(t('Cover of {title}', { title: rawTitle }))}">` : '';
     const fields = [
       ['Category', product.category], ['Format', Array.isArray(product.formats) ? product.formats.join(', ') : product.format],
-      ['Author', product.author], ['Language', product.language ? (product.language.toLowerCase() === 'en' ? 'English' : product.language) : ''],
+      ['Author', product.author], ['Language', product.language ? asValues(product.language).map((language) => t(({ en: 'English', fr: 'French' }[String(language).toLowerCase()] || language))).join(', ') : ''],
       ['Price', product.price !== undefined ? formatPrice(product.price, product.currency) : '']
     ].filter(([, value]) => value !== undefined && value !== null && value !== '');
     let purchaseButton = '';
@@ -79,7 +112,7 @@
     }
 
     const localizedMetadata = fields.length ? `<dl class="product-detail-meta">${fields.map(([label, value]) => `<div><dt>${escapeHtml(t(label))}</dt><dd>${escapeHtml(t(value))}</dd></div>`).join('')}</dl>` : '';
-    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">${escapeHtml(t('CDL Network · Digital store'))}</p><h1>${title}</h1><p>${description}</p>${localizedMetadata}${purchaseButton}</div></article>`;
+    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">${escapeHtml(t('CDL Network · Digital store'))}</p><h1>${title}</h1>${description}${localizedMetadata}${purchaseButton}</div></article>`;
     document.title = `${t(rawTitle)} | CDL Network`;
   }
 

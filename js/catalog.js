@@ -76,7 +76,7 @@
     const subcategoryMatch = !subcategorySelect?.value || slug(product.subcategory) === subcategorySelect.value;
     const productFormats = asValues(product.formats || product.format || product.productType || product.type);
     const typeMatch = !typeSelect?.value || productFormats.some((format) => slug(format) === typeSelect.value);
-    const languageMatch = !languageSelect?.value || slug(product.language) === languageSelect.value;
+    const languageMatch = !languageSelect?.value || asValues(product.language).some((language) => slug(language) === languageSelect.value);
     const groupMatch = !expectedGroup || slug(product.productGroup || product.group) === slug(expectedGroup);
     const freeMatch = !freeOnly || product.isFree === true;
     return audienceMatch && subcategoryMatch && typeMatch && languageMatch && groupMatch && freeMatch;
@@ -84,10 +84,12 @@
 
   function card(product) {
     const title = escapeHtml(t(product.title || 'Untitled product'));
-    const cover = product.cover
-      ? `<img class="catalog-card-cover" src="${escapeHtml(product.cover)}" alt="${escapeHtml(t('Cover of {title}', { title: product.title || 'Untitled product' }))}" loading="lazy">`
+    const coverPath = product.covers?.[window.CDL_I18N?.language] || product.cover;
+    const cover = coverPath
+      ? `<img class="catalog-card-cover" src="${escapeHtml(coverPath)}" alt="${escapeHtml(t('Cover of {title}', { title: product.title || 'Untitled product' }))}" loading="lazy">`
       : '<div class="catalog-card-placeholder" aria-hidden="true">CDL</div>';
-    const description = product.description ? `<p>${escapeHtml(t(product.description))}</p>` : '';
+    const cardDescription = product.shortDescription || product.description;
+    const description = cardDescription ? `<p>${escapeHtml(t(cardDescription))}</p>` : '';
     const category = t(product.subcategory || product.productGroup || '');
     const price = product.isFree === true ? t('Free') : (product.price !== undefined ? formatPrice(product.price, product.currency) : '');
     return `<article class="catalog-card">${cover}<div class="catalog-card-body">${category ? `<p class="catalog-card-category">${escapeHtml(category)}</p>` : ''}<h2>${title}</h2>${description}<div class="catalog-card-footer">${price ? `<span>${price}</span>` : '<span></span>'}<a href="/product.html?id=${encodeURIComponent(product.id)}">${escapeHtml(t('View product'))} <span aria-hidden="true">↗</span></a></div></div></article>`;
