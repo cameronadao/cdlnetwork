@@ -5,6 +5,15 @@
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   })[char]);
+  const formatPrice = (amount, currency) => {
+    const numericAmount = Number(amount);
+    if (!Number.isFinite(numericAmount) || !currency) return escapeHtml(amount);
+    try {
+      return escapeHtml(new Intl.NumberFormat('fr-FR', { style: 'currency', currency }).format(numericAmount));
+    } catch {
+      return escapeHtml(amount);
+    }
+  };
 
   const showState = (title, message) => {
     target.innerHTML = `<div class="product-detail-state" role="status"><p class="eyebrow">CDL Network · Digital store</p><h1>${escapeHtml(title)}</h1><p>${escapeHtml(message)}</p></div>`;
@@ -45,7 +54,7 @@
     const cover = product.cover ? `<img class="product-detail-cover" src="${escapeHtml(product.cover)}" alt="Cover of ${title}">` : '';
     const fields = [
       ['Category', product.category], ['Format', Array.isArray(product.formats) ? product.formats.join(', ') : product.format],
-      ['Author', product.author], ['Price', product.price]
+      ['Author', product.author], ['Price', product.price !== undefined ? formatPrice(product.price, product.currency) : '']
     ].filter(([, value]) => value !== undefined && value !== null && value !== '');
     const metadata = fields.length ? `<dl class="product-detail-meta">${fields.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>` : '';
 

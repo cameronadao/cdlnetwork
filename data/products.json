@@ -9,6 +9,7 @@
     "audience": "Personal Growth Coach",
     "subject": "Religion et spiritualité",
     "price": 6.99,
+    "currency": "EUR",
     "formats": ["EPUB"],
     "cover": "/assets/images/the-bible-explained-cover.png",
     "status": "published"

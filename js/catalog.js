@@ -43,6 +43,15 @@
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   })[char]);
   const asValues = (value) => Array.isArray(value) ? value : (value ? [value] : []);
+  const formatPrice = (amount, currency) => {
+    const numericAmount = Number(amount);
+    if (!Number.isFinite(numericAmount) || !currency) return escapeHtml(amount);
+    try {
+      return escapeHtml(new Intl.NumberFormat('fr-FR', { style: 'currency', currency }).format(numericAmount));
+    } catch {
+      return escapeHtml(amount);
+    }
+  };
 
   function fillSelect(select, values, firstLabel) {
     if (!select) return;
@@ -73,7 +82,7 @@
       : '<div class="catalog-card-placeholder" aria-hidden="true">CDL</div>';
     const description = product.description ? `<p>${escapeHtml(product.description)}</p>` : '';
     const category = product.subcategory || product.productGroup || '';
-    const price = product.isFree === true ? 'Free' : (product.price ? escapeHtml(product.price) : '');
+    const price = product.isFree === true ? 'Free' : (product.price !== undefined ? formatPrice(product.price, product.currency) : '');
     return `<article class="catalog-card">${cover}<div class="catalog-card-body">${category ? `<p class="catalog-card-category">${escapeHtml(category)}</p>` : ''}<h2>${title}</h2>${description}<div class="catalog-card-footer">${price ? `<span>${price}</span>` : '<span></span>'}<a href="/product.html?id=${encodeURIComponent(product.id)}">View product <span aria-hidden="true">↗</span></a></div></div></article>`;
   }
 
