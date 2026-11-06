@@ -57,7 +57,8 @@
     const cover = product.cover ? `<img class="product-detail-cover" src="${escapeHtml(product.cover)}" alt="${escapeHtml(t('Cover of {title}', { title: rawTitle }))}">` : '';
     const fields = [
       ['Category', product.category], ['Format', Array.isArray(product.formats) ? product.formats.join(', ') : product.format],
-      ['Author', product.author], ['Price', product.price !== undefined ? formatPrice(product.price, product.currency) : '']
+      ['Author', product.author], ['Language', product.language ? (product.language.toLowerCase() === 'en' ? 'English' : product.language) : ''],
+      ['Price', product.price !== undefined ? formatPrice(product.price, product.currency) : '']
     ].filter(([, value]) => value !== undefined && value !== null && value !== '');
     let purchaseButton = '';
     if (product.purchaseUrl) {
