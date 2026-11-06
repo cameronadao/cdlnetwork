@@ -7,6 +7,7 @@
   const audienceSelect = root.querySelector('#audience-filter');
   const subcategorySelect = root.querySelector('#subcategory-filter');
   const typeSelect = root.querySelector('#product-type-filter');
+  const languageSelect = root.querySelector('#language-filter');
   const sortSelect = root.querySelector('#catalog-sort');
   const clearButton = root.querySelector('[data-clear-filters]');
   const freeOnly = root.dataset.freeOnly === 'true';
@@ -36,6 +37,7 @@
     'SPORTS & OUTDOORS', 'TRAFFIC & SEO', 'TRAVEL', 'WRITING & PUBLISHING'
   ];
   const digitalProductTypes = ['PDF', 'EPUB', 'XLSX'];
+  const productLanguages = [['en', 'English'], ['fr', 'French']];
 
   const slug = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -66,6 +68,7 @@
 
   fillSelect(audienceSelect, audiences, 'All audiences');
   fillSelect(subcategorySelect, subcategories, 'All subcategories');
+  fillSelect(languageSelect, productLanguages, 'All languages');
 
   function matches(product) {
     const audienceValue = (product.audiences || product.audience || product.marketSegments || []);
@@ -73,9 +76,10 @@
     const subcategoryMatch = !subcategorySelect?.value || slug(product.subcategory) === subcategorySelect.value;
     const productFormats = asValues(product.formats || product.format || product.productType || product.type);
     const typeMatch = !typeSelect?.value || productFormats.some((format) => slug(format) === typeSelect.value);
+    const languageMatch = !languageSelect?.value || slug(product.language) === languageSelect.value;
     const groupMatch = !expectedGroup || slug(product.productGroup || product.group) === slug(expectedGroup);
     const freeMatch = !freeOnly || product.isFree === true;
-    return audienceMatch && subcategoryMatch && typeMatch && groupMatch && freeMatch;
+    return audienceMatch && subcategoryMatch && typeMatch && languageMatch && groupMatch && freeMatch;
   }
 
   function card(product) {
@@ -150,10 +154,11 @@
       if (audienceSelect && params.has('audience')) audienceSelect.value = slug(params.get('audience'));
       if (subcategorySelect && params.has('subcategory')) subcategorySelect.value = slug(params.get('subcategory'));
       if (typeSelect && params.has('type')) typeSelect.value = slug(params.get('type'));
+      if (languageSelect && params.has('language')) languageSelect.value = slug(params.get('language'));
 
-      [audienceSelect, subcategorySelect, typeSelect, sortSelect].forEach((select) => select?.addEventListener('change', () => render(products)));
+      [audienceSelect, subcategorySelect, typeSelect, languageSelect, sortSelect].forEach((select) => select?.addEventListener('change', () => render(products)));
       clearButton?.addEventListener('click', () => {
-        [audienceSelect, subcategorySelect, typeSelect].forEach((select) => { if (select) select.value = ''; });
+        [audienceSelect, subcategorySelect, typeSelect, languageSelect].forEach((select) => { if (select) select.value = ''; });
         if (sortSelect) sortSelect.value = 'price-asc';
         render(products);
       });
