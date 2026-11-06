@@ -36,6 +36,7 @@
     'SOCIAL MEDIA VIDEOS', 'SPORTS & OUTDOORS', 'TRAFFIC & SEO', 'TRAVEL',
     'WRITING & PUBLISHING'
   ];
+  const digitalProductTypes = ['PDF', 'EPUB', 'XLSX'];
 
   const slug = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -69,7 +70,8 @@
     const audienceValue = (product.audiences || product.audience || product.marketSegments || []);
     const audienceMatch = !audienceSelect?.value || asValues(audienceValue).some((value) => slug(value) === audienceSelect.value);
     const subcategoryMatch = !subcategorySelect?.value || slug(product.subcategory) === subcategorySelect.value;
-    const typeMatch = !typeSelect?.value || slug(product.productType || product.type) === typeSelect.value;
+    const productFormats = asValues(product.formats || product.format || product.productType || product.type);
+    const typeMatch = !typeSelect?.value || productFormats.some((format) => slug(format) === typeSelect.value);
     const groupMatch = !expectedGroup || slug(product.productGroup || product.group) === slug(expectedGroup);
     const freeMatch = !freeOnly || product.isFree === true;
     return audienceMatch && subcategoryMatch && typeMatch && groupMatch && freeMatch;
@@ -105,9 +107,7 @@
       const products = await response.json();
       if (!Array.isArray(products)) throw new Error('Product data must be a JSON array');
 
-      const types = [...new Set(products.map((product) => product.productType || product.type).filter(Boolean))]
-        .sort((a, b) => String(a).localeCompare(String(b)));
-      fillSelect(typeSelect, types, types.length ? 'All product types' : 'Product type list pending');
+      fillSelect(typeSelect, digitalProductTypes, 'All product types');
 
       const params = new URLSearchParams(location.search);
       if (audienceSelect && params.has('audience')) audienceSelect.value = slug(params.get('audience'));
