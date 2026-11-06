@@ -57,8 +57,19 @@
       ['Author', product.author], ['Price', product.price !== undefined ? formatPrice(product.price, product.currency) : '']
     ].filter(([, value]) => value !== undefined && value !== null && value !== '');
     const metadata = fields.length ? `<dl class="product-detail-meta">${fields.map(([label, value]) => `<div><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join('')}</dl>` : '';
+    let purchaseButton = '';
+    if (product.purchaseUrl) {
+      try {
+        const purchaseUrl = new URL(product.purchaseUrl);
+        if (purchaseUrl.protocol === 'https:' && ['payhip.com', 'www.payhip.com'].includes(purchaseUrl.hostname)) {
+          purchaseButton = `<a class="product-detail-buy" href="${escapeHtml(purchaseUrl.href)}" rel="noopener noreferrer">Buy now${product.price !== undefined ? ` · ${formatPrice(product.price, product.currency)}` : ''}</a>`;
+        }
+      } catch (error) {
+        console.error('Invalid product purchase URL:', error);
+      }
+    }
 
-    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">CDL Network · Digital store</p><h1>${title}</h1><p>${description}</p>${metadata}</div></article>`;
+    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">CDL Network · Digital store</p><h1>${title}</h1><p>${description}</p>${metadata}${purchaseButton}</div></article>`;
     document.title = `${title} | CDL Network`;
   }
 
