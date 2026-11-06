@@ -15,5 +15,21 @@
     "cover": "/assets/images/the-bible-explained-cover.png",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=yl9RI"
+  },
+  {
+    "id": "walking-with-jesus-through-lent-46-day-devotional-ash-wednesday-resurrection-sunday",
+    "title": "Walking with Jesus Through Lent: A 46-Day Devotional from Ash Wednesday to Resurrection Sunday",
+    "author": "Daily Grace Room",
+    "description": "A 46-day devotional with daily reflections from Ash Wednesday to Easter Sunday.",
+    "category": "Learning & Guides",
+    "subcategory": "SPIRITUALITY",
+    "productGroup": "Learning & Guides",
+    "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
+    "price": 5.99,
+    "currency": "USD",
+    "formats": ["PDF"],
+    "cover": "/assets/images/walking-with-jesus-through-lent-cover.png",
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=VaABc"
   }
 ]
