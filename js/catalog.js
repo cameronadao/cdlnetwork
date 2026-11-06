@@ -11,6 +11,7 @@
   const clearButton = root.querySelector('[data-clear-filters]');
   const freeOnly = root.dataset.freeOnly === 'true';
   const expectedGroup = new URLSearchParams(location.search).get('group') || '';
+  let catalogProducts = null;
 
   const audiences = [
     ['business-builder', 'Business Builder'],
@@ -38,6 +39,7 @@
 
   const slug = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const t = (value, replacements) => window.CDL_I18N ? window.CDL_I18N.t(value, replacements) : value;
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
   })[char]);
@@ -46,7 +48,8 @@
     const numericAmount = Number(amount);
     if (!Number.isFinite(numericAmount) || !currency) return escapeHtml(amount);
     try {
-      return escapeHtml(new Intl.NumberFormat('fr-FR', { style: 'currency', currency }).format(numericAmount));
+      const locale = window.CDL_I18N?.language === 'fr' ? 'fr-FR' : 'en-US';
+      return escapeHtml(new Intl.NumberFormat(locale, { style: 'currency', currency }).format(numericAmount));
     } catch {
       return escapeHtml(amount);
     }
@@ -76,14 +79,14 @@
   }
 
   function card(product) {
-    const title = escapeHtml(product.title || 'Untitled product');
+    const title = escapeHtml(t(product.title || 'Untitled product'));
     const cover = product.cover
-      ? `<img class="catalog-card-cover" src="${escapeHtml(product.cover)}" alt="Cover of ${title}" loading="lazy">`
+      ? `<img class="catalog-card-cover" src="${escapeHtml(product.cover)}" alt="${escapeHtml(t('Cover of {title}', { title: product.title || 'Untitled product' }))}" loading="lazy">`
       : '<div class="catalog-card-placeholder" aria-hidden="true">CDL</div>';
-    const description = product.description ? `<p>${escapeHtml(product.description)}</p>` : '';
-    const category = product.subcategory || product.productGroup || '';
-    const price = product.isFree === true ? 'Free' : (product.price !== undefined ? formatPrice(product.price, product.currency) : '');
-    return `<article class="catalog-card">${cover}<div class="catalog-card-body">${category ? `<p class="catalog-card-category">${escapeHtml(category)}</p>` : ''}<h2>${title}</h2>${description}<div class="catalog-card-footer">${price ? `<span>${price}</span>` : '<span></span>'}<a href="/product.html?id=${encodeURIComponent(product.id)}">View product <span aria-hidden="true">↗</span></a></div></div></article>`;
+    const description = product.description ? `<p>${escapeHtml(t(product.description))}</p>` : '';
+    const category = t(product.subcategory || product.productGroup || '');
+    const price = product.isFree === true ? t('Free') : (product.price !== undefined ? formatPrice(product.price, product.currency) : '');
+    return `<article class="catalog-card">${cover}<div class="catalog-card-body">${category ? `<p class="catalog-card-category">${escapeHtml(category)}</p>` : ''}<h2>${title}</h2>${description}<div class="catalog-card-footer">${price ? `<span>${price}</span>` : '<span></span>'}<a href="/product.html?id=${encodeURIComponent(product.id)}">${escapeHtml(t('View product'))} <span aria-hidden="true">↗</span></a></div></div></article>`;
   }
 
   function render(products) {
@@ -118,13 +121,20 @@
     }
     grid.innerHTML = matchesNow.map(card).join('');
     if (matchesNow.length) {
-      status.textContent = `${matchesNow.length} product${matchesNow.length === 1 ? '' : 's'} found.`;
+      const countMessage = freeOnly
+        ? (matchesNow.length === 1 ? '{count} free product found.' : '{count} free products found.')
+        : (matchesNow.length === 1 ? '{count} product found.' : '{count} products found.');
+      status.textContent = t(countMessage, { count: matchesNow.length });
     } else {
-      status.textContent = freeOnly
+      status.textContent = t(freeOnly
         ? 'No free products are available yet. Check back soon.'
-        : 'No products match these filters yet. Published products will appear here.';
+        : 'No products match these filters yet. Published products will appear here.');
     }
   }
+
+  document.addEventListener('cdl:languagechange', () => {
+    if (catalogProducts) render(catalogProducts);
+  });
 
   async function init() {
     try {
@@ -132,6 +142,7 @@
       if (!response.ok) throw new Error(`Product data returned ${response.status}`);
       const products = await response.json();
       if (!Array.isArray(products)) throw new Error('Product data must be a JSON array');
+      catalogProducts = products;
 
       fillSelect(typeSelect, digitalProductTypes, 'All product types');
 
@@ -149,7 +160,7 @@
       render(products);
     } catch (error) {
       console.error('Unable to load the product catalogue:', error);
-      status.textContent = 'The product catalogue could not be loaded. Please try again later.';
+      status.textContent = t('The product catalogue could not be loaded. Please try again later.');
       grid.innerHTML = '';
     }
   }
