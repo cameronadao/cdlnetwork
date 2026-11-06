@@ -33,5 +33,22 @@
     "cover": "/assets/images/walking-with-jesus-through-lent-cover.png",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=VaABc"
+  },
+  {
+    "id": "digitals-planners-journals-canva-templates",
+    "title": "Digitals Planners & Journals (Canva Templates)",
+    "author": "Daily Grace Room",
+    "description": "A bundle of 30+ digital planners and journals for faith, prayer, gratitude, devotion, manifestation, and more.",
+    "category": "Kits & Bundles",
+    "subcategory": "CANVA PLANNERS",
+    "productGroup": "Kits & Bundles",
+    "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
+    "price": 39.99,
+    "currency": "USD",
+    "formats": ["PDF"],
+    "publishedAt": "2026-11-06T14:49:37+01:00",
+    "cover": "/assets/images/digital-planners-journals-canva-cover.png",
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=6laoM"
   }
 ]
