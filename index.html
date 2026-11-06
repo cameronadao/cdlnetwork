@@ -1,4 +1,5 @@
-
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,15 +14,15 @@
 
     <!-- FAVICON -->
 <link rel="icon" type="image/png" sizes="32x32"
-      href="/assets/images/logo.png?v=2">
+      href="//assets/images/logo">
 
 <link rel="icon" type="image/png" sizes="192x192"
-      href="/assets/images/logo.png?v=2">
+      href="//assets/images/logo">
 
       
 
 <link rel="apple-touch-icon"
-      href="/assets/images/logo.png?v=2">
+      href="//assets/images/favicon.svg?v=2">
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +50,7 @@
         <div class="container navbar">
 
             <a href="#home" class="logo">
-                <img src="assets/images/logo.png" alt="CDL Network">
+                <img src="/assets/images/logo.png" alt="CDL Network">
                 <span class="brand-name">CDL NETWORK</span>
             </a>
 
@@ -67,62 +68,45 @@
     <span></span>
 </button>
 
-<nav class="nav-menu" id="primary-navigation">
-
-    <a href="#home" class="nav-link active">Home</a>
-    <a href="#products" class="nav-link">Digital Products</a>
-    <a href="#services" class="nav-link">Web Design</a>
-    <a href="#portfolio" class="nav-link">Portfolio</a>
-    <a href="#resources" class="nav-link">Resources</a>
-    <a href="#about" class="nav-link">About</a>
-    <a href="#faq" class="nav-link">FAQ</a>
-
-    <div class="nav-item nav-dropdown">
-
-        <button
-            class="nav-link dropdown-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-haspopup="true"
-        >
-            Shop
-            <span class="dropdown-arrow">⌄</span>
+<nav class="nav-menu" id="primary-navigation" aria-label="Main navigation">
+    <a href="/#home" class="nav-link">Home</a>
+    <div class="nav-item nav-dropdown mega-dropdown">
+        <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="digital-products-menu">
+            Digital Products <span class="dropdown-arrow" aria-hidden="true">⌄</span>
         </button>
-
-        <ul class="dropdown-menu">
-
-            <li>
-                <a href="https://kdp.amazon.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">Amazon KDP</a>
-            </li>
-
-            <li>
-                <a href="https://books.apple.com/us/author/cdl-network/id6802080396"
-                   target="_blank"
-                   rel="noopener noreferrer">Apple Books</a>
-            </li>
-
-            <li>
-                <a href="https://www.etsy.com/shop/CDLNetwork"
-                   target="_blank"
-                   rel="noopener noreferrer">Etsy</a>
-            </li>
-
-            <li>
-                <a href="https://payhip.com/cdlnetwork"
-                   target="_blank"
-                   rel="noopener noreferrer">Payhip</a>
-            </li>
-
-        </ul>
-
+        <div class="dropdown-menu mega-menu" id="digital-products-menu">
+            <div class="mega-column">
+                <p class="mega-heading">Browse product categories</p>
+                <ul>                    <li><a href="/shop.html?group=learning-guides">Learning & Guides</a></li>
+                    <li><a href="/shop.html?group=planning-tracking">Planning & Tracking</a></li>
+                    <li><a href="/shop.html?group=templates-documents">Templates & Documents</a></li>
+                    <li><a href="/shop.html?group=ai-digital-tools">AI & Digital Tools</a></li>
+                    <li><a href="/shop.html?group=systems-operations">Systems & Operations</a></li>
+                    <li><a href="/shop.html?group=courses-training">Courses & Training</a></li>
+                    <li><a href="/shop.html?group=strategy-frameworks">Strategy & Frameworks</a></li>
+                    <li><a href="/shop.html?group=data-organization">Data & Organization</a></li>
+                    <li><a href="/shop.html?group=libraries-collections">Libraries & Collections</a></li>
+                    <li><a href="/shop.html?group=kits-bundles">Kits & Bundles</a></li>
+                </ul>
+            </div>
+            <div class="mega-column mega-audiences">
+                <p class="mega-heading">Shop by audience</p>
+                <ul>                    <li><a href="/shop.html?audience=business-builder">For Business Builder</a></li>
+                    <li><a href="/shop.html?audience=digital-creators">For Digital Creator</a></li>
+                    <li><a href="/shop.html?audience=family-niches-market">For Family & Niche Markets</a></li>
+                    <li><a href="/shop.html?audience=lifestyle-hobbyist">For Lifestyle & Hobbyist</a></li>
+                    <li><a href="/shop.html?audience=personal-growth-coach">For Personal Growth Coach</a></li>
+                    <li><a href="/shop.html?audience=specialists">For Specialist</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <a href="#contact" class="nav-cta">
-        Let's Talk <span>↗</span>
-    </a>
-
+    <a href="/shop.html" class="nav-link">All Products</a>
+    <a href="/free-products.html" class="nav-link">Free Products</a>
+    <a href="/#services" class="nav-link">Web Design</a>
+    <a href="/#about" class="nav-link">About</a>
+    <a href="/#faq" class="nav-link">FAQ</a>
+    <a href="/#contact" class="nav-cta">Let’s Talk <span aria-hidden="true">↗</span></a>
 </nav>
 
 
@@ -183,7 +167,7 @@
                     <div class="visual-main">
 
                         <div class="visual-circle">
-                            <img src="assets/images/logo.png" alt="CDL Network Logo">
+                            <img src="/assets/images/logo.png" alt="CDL Network Logo">
                         </div>
 
                         <div class="visual-label label-one">
@@ -382,7 +366,6 @@
 
 
         
-```html
 <!-- DIGITAL STORE SECTION -->
 <section class="products section-padding" id="products">
 
@@ -405,128 +388,50 @@
 
         <!-- PRODUCT CATEGORIES -->
         <div class="products-grid">
-
-            <!-- 01 — WORKBOOKS & GUIDES -->
-            <a href="/workbooks-guides.html" class="product-card reveal">
+            <a href="/shop.html?group=learning-guides" class="product-card reveal">
                 <span class="product-number">01</span>
-                <div>
-                    <span class="product-category">LEARN & GROW</span>
-                    <h3>Workbooks & Guides</h3>
-                    <p>
-                        Structured learning resources, practical exercises
-                        and actionable guidance to help you develop new skills.
-                    </p>
-                    <span class="product-explore">Explore Collection ↗</span>
-                </div>
+                <div><span class="product-category">LEARN & GROW</span><h3>Learning & Guides</h3><p>Structured guides and workbooks to build knowledge and develop useful skills.</p><span class="product-explore">Explore Collection ↗</span></div>
             </a>
-
-
-            <!-- 02 — PLANNERS & JOURNALS -->
-            <a href="/planners-journals.html" class="product-card reveal reveal-delay-1">
+            <a href="/shop.html?group=planning-tracking" class="product-card reveal reveal-delay-1">
                 <span class="product-number">02</span>
-                <div>
-                    <span class="product-category">PLAN & ORGANIZE</span>
-                    <h3>Planners & Journals</h3>
-                    <p>
-                        Thoughtfully structured tools to organize your goals,
-                        build productive habits and track your progress.
-                    </p>
-                    <span class="product-explore">Explore Collection ↗</span>
-                </div>
+                <div><span class="product-category">PLAN & ORGANIZE</span><h3>Planning & Tracking</h3><p>Planners and trackers to organize priorities, goals and everyday progress.</p><span class="product-explore">Explore Collection ↗</span></div>
             </a>
-
-
-            <!-- 03 — TEMPLATES -->
-            <a href="/templates.html" class="product-card reveal">
+            <a href="/shop.html?group=templates-documents" class="product-card reveal">
                 <span class="product-number">03</span>
-                <div>
-                    <span class="product-category">CREATE & DESIGN</span>
-                    <h3>Templates</h3>
-                    <p>
-                        Ready-to-customize resources that simplify content
-                        creation, organization and everyday business tasks.
-                    </p>
-                    <span class="product-explore">Explore Collection ↗</span>
-                </div>
+                <div><span class="product-category">CREATE & DOCUMENT</span><h3>Templates & Documents</h3><p>Ready-to-use documents and templates for creative and practical work.</p><span class="product-explore">Explore Collection ↗</span></div>
             </a>
-
-
-            <!-- 04 — AI TOOLS & RESOURCES -->
-            <a href="/ai-tools-resources.html" class="product-card reveal reveal-delay-1">
+            <a href="/shop.html?group=ai-digital-tools" class="product-card reveal reveal-delay-1">
                 <span class="product-number">04</span>
-                <div>
-                    <span class="product-category">WORK SMARTER</span>
-                    <h3>AI Tools & Resources</h3>
-                    <p>
-                        Digital resources designed to help you explore AI,
-                        streamline tasks and support creative workflows.
-                    </p>
-                    <span class="product-explore">Explore Collection ↗</span>
-                </div>
+                <div><span class="product-category">WORK SMARTER</span><h3>AI & Digital Tools</h3><p>Digital tools and AI resources for more focused creative workflows.</p><span class="product-explore">Explore Collection ↗</span></div>
             </a>
-
-
-            <!-- 05 — DIGITAL SYSTEMS -->
-            <a href="/digital-systems.html" class="product-card reveal">
+            <a href="/shop.html?group=systems-operations" class="product-card reveal">
                 <span class="product-number">05</span>
-                <div>
-                    <span class="product-category">BUILD SYSTEMS</span>
-                    <h3>Digital Systems</h3>
-                    <p>
-                        Practical frameworks and organized resources to
-                        structure projects and improve business processes.
-                    </p>
-                    <span class="product-explore">Explore Collection ↗</span>
-                </div>
+                <div><span class="product-category">BUILD SYSTEMS</span><h3>Systems & Operations</h3><p>Frameworks and resources for organizing projects and business operations.</p><span class="product-explore">Explore Collection ↗</span></div>
             </a>
-
-
-            <!-- 06 — COURSES & LEARNING -->
-            <a href="/courses-learning.html" class="product-card reveal reveal-delay-1">
+            <a href="/shop.html?group=courses-training" class="product-card reveal reveal-delay-1">
                 <span class="product-number">06</span>
-                <div>
-                    <span class="product-category">DEVELOP SKILLS</span>
-                    <h3>Courses & Learning</h3>
-                    <p>
-                        Educational resources created to support continuous
-                        learning, personal development and professional growth.
-                    </p>
-                    <span class="product-explore">Explore Collection ↗</span>
-                </div>
+                <div><span class="product-category">LEARN BY DOING</span><h3>Courses & Training</h3><p>Courses and training resources for continuous learning and skill building.</p><span class="product-explore">Explore Collection ↗</span></div>
             </a>
-
-
-            <!-- 07 — BUSINESS RESOURCES -->
-            <a href="/business-resources.html" class="product-card reveal">
+            <a href="/shop.html?group=strategy-frameworks" class="product-card reveal">
                 <span class="product-number">07</span>
-                <div>
-                    <span class="product-category">BUSINESS & PRODUCTIVITY</span>
-                    <h3>Business Resources</h3>
-                    <p>
-                        Useful digital tools and resources for entrepreneurs
-                        looking to organize, develop and grow their activities.
-                    </p>
-                    <span class="product-explore">Explore Collection ↗</span>
-                </div>
+                <div><span class="product-category">PLAN & GROW</span><h3>Strategy & Frameworks</h3><p>Structured approaches for making plans, decisions and meaningful progress.</p><span class="product-explore">Explore Collection ↗</span></div>
             </a>
-
-
-            <!-- 08 — BUNDLES & COLLECTIONS -->
-            <a href="/bundles-collections.html" class="product-card reveal reveal-delay-1">
+            <a href="/shop.html?group=data-organization" class="product-card reveal reveal-delay-1">
                 <span class="product-number">08</span>
-                <div>
-                    <span class="product-category">MORE VALUE</span>
-                    <h3>Bundles & Collections</h3>
-                    <p>
-                        Curated collections combining complementary digital
-                        resources into convenient product bundles.
-                    </p>
-                    <span class="product-explore">Explore Collection ↗</span>
-                </div>
+                <div><span class="product-category">SORT & ORGANIZE</span><h3>Data & Organization</h3><p>Practical tools for arranging information, workflows and resources.</p><span class="product-explore">Explore Collection ↗</span></div>
             </a>
-
+            <a href="/shop.html?group=libraries-collections" class="product-card reveal">
+                <span class="product-number">09</span>
+                <div><span class="product-category">EXPLORE COLLECTIONS</span><h3>Libraries & Collections</h3><p>Curated libraries of resources organized around useful themes.</p><span class="product-explore">Explore Collection ↗</span></div>
+            </a>
+            <a href="/shop.html?group=kits-bundles" class="product-card reveal reveal-delay-1">
+                <span class="product-number">10</span>
+                <div><span class="product-category">MORE VALUE</span><h3>Kits & Bundles</h3><p>Complementary resources grouped into convenient digital bundles.</p><span class="product-explore">Explore Collection ↗</span></div>
+            </a>
         </div>
+        </a>
 
+        <p class="catalog-home-link"><a class="btn btn-outline" href="/shop.html">Browse all digital products <span aria-hidden="true">↗</span></a></p>
 
         <!-- SALES PLATFORMS -->
         <div class="store-platforms reveal">
@@ -573,7 +478,6 @@
     </div>
 
 </section>
-```
 
 
 
@@ -1314,7 +1218,7 @@
                 <div class="footer-brand">
 
                     <a href="#home" class="footer-logo">
-                        <img src="assets/images/logo.png" alt="CDL Network Logo">
+                        <img src="/assets/images/favicon.svg" alt="CDL Network Logo">
                     </a>
 
                     <h3>CDL NETWORK</h3>

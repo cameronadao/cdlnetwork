@@ -1,142 +1,161 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>All Digital Products | CDL Network</title>
-
-    <meta name="description" content="Explore the CDL Network digital product collection. Discover practical resources, templates, guides and tools.">
-
-    <meta name="theme-color" content="#ffffff">
-
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/shop.css">
-
-    <script>
-        document.addEventListener("cdlCatalogReady", function (event) {
-
-            const data = event.detail;
-
-            const totalTypes = data.productTypes.reduce(
-                (total, family) => total + family.types.length,
-                0
-            );
-
-            document.getElementById("catalog-status").textContent =
-                "Catalog loaded successfully.";
-
-            document.getElementById("categories-count").textContent =
-                data.categories.length;
-
-            document.getElementById("niches-count").textContent =
-                data.niches.length;
-
-            document.getElementById("families-count").textContent =
-                data.productTypes.length;
-
-            document.getElementById("types-count").textContent =
-                totalTypes;
-
-            document.getElementById("products-count").textContent =
-                data.products.length;
-
-        });
-
-        document.addEventListener("cdlCatalogError", function (event) {
-
-            document.getElementById("catalog-status").textContent =
-                "Unable to load the catalog. Please check the JSON files.";
-
-            console.error(event.detail);
-
-        });
-    </script>
-
-    <script src="/js/products.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/script.js" defer></script>
+  <script src="/js/catalog.js" defer></script>
+  <title>All Digital Products | CDL Network</title>
 </head>
-
 <body>
+  <div class="scroll-progress" aria-hidden="true"><div class="scroll-progress-bar"></div></div>
+  <header class="header">
+        <div class="container navbar">
 
-    <main class="shop-page">
+            <a href="/#home" class="logo">
+                <img src="assets/images/logo.png" alt="CDL Network">
+                <span class="brand-name">CDL NETWORK</span>
+            </a>
 
-        <section class="shop-header">
 
-            <p class="section-label">CDL NETWORK / DIGITAL STORE</p>
+<button
+    class="menu-toggle"
+    id="menu-toggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="primary-navigation"
+    type="button"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 
-            <h1>All Digital Products</h1>
-
-            <p>
-                Discover practical digital resources, tools,
-                templates and learning materials.
-            </p>
-
-        </section>
-
-        
-<section class="shop-catalog">
-
-    <div class="shop-catalog-heading">
-        <p class="section-label">EXPLORE THE COLLECTION</p>
-        <h2>Find Your Next Resource</h2>
-        <p>Explore our digital products by category, niche or product type.</p>
-    </div>
-
-    <div class="shop-filters">
-
-        <div class="filter-field">
-            <label for="category-filter">Main Category</label>
-            <select id="category-filter">
-                <option value="">All Categories</option>
-            </select>
-        </div>
-
-        <div class="filter-field">
-            <label for="niche-filter">Niche</label>
-            <select id="niche-filter">
-                <option value="">All Niches</option>
-            </select>
-        </div>
-
-        <div class="filter-field">
-            <label for="type-filter">Product Type</label>
-            <select id="type-filter">
-                <option value="">All Product Types</option>
-            </select>
-        </div>
-
-        <div class="filter-field search-field">
-            <label for="product-search">Search</label>
-            <input
-                type="search"
-                id="product-search"
-                placeholder="Search digital products..."
-            >
-        </div>
-
-    </div>
-
-    <div class="shop-results-header">
-        <p id="results-count">Loading products...</p>
-
-        <button type="button" id="reset-filters">
-            Reset Filters
+<nav class="nav-menu" id="primary-navigation" aria-label="Main navigation">
+    <a href="/#home" class="nav-link">Home</a>
+    <div class="nav-item nav-dropdown mega-dropdown">
+        <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="digital-products-menu">
+            Digital Products <span class="dropdown-arrow" aria-hidden="true">⌄</span>
         </button>
+        <div class="dropdown-menu mega-menu" id="digital-products-menu">
+            <div class="mega-column">
+                <p class="mega-heading">Browse product categories</p>
+                <ul>                    <li><a href="/shop.html?group=learning-guides">Learning & Guides</a></li>
+                    <li><a href="/shop.html?group=planning-tracking">Planning & Tracking</a></li>
+                    <li><a href="/shop.html?group=templates-documents">Templates & Documents</a></li>
+                    <li><a href="/shop.html?group=ai-digital-tools">AI & Digital Tools</a></li>
+                    <li><a href="/shop.html?group=systems-operations">Systems & Operations</a></li>
+                    <li><a href="/shop.html?group=courses-training">Courses & Training</a></li>
+                    <li><a href="/shop.html?group=strategy-frameworks">Strategy & Frameworks</a></li>
+                    <li><a href="/shop.html?group=data-organization">Data & Organization</a></li>
+                    <li><a href="/shop.html?group=libraries-collections">Libraries & Collections</a></li>
+                    <li><a href="/shop.html?group=kits-bundles">Kits & Bundles</a></li>
+                </ul>
+            </div>
+            <div class="mega-column mega-audiences">
+                <p class="mega-heading">Shop by audience</p>
+                <ul>                    <li><a href="/shop.html?audience=business-builder">For Business Builder</a></li>
+                    <li><a href="/shop.html?audience=digital-creators">For Digital Creator</a></li>
+                    <li><a href="/shop.html?audience=family-niches-market">For Family & Niche Markets</a></li>
+                    <li><a href="/shop.html?audience=lifestyle-hobbyist">For Lifestyle & Hobbyist</a></li>
+                    <li><a href="/shop.html?audience=personal-growth-coach">For Personal Growth Coach</a></li>
+                    <li><a href="/shop.html?audience=specialists">For Specialist</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
+    <a href="/shop.html" class="nav-link">All Products</a>
+    <a href="/free-products.html" class="nav-link">Free Products</a>
+    <a href="/#services" class="nav-link">Web Design</a>
+    <a href="/#about" class="nav-link">About</a>
+    <a href="/#faq" class="nav-link">FAQ</a>
+    <a href="/#contact" class="nav-cta">Let’s Talk <span aria-hidden="true">↗</span></a>
+</nav>
 
-    <div id="products-grid" class="products-grid">
 
-        <p class="catalog-message">Loading catalog...</p>
+        </div>
+    </header>
+  <main class="catalog-page" data-catalog>
+    <section class="catalog-intro container">
+      <p class="section-tag">03 / THE DIGITAL STORE</p>
+      <h1>All digital products.</h1>
+      <p>Browse the complete CDL Network digital collection. Filter by audience, subcategory and product type.</p>
+    </section>
+    <section class="catalog-content container" aria-label="Product catalogue">
+      <div class="catalog-filter-panel">
+        <label for="audience-filter"><span>Audience</span><select id="audience-filter"><option value="">All audiences</option></select></label>
+        <label for="subcategory-filter"><span>Subcategory</span><select id="subcategory-filter"><option value="">All subcategories</option></select></label>
+        <label for="product-type-filter"><span>Digital product type</span><select id="product-type-filter"><option value="">Loading types…</option></select></label>
+        <button class="catalog-clear" type="button" data-clear-filters>Clear filters</button>
+      </div>
+      <p class="catalog-status" data-catalog-status role="status" aria-live="polite">Loading products…</p>
+      <div class="catalog-grid" data-catalog-grid></div>
+    </section>
+  </main>
+  <footer class="footer">
 
-    </div>
+        <div class="container">
 
-</section>
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a href="/#home" class="footer-logo">
+                        <img src="assets/images/logo.png" alt="CDL Network Logo">
+                    </a>
+
+                    <h3>CDL NETWORK</h3>
+
+                    <p>
+                        Digital Products & Web Design Studio.
+                        Create. Build. Grow.
+                    </p>
+
+                </div>
 
 
-    </main>
-<script src="/js/products.js" defer></script>
-<script src="/js/filters.js" defer></script>
+                <div class="footer-column">
+                    <h4>EXPLORE</h4>
+                    <a href="/#home">Home</a>
+                    <a href="#products">Digital Products</a>
+                    <a href="#services">Web Design</a>
+                    <a href="#portfolio">Portfolio</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>RESOURCES</h4>
+                    <a href="#resources">Free Resources</a>
+                    <a href="#resources">Articles</a>
+                    <a href="#resources">Tutorials</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>INFORMATION</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="/legal-notice.html">Legal Notice</a>
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> CDL Network. All rights reserved.</p>
+                <p>DESIGNED WITH PURPOSE. BUILT FOR GROWTH.</p>
+            </div>
+
+        </div>
+
+    </footer>
 </body>
 </html>
