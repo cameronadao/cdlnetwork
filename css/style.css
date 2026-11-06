@@ -4641,9 +4641,12 @@ img {
 
 .catalog-card-cover {
     display: block;
-    height: 340px;
-    padding: 14px;
-    aspect-ratio: auto;
+    width: min(100%, 625px);
+    max-height: 1000px;
+    height: auto;
+    padding: 0;
+    aspect-ratio: 625 / 1000;
+    margin-inline: auto;
 }
 
 .catalog-card-placeholder {
@@ -4738,10 +4741,6 @@ img {
     .catalog-grid,
     .catalog-filter-panel {
         grid-template-columns: 1fr;
-    }
-
-    .catalog-card-cover {
-        height: 300px;
     }
 
     .catalog-intro {
