@@ -12,6 +12,7 @@
     "price": 6.99,
     "currency": "USD",
     "formats": ["EPUB"],
+    "publishedAt": "2026-11-06T10:23:14+01:00",
     "cover": "/assets/images/the-bible-explained-cover.png",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=yl9RI"
@@ -28,6 +29,7 @@
     "price": 5.99,
     "currency": "USD",
     "formats": ["PDF"],
+    "publishedAt": "2026-11-06T14:18:57+01:00",
     "cover": "/assets/images/walking-with-jesus-through-lent-cover.png",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=VaABc"

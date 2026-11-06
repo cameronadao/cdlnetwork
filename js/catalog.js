@@ -7,6 +7,7 @@
   const audienceSelect = root.querySelector('#audience-filter');
   const subcategorySelect = root.querySelector('#subcategory-filter');
   const typeSelect = root.querySelector('#product-type-filter');
+  const sortSelect = root.querySelector('#catalog-sort');
   const clearButton = root.querySelector('[data-clear-filters]');
   const freeOnly = root.dataset.freeOnly === 'true';
   const expectedGroup = new URLSearchParams(location.search).get('group') || '';
@@ -87,6 +88,34 @@
 
   function render(products) {
     const matchesNow = products.filter((product) => product && product.status === 'published' && matches(product));
+    const priceOf = (product) => {
+      const price = Number(product.price);
+      return Number.isFinite(price) ? price : Number.POSITIVE_INFINITY;
+    };
+    const dateOf = (product) => {
+      const timestamp = Date.parse(product.publishedAt || product.createdAt || '');
+      return Number.isFinite(timestamp) ? timestamp : 0;
+    };
+    switch (sortSelect?.value) {
+      case 'price-asc':
+        matchesNow.sort((a, b) => priceOf(a) - priceOf(b));
+        break;
+      case 'price-desc':
+        matchesNow.sort((a, b) => priceOf(b) - priceOf(a));
+        break;
+      case 'title-asc':
+        matchesNow.sort((a, b) => String(a.title || '').localeCompare(String(b.title || '')));
+        break;
+      case 'title-desc':
+        matchesNow.sort((a, b) => String(b.title || '').localeCompare(String(a.title || '')));
+        break;
+      case 'newest':
+        matchesNow.sort((a, b) => dateOf(b) - dateOf(a));
+        break;
+      case 'oldest':
+        matchesNow.sort((a, b) => dateOf(a) - dateOf(b));
+        break;
+    }
     grid.innerHTML = matchesNow.map(card).join('');
     if (matchesNow.length) {
       status.textContent = `${matchesNow.length} product${matchesNow.length === 1 ? '' : 's'} found.`;
@@ -111,9 +140,10 @@
       if (subcategorySelect && params.has('subcategory')) subcategorySelect.value = slug(params.get('subcategory'));
       if (typeSelect && params.has('type')) typeSelect.value = slug(params.get('type'));
 
-      [audienceSelect, subcategorySelect, typeSelect].forEach((select) => select?.addEventListener('change', () => render(products)));
+      [audienceSelect, subcategorySelect, typeSelect, sortSelect].forEach((select) => select?.addEventListener('change', () => render(products)));
       clearButton?.addEventListener('click', () => {
         [audienceSelect, subcategorySelect, typeSelect].forEach((select) => { if (select) select.value = ''; });
+        if (sortSelect) sortSelect.value = 'price-asc';
         render(products);
       });
       render(products);

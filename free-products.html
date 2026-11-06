@@ -93,6 +93,14 @@
         <label for="audience-filter"><span>Audience</span><select id="audience-filter"><option value="">All audiences</option></select></label>
         <label for="subcategory-filter"><span>Subcategory</span><select id="subcategory-filter"><option value="">All subcategories</option></select></label>
         <label for="product-type-filter"><span>Digital product type</span><select id="product-type-filter"><option value="">Loading types…</option></select></label>
+        <label for="catalog-sort"><span>Sort by</span><select id="catalog-sort">
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="title-asc">Name: A to Z</option>
+          <option value="title-desc">Name: Z to A</option>
+          <option value="newest">Newest products</option>
+          <option value="oldest">Oldest products</option>
+        </select></label>
         <button class="catalog-clear" type="button" data-clear-filters>Clear filters</button>
       </div>
       <p class="catalog-status" data-catalog-status role="status" aria-live="polite">Loading products…</p>
