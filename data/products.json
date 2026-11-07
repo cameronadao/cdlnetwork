@@ -187,5 +187,23 @@
     },
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=6s1S3"
+  },
+  {
+    "id": "the-ai-marketing-edge",
+    "title": "THE AI MARKETING EDGE",
+    "shortDescription": "A Complete Guide to Artificial Intelligence in Digital Marketing.",
+    "description": "**Future-proof your marketing. Master the AI revolution.**\n\nAI is transforming digital marketing at breakneck speed. From Google’s SGE to ChatGPT and predictive analytics, the old playbook is fading. Are you ready for what’s next?\n\n**THE AI MARKETING EDGE** is your no-fluff guide to understanding and leveraging AI across every facet of digital marketing. Whether you’re a seasoned marketer or just starting out, this book gives you the strategies to stay ahead of 99% of your competitors.\n\n**📖 WHAT'S INSIDE:**\n\n- **AI & ML Demystified:** Neural networks, NLP, computer vision—explained simply.\n- **Google’s AI-First Evolution:** SEO for SGE, BERT, MUM, and semantic search.\n- **Semantic Search & Entity SEO:** Topic clusters, structured data, entity optimization.\n- **Big Data & Predictive Analytics:** Forecast behavior, reduce churn, boost ROI.\n- **Computer Vision:** Visual search, AR, synthetic imagery—ethical use.\n- **Programmatic 2.0:** AI bidding, privacy-first targeting.\n- **AI Email Marketing:** Hyper-personalization, lead scoring, churn prediction.\n- **Chatbots & Conversational AI:** Bots that qualify leads and drive sales.\n- **Generative AI for Content:** ChatGPT, Midjourney, Synthesia—keeping your brand voice.\n- **Data Science Essentials:** SQL, Python concepts, no-code tools.\n- **Future-Proofing Your Strategy:** Principles to stay resilient.\n- **Bonus: AI Tools Every Marketer Should Know:** Curated list of top tools.\n- **Glossary:** Key terms demystified.\n\n**✨ PERFECT FOR:**\n\n- Digital marketers & entrepreneurs 💻\n- Business owners future-proofing their brand 🚀\n- SEO specialists adapting to generative search 🔍\n- Content creators using AI ethically ✍️\n- Anyone who wants to understand AI in marketing 🧠\n\n**Stop guessing. Start leading.**\n\nTap the link to get your copy and master the AI marketing edge today. 📈",
+    "category": "AI & Digital Tools",
+    "subcategory": "COMPUTER & TECHNOLOGY",
+    "productGroup": "AI & Digital Tools",
+    "audience": "Specialists",
+    "language": "en",
+    "price": 14.99,
+    "currency": "USD",
+    "formats": ["PDF", "EPUB"],
+    "publishedAt": "2026-11-07T12:00:00+01:00",
+    "cover": "/assets/images/the-ai-marketing-edge-cover.png",
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=81CMy"
   }
 ]
