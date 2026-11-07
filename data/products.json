@@ -268,5 +268,26 @@
     "cover": "/assets/images/michael-jackson-songs-context-truth-cover.png",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=M2JKH"
+  },
+  {
+    "id": "the-ai-marketing-edge-resources-report",
+    "title": "THE AI MARKETING EDGE - Resources Report",
+    "shortDescription": "The Ultimate Curated Toolkit: 50+ AI Tools, Platforms, and Learning Resources for Smarter Digital Marketing",
+    "description": "**The Ultimate Curated Toolkit: 50+ AI Tools, Platforms, and Learning Resources for Smarter Digital Marketing**\n\n**Your essential toolkit for AI-powered marketing success.**\n\nYou’ve read the strategies. Now it’s time to put them into practice. \"THE AI MARKETING EDGE – Resources Report\" is your curated, ready-to-use directory of the most powerful AI tools, platforms, and learning resources available today.\n\nFrom generative AI and conversational chatbots to predictive analytics and programmatic advertising, this report brings together everything you need to start experimenting and scaling with AI—all in one place.\n\n**Here’s exactly what you’ll get:**\n\n- **Semantic SEO & Structured Data:** Surfer SEO, Clearscope, Schema Markup Generator, Google Markup Helper.\n- **Generative AI for Content:** ChatGPT, Claude, Jasper, Midjourney, DALL‑E, Synthesia, ElevenLabs.\n- **Programmatic Advertising:** Google Ads Smart Bidding, The Trade Desk, Adzooma, SmartyAds.\n- **AI-Powered Email Marketing:** Klaviyo, Mailchimp, ActiveCampaign, Seventh Sense.\n- **Chatbots & Conversational AI:** ManyChat, Landbot, Intercom, Custom GPTs.\n- **Computer Vision & Visual Search:** Google Vision AI, Pinterest Lens, Canva AI.\n- **Data & Analytics:** Google Analytics 4, BigQuery, Tableau, Zapier, Make.\n- **SQL & Data Science Learning:** SQL Primer, Mode Analytics Tutorial, Kaggle.\n- **Open Source AI & Advanced Tools:** TensorFlow, Hugging Face.\n- **Communities & Learning:** Marketing AI Institute, LinkedIn AI in Marketing group, and the official course hub.\n- **Direct links** to each resource for instant access.\n\n**Perfect for:**\n\n- Marketers building their AI stack\n- Entrepreneurs researching tools\n- Business owners implementing AI strategies\n- Anyone who wants a curated shortcut to the best AI resources\n\n**Instant Download.** Stop searching. Start doing.",
+    "category": "Libraries & Collections",
+    "subcategory": "COMPUTER & TECHNOLOGY",
+    "productGroup": "Libraries & Collections",
+    "productFamily": "libraries-collections",
+    "productType": "resource-library",
+    "audience": "Specialists",
+    "language": "en",
+    "price": 0,
+    "currency": "USD",
+    "isFree": true,
+    "formats": ["PDF", "EPUB"],
+    "publishedAt": "2026-11-07T14:30:00+01:00",
+    "cover": "/assets/images/the-ai-marketing-edge-resources-report-cover.png",
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=MSWoR"
   }
 ]
