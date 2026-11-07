@@ -36,7 +36,7 @@
     'SELF IMPROVEMENT & PERSONAL DEVELOPMENT', 'SOCIAL MEDIA', 'SPIRITUALITY',
     'SPORTS & OUTDOORS', 'TRAFFIC & SEO', 'TRAVEL', 'WRITING & PUBLISHING'
   ];
-  const digitalProductTypes = ['PDF', 'EPUB', 'XLSX'];
+  const digitalProductTypes = ['PDF', 'EPUB', 'XLSX', 'ZIP'];
   const productLanguages = [['en', 'English'], ['fr', 'French']];
 
   const slug = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')

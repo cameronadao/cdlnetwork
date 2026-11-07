@@ -149,5 +149,23 @@
     },
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=CloX2"
+  },
+  {
+    "id": "the-ultimate-junior-explorer-collection",
+    "title": "The Ultimate Junior Explorer Collection",
+    "shortDescription": "Unlock the Wonders of the World! From the Pyramids to Coding – The Complete Library for Curious Minds.",
+    "description": "**Unlock the Wonders of the World! From the Pyramids to Coding – The Complete Library for Curious Minds.**\n\nGive your child the gift of knowledge with the complete *The Discovery Chronicles collection*! This massive digital library contains 48 beautifully crafted ebooks designed to spark curiosity, fuel imagination, and build a solid foundation in STEM, History, Geography, and Health.\n\nWhether it’s exploring the depths of the Great Blue Hole, mastering the basics of coding, or launching a backyard rocket, this bundle covers it all. Perfect for home-schooling, bedtime reading, or supplemental classroom material.\n\n### What’s included in this 48-Ebook Mega Bundle?\n\n- ✅ **🌍 Ancient Wonders & History:** Journey to Petra, the Great Wall of China, and the Great Pyramids.\n- ✅ **🔬 STEM & Technology:** Discover the Art of Coding, the Science of Flight, and the Physics of Sound.\n- ✅ **🦁 Nature & Wildlife:** Meet the giants of the ocean in \"Whale Wonders\" and the tiny \"Insects All Around Us.\"\n- ✅ **🌋 Earth Sciences:** Become a \"Dirt Detective\" and explore the depths of the Grand Canyon.\n- ✅ **🍎 Health & Human Body:** Learn about nutrition in \"Healthy Plate, Happy Tummy\" and the secrets of \"Snooze Science.\"\n- ✅ **🚀 Hands-On Projects:** Step-by-step guides like the Baking Soda Rocket experiment!\n\n### **Why choose this bundle?**\n\n**Unbeatable Value**: Get all 48 books for a fraction of their individual price.\n\n**Comprehensive Learning**: A wide range of topics to keep children engaged for years.\n\n**Kid-Friendly Language**: Complex subjects simplified for ages 6 to 12.\n\n**Instant Access**: Download the entire library immediately after purchase in EPUB.",
+    "category": "Libraries & Collections",
+    "subcategory": "KIDS COLLECTION",
+    "productGroup": "Libraries & Collections",
+    "audience": "Family & Niches Market",
+    "language": "en",
+    "price": 24.99,
+    "currency": "USD",
+    "formats": ["ZIP", "EPUB", "PDF"],
+    "publishedAt": "2026-11-07T00:14:40+01:00",
+    "cover": "/assets/images/the-ultimate-junior-explorer-collection.jpg",
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=o4rYj"
   }
 ]

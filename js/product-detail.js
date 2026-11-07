@@ -11,7 +11,9 @@
     const blocks = [];
     let paragraph = [];
     let list = [];
-    const inline = (text) => escapeHtml(text).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    const inline = (text) => escapeHtml(text)
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/\*([^*]+)\*/g, '<em>$1</em>');
     const flushParagraph = () => {
       if (!paragraph.length) return;
       const text = paragraph.join(' ').trim();
