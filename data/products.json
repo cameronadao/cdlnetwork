@@ -167,5 +167,25 @@
     "cover": "/assets/images/the-ultimate-junior-explorer-collection.jpg",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=o4rYj"
+  },
+  {
+    "id": "the-power-of-affirmative-prayer-complete-guide-co-creating-reality",
+    "title": "The Power of Affirmative Prayer / Complete Guide to Co-creating Reality",
+    "category": "Learning & Guides",
+    "subcategory": "SPIRITUALITY",
+    "productGroup": "Learning & Guides",
+    "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
+    "language": ["en", "fr"],
+    "price": 9.99,
+    "currency": "USD",
+    "formats": ["EPUB", "PDF"],
+    "publishedAt": "2026-11-07T11:27:27+01:00",
+    "cover": "/assets/images/affirmative-prayer-cover-en.png",
+    "covers": {
+      "en": "/assets/images/affirmative-prayer-cover-en.png",
+      "fr": "/assets/images/affirmative-prayer-cover-fr.png"
+    },
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=6s1S3"
   }
 ]
