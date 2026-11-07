@@ -13,6 +13,7 @@
   const freeOnly = root.dataset.freeOnly === 'true';
   const expectedGroup = new URLSearchParams(location.search).get('group') || '';
   let catalogProducts = null;
+  let productTypeFamilies = [];
 
   const audiences = [
     ['business-builder', 'Business Builder'],
@@ -36,7 +37,6 @@
     'SELF IMPROVEMENT & PERSONAL DEVELOPMENT', 'SOCIAL MEDIA', 'SPIRITUALITY',
     'SPORTS & OUTDOORS', 'TRAFFIC & SEO', 'TRAVEL', 'WRITING & PUBLISHING'
   ];
-  const digitalProductTypes = ['PDF', 'EPUB', 'XLSX', 'ZIP'];
   const productLanguages = [['en', 'English'], ['fr', 'French']];
 
   const slug = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
@@ -66,6 +66,15 @@
     }).join('');
   }
 
+  function fillProductTypeSelect() {
+    if (!typeSelect) return;
+    const groups = productTypeFamilies.map((family) => {
+      const options = family.types.map((type) => `<option value="${escapeHtml(type.id)}">${escapeHtml(t(type.name))}</option>`).join('');
+      return `<optgroup label="${escapeHtml(t(family.name))}">${options}</optgroup>`;
+    }).join('');
+    typeSelect.innerHTML = `<option value="">${escapeHtml(t('All product types'))}</option>${groups}`;
+  }
+
   fillSelect(audienceSelect, audiences, 'All audiences');
   fillSelect(subcategorySelect, subcategories, 'All subcategories');
   fillSelect(languageSelect, productLanguages, 'All languages');
@@ -74,8 +83,7 @@
     const audienceValue = (product.audiences || product.audience || product.marketSegments || []);
     const audienceMatch = !audienceSelect?.value || asValues(audienceValue).some((value) => slug(value) === audienceSelect.value);
     const subcategoryMatch = !subcategorySelect?.value || slug(product.subcategory) === subcategorySelect.value;
-    const productFormats = asValues(product.formats || product.format || product.productType || product.type);
-    const typeMatch = !typeSelect?.value || productFormats.some((format) => slug(format) === typeSelect.value);
+    const typeMatch = !typeSelect?.value || product.productType === typeSelect.value;
     const languageMatch = !languageSelect?.value || asValues(product.language).some((language) => slug(language) === languageSelect.value);
     const groupMatch = !expectedGroup || slug(product.productGroup || product.group) === slug(expectedGroup);
     const freeMatch = !freeOnly || product.isFree === true;
@@ -139,18 +147,27 @@
   }
 
   document.addEventListener('cdl:languagechange', () => {
+    const selectedType = typeSelect?.value || '';
+    fillProductTypeSelect();
+    if (typeSelect) typeSelect.value = selectedType;
     if (catalogProducts) render(catalogProducts);
   });
 
   async function init() {
     try {
-      const response = await fetch('/data/products.json', { headers: { Accept: 'application/json' } });
-      if (!response.ok) throw new Error(`Product data returned ${response.status}`);
-      const products = await response.json();
+      const [productsResponse, productTypesResponse] = await Promise.all([
+        fetch('/data/products.json', { headers: { Accept: 'application/json' } }),
+        fetch('/data/product-types.json', { headers: { Accept: 'application/json' } })
+      ]);
+      if (!productsResponse.ok) throw new Error(`Product data returned ${productsResponse.status}`);
+      if (!productTypesResponse.ok) throw new Error(`Product type data returned ${productTypesResponse.status}`);
+      const [products, families] = await Promise.all([productsResponse.json(), productTypesResponse.json()]);
       if (!Array.isArray(products)) throw new Error('Product data must be a JSON array');
+      if (!Array.isArray(families)) throw new Error('Product type data must be a JSON array');
       catalogProducts = products;
+      productTypeFamilies = families;
 
-      fillSelect(typeSelect, digitalProductTypes, 'All product types');
+      fillProductTypeSelect();
 
       const params = new URLSearchParams(location.search);
       if (audienceSelect && params.has('audience')) audienceSelect.value = slug(params.get('audience'));
