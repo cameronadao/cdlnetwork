@@ -17,7 +17,6 @@
     --transition: all 0.35s ease;
 }
 
-
 /* =========================================
    RESET & GLOBAL
 ========================================= */
@@ -4489,14 +4488,20 @@ img {
 
 .products-grid .product-card {
     display: block;
+    min-width: 0;
     color: inherit;
     text-decoration: none;
     cursor: pointer;
 }
 
+.products-grid .product-card > div {
+    min-width: 0;
+}
+
 .products-grid .product-card h3,
 .products-grid .product-card p {
     color: inherit;
+    overflow-wrap: anywhere;
 }
 
 .product-explore {
@@ -4680,7 +4685,7 @@ img {
 
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 20px;
 }
 
@@ -4696,8 +4701,8 @@ img {
     width: 100%;
     aspect-ratio: 4 / 3;
     object-fit: contain;
-    background: #e9e5dc;
-    color: #171717;
+    background: #000;
+    color: #f4f4f4;
     place-items: center;
 }
 
@@ -4787,7 +4792,7 @@ img {
     }
 
     .catalog-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(5, minmax(0, 1fr));
     }
 
     .catalog-filter-panel {
@@ -4800,9 +4805,49 @@ img {
         grid-template-columns: 1fr;
     }
 
-    .catalog-grid,
     .catalog-filter-panel {
         grid-template-columns: 1fr;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 6px;
+    }
+
+    .catalog-card-body {
+        padding: 6px 4px;
+    }
+
+    .catalog-card-category {
+        margin-bottom: 4px;
+        font-size: 5px;
+        letter-spacing: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .catalog-card h2 {
+        margin-bottom: 0;
+        font-size: 8px;
+        line-height: 1.2;
+        overflow-wrap: anywhere;
+    }
+
+    .catalog-card-body > p:not(.catalog-card-category) {
+        display: none;
+    }
+
+    .catalog-card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        margin-top: 6px;
+        padding-top: 5px;
+        font-size: 7px;
+        overflow-wrap: anywhere;
+    }
+
+    .catalog-card-footer a {
+        font-size: 7px;
     }
 
     .catalog-intro {
@@ -4842,7 +4887,7 @@ img {
     max-width: 360px;
     aspect-ratio: 5 / 8;
     object-fit: contain;
-    background: #e9e5dc;
+    background: #000;
 }
 
 .product-detail-copy .eyebrow,
@@ -5331,4 +5376,25 @@ img {
     .portfolio-caption > span {
         font-size: 7px;
     }
+
+    .hero-buttons {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .hero-buttons .btn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-width: 0;
+        min-height: 52px;
+        gap: 4px;
+        padding: 10px 8px;
+        font-size: clamp(8px, 2.3vw, 10px);
+        line-height: 1.2;
+        text-align: left;
+    }
 }
+
