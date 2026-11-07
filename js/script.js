@@ -491,3 +491,76 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+/* ========================================
+   BLACK FRIDAY + CYBER MONDAY COUNTDOWN
+======================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".header");
+    if (!header || document.querySelector(".store-promo-banner")) return;
+
+    const saleStartsAt = new Date("2026-11-27T00:00:00+01:00").getTime();
+    const saleEndsAt = new Date("2026-12-01T00:00:00+01:00").getTime();
+    const translate = (text) => window.CDL_I18N ? window.CDL_I18N.t(text) : text;
+    const banner = document.createElement("aside");
+
+    banner.className = "store-promo-banner";
+    banner.setAttribute("role", "region");
+    banner.setAttribute("aria-label", translate("Black Friday and Cyber Monday offer"));
+    banner.innerHTML = `
+        <div class="store-promo-inner">
+            <div class="store-promo-copy">
+                <p class="store-promo-event">Black Friday + Cyber Monday</p>
+                <p class="store-promo-discount" data-promo-discount></p>
+                <p class="store-promo-dates" data-promo-dates></p>
+            </div>
+            <div class="store-promo-timer" role="timer" aria-live="off">
+                <span class="store-promo-timer-label" data-promo-label></span>
+                <div class="store-promo-units">
+                    <span><strong data-promo-days>00</strong><small data-promo-days-label></small></span>
+                    <span><strong data-promo-hours>00</strong><small data-promo-hours-label></small></span>
+                    <span><strong data-promo-minutes>00</strong><small data-promo-minutes-label></small></span>
+                    <span><strong data-promo-seconds>00</strong><small data-promo-seconds-label></small></span>
+                </div>
+            </div>
+        </div>`;
+
+    header.insertAdjacentElement("afterend", banner);
+
+    const pad = (value) => String(value).padStart(2, "0");
+    let intervalId;
+
+    function updateCountdown() {
+        const now = Date.now();
+        if (now >= saleEndsAt) {
+            banner.remove();
+            window.clearInterval(intervalId);
+            return;
+        }
+
+        const saleIsActive = now >= saleStartsAt;
+        const secondsRemaining = Math.max(0, Math.floor(((saleIsActive ? saleEndsAt : saleStartsAt) - now) / 1000));
+        const days = Math.floor(secondsRemaining / 86400);
+        const hours = Math.floor((secondsRemaining % 86400) / 3600);
+        const minutes = Math.floor((secondsRemaining % 3600) / 60);
+        const seconds = secondsRemaining % 60;
+
+        banner.setAttribute("aria-label", translate("Black Friday and Cyber Monday offer"));
+        banner.querySelector("[data-promo-discount]").textContent = translate("80% off the entire store");
+        banner.querySelector("[data-promo-dates]").textContent = translate("Nov 27, 2026, 00:00 – Dec 1, 2026, 00:00 (Paris time)");
+        banner.querySelector("[data-promo-label]").textContent = translate(saleIsActive ? "Ends in" : "Starts in");
+        banner.querySelector("[data-promo-days]").textContent = pad(days);
+        banner.querySelector("[data-promo-hours]").textContent = pad(hours);
+        banner.querySelector("[data-promo-minutes]").textContent = pad(minutes);
+        banner.querySelector("[data-promo-seconds]").textContent = pad(seconds);
+        banner.querySelector("[data-promo-days-label]").textContent = translate("days");
+        banner.querySelector("[data-promo-hours-label]").textContent = translate("hours");
+        banner.querySelector("[data-promo-minutes-label]").textContent = translate("minutes");
+        banner.querySelector("[data-promo-seconds-label]").textContent = translate("seconds");
+    }
+
+    document.addEventListener("cdl:languagechange", updateCountdown);
+    updateCountdown();
+    if (banner.isConnected) intervalId = window.setInterval(updateCountdown, 1000);
+});
