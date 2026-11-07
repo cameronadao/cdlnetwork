@@ -205,5 +205,24 @@
     "cover": "/assets/images/the-ai-marketing-edge-cover.png",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=81CMy"
+  },
+  {
+    "id": "the-ai-marketing-edge-cheat-sheet",
+    "title": "THE AI MARKETING EDGE - Cheat Sheet",
+    "shortDescription": "Quick Reference Guide to Artificial Intelligence in Digital Marketing.",
+    "description": "**Quick Reference Guide to Artificial Intelligence in Digital Marketing: AI Fundamentals, Google SGE, Predictive Analytics, Generative AI Tools & Future-Proof Strategies**\n\n**Master AI marketing in minutes.**\n\nArtificial intelligence is transforming digital marketing at lightning speed. But with so many concepts, tools, and strategies to absorb, keeping everything straight can be overwhelming. That’s where this cheat sheet comes in.\n\n\"THE AI MARKETING EDGE – Cheat Sheet\" distills the most critical insights from the complete guide into a concise, actionable reference. Perfect for busy marketers, entrepreneurs, and business owners who need to stay ahead—without spending hours reading.\n\n**Here's exactly what you'll get (at a glance):**\n\n- **AI & Machine Learning Fundamentals:** Narrow AI, General AI, generative AI, LLMs—with action steps.\n- **Google’s AI-First Evolution:** RankBrain, BERT, MUM, SGE—SEO adaptation strategies.\n- **Semantic Search & Entity-Based SEO:** Entities, structured data (schema), topic clusters—implementation tips.\n- **Big Data & Predictive Analytics:** The 3 Vs, predictive analytics use cases (churn, lead scoring), data centralization.\n- **Computer Vision in Marketing:** Visual search, AR, image optimization.\n- **Programmatic Advertising 2.0:** RTB, AI-driven optimization, cookieless strategies.\n- **AI-Powered Email Marketing:** Predictive segmentation, hyper-personalization, lead scoring—and tools.\n- **Chatbots & Conversational AI:** LLM-powered bots, use cases, best practices.\n- **Generative AI for Content Creation:** Tools for text, images, video, audio—ethical considerations.\n- **Data Science Essentials for Marketers:** SQL basics, no-code AI tools, key concepts.\n- **Future-Proofing Your Strategy:** Key trends and principles for resilience.\n- **Action Steps:** Every section includes clear, practical actions you can take immediately.\n\n**Perfect for:**\n\n- Busy marketers needing quick reference\n- Business owners implementing AI strategies\n- Teams needing training handouts\n- Anyone who wants AI marketing essentials in one place\n\n**Instant Download.** Get your edge today.",
+    "category": "AI & Digital Tools",
+    "subcategory": "COMPUTER & TECHNOLOGY",
+    "productGroup": "AI & Digital Tools",
+    "audience": "Specialists",
+    "language": "en",
+    "price": 0,
+    "currency": "USD",
+    "isFree": true,
+    "formats": ["PDF", "EPUB"],
+    "publishedAt": "2026-11-07T13:00:00+01:00",
+    "cover": "/assets/images/the-ai-marketing-edge-cheatsheet-cover.png",
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=2YlwJ"
   }
 ]
