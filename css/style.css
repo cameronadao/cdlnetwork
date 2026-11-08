@@ -2194,6 +2194,20 @@ img {
     transition: var(--transition);
 }
 
+.footer-social a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-social a img {
+    display: block;
+    width: 16px;
+    height: 16px;
+    flex: 0 0 16px;
+    object-fit: contain;
+}
+
 .footer-column a:hover {
     color: var(--black);
     transform: translateX(3px);
