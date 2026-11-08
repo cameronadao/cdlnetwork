@@ -329,6 +329,7 @@
     "currency": "USD",
     "formats": ["PDF", "EPUB"],
     "publishedAt": "2026-11-08T00:00:00+01:00",
+    "cover": "/assets/images/The Chef’s Method.png",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=BLEbZ",
     "translations": {
