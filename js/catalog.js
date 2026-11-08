@@ -91,12 +91,14 @@
   }
 
   function card(product) {
-    const title = escapeHtml(t(product.title || 'Untitled product'));
+    const locale = window.CDL_I18N?.language || 'en';
+    const translation = product.translations?.[locale] || {};
+    const title = escapeHtml(t(translation.title || product.title || 'Untitled product'));
     const coverPath = product.covers?.[window.CDL_I18N?.language] || product.cover;
     const cover = coverPath
       ? `<img class="catalog-card-cover" src="${escapeHtml(coverPath)}" alt="${escapeHtml(t('Cover of {title}', { title: product.title || 'Untitled product' }))}" loading="lazy">`
       : '<div class="catalog-card-placeholder" aria-hidden="true">CDL</div>';
-    const cardDescription = product.shortDescription || product.description;
+    const cardDescription = translation.shortDescription || translation.description || product.shortDescription || product.description;
     const description = cardDescription ? `<p>${escapeHtml(t(cardDescription))}</p>` : '';
     const category = t(product.subcategory || product.productGroup || '');
     const price = product.isFree === true ? t('Free') : (product.price !== undefined ? formatPrice(product.price, product.currency) : '');

@@ -83,11 +83,14 @@
       return;
     }
 
-    const rawTitle = product.title || 'Untitled product';
+    const locale = window.CDL_I18N?.language || 'en';
+    const translation = product.translations?.[locale] || {};
+    const rawTitle = translation.title || product.title || 'Untitled product';
     const title = escapeHtml(t(rawTitle));
     const coverPath = product.covers?.[window.CDL_I18N?.language] || product.cover;
-    const description = product.description
-      ? `<div class="product-detail-description">${renderDescription(product.description)}</div>`
+    const productDescription = translation.description || product.description;
+    const description = productDescription
+      ? `<div class="product-detail-description">${renderDescription(productDescription)}</div>`
       : `<p>${escapeHtml(t('Product information will be added soon.'))}</p>`;
     const cover = coverPath ? `<img class="product-detail-cover" src="${escapeHtml(coverPath)}" alt="${escapeHtml(t('Cover of {title}', { title: rawTitle }))}">` : '';
     const fields = [
