@@ -356,6 +356,7 @@
     "currency": "USD",
     "formats": ["PDF", "EPUB"],
     "publishedAt": "2026-11-08T17:11:59+01:00",
+    "cover": "/assets/images/Gemini_Generated_Image_hjw4s9hjw4s9hjw4.jpg",
     "status": "published",
     "purchaseUrl": "https://payhip.com/buy?link=Ux0wm",
     "translations": {
