@@ -2202,6 +2202,10 @@ img {
     gap: 12px;
 }
 
+.footer-column.footer-social h4 {
+    grid-column: 1 / -1;
+}
+
 .footer-social a {
     display: flex;
     width: 24px;
