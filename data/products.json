@@ -383,6 +383,7 @@
     "currency": "EUR",
     "formats": ["XLSX"],
     "publishedAt": "2026-11-11T00:00:00+01:00",
+    "cover": "/assets/images/planificateur-de-voyage.png",
     "status": "published",
     "purchaseUrl": "https://www.etsy.com/fr/listing/4517484275/vacation-planner-pro-digital-excel",
     "translations": {
