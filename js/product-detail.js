@@ -109,7 +109,8 @@
           const checkoutUrl = isPayhip && productCode
             ? `${purchaseUrl.origin}/buy?link=${encodeURIComponent(productCode)}`
             : purchaseUrl.href;
-          purchaseButton = `<a class="product-detail-buy" href="${escapeHtml(checkoutUrl)}">${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(product.price, product.currency)}` : ''}</a>`;
+          const newTabAttributes = isEtsy ? ` target="_blank" rel="noopener noreferrer"` : '';
+          purchaseButton = `<a class="product-detail-buy" href="${escapeHtml(checkoutUrl)}"${newTabAttributes}>${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(product.price, product.currency)}` : ''}</a>`;
         }
       } catch (error) {
         console.error('Invalid product purchase URL:', error);
