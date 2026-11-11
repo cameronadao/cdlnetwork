@@ -564,3 +564,46 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCountdown();
     if (banner.isConnected) intervalId = window.setInterval(updateCountdown, 1000);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("[data-swipe-carousel]").forEach((carousel) => {
+        let startX = 0;
+        let startScrollLeft = 0;
+        let isPointerDown = false;
+        let didDrag = false;
+
+        carousel.addEventListener("pointerdown", (event) => {
+            if (event.pointerType !== "mouse" || event.button !== 0) return;
+            startX = event.clientX;
+            startScrollLeft = carousel.scrollLeft;
+            isPointerDown = true;
+            didDrag = false;
+        });
+
+        carousel.addEventListener("pointermove", (event) => {
+            if (!isPointerDown) return;
+            const distance = startX - event.clientX;
+            if (Math.abs(distance) > 5) {
+                didDrag = true;
+                carousel.classList.add("is-dragging");
+                carousel.scrollLeft = startScrollLeft + distance;
+            }
+        });
+
+        const finishDrag = () => {
+            isPointerDown = false;
+            carousel.classList.remove("is-dragging");
+            window.setTimeout(() => { didDrag = false; }, 0);
+        };
+
+        window.addEventListener("pointerup", finishDrag);
+        window.addEventListener("pointercancel", finishDrag);
+
+        carousel.addEventListener("click", (event) => {
+            if (!didDrag) return;
+            event.preventDefault();
+            event.stopPropagation();
+            didDrag = false;
+        }, true);
+    });
+});

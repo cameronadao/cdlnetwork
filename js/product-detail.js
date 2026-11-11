@@ -103,10 +103,10 @@
       try {
         const purchaseUrl = new URL(product.purchaseUrl);
         const isPayhip = purchaseUrl.protocol === 'https:' && ['payhip.com', 'www.payhip.com'].includes(purchaseUrl.hostname);
+        const isEtsy = purchaseUrl.protocol === 'https:' && ['etsy.com', 'www.etsy.com'].includes(purchaseUrl.hostname);
         const productCode = purchaseUrl.pathname.match(/^\/b\/([A-Za-z0-9]+)\/?$/)?.[1];
-        const directCheckoutCode = purchaseUrl.pathname === '/buy' ? purchaseUrl.searchParams.get('link') : null;
-        if (isPayhip && (productCode || directCheckoutCode)) {
-          const checkoutUrl = productCode
+        if (isPayhip || isEtsy) {
+          const checkoutUrl = isPayhip && productCode
             ? `${purchaseUrl.origin}/buy?link=${encodeURIComponent(productCode)}`
             : purchaseUrl.href;
           purchaseButton = `<a class="product-detail-buy" href="${escapeHtml(checkoutUrl)}">${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(product.price, product.currency)}` : ''}</a>`;
