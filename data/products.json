@@ -12,10 +12,15 @@
     "productType": "reference-guide",
     "audience": "Personal Growth Coach",
     "subject": "Religion et spiritualité",
-    "language": "en",
+    "language": [
+      "en",
+      "fr"
+    ],
     "price": 6.99,
     "currency": "USD",
-    "formats": ["EPUB"],
+    "formats": [
+      "EPUB"
+    ],
     "publishedAt": "2026-11-06T10:23:14+01:00",
     "cover": "/assets/images/the-bible-explained-cover.png",
     "status": "published",
@@ -36,7 +41,9 @@
     "language": "en",
     "price": 5.99,
     "currency": "USD",
-    "formats": ["PDF"],
+    "formats": [
+      "PDF"
+    ],
     "publishedAt": "2026-11-06T14:18:57+01:00",
     "cover": "/assets/images/walking-with-jesus-through-lent-cover.png",
     "status": "published",
@@ -56,7 +63,9 @@
     "language": "en",
     "price": 39.99,
     "currency": "USD",
-    "formats": ["PDF"],
+    "formats": [
+      "PDF"
+    ],
     "publishedAt": "2026-11-06T14:49:37+01:00",
     "cover": "/assets/images/digital-planners-journals-canva-cover.png",
     "status": "published",
@@ -76,7 +85,10 @@
     "language": "en",
     "price": 14.99,
     "currency": "USD",
-    "formats": ["EPUB", "PDF"],
+    "formats": [
+      "EPUB",
+      "PDF"
+    ],
     "publishedAt": "2026-11-06T20:38:15+01:00",
     "cover": "/assets/images/faceless-marketing-instagram-cover.png",
     "status": "published",
@@ -96,7 +108,10 @@
     "language": "fr",
     "price": 14.99,
     "currency": "USD",
-    "formats": ["EPUB", "PDF"],
+    "formats": [
+      "EPUB",
+      "PDF"
+    ],
     "publishedAt": "2026-11-06T21:18:42+01:00",
     "cover": "/assets/images/marketing-sans-visage-cover.png",
     "status": "published",
@@ -111,10 +126,16 @@
     "productFamily": "learning-guides",
     "productType": "guidebook",
     "audience": "LOVE & RELATIONSHIPS",
-    "language": ["en", "fr"],
+    "language": [
+      "en",
+      "fr"
+    ],
     "price": 7.99,
     "currency": "USD",
-    "formats": ["EPUB", "PDF"],
+    "formats": [
+      "EPUB",
+      "PDF"
+    ],
     "publishedAt": "2026-11-06T22:15:04+01:00",
     "cover": "/assets/images/the-art-of-the-first-date-cover-en.png",
     "covers": {
@@ -136,7 +157,10 @@
     "language": "en",
     "price": 9.99,
     "currency": "USD",
-    "formats": ["EPUB", "PDF"],
+    "formats": [
+      "EPUB",
+      "PDF"
+    ],
     "publishedAt": "2026-11-06T22:24:19+01:00",
     "cover": "/assets/images/the-resonance-blueprint-cover.png",
     "status": "published",
@@ -153,10 +177,15 @@
     "productFamily": "libraries-collections",
     "productType": "resource-library",
     "audience": "Business Builder",
-    "language": ["en", "fr"],
+    "language": [
+      "en",
+      "fr"
+    ],
     "price": 4.99,
     "currency": "USD",
-    "formats": ["PDF"],
+    "formats": [
+      "PDF"
+    ],
     "publishedAt": "2026-11-06T23:30:32+01:00",
     "cover": "/assets/images/cdl-master-library-cover-en.png",
     "covers": {
@@ -180,7 +209,11 @@
     "language": "en",
     "price": 24.99,
     "currency": "USD",
-    "formats": ["ZIP", "EPUB", "PDF"],
+    "formats": [
+      "ZIP",
+      "EPUB",
+      "PDF"
+    ],
     "publishedAt": "2026-11-07T00:14:40+01:00",
     "cover": "/assets/images/the-ultimate-junior-explorer-collection.jpg",
     "status": "published",
@@ -195,10 +228,16 @@
     "productFamily": "learning-guides",
     "productType": "guidebook",
     "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
-    "language": ["en", "fr"],
+    "language": [
+      "en",
+      "fr"
+    ],
     "price": 9.99,
     "currency": "USD",
-    "formats": ["EPUB", "PDF"],
+    "formats": [
+      "EPUB",
+      "PDF"
+    ],
     "publishedAt": "2026-11-07T11:27:27+01:00",
     "cover": "/assets/images/affirmative-prayer-cover-en.png",
     "covers": {
@@ -222,7 +261,10 @@
     "language": "en",
     "price": 14.99,
     "currency": "USD",
-    "formats": ["PDF", "EPUB"],
+    "formats": [
+      "PDF",
+      "EPUB"
+    ],
     "publishedAt": "2026-11-07T12:00:00+01:00",
     "cover": "/assets/images/the-ai-marketing-edge-cover.png",
     "status": "published",
@@ -243,7 +285,10 @@
     "price": 0,
     "currency": "USD",
     "isFree": true,
-    "formats": ["PDF", "EPUB"],
+    "formats": [
+      "PDF",
+      "EPUB"
+    ],
     "publishedAt": "2026-11-07T13:00:00+01:00",
     "cover": "/assets/images/the-ai-marketing-edge-cheatsheet-cover.png",
     "status": "published",
@@ -263,7 +308,10 @@
     "language": "en",
     "price": 24.99,
     "currency": "USD",
-    "formats": ["PDF", "EPUB"],
+    "formats": [
+      "PDF",
+      "EPUB"
+    ],
     "publishedAt": "2026-11-07T14:00:00+01:00",
     "cover": "/assets/images/michael-jackson-songs-context-truth-cover.png",
     "status": "published",
@@ -284,7 +332,10 @@
     "price": 0,
     "currency": "USD",
     "isFree": true,
-    "formats": ["PDF", "EPUB"],
+    "formats": [
+      "PDF",
+      "EPUB"
+    ],
     "publishedAt": "2026-11-07T14:30:00+01:00",
     "cover": "/assets/images/the-ai-marketing-edge-resources-report-cover.png",
     "status": "published",
@@ -304,7 +355,10 @@
     "language": "en",
     "price": 24.99,
     "currency": "USD",
-    "formats": ["PDF", "EPUB"],
+    "formats": [
+      "PDF",
+      "EPUB"
+    ],
     "publishedAt": "2026-11-07T16:00:00+01:00",
     "cover": "/assets/images/o_1jkq171li1st1r8f19hn11cred17.png.avif",
     "status": "published",
@@ -327,7 +381,10 @@
     ],
     "price": 14.99,
     "currency": "USD",
-    "formats": ["PDF", "EPUB"],
+    "formats": [
+      "PDF",
+      "EPUB"
+    ],
     "publishedAt": "2026-11-08T00:00:00+01:00",
     "cover": "/assets/images/The Chef’s Method.png",
     "status": "published",
@@ -351,10 +408,16 @@
     "productFamily": "strategy-frameworks",
     "productType": "method",
     "audience": "Family & Niches Market",
-    "language": ["en", "fr"],
+    "language": [
+      "en",
+      "fr"
+    ],
     "price": 16.99,
     "currency": "USD",
-    "formats": ["PDF", "EPUB"],
+    "formats": [
+      "PDF",
+      "EPUB"
+    ],
     "publishedAt": "2026-11-08T17:11:59+01:00",
     "cover": "/assets/images/Gemini_Generated_Image_hjw4s9hjw4s9hjw4.jpg",
     "status": "published",
@@ -378,10 +441,15 @@
     "productFamily": "planning-tracking",
     "productType": "planners",
     "audience": "Lifestyle & Hobbyist",
-    "language": ["en", "fr"],
+    "language": [
+      "en",
+      "fr"
+    ],
     "price": 10.79,
     "currency": "EUR",
-    "formats": ["XLSX"],
+    "formats": [
+      "XLSX"
+    ],
     "publishedAt": "2026-11-11T00:00:00+01:00",
     "cover": "/assets/images/planificateur-de-voyage.png",
     "status": "published",
