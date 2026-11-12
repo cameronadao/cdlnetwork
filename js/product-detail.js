@@ -99,7 +99,9 @@
       ['Price', product.price !== undefined ? formatPrice(product.price, product.currency) : '']
     ].filter(([, value]) => value !== undefined && value !== null && value !== '');
     let purchaseButton = '';
-    if (product.purchaseUrl) {
+    if (product.checkoutProvider === 'stripe') {
+      purchaseButton = `<button class="product-detail-buy" type="button" data-stripe-checkout data-product-id="${escapeHtml(product.id)}">${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(product.price, product.currency)}` : ''}</button><p class="checkout-status" data-checkout-status role="status" aria-live="polite"></p>`;
+    } else if (product.purchaseUrl) {
       try {
         const purchaseUrl = new URL(product.purchaseUrl);
         const isPayhip = purchaseUrl.protocol === 'https:' && ['payhip.com', 'www.payhip.com'].includes(purchaseUrl.hostname);

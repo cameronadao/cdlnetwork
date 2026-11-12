@@ -1,0 +1,4 @@
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+  included_files = ["data/products.json", "netlify/functions/_shared/delivery-assets.json", "netlify/functions/_shared/stripe-products.json"]
