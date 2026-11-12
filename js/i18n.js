@@ -6,13 +6,29 @@
   const translatedAttributes = new WeakMap();
   const translatableAttributes = ['alt', 'aria-description', 'aria-label', 'content', 'placeholder', 'title'];
   let translations = { en: {}, fr: {} };
-  let language = document.documentElement.lang === 'fr' ? 'fr' : 'en';
+
+  function detectSystemLanguage() {
+    const candidates = [
+      ...(Array.isArray(navigator.languages) ? navigator.languages : []),
+      navigator.language
+    ].filter(Boolean);
+
+    for (const candidate of candidates) {
+      const languageCode = String(candidate).trim().toLowerCase().split(/[-_]/)[0];
+      if (languageCode === 'fr') return 'fr';
+      if (languageCode === 'en') return 'en';
+    }
+
+    return document.documentElement.lang?.toLowerCase().startsWith('fr') ? 'fr' : 'en';
+  }
+
+  let language = detectSystemLanguage();
 
   try {
     const savedLanguage = localStorage.getItem(languageStorageKey);
     if (savedLanguage === 'fr' || savedLanguage === 'en') language = savedLanguage;
   } catch (error) {
-    // The language switch still works for this page if storage is unavailable.
+    // Automatic detection still works if storage is unavailable.
   }
 
   const normalize = (value) => String(value).replace(/\s+/g, ' ').trim();
