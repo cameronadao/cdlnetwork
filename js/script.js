@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
         dropdownButton.setAttribute("aria-expanded", String(isOpen));
     });
 
-    navMenu.querySelectorAll("a").forEach(link => {
+    navMenu.querySelectorAll("a, [data-contact-modal-open]").forEach(link => {
         link.addEventListener("click", () => {
             if (isMobile()) {
                 closeMenu();

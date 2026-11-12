@@ -16,6 +16,8 @@
   <script src="/js/product-detail.js" defer></script>
   <title>Product | CDL Network</title>
   <script src="/js/i18n.js" defer></script>
+    <link rel="stylesheet" href="/css/contact-modal.css">
+    <script src="/js/contact-modal.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -80,7 +82,7 @@
     <a href="/web-design.html" class="nav-link">Web Design</a>
     <a href="/#about" class="nav-link">About</a>
     <a href="/#faq" class="nav-link">FAQ</a>
-    <a href="/#contact" class="nav-cta">Let’s Talk <span aria-hidden="true">↗</span></a>
+    <button type="button" class="nav-cta" data-contact-modal-open>Let’s Talk <span aria-hidden="true">↗</span></button>
 </nav>
 
 
@@ -96,7 +98,117 @@
     </div>
   </main>
 
-  <footer class="footer">
+  <div class="contact-modal" id="contact-modal" hidden>
+    <button class="contact-modal-backdrop" type="button" data-contact-modal-close aria-label="Close contact form"></button>
+    <section class="contact-modal-panel" role="dialog" aria-modal="true" aria-labelledby="contact-modal-heading" tabindex="-1">
+        <button class="contact-modal-close" type="button" data-contact-modal-close aria-label="Close contact form">×</button>
+        <div class="contact-modal-content"><div class="project-form-wrapper">
+
+    <div class="project-form-heading">
+        <span class="section-tag">START A PROJECT</span>
+        <h3 id="contact-modal-heading">Tell us about your <span>project.</span></h3>
+        <p>
+            Share your ideas with us. We'll review your inquiry
+            and get back to you as soon as possible.
+        </p>
+    </div>
+
+    <form
+        name="project-inquiry"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="project-form"
+    >
+
+        <input type="hidden" name="form-name" value="project-inquiry">
+        <input type="hidden" name="subject" value="New project inquiry — CDL Network">
+
+        <p class="hidden-field">
+            <label>
+                Do not fill this field:
+                <input name="bot-field">
+            </label>
+        </p>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="project-name">Full name *</label>
+                <input type="text" id="project-name" name="name"
+                    placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="project-email">Email address *</label>
+                <input type="email" id="project-email" name="email"
+                    placeholder="you@example.com" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="project-company">Company / Brand</label>
+                <input type="text" id="project-company" name="company"
+                    placeholder="Your company name">
+            </div>
+
+            <div class="form-group">
+                <label for="project-service">Service required *</label>
+                <select id="project-service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="Digital Products">Digital Products</option>
+                    <option value="Branding & Creative">Branding & Creative</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="project-budget">Estimated budget *</label>
+            <select id="project-budget" name="budget" required>
+                <option value="" disabled selected>Select your budget</option>
+                <option value="Under €500">Under €500</option>
+                <option value="€500 – €1,000">€500 – €1,000</option>
+                <option value="€1,000 – €3,000">€1,000 – €3,000</option>
+                <option value="€3,000 – €5,000">€3,000 – €5,000</option>
+                <option value="€5,000+">€5,000+</option>
+                <option value="Not yet defined">Not yet defined</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="project-message">Tell us about your project *</label>
+            <textarea id="project-message" name="message" rows="6"
+                placeholder="Describe your project, objectives and expectations..."
+                required></textarea>
+        </div>
+
+        <div class="form-consent">
+            <input type="checkbox" id="project-consent"
+                name="consent" value="Accepted" required>
+            <label for="project-consent">
+                I agree to the processing of my personal data
+                in accordance with the
+                <a href="/privacy-policy.html" target="_blank">
+                    Privacy Policy
+                </a>.
+            </label>
+        </div>
+
+        <button type="submit" class="project-submit">
+            Send project inquiry <span>↗</span>
+        </button>
+
+        <p class="form-required-note">* Required fields</p>
+
+    </form></div></div>
+    </section>
+</div>
+
+    <footer class="footer">
 
         <div class="container">
 

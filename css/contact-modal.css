@@ -14,3 +14,5 @@ body.has-contact-modal { overflow: hidden; }
   .contact-modal .project-form-wrapper { padding: 54px 20px 24px; }
   .contact-modal .project-form-heading { margin-bottom: 28px; }
 }
+
+button.nav-cta { border: 0; font: inherit; cursor: pointer; }
