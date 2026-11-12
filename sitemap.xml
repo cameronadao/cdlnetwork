@@ -27,4 +27,28 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>https://cdlnetwork.com/web-design.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://cdlnetwork.com/e-commerce.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://cdlnetwork.com/website-redesign.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://cdlnetwork.com/maintenance.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
 </urlset>
