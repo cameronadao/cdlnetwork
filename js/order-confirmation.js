@@ -34,7 +34,7 @@
         anchor.setAttribute('rel', 'nofollow');
         downloads.append(anchor);
       });
-      if (email && result.email) email.textContent = `${t('A download link was also sent to')} ${result.email}.`;
+      if (email && result.email) email.textContent = `${t('Order email:')} ${result.email}.`;
     })
     .catch((error) => {
       console.error('Order confirmation could not load downloads:', error);

@@ -20,7 +20,9 @@ async function supabaseRequest(path, options = {}) {
     headers: supabaseAuthHeaders({ 'content-type': 'application/json', ...(options.headers || {}) })
   });
   if (!response.ok) throw new Error(`Order database request failed (${response.status}).`);
-  return response.status === 204 ? null : response.json();
+  if (response.status === 204) return null;
+  const body = await response.text();
+  return body.trim() ? JSON.parse(body) : null;
 }
 
 function emailMarkup(product, links, locale) {
