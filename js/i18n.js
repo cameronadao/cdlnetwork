@@ -1,5 +1,5 @@
 (() => {
-  const languageStorageKey = 'cdl-network-language';
+  const languageStorageKey = 'cdl-network-language-override';
   const originalText = new WeakMap();
   const translatedText = new WeakMap();
   const originalAttributes = new WeakMap();
