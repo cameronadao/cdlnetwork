@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | CDL Network</title>
+    <meta name="description" content="Explore articles from CDL Network on digital products, web design, and practical ways to grow your online presence.">
+    <meta name="theme-color" content="#080808">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo.png">
+    <link rel="apple-touch-icon" href="/assets/images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/articles.css">
+    <link rel="stylesheet" href="/css/contact-modal.css">
+    <script src="/js/script.js" defer></script>
+    <script src="/js/i18n.js" defer></script>
+    <script src="/js/articles.js" defer></script>
+    <script src="/js/contact-modal.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="scroll-progress"><div class="scroll-progress-bar"></div></div>
+    <header class="header">
+        <div class="container navbar">
+
+            <a href="#home" class="logo">
+                <img src="/assets/images/logo.png" alt="CDL Network">
+                <span class="brand-name">CDL NETWORK</span>
+            </a>
+
+            
+<button
+    class="menu-toggle"
+    id="menu-toggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+    aria-controls="primary-navigation"
+    type="button"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav class="nav-menu" id="primary-navigation" aria-label="Main navigation">
+    <a href="/#home" class="nav-link">Home</a>
+    <div class="nav-item nav-dropdown mega-dropdown">
+        <button class="nav-link dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="digital-products-menu">
+            Digital Products <span class="dropdown-arrow" aria-hidden="true">⌄</span>
+        </button>
+        <div class="dropdown-menu mega-menu" id="digital-products-menu">
+            <div class="mega-column">
+                <p class="mega-heading">Browse product categories</p>
+                <ul>                    <li><a href="/shop.html?group=learning-guides">Learning & Guides</a></li>
+                    <li><a href="/shop.html?group=planning-tracking">Planning & Tracking</a></li>
+                    <li><a href="/shop.html?group=templates-documents">Templates & Documents</a></li>
+                    <li><a href="/shop.html?group=ai-digital-tools">AI & Digital Tools</a></li>
+                    <li><a href="/shop.html?group=systems-operations">Systems & Operations</a></li>
+                    <li><a href="/shop.html?group=courses-training">Courses & Training</a></li>
+                    <li><a href="/shop.html?group=strategy-frameworks">Strategy & Frameworks</a></li>
+                    <li><a href="/shop.html?group=data-organization">Data & Organization</a></li>
+                    <li><a href="/shop.html?group=libraries-collections">Libraries & Collections</a></li>
+                    <li><a href="/shop.html?group=kits-bundles">Kits & Bundles</a></li>
+                </ul>
+            </div>
+            <div class="mega-column mega-audiences">
+                <p class="mega-heading">Shop by audience</p>
+                <ul>                    <li><a href="/shop.html?audience=business-builder">For Business Builder</a></li>
+                    <li><a href="/shop.html?audience=digital-creators">For Digital Creator</a></li>
+                    <li><a href="/shop.html?audience=family-niches-market">For Family & Niche Markets</a></li>
+                    <li><a href="/shop.html?audience=lifestyle-hobbyist">For Lifestyle & Hobbyist</a></li>
+                    <li><a href="/shop.html?audience=personal-growth-coach">For Personal Growth Coach</a></li>
+                    <li><a href="/shop.html?audience=specialists">For Specialist</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a href="/shop.html" class="nav-link">All Products</a>
+    <a href="/free-products.html" class="nav-link">Free Products</a>
+    <a href="/web-design.html" class="nav-link">Web Design</a>
+    <a href="/articles.html" class="nav-link">Articles</a>
+    <a href="/#about" class="nav-link">About</a>
+    <a href="/#faq" class="nav-link">FAQ</a>
+    <button type="button" class="nav-cta" data-contact-modal-open>Let’s Talk <span aria-hidden="true">↗</span></button>
+</nav>
+
+
+        </div>
+    </header>
+    <main id="main-content">
+        <section class="articles-hero" id="home">
+            <div class="container articles-hero-inner">
+                <p class="articles-eyebrow"><span></span> THE CDL NETWORK JOURNAL</p>
+                <h1>Ideas to help you<br>think, build, <em>and grow.</em></h1>
+                <p class="articles-lead">Explore articles from CDL Network on digital products, web design, and practical ways to grow your online presence.</p>
+                <a class="btn btn-dark" href="#article-list">Browse articles <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+        <section class="articles-section section-padding" id="article-list">
+            <div class="container">
+                <div class="articles-heading"><div><span class="section-tag">ALL ARTICLES</span><h2>Ideas for what comes next.</h2></div><p>Practical insights and useful perspectives from CDL Network.</p></div>
+                <div class="articles-grid" id="articles-grid" aria-live="polite"></div>
+                <div class="articles-state" id="articles-state" role="status"><span class="articles-state-mark">CDL / JOURNAL</span><h3>Loading articles…</h3><p>Our latest articles will appear here.</p></div>
+            </div>
+        </section>
+        <section class="articles-contact section-padding"><div class="container articles-contact-inner"><span class="section-tag">HAVE A PROJECT IN MIND?</span><h2>Let’s talk about<br>what you’re building.</h2><button class="btn btn-white" type="button" data-contact-modal-open>Let’s Talk <span aria-hidden="true">↗</span></button></div></section>
+    </main>
+    <div class="contact-modal" id="contact-modal" hidden>
+    <button class="contact-modal-backdrop" type="button" data-contact-modal-close aria-label="Close contact form"></button>
+    <section class="contact-modal-panel" role="dialog" aria-modal="true" aria-labelledby="contact-modal-heading" tabindex="-1">
+        <button class="contact-modal-close" type="button" data-contact-modal-close aria-label="Close contact form">×</button>
+        <div class="contact-modal-content"><div class="project-form-wrapper">
+
+    <div class="project-form-heading">
+        <span class="section-tag">START A PROJECT</span>
+        <h3 id="contact-modal-heading">Tell us about your <span>project.</span></h3>
+        <p>
+            Share your ideas with us. We'll review your inquiry
+            and get back to you as soon as possible.
+        </p>
+    </div>
+
+    <form
+        name="project-inquiry"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="project-form"
+    >
+
+        <input type="hidden" name="form-name" value="project-inquiry">
+        <input type="hidden" name="subject" value="New project inquiry — CDL Network">
+
+        <p class="hidden-field">
+            <label>
+                Do not fill this field:
+                <input name="bot-field">
+            </label>
+        </p>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="project-name">Full name *</label>
+                <input type="text" id="project-name" name="name"
+                    placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="project-email">Email address *</label>
+                <input type="email" id="project-email" name="email"
+                    placeholder="you@example.com" required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="project-company">Company / Brand</label>
+                <input type="text" id="project-company" name="company"
+                    placeholder="Your company name">
+            </div>
+
+            <div class="form-group">
+                <label for="project-service">Service required *</label>
+                <select id="project-service" name="service" required>
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Website Design">Website Design</option>
+                    <option value="Website Development">Website Development</option>
+                    <option value="E-commerce">E-commerce</option>
+                    <option value="Digital Products">Digital Products</option>
+                    <option value="Branding & Creative">Branding & Creative</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="project-budget">Estimated budget *</label>
+            <select id="project-budget" name="budget" required>
+                <option value="" disabled selected>Select your budget</option>
+                <option value="Under €500">Under €500</option>
+                <option value="€500 – €1,000">€500 – €1,000</option>
+                <option value="€1,000 – €3,000">€1,000 – €3,000</option>
+                <option value="€3,000 – €5,000">€3,000 – €5,000</option>
+                <option value="€5,000+">€5,000+</option>
+                <option value="Not yet defined">Not yet defined</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="project-message">Tell us about your project *</label>
+            <textarea id="project-message" name="message" rows="6"
+                placeholder="Describe your project, objectives and expectations..."
+                required></textarea>
+        </div>
+
+        <div class="form-consent">
+            <input type="checkbox" id="project-consent"
+                name="consent" value="Accepted" required>
+            <label for="project-consent">
+                I agree to the processing of my personal data
+                in accordance with the
+                <a href="/privacy-policy.html" target="_blank">
+                    Privacy Policy
+                </a>.
+            </label>
+        </div>
+
+        <button type="submit" class="project-submit">
+            Send project inquiry <span>↗</span>
+        </button>
+
+        <p class="form-required-note">* Required fields</p>
+
+    </form></div></div>
+    </section>
+</div>
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+
+                    <a href="#home" class="footer-logo">
+                        <img src="/assets/images/logo.png" alt="CDL Network Logo">
+                    </a>
+
+                    <h3>CDL NETWORK</h3>
+
+                    <p>
+                        Digital Products & Web Design Studio.
+                        Create. Build. Grow.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>EXPLORE</h4>
+                    <a href="#home">Home</a>
+                    <a href="#products">Digital Products</a>
+                    <a href="/web-design.html">Web Design</a>
+                    <a href="#portfolio">Portfolio</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>RESOURCES</h4>
+                    <a href="#resources">Free Resources</a>
+                    <a href="/articles.html">Articles</a>
+                    <a href="#resources">Tutorials</a>
+                </div>
+
+
+                <div class="footer-column">
+                    <h4>INFORMATION</h4>
+                    <a href="#about">About Us</a>
+                    <a href="#contact">Contact</a>
+                    <a href="/legal-notice.html">Legal Notice</a>
+                    <a href="/privacy-policy.html">Privacy Policy</a>
+                </div>
+
+                <div class="footer-column footer-social">
+                    <h4>FOLLOW US</h4>
+                    <a href="https://www.tiktok.com/@cdlnetwork_" target="_blank" rel="noopener noreferrer" aria-label="TikTok @cdlnetwork_"><img src="/assets/icons/social/tiktok.svg" alt="" aria-hidden="true"></a>
+                    <a href="https://www.instagram.com/cdlnetwork_" target="_blank" rel="noopener noreferrer" aria-label="Instagram @cdlnetwork_"><img src="/assets/icons/social/instagram.svg" alt="" aria-hidden="true"></a>
+                    <a href="https://www.youtube.com/@cdlnetwork" target="_blank" rel="noopener noreferrer" aria-label="YouTube @cdlnetwork"><img src="/assets/icons/social/youtube.svg" alt="" aria-hidden="true"></a>
+                    <a href="https://www.linkedin.com/company/cdlnetwork" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn CDL Network"><img src="/assets/icons/social/linkedin.svg" alt="" aria-hidden="true"></a>
+                    <a href="https://www.facebook.com/cdlnetwork" target="_blank" rel="noopener noreferrer" aria-label="Facebook CDL Network"><img src="/assets/icons/social/facebook.svg" alt="" aria-hidden="true"></a>
+                    <a href="https://www.pinterest.com/cdlnetwork/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest CDL Network"><img src="/assets/icons/social/pinterest.svg" alt="" aria-hidden="true"></a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+                <p>© <span id="current-year"></span> CDL Network. All rights reserved.</p>
+                <p>DESIGNED WITH PURPOSE. BUILT FOR GROWTH.</p>
+            </div>
+
+        </div>
+
+    </footer>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+</body>
+</html>
