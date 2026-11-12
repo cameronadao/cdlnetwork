@@ -25,7 +25,8 @@ export async function getStripeProducts() {
 }
 
 export function getSiteUrl() {
-  const value = process.env.SITE_URL || process.env.URL || 'https://cdlnetwork.netlify.app';
+  const previewUrl = process.env.CONTEXT === 'deploy-preview' ? process.env.DEPLOY_PRIME_URL : '';
+  const value = previewUrl || process.env.SITE_URL || process.env.URL || 'https://cdlnetwork.netlify.app';
   const url = new URL(value);
   if (url.protocol !== 'https:' && url.hostname !== 'localhost') throw new Error('SITE_URL must use HTTPS.');
   return url.origin;
@@ -68,7 +69,10 @@ export async function createSignedDownloads(productId) {
   const bucket = encodeURIComponent(process.env.SUPABASE_BUCKET);
   const links = [];
   for (const entry of entries) {
-    const objectPath = entry.path.split('/').map(encodeURIComponent).join('/');
+    // Match Supabase Storage's URL handling: keep colons literal in the signed
+    // path, then URI-encode the completed URL. Encoding ':' before signing can
+    // produce a token that Storage later rejects for filenames containing it.
+    const objectPath = entry.path.split('/').map((segment) => encodeURIComponent(segment).replace(/%3A/gi, ':')).join('/');
     const response = await fetch(`${base}/storage/v1/object/sign/${bucket}/${objectPath}`, {
       method: 'POST',
       headers: supabaseAuthHeaders({ 'content-type': 'application/json' }),
@@ -81,7 +85,7 @@ export async function createSignedDownloads(productId) {
     const downloadUrl = /^https?:\/\//i.test(signedUrl)
       ? signedUrl
       : `${base}/storage/v1${signedUrl.startsWith('/') ? signedUrl : `/${signedUrl}`}`;
-    links.push({ name: entry.name, url: downloadUrl });
+    links.push({ name: entry.name, url: encodeURI(downloadUrl) });
   }
   return links;
 }
