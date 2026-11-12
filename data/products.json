@@ -24,7 +24,8 @@
     "publishedAt": "2026-11-06T10:23:14+01:00",
     "cover": "/assets/images/the-bible-explained-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=yl9RI"
+    "purchaseUrl": "https://payhip.com/buy?link=yl9RI",
+    "checkoutProvider": "stripe"
   },
   {
     "id": "walking-with-jesus-through-lent-46-day-devotional-ash-wednesday-resurrection-sunday",
