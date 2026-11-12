@@ -1,1 +1,9 @@
-{}
+{
+  "the-bible-explained-a-complete-guide-to-the-66-books": {
+    "priceId": "price_1Ub4nYRndb9QJLuzsrCMWE7Y",
+    "productId": "prod_VcJQ6hythNzo5f",
+    "taxCode": "txcd_10302000",
+    "taxBehavior": "inclusive",
+    "mode": "test"
+  }
+}
