@@ -84,7 +84,11 @@ export async function createSignedDownloads(productId) {
     const downloadUrl = /^https?:\/\//i.test(signedUrl)
       ? signedUrl
       : `${base}/storage/v1${signedUrl.startsWith('/') ? signedUrl : `/${signedUrl}`}`;
-    links.push({ name: entry.name, url: encodeURI(downloadUrl) });
+    // Supabase may return an already-escaped object path (for example `%3A`)
+    // alongside literal spaces. Encode spaces without escaping those existing
+    // path escapes a second time, or Storage verifies a different object path.
+    const safeDownloadUrl = encodeURI(downloadUrl).replace(/%25(?=[0-9a-f]{2})/gi, '%');
+    links.push({ name: entry.name, url: safeDownloadUrl });
   }
   return links;
 }
