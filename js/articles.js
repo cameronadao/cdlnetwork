@@ -1,17 +1,29 @@
 (() => {
   const grid = document.querySelector('#articles-grid');
   const state = document.querySelector('#articles-state');
-  if (!grid || !state) return;
+  const filterNav = document.querySelector('#article-audience-filters');
+  const filterHeading = document.querySelector('#articles-audiences-heading');
+  const filterEyebrow = document.querySelector('#article-filter-eyebrow');
+  if (!grid || !state || !filterNav) return;
 
-  const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));
+  const audienceFilters = [
+    { id: 'business-builder', en: 'For Business Builder', fr: 'Pour les entrepreneurs' },
+    { id: 'digital-creators', en: 'For Digital Creators', fr: 'Pour les créateurs numériques' },
+    { id: 'family-niches-market', en: 'For Family & Niche Markets', fr: 'Pour les familles et les marchés de niche' },
+    { id: 'lifestyle-hobbyist', en: 'For Lifestyle & Hobbyist', fr: 'Pour les loisirs et le mode de vie' },
+    { id: 'personal-growth-coach', en: 'For Personal Growth Coach', fr: 'Pour les coachs en développement personnel' },
+    { id: 'specialists', en: 'For Specialists', fr: 'Pour les spécialistes' }
+  ];
   const localized = (value, language) => typeof value === 'string' ? value : (value?.[language] || value?.en || value?.fr || '');
-  const translate = (value) => window.CDL_I18N?.t(value) || value;
+  const slug = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  let allArticles = [];
+  let selectedAudience = '';
 
-  function showState(title, message, isError = false) {
+  function setState(title, message, isError = false) {
     state.hidden = false;
     state.classList.toggle('is-error', isError);
-    state.querySelector('h3').textContent = translate(title);
-    state.querySelector('p').textContent = translate(message);
+    state.querySelector('h3').textContent = title;
+    state.querySelector('p').textContent = message;
     grid.replaceChildren();
   }
 
@@ -20,25 +32,57 @@
     try {
       const url = new URL(value, window.location.origin);
       return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
-    } catch (error) {
+    } catch {
       return '';
     }
   }
 
-  function render(articles) {
+  function renderFilters(language) {
+    filterHeading.textContent = language === 'fr' ? 'Parcourir les articles par public' : 'Browse articles by audience';
+    filterEyebrow.textContent = language === 'fr' ? 'FILTRES DES ARTICLES' : 'ARTICLE FILTERS';
+    filterNav.setAttribute('aria-label', language === 'fr' ? 'Filtrer les articles par public' : 'Filter articles by audience');
+    filterNav.replaceChildren();
+    const options = [{ id: '', en: 'All articles', fr: 'Tous les articles' }, ...audienceFilters];
+    options.forEach((option) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.textContent = language === 'fr' ? option.fr : option.en;
+      button.classList.toggle('is-active', selectedAudience === option.id);
+      button.setAttribute('aria-pressed', String(selectedAudience === option.id));
+      button.addEventListener('click', () => {
+        selectedAudience = option.id;
+        renderFilters(window.CDL_I18N?.language || 'en');
+        renderArticles();
+      });
+      filterNav.append(button);
+    });
+  }
+
+  function articleMatchesAudience(article) {
+    if (!selectedAudience) return true;
+    const values = Array.isArray(article.audiences) ? article.audiences : (article.audience ? [article.audience] : []);
+    return values.some((value) => slug(value) === selectedAudience);
+  }
+
+  function renderArticles() {
     const language = window.CDL_I18N?.language || 'en';
-    const published = articles
+    const published = allArticles
       .filter((article) => article?.status === 'published' && localized(article.title, language))
       .sort((a, b) => String(b.publishedAt || '').localeCompare(String(a.publishedAt || '')));
+    const visible = published.filter(articleMatchesAudience);
 
     if (!published.length) {
-      showState('No articles published yet', 'New articles from CDL Network will appear here. Check back soon.');
+      setState(language === 'fr' ? 'Aucun article publié pour le moment' : 'No articles published yet', language === 'fr' ? 'Les nouveaux articles de CDL Network apparaîtront ici. Revenez bientôt.' : 'New articles from CDL Network will appear here. Check back soon.');
+      return;
+    }
+    if (!visible.length) {
+      setState(language === 'fr' ? 'Aucun article dans cette catégorie pour le moment' : 'No articles in this audience yet', language === 'fr' ? 'Choisissez un autre filtre pour parcourir les articles disponibles.' : 'Choose another filter to browse the available articles.');
       return;
     }
 
     state.hidden = true;
     grid.replaceChildren();
-    published.forEach((article) => {
+    visible.forEach((article) => {
       const title = localized(article.title, language);
       const summary = localized(article.summary, language);
       const category = localized(article.category, language);
@@ -96,7 +140,7 @@
       if (url) {
         const read = document.createElement('span');
         read.className = 'article-card-read';
-        read.textContent = translate('Read article');
+        read.textContent = language === 'fr' ? 'Lire l’article' : 'Read article';
         const arrow = document.createElement('span');
         arrow.setAttribute('aria-hidden', 'true');
         arrow.textContent = '↗';
@@ -116,11 +160,16 @@
     })
     .then((data) => {
       if (!Array.isArray(data)) throw new Error('Article data must be an array');
-      render(data);
-      document.addEventListener('cdl:languagechange', () => render(data));
+      allArticles = data;
+      renderFilters(window.CDL_I18N?.language || 'en');
+      renderArticles();
+      document.addEventListener('cdl:languagechange', () => {
+        renderFilters(window.CDL_I18N?.language || 'en');
+        renderArticles();
+      });
     })
     .catch((error) => {
       console.error('Unable to load articles:', error);
-      showState('Articles could not be loaded', 'Please try again later.', true);
+      setState('Articles could not be loaded', 'Please try again later.', true);
     });
 })();
