@@ -63,19 +63,25 @@
     const productLink = article.querySelector('.article-detail-product-link');
     const isAiArticle = currentArticle.id === 'adapter-strategie-marketing-ere-ia';
     const isDiscographyArticle = currentArticle.id === 'analyser-discographie-nourrir-creativite';
+    const isFamilyHostingArticle = currentArticle.id === 'organiser-grand-repas-famille-sans-epuisement';
+    const isChefMethodArticle = currentArticle.id === 'arreter-dependre-recettes-cuisiner-methode';
     if (productLink) {
       productLink.textContent = isAiArticle
         ? t({ fr: 'Découvrir THE AI MARKETING EDGE ↗', en: 'Explore THE AI MARKETING EDGE ↗' })
         : isDiscographyArticle
           ? t({ fr: 'Découvrir MICHAEL JACKSON / Songs, Context, Truth ↗', en: 'Explore MICHAEL JACKSON / Songs, Context, Truth ↗' })
-          : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
+          : isFamilyHostingArticle
+            ? t({ fr: 'Découvrir La Méthode Thanksgiving ↗', en: 'Explore The Thanksgiving Method ↗' })
+            : isChefMethodArticle
+              ? t({ fr: 'Découvrir La Méthode du Chef ↗', en: 'Explore The Chef’s Method ↗' })
+              : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
     }
     const categoryLink = article.querySelector('.article-detail-end a:last-child');
     if (categoryLink) {
-      categoryLink.href = isAiArticle ? '/shop.html?group=learning-guides' : isDiscographyArticle ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
+      categoryLink.href = isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
       categoryLink.textContent = isAiArticle
         ? t({ fr: 'Explorer Learning & Guides ↗', en: 'Explore Learning & Guides ↗' })
-        : isDiscographyArticle
+        : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle)
           ? t({ fr: 'Explorer Strategy & Frameworks ↗', en: 'Explore Strategy & Frameworks ↗' })
           : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
     }
