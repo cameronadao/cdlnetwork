@@ -461,5 +461,34 @@
         "description": "**Organisez votre prochain voyage dans un seul classeur Excel.**\n\nOrganisateur de Voyage Pro est un planificateur de voyage numérique au format Excel qui rassemble les informations de votre séjour. La fiche présente les renseignements généraux du voyage, l’itinéraire, le budget, les bagages, une checklist et les contacts d’urgence.\n\n**Votre téléchargement comprend deux classeurs adaptés à leur langue et à leur devise :**\n\n- La version anglaise avec les options de devise USD et GBP.\n- La version française avec l’option de devise EUR.\n\nLes deux fichiers sont au format XLSX."
       }
     }
+  },
+  {
+    "id": "instagram-b-roll-hooks-bonus",
+    "title": "Instagram Bonus: 100 B-Roll & 30 Hooks",
+    "shortDescription": "A free Instagram bonus bundle with two PDF files: Bonus Insta and 100 B-Roll & 30 Hooks.",
+    "description": "A free two-PDF Instagram bonus bundle. The files included are Bonus Insta.pdf and 100 B-Roll & 30 Hooks.pdf.",
+    "category": "Libraries & Collections",
+    "subcategory": "SOCIAL MEDIA",
+    "productGroup": "Libraries & Collections",
+    "productFamily": "libraries-collections",
+    "productType": "swipe-file",
+    "audience": "Business Builder",
+    "price": 0,
+    "currency": "USD",
+    "isFree": true,
+    "formats": [
+      "PDF"
+    ],
+    "publishedAt": "2026-11-13T00:00:00+01:00",
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/buy?link=dGzOm",
+    "relatedProductId": "marketing-sans-visage-faceless-instagram-ebook-template-fr",
+    "translations": {
+      "fr": {
+        "title": "Bonus Instagram : 100 B-Roll et 30 accroches",
+        "shortDescription": "Un pack gratuit de bonus Instagram comprenant deux fichiers PDF : Bonus Insta et 100 B-Roll & 30 Hooks.",
+        "description": "Un pack gratuit de deux PDF pour Instagram. Il comprend les fichiers Bonus Insta.pdf et 100 B-Roll & 30 Hooks.pdf."
+      }
+    }
   }
 ]

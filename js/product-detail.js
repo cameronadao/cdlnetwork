@@ -120,7 +120,15 @@
     }
 
     const localizedMetadata = fields.length ? `<dl class="product-detail-meta">${fields.map(([label, value]) => `<div><dt>${escapeHtml(t(label))}</dt><dd>${escapeHtml(t(value))}</dd></div>`).join('')}</dl>` : '';
-    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">${escapeHtml(t('CDL Network · Digital store'))}</p><h1>${title}</h1>${description}${localizedMetadata}${purchaseButton}</div></article>`;
+    const relatedProduct = product.relatedProductId
+      ? products.find((item) => item && item.id === product.relatedProductId && item.status === 'published')
+      : null;
+    const relatedTranslation = relatedProduct?.translations?.[locale] || {};
+    const relatedTitle = relatedTranslation.title || relatedProduct?.title;
+    const relatedSection = relatedProduct
+      ? `<section class="product-related" aria-labelledby="product-related-title"><h2 id="product-related-title">${escapeHtml(locale === 'fr' ? 'Produit similaire' : 'Similar product')}</h2><p>${escapeHtml(locale === 'fr' ? 'Voir aussi' : 'See also')}</p><a href="/product.html?id=${encodeURIComponent(relatedProduct.id)}">${escapeHtml(relatedTitle)} <span aria-hidden="true">↗</span></a></section>`
+      : '';
+    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">${escapeHtml(t('CDL Network · Digital store'))}</p><h1>${title}</h1>${description}${localizedMetadata}${purchaseButton}${relatedSection}</div></article>`;
     document.title = `${t(rawTitle)} | CDL Network`;
   }
 
