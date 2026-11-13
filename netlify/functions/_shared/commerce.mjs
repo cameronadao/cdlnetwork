@@ -69,9 +69,9 @@ export async function createSignedDownloads(productId) {
   const bucket = encodeURIComponent(process.env.SUPABASE_BUCKET);
   const links = [];
   for (const entry of entries) {
-    // Match Supabase Storage's SDK: encode each object path segment before
-    // requesting a signature, then encode the completed URL for display/use.
-    const objectPath = entry.path.split('/').map((segment) => encodeURIComponent(segment)).join('/');
+    // Supabase signs colon-bearing object names with the literal colon in the
+    // route. Percent-encoding it here makes Storage verify a different path.
+    const objectPath = entry.path.split('/').map((segment) => encodeURIComponent(segment).replace(/%3A/gi, ':')).join('/');
     const response = await fetch(`${base}/storage/v1/object/sign/${bucket}/${objectPath}`, {
       method: 'POST',
       headers: supabaseAuthHeaders({ 'content-type': 'application/json' }),
