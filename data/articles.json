@@ -397,5 +397,307 @@
       }
     }
   ]
+},
+{
+  "id": "initier-enfants-science-experiences-maison",
+  "audience": "family-niches-market",
+  "title": {
+    "fr": "Comment initier les enfants à la science à la maison avec des expériences simples",
+    "en": "How to Introduce Children to Science at Home with Simple Experiments"
+  },
+  "summary": {
+    "fr": "Une méthode accessible pour choisir une expérience, inviter l’enfant à faire une prédiction, le laisser manipuler et expliquer ce qu’il observe en toute sécurité.",
+    "en": "A practical method for choosing an activity, inviting children to make a prediction, letting them participate, and discussing what they observe safely."
+  },
+  "category": {
+    "fr": "Famille · Sciences et activités",
+    "en": "Family · Science Activities"
+  },
+  "publishedAt": "2026-11-13",
+  "image": "/assets/images/enfant-experience-scientifique-bicarbonate-vinaigre.jpg",
+  "url": "/article-science-enfants-maison.html",
+  "productUrl": "https://payhip.com/buy?link=o4rYj",
+  "status": "published",
+  "sections": [
+    {
+      "type": "lead",
+      "text": {
+        "fr": "« Pourquoi le ciel est-il bleu ? », « Que devient la glace quand elle fond ? », « Pourquoi le vinaigre pique-t-il le nez ? » Les questions des enfants sont de belles occasions d’explorer le monde. Une activité scientifique à la maison ne demande ni laboratoire ni diplôme : une question, du matériel simple et un adulte prêt à observer avec l’enfant peuvent suffire.",
+        "en": "“Why is the sky blue?”, “What happens when ice melts?”, “Why does vinegar smell sharp?” Children’s questions are invitations to explore the world. A home science activity needs neither a laboratory nor a degree: a question, simple materials, and an adult ready to observe alongside the child can be enough."
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Le défi n’est pas de tout savoir. L’adulte peut dire « je ne sais pas, cherchons ensemble ». Cette curiosité partagée compte autant que l’explication : l’enfant apprend à observer, à poser une hypothèse et à comparer ce qu’il imaginait avec ce qui se passe.",
+        "en": "The challenge is not knowing everything. An adult can say, “I’m not sure; let’s find out together.” Shared curiosity matters as much as the explanation: children practice observing, making a prediction, and comparing what they expected with what happens."
+      }
+    },
+    {
+      "type": "h2",
+      "text": {
+        "fr": "Pourquoi proposer des expériences scientifiques aux jeunes enfants ?",
+        "en": "Why Try Science Activities with Young Children?"
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Pour un jeune enfant, la science est une façon concrète d’explorer. Une expérience peut rendre visibles des notions comme le mélange, la transformation ou la formation de bulles, et encourager l’enfant à attendre, observer et recommencer. Elle peut aussi créer un moment partagé et une première expérience positive avec les sciences.",
+        "en": "For a young child, science is a concrete way to explore. An activity can make ideas such as mixing, change, or bubble formation visible, while encouraging children to wait, observe, and try again. It can also create a shared moment and a positive early experience with science."
+      }
+    },
+    {
+      "type": "h2",
+      "text": {
+        "fr": "Choisir une expérience adaptée",
+        "en": "Choose an Activity That Fits"
+      }
+    },
+    {
+      "type": "list",
+      "items": {
+        "fr": [
+          "Un résultat visible rapidement : un changement de couleur, un objet qui flotte ou des bulles qui apparaissent.",
+          "Du matériel simple, disponible et adapté à l’âge, avec un adulte qui prépare ce qui pourrait être salissant ou délicat.",
+          "Une explication que l’enfant peut reformuler avec ses propres mots.",
+          "Une expérience facile à refaire, pour comparer les résultats et tester une nouvelle idée."
+        ],
+        "en": [
+          "A result children can see quickly: a color change, an object floating, or bubbles forming.",
+          "Simple materials that are available and age-appropriate, with an adult handling anything messy or delicate.",
+          "An explanation the child can restate in their own words.",
+          "An activity that is easy to repeat so children can compare results and try a new idea."
+        ]
+      }
+    },
+    {
+      "type": "h2",
+      "text": {
+        "fr": "La méthode en quatre étapes",
+        "en": "A Four-Step Method"
+      }
+    },
+    {
+      "type": "h3",
+      "text": {
+        "fr": "1. Préparer l’espace et les règles",
+        "en": "1. Prepare the Space and Agree on Safety Rules"
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Choisissez une table protégée ou un espace extérieur dégagé. Rassemblez le matériel sur un plateau avant de commencer. Expliquez les règles simplement : on ne goûte rien, on ne porte pas les mains au visage et on suit les consignes de l’adulte. Pour une réaction qui éclabousse, prévoyez des lunettes de protection et gardez le visage à distance.",
+        "en": "Choose a protected table or a clear outdoor area. Gather the materials on a tray before you begin. Explain the rules simply: do not taste anything, keep hands away from the face, and follow the adult’s directions. For a reaction that may splash, use safety goggles and keep faces back."
+      }
+    },
+    {
+      "type": "h3",
+      "text": {
+        "fr": "2. Demander une prédiction",
+        "en": "2. Ask for a Prediction"
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Avant de mélanger quoi que ce soit, demandez : « À ton avis, qu’est-ce qui va se passer ? » Accueillez la réponse sans la corriger. La prédiction donne un but à l’observation ; si elle ne se réalise pas, c’est une occasion de se demander pourquoi.",
+        "en": "Before mixing anything, ask: “What do you think will happen?” Welcome the answer without correcting it. A prediction gives the observation a purpose; if it does not come true, that is a chance to ask why."
+      }
+    },
+    {
+      "type": "h3",
+      "text": {
+        "fr": "3. Laisser l’enfant participer",
+        "en": "3. Let the Child Take Part"
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "L’enfant peut verser, mesurer ou mélanger lorsque le geste est adapté à son âge et que l’adulte le supervise. L’adulte garde la responsabilité de préparer le matériel, d’évaluer les risques et de réaliser les gestes délicats. L’objectif est de faire participer l’enfant, pas de lui déléguer la sécurité.",
+        "en": "Children can pour, measure, or stir when the action is age-appropriate and supervised. The adult remains responsible for preparing materials, assessing risks, and handling delicate steps. The goal is to involve the child, not to delegate safety."
+      }
+    },
+    {
+      "type": "h3",
+      "text": {
+        "fr": "4. Décrire puis expliquer",
+        "en": "4. Describe, Then Explain"
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Commencez par ce que l’enfant a vu : « La mousse est montée et des bulles sont apparues. » Introduisez ensuite un mot scientifique à la fois, par exemple « gaz ». Une explication courte, reliée à l’observation, est plus utile qu’un long discours. Puis relancez avec une question ouverte : « Qu’est-ce qu’on pourrait changer la prochaine fois ? »",
+        "en": "Start with what the child saw: “The foam rose and bubbles appeared.” Then introduce one science word at a time, such as “gas.” A short explanation tied to the observation is more useful than a long lecture. Follow up with an open question: “What could we change next time?”"
+      }
+    },
+    {
+      "type": "h2",
+      "text": {
+        "fr": "Une expérience accessible : observer la mousse",
+        "en": "A Simple Activity: Observe the Foam"
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Pour observer la réaction du bicarbonate et du vinaigre, un adulte peut placer un peu de bicarbonate dans une bouteille ou un récipient ouvert, posé dans un bac. L’enfant peut ajouter doucement du vinaigre sous supervision et regarder les bulles et la mousse se former. Ne fermez pas le récipient : le mélange produit du dioxyde de carbone, et un contenant rigide fermé peut accumuler de la pression.",
+        "en": "To observe the reaction between baking soda and vinegar, an adult can place a small amount of baking soda in an open bottle or container set inside a tray. With supervision, the child can slowly add vinegar and watch bubbles and foam form. Do not seal the container: the reaction produces carbon dioxide, and pressure can build in a closed rigid container."
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Restez à l’air libre ou dans une pièce bien ventilée, portez des lunettes adaptées, gardez le visage à distance et ne goûtez jamais les mélanges. La réaction crée du dioxyde de carbone ; l’observation de bulles ou d’une mousse qui déborde suffit à explorer le phénomène sans transformer un récipient en projectile.",
+        "en": "Work outdoors or in a well-ventilated space, wear suitable eye protection, keep faces back, and never taste the mixture. The reaction produces carbon dioxide; bubbles or overflowing foam are enough to explore the phenomenon without turning a container into a projectile."
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Pour prolonger, comparez de petites quantités dans des récipients ouverts et demandez à l’enfant ce qu’il remarque. Ne cherchez pas à obtenir une projection. L’American Chemical Society propose également des activités encadrées autour de la mousse et des ballons qui permettent d’observer le gaz produit.",
+        "en": "To extend the activity, compare small amounts in open containers and ask the child what they notice. Do not try to create a launch. The American Chemical Society also provides supervised activities with foam and balloons that let children observe the gas being produced."
+      }
+    },
+    {
+      "type": "h2",
+      "text": {
+        "fr": "Un support visuel pour prolonger l’exploration",
+        "en": "A Visual Resource to Continue Exploring"
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "The Ultimate Junior Explorer Collection rassemble 48 ebooks pour enfants sur des sujets comme les sciences, l’histoire, la géographie et la santé. La collection comprend notamment des guides de projets pratiques, dont une expérience de fusée au bicarbonate. Elle est proposée en anglais : elle peut convenir aux familles anglophones ou bilingues, ou servir de support pour découvrir le vocabulaire anglais avec un adulte.",
+        "en": "The Ultimate Junior Explorer Collection brings together 48 children’s ebooks on topics including science, history, geography, and health. The collection includes hands-on project guides, including a baking soda rocket activity. It is in English, so it may suit English-speaking or bilingual families, or be used to explore English vocabulary with an adult."
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Un guide illustré peut aider l’enfant à suivre les étapes, mais l’adulte doit lire les instructions et les consignes de sécurité avant l’activité. Pour toute expérience qui utilise un récipient fermé ou produit un lancement, ne suivez pas une improvisation : respectez exactement les instructions du guide, l’âge indiqué et la supervision adulte.",
+        "en": "An illustrated guide can help a child follow the steps, but an adult should read the instructions and safety guidance before the activity. For any experiment involving a sealed container or a launch, do not improvise: follow the guide’s instructions, age guidance, and adult-supervision requirements exactly."
+      }
+    },
+    {
+      "type": "cta",
+      "text": {
+        "fr": "Découvrez The Ultimate Junior Explorer Collection et ses ressources éducatives pour enfants.",
+        "en": "Explore The Ultimate Junior Explorer Collection and its educational resources for children."
+      },
+      "button": {
+        "fr": "Voir la collection",
+        "en": "View the collection"
+      }
+    },
+    {
+      "type": "h2",
+      "text": {
+        "fr": "Les erreurs à éviter",
+        "en": "Common Mistakes to Avoid"
+      }
+    },
+    {
+      "type": "list",
+      "items": {
+        "fr": [
+          "Faire l’expérience à la place de l’enfant : confiez-lui les gestes adaptés à son âge, tout en gardant la supervision.",
+          "Oublier la prédiction : demandez « à ton avis ? » avant de commencer.",
+          "Trop expliquer d’un coup : reliez une idée simple à ce que l’enfant vient d’observer.",
+          "Choisir une activité trop longue : privilégiez une étape courte que l’on peut répéter.",
+          "Négliger la sécurité : espace dégagé, lunettes si nécessaire, visage éloigné et jamais de récipient rigide fermé pour une réaction qui produit du gaz."
+        ],
+        "en": [
+          "Doing the activity for the child: let them handle age-appropriate steps while staying close.",
+          "Skipping the prediction: ask “what do you think?” before starting.",
+          "Explaining too much at once: connect one simple idea to what the child just observed.",
+          "Choosing an activity that takes too long: favor a short step that can be repeated.",
+          "Ignoring safety: use a clear space, goggles when needed, keep faces back, and never seal a rigid container during a gas-producing reaction."
+        ]
+      }
+    },
+    {
+      "type": "h2",
+      "text": {
+        "fr": "Checklist : préparer votre première expérience",
+        "en": "Checklist: Prepare Your First Experiment"
+      }
+    },
+    {
+      "type": "list",
+      "items": {
+        "fr": [
+          "Choisissez une activité courte, adaptée à l’âge et avec un résultat observable.",
+          "Vérifiez les consignes et rassemblez le matériel avant de commencer.",
+          "Protégez la table ou choisissez un espace extérieur dégagé.",
+          "Expliquez les règles et prévoyez les protections recommandées.",
+          "Demandez à l’enfant ce qu’il pense qu’il va se passer.",
+          "Laissez-le participer aux gestes adaptés, sous supervision.",
+          "Observez et décrivez ensemble le résultat.",
+          "Proposez une question ou une petite variante sûre.",
+          "Dessinez ou notez ce que vous avez découvert."
+        ],
+        "en": [
+          "Choose a short, age-appropriate activity with an observable result.",
+          "Check the instructions and gather materials before starting.",
+          "Protect the table or choose a clear outdoor space.",
+          "Explain the rules and prepare the recommended protective equipment.",
+          "Ask the child what they think will happen.",
+          "Let them take part in appropriate steps under supervision.",
+          "Observe and describe the result together.",
+          "Suggest a question or a small, safe variation.",
+          "Draw or write down what you discovered."
+        ]
+      }
+    },
+    {
+      "type": "sources",
+      "title": {
+        "fr": "Sources pour préparer une activité en sécurité",
+        "en": "Sources for Planning a Safe Activity"
+      },
+      "items": [
+        {
+          "label": {
+            "fr": "American Chemical Society : « Gas Sudsation », expérience au vinaigre et au bicarbonate avec consignes de sécurité",
+            "en": "American Chemical Society: “Gas Sudsation,” a vinegar-and-baking-soda activity with safety guidance"
+          },
+          "url": "https://www.acs.org/education/whatischemistry/adventures-in-chemistry/experiments/gas-sudsation.html"
+        },
+        {
+          "label": {
+            "fr": "American Chemical Society : « The Secret Science of Self-Inflating Balloons », activité supervisée et précautions",
+            "en": "American Chemical Society: “The Secret Science of Self-Inflating Balloons,” supervised activity and precautions"
+          },
+          "url": "https://www.acs.org/education/activities/the-secret-science-of-self-inflating-balloons.html"
+        }
+      ]
+    },
+    {
+      "type": "h2",
+      "text": {
+        "fr": "Conclusion",
+        "en": "Conclusion"
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "Initier un enfant à la science ne demande pas de matériel sophistiqué. Préparez l’espace, invitez-le à prédire, laissez-le participer et prenez le temps de décrire ce que vous voyez ensemble. Les questions, les essais et les observations font déjà partie de la démarche scientifique.",
+        "en": "Introducing a child to science does not require sophisticated equipment. Prepare the space, invite them to make a prediction, let them take part, and describe what you observe together. Questions, attempts, and observations are already part of scientific thinking."
+      }
+    },
+    {
+      "type": "p",
+      "text": {
+        "fr": "La prochaine fois que votre enfant demande « pourquoi ? » ou « qu’est-ce qui se passe si… ? », vous pourrez commencer par une expérience courte, ouverte et encadrée. Un support illustré comme ceux de The Ultimate Junior Explorer Collection peut aider à préparer l’activité et donner à l’enfant un fil visuel à suivre avec vous.",
+        "en": "The next time your child asks “why?” or “what happens if…?”, you can start with a short, open, supervised activity. An illustrated resource such as those in The Ultimate Junior Explorer Collection can help you prepare and give your child a visual guide to follow with you."
+      }
+    }
+  ]
 }
 ]
