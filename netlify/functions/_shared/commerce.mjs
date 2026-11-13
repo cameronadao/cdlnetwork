@@ -12,6 +12,20 @@ export function jsonResponse(body, status = 200) {
   });
 }
 
+export async function readJsonResponse(response, context, { allowEmpty = false } = {}) {
+  const body = await response.text();
+  if (!body.trim()) {
+    if (allowEmpty) return null;
+    throw new Error(`${context} returned an empty response (${response.status}).`);
+  }
+
+  try {
+    return JSON.parse(body);
+  } catch {
+    throw new Error(`${context} returned invalid JSON (${response.status}).`);
+  }
+}
+
 export async function getProducts() {
   return JSON.parse(await readFile(productsPath, 'utf8'));
 }
@@ -78,7 +92,7 @@ export async function createSignedDownloads(productId) {
       body: JSON.stringify({ expiresIn: 86400 })
     });
     if (!response.ok) throw new Error(`Private file signing failed (${response.status}).`);
-    const data = await response.json();
+    const data = await readJsonResponse(response, 'Supabase Storage signing endpoint');
     const signedUrl = data.signedURL || data.signedUrl;
     if (!signedUrl) throw new Error('Storage did not return a signed download URL.');
     const downloadUrl = /^https?:\/\//i.test(signedUrl)

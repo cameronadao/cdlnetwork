@@ -1,5 +1,5 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
-import { createSignedDownloads, escapeHtml, getProducts, jsonResponse, supabaseAuthHeaders } from './_shared/commerce.mjs';
+import { createSignedDownloads, escapeHtml, getProducts, jsonResponse, readJsonResponse, supabaseAuthHeaders } from './_shared/commerce.mjs';
 
 function isValidSignature(rawBody, header, secret) {
   const parts = header.split(',').map((part) => part.trim().split('='));
@@ -20,9 +20,9 @@ async function supabaseRequest(path, options = {}) {
     headers: supabaseAuthHeaders({ 'content-type': 'application/json', ...(options.headers || {}) })
   });
   if (!response.ok) throw new Error(`Order database request failed (${response.status}).`);
-  if (response.status === 204) return null;
-  const body = await response.text();
-  return body.trim() ? JSON.parse(body) : null;
+  const method = (options.method || 'GET').toUpperCase();
+  const allowEmpty = response.status === 204 || ['POST', 'PATCH', 'PUT', 'DELETE'].includes(method);
+  return readJsonResponse(response, 'Supabase order database', { allowEmpty });
 }
 
 function emailMarkup(product, links, locale) {
