@@ -40,7 +40,7 @@
       if (section.type === 'cta') {
         const box = document.createElement('aside'); box.className = 'article-detail-cta';
         const p = document.createElement('p'); p.textContent = t(section.text);
-        const link = document.createElement('a'); link.href = currentArticle.productUrl; link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = `${t(section.button)} ↗`;
+        const link = document.createElement('a'); link.href = t(currentArticle.productUrl); link.target = '_blank'; link.rel = 'noopener noreferrer'; link.textContent = `${t(section.button)} ↗`;
         box.append(p, link); content.append(box); return;
       }
       if (section.type === 'list') {
@@ -65,7 +65,9 @@
     const isDiscographyArticle = currentArticle.id === 'analyser-discographie-nourrir-creativite';
     const isFamilyHostingArticle = currentArticle.id === 'organiser-grand-repas-famille-sans-epuisement';
     const isChefMethodArticle = currentArticle.id === 'arreter-dependre-recettes-cuisiner-methode';
+    const isFacelessMarketingArticle = currentArticle.id === 'faceless-instagram-proof-before-passive-income';
     if (productLink) {
+      productLink.href = t(currentArticle.productUrl);
       productLink.textContent = isAiArticle
         ? t({ fr: 'Découvrir THE AI MARKETING EDGE ↗', en: 'Explore THE AI MARKETING EDGE ↗' })
         : isDiscographyArticle
@@ -74,16 +76,20 @@
             ? t({ fr: 'Découvrir La Méthode Thanksgiving ↗', en: 'Explore The Thanksgiving Method ↗' })
             : isChefMethodArticle
               ? t({ fr: 'Découvrir La Méthode du Chef ↗', en: 'Explore The Chef’s Method ↗' })
-              : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
+              : isFacelessMarketingArticle
+                ? t({ fr: 'Découvrir Marketing sans visage ↗', en: 'Explore Faceless Marketing ↗' })
+                : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
     }
     const categoryLink = article.querySelector('.article-detail-end a:last-child');
     if (categoryLink) {
-      categoryLink.href = isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
+      categoryLink.href = isFacelessMarketingArticle ? '/shop.html?audience=business-builder' : isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
       categoryLink.textContent = isAiArticle
         ? t({ fr: 'Explorer Learning & Guides ↗', en: 'Explore Learning & Guides ↗' })
         : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle)
           ? t({ fr: 'Explorer Strategy & Frameworks ↗', en: 'Explore Strategy & Frameworks ↗' })
-          : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
+          : isFacelessMarketingArticle
+            ? t({ fr: 'Explorer les ressources pour les entrepreneurs ↗', en: 'Explore resources for business builders ↗' })
+            : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
     }
   }
 
