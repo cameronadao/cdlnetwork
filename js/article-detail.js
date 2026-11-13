@@ -61,7 +61,7 @@
     const backLabels = article.querySelectorAll('.article-detail-back span,.article-detail-end a:first-child span');
     backLabels.forEach((item) => { item.textContent = t({ fr: 'Tous les articles', en: 'All articles' }); });
     const productLink = article.querySelector('.article-detail-product-link');
-    const isAiArticle = currentArticle.id === 'adapter-strategie-marketing-ere-ia';
+    const isAiArticle = ['adapter-strategie-marketing-ere-ia', 'choisir-premier-chantier-ia-marketing'].includes(currentArticle.id);
     const isDiscographyArticle = currentArticle.id === 'analyser-discographie-nourrir-creativite';
     const isFamilyHostingArticle = currentArticle.id === 'organiser-grand-repas-famille-sans-epuisement';
     const isChefMethodArticle = currentArticle.id === 'arreter-dependre-recettes-cuisiner-methode';
