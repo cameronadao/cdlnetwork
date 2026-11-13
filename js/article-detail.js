@@ -61,16 +61,23 @@
     const backLabels = article.querySelectorAll('.article-detail-back span,.article-detail-end a:first-child span');
     backLabels.forEach((item) => { item.textContent = t({ fr: 'Tous les articles', en: 'All articles' }); });
     const productLink = article.querySelector('.article-detail-product-link');
-    if (productLink) productLink.textContent = currentArticle.id === 'adapter-strategie-marketing-ere-ia'
-      ? t({ fr: 'Découvrir THE AI MARKETING EDGE ↗', en: 'Explore THE AI MARKETING EDGE ↗' })
-      : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
+    const isAiArticle = currentArticle.id === 'adapter-strategie-marketing-ere-ia';
+    const isDiscographyArticle = currentArticle.id === 'analyser-discographie-nourrir-creativite';
+    if (productLink) {
+      productLink.textContent = isAiArticle
+        ? t({ fr: 'Découvrir THE AI MARKETING EDGE ↗', en: 'Explore THE AI MARKETING EDGE ↗' })
+        : isDiscographyArticle
+          ? t({ fr: 'Découvrir MICHAEL JACKSON / Songs, Context, Truth ↗', en: 'Explore MICHAEL JACKSON / Songs, Context, Truth ↗' })
+          : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
+    }
     const categoryLink = article.querySelector('.article-detail-end a:last-child');
     if (categoryLink) {
-      const isAiArticle = currentArticle.id === 'adapter-strategie-marketing-ere-ia';
-      categoryLink.href = isAiArticle ? '/shop.html?group=learning-guides' : '/shop.html?group=planning-tracking';
+      categoryLink.href = isAiArticle ? '/shop.html?group=learning-guides' : isDiscographyArticle ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
       categoryLink.textContent = isAiArticle
         ? t({ fr: 'Explorer Learning & Guides ↗', en: 'Explore Learning & Guides ↗' })
-        : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
+        : isDiscographyArticle
+          ? t({ fr: 'Explorer Strategy & Frameworks ↗', en: 'Explore Strategy & Frameworks ↗' })
+          : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
     }
   }
 
