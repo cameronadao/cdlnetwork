@@ -36,7 +36,11 @@ function emailMarkup(product, links, locale) {
 
 export default async function stripeWebhook(request) {
   if (request.method !== 'POST') return jsonResponse({ error: 'Method not allowed.' }, 405);
-  const secret = process.env.STRIPE_WEBHOOK_SECRET;
+  const hostname = new URL(request.url).hostname;
+  const isNetlifyPreview = /^[a-z0-9-]+--cdlnetwork\.netlify\.app$/i.test(hostname);
+  const secret = isNetlifyPreview
+    ? process.env.STRIPE_WEBHOOK_SECRET_PREVIEW
+    : process.env.STRIPE_WEBHOOK_SECRET;
   if (!secret) return jsonResponse({ error: 'Webhook is not configured.' }, 503);
   const rawBody = await request.text();
   const signature = request.headers.get('stripe-signature') || '';
