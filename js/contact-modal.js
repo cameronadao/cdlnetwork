@@ -118,11 +118,9 @@
 
   const options = modal.querySelector('.cal-booking-options');
   bookingTypes.forEach(({ name, slug, namespace }) => {
-    const link = document.createElement('a');
+    const link = document.createElement('button');
+    link.type = 'button';
     link.className = 'cal-booking-option';
-    link.href = `https://cal.com/cdlnetwork/${slug}`;
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
     link.dataset.calLink = `cdlnetwork/${slug}`;
     link.dataset.calNamespace = namespace;
     link.dataset.calConfig = JSON.stringify({ layout: 'month_view', useSlotsViewOnSmallScreen: 'true' });
