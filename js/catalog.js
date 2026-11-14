@@ -101,8 +101,15 @@
     const cardDescription = translation.shortDescription || translation.description || product.shortDescription || product.description;
     const description = cardDescription ? `<p>${escapeHtml(t(cardDescription))}</p>` : '';
     const category = t(product.subcategory || product.productGroup || '');
-    const price = product.isFree === true ? t('Free') : (product.price !== undefined ? formatPrice(product.price, product.currency) : '');
-    return `<article class="catalog-card">${cover}<div class="catalog-card-body">${category ? `<p class="catalog-card-category">${escapeHtml(category)}</p>` : ''}<h2>${title}</h2>${description}<div class="catalog-card-footer">${price ? `<span>${price}</span>` : '<span></span>'}<a href="/product.html?id=${encodeURIComponent(product.id)}">${escapeHtml(t('View product'))} <span aria-hidden="true">↗</span></a></div></div></article>`;
+    const paidPrice = product.isFree !== true && product.price !== undefined && Number(product.price) > 0;
+    const promoActive = paidPrice && window.CDL_PROMOTION_PRICING?.isActive();
+    const regularPrice = product.price !== undefined ? formatPrice(product.price, product.currency) : '';
+    const price = product.isFree === true
+      ? `<span class=\"catalog-card-price\">${escapeHtml(t('Free'))}</span>`
+      : promoActive
+        ? `<span class=\"catalog-card-price is-on-sale\"><del class=\"price-original\">${regularPrice}</del><strong class=\"price-sale\">${formatPrice(window.CDL_PROMOTION_PRICING.discountedAmount(product.price), product.currency)}</strong><span class=\"price-discount-badge\">-50%</span></span>`
+        : regularPrice ? `<span class=\"catalog-card-price\">${regularPrice}</span>` : '';
+    return `<article class="catalog-card">${cover}<div class="catalog-card-body">${category ? `<p class="catalog-card-category">${escapeHtml(category)}</p>` : ''}<h2>${title}</h2>${description}<div class="catalog-card-footer">${price || '<span></span>'}<a href="/product.html?id=${encodeURIComponent(product.id)}">${escapeHtml(t('View product'))} <span aria-hidden="true">↗</span></a></div></div></article>`;
   }
 
   function render(products) {

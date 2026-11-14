@@ -95,12 +95,15 @@
     const cover = coverPath ? `<img class="product-detail-cover" src="${escapeHtml(coverPath)}" alt="${escapeHtml(t('Cover of {title}', { title: rawTitle }))}">` : '';
     const fields = [
       ['Category', product.category], ['Format', Array.isArray(product.formats) ? product.formats.join(', ') : product.format],
-      ['Author', product.author], ['Language', product.language ? asValues(product.language).map((language) => t(({ en: 'English', fr: 'French' }[String(language).toLowerCase()] || language))).join(', ') : ''],
-      ['Price', product.price !== undefined ? formatPrice(product.price, product.currency) : '']
+      ['Author', product.author], ['Language', product.language ? asValues(product.language).map((language) => t(({ en: 'English', fr: 'French' }[String(language).toLowerCase()] || language))).join(', ') : '']
     ].filter(([, value]) => value !== undefined && value !== null && value !== '');
+    const promoActive = product.isFree !== true && Number(product.price) > 0 && window.CDL_PROMOTION_PRICING?.isActive();
+    const displayedPrice = promoActive
+      ? `<span class="product-price-promo"><del class="price-original">${formatPrice(product.price, product.currency)}</del><strong class="price-sale">${formatPrice(window.CDL_PROMOTION_PRICING.discountedAmount(product.price), product.currency)}</strong><span class="price-discount-badge">-50%</span></span>`
+      : formatPrice(product.price, product.currency);
     let purchaseButton = '';
     if (product.checkoutProvider === 'stripe') {
-      purchaseButton = `<button class="product-detail-buy" type="button" data-stripe-checkout data-product-id="${escapeHtml(product.id)}">${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(product.price, product.currency)}` : ''}</button><p class="checkout-status" data-checkout-status role="status" aria-live="polite"></p>`;
+      purchaseButton = `<button class="product-detail-buy" type="button" data-stripe-checkout data-product-id="${escapeHtml(product.id)}">${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(promoActive ? window.CDL_PROMOTION_PRICING.discountedAmount(product.price) : product.price, product.currency)}` : ''}</button><p class="checkout-status" data-checkout-status role="status" aria-live="polite"></p>`;
     } else if (product.purchaseUrl) {
       try {
         const purchaseUrl = new URL(product.purchaseUrl);
@@ -112,14 +115,15 @@
             ? `${purchaseUrl.origin}/buy?link=${encodeURIComponent(productCode)}`
             : purchaseUrl.href;
           const newTabAttributes = isEtsy ? ` target="_blank" rel="noopener noreferrer"` : '';
-          purchaseButton = `<a class="product-detail-buy" href="${escapeHtml(checkoutUrl)}"${newTabAttributes}>${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(product.price, product.currency)}` : ''}</a>`;
+          purchaseButton = `<a class="product-detail-buy" href="${escapeHtml(checkoutUrl)}"${newTabAttributes}>${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(promoActive ? window.CDL_PROMOTION_PRICING.discountedAmount(product.price) : product.price, product.currency)}` : ''}</a>`;
         }
       } catch (error) {
         console.error('Invalid product purchase URL:', error);
       }
     }
 
-    const localizedMetadata = fields.length ? `<dl class="product-detail-meta">${fields.map(([label, value]) => `<div><dt>${escapeHtml(t(label))}</dt><dd>${escapeHtml(t(value))}</dd></div>`).join('')}</dl>` : '';
+    const priceRow = product.price !== undefined ? `<div><dt>${escapeHtml(t('Price'))}</dt><dd>${displayedPrice}</dd></div>` : '';
+    const localizedMetadata = fields.length || priceRow ? `<dl class="product-detail-meta">${fields.map(([label, value]) => `<div><dt>${escapeHtml(t(label))}</dt><dd>${escapeHtml(t(value))}</dd></div>`).join('')}${priceRow}</dl>` : '';
     const relatedProduct = product.relatedProductId
       ? products.find((item) => item && item.id === product.relatedProductId && item.status === 'published')
       : null;
