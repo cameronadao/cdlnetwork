@@ -1138,7 +1138,18 @@
     "Your payment may still be processing. Check your email for the download link, or contact us if it does not arrive.": "Votre paiement est peut-être encore en cours de traitement. Consultez votre e-mail pour trouver le lien ou contactez-nous s’il n’arrive pas.",
     "Return to the digital store ↗": "Retourner à la boutique numérique ↗",
     "Opening secure checkout…": "Ouverture du paiement sécurisé…",
-    "Checkout could not be started. Please try again.": "Le paiement n’a pas pu démarrer. Veuillez réessayer."
+    "Checkout could not be started. Please try again.": "Le paiement n’a pas pu démarrer. Veuillez réessayer.",
+    "Book a video or phone appointment": "Réserver un rendez-vous en visio ou par téléphone",
+    "Close booking options": "Fermer les options de réservation",
+    "Discovery call — discuss your project": "Appel découverte — parlons de votre projet",
+    "Website design or redesign consultation": "Consultation — création ou refonte de site web",
+    "Online store launch consultation": "Consultation — lancement de boutique en ligne",
+    "Digital strategy and entrepreneurship consultation": "Conseil en stratégie digitale et entrepreneuriat",
+    "Website and digital presence audit": "Audit de site web et de présence en ligne",
+    "Digital products and templates consultation": "Consultation — produits numériques et modèles",
+    "Project follow-up": "Suivi de projet",
+    "Customer support appointment": "Rendez-vous d’assistance et d’accompagnement client",
+    "Choose the kind of appointment you need, then select an available time.": "Choisissez le type de rendez-vous souhaité, puis sélectionnez un créneau."
   },
   "en": {
     "Marketing Sans Visage & Faceless Instagram eBook and Template": "Faceless Marketing & Faceless Instagram eBook and Template",
@@ -1241,4 +1252,4 @@
     "Politique de": "Privacy",
     "**Chatbots & Conversational AI:** Bots that qualify leads and drive sales.": "**Chatbots et IA conversationnelle :** des assistants qui qualifient les prospects et stimulent les ventes."
   }
-}
+}\n
