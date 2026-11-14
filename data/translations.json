@@ -865,7 +865,7 @@
     "**Web Developers:** Discover how AI is changing front-end design and user experience.": "**Développeurs web :** découvrez comment l’IA transforme le design front-end et l’expérience utilisateur.",
     "Download instantly and start marketing smarter today.": "Téléchargez le coffret immédiatement et adoptez dès aujourd’hui un marketing plus intelligent.",
     "Black Friday and Cyber Monday offer": "Offre Black Friday et Cyber Monday",
-    "80% off the entire store": "-80 % sur toute la boutique",
+    "50% off the entire store": "-50 % sur toute la boutique",
     "Nov 27, 2026, 00:00 – Dec 1, 2026, 00:00 (Paris time)": "Du 27 novembre 2026 à 00 h 00 au 1er décembre 2026 à 00 h 00 (heure de Paris)",
     "Starts in": "Commence dans",
     "Ends in": "Se termine dans",
@@ -1127,7 +1127,18 @@
     "Please try again later.": "Veuillez réessayer plus tard.",
     "Read article": "Lire l’article",
     "Let’s talk about": "Parlons de",
-    "what you’re building.": "votre projet."
+    "what you’re building.": "votre projet.",
+    "BROWSE THE STORE": "PARCOURIR LA BOUTIQUE",
+    "Order received": "Commande reçue",
+    "Your payment is being confirmed. This page will show your download as soon as it is ready.": "Votre paiement est en cours de confirmation. Le téléchargement apparaîtra ici dès qu’il sera prêt.",
+    "We could not verify this order. Check your email for the download link.": "Nous n’avons pas pu vérifier cette commande. Consultez votre e-mail pour trouver le lien de téléchargement.",
+    "Your payment has been confirmed. Your secure downloads are ready:": "Votre paiement est confirmé. Vos téléchargements sécurisés sont prêts :",
+    "Download": "Télécharger",
+    "A download link was also sent to": "Un lien de téléchargement a également été envoyé à",
+    "Your payment may still be processing. Check your email for the download link, or contact us if it does not arrive.": "Votre paiement est peut-être encore en cours de traitement. Consultez votre e-mail pour trouver le lien ou contactez-nous s’il n’arrive pas.",
+    "Return to the digital store ↗": "Retourner à la boutique numérique ↗",
+    "Opening secure checkout…": "Ouverture du paiement sécurisé…",
+    "Checkout could not be started. Please try again.": "Le paiement n’a pas pu démarrer. Veuillez réessayer."
   },
   "en": {
     "Marketing Sans Visage & Faceless Instagram eBook and Template": "Faceless Marketing & Faceless Instagram eBook and Template",

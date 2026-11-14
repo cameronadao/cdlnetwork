@@ -3,6 +3,21 @@
    CDL NETWORK — JAVASCRIPT
 ========================================= */
 
+
+window.CDL_PROMOTION_PRICING = Object.freeze({
+    startsAt: new Date("2026-11-27T00:00:00+01:00").getTime(),
+    endsAt: new Date("2026-12-01T00:00:00+01:00").getTime(),
+    isActive() {
+        const now = Date.now();
+        return now >= this.startsAt && now < this.endsAt;
+    },
+    discountedAmount(amount) {
+        const value = Number(amount);
+        if (!Number.isFinite(value) || value <= 0 || !this.isActive()) return value;
+        return Math.round(value * 50) / 100;
+    }
+});
+
 document.addEventListener("DOMContentLoaded", () => {
 
     /* =====================================
@@ -547,7 +562,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const seconds = secondsRemaining % 60;
 
         banner.setAttribute("aria-label", translate("Black Friday and Cyber Monday offer"));
-        banner.querySelector("[data-promo-discount]").textContent = translate("80% off the entire store");
+        banner.querySelector("[data-promo-discount]").textContent = translate("50% off the entire store");
         banner.querySelector("[data-promo-dates]").textContent = translate("Nov 27, 2026, 00:00 – Dec 1, 2026, 00:00 (Paris time)");
         banner.querySelector("[data-promo-label]").textContent = translate(saleIsActive ? "Ends in" : "Starts in");
         banner.querySelector("[data-promo-days]").textContent = pad(days);
