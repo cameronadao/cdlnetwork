@@ -10,6 +10,15 @@
   let currentArticle;
   const text = (value, language) => typeof value === 'string' ? value : (value?.[language] || value?.en || value?.fr || '');
   const slug = (value) => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const safeArticleUrl = (value) => {
+    if (!value) return '';
+    try {
+      const url = new URL(value, window.location.origin);
+      return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
+    } catch {
+      return '';
+    }
+  };
 
   function render() {
     if (!currentArticle) return;
@@ -26,6 +35,17 @@
     content.replaceChildren();
     toc.replaceChildren(Object.assign(document.createElement('p'), { textContent: t({ fr: 'Dans cet article', en: 'In this article' }) }));
     currentArticle.sections.forEach((section, index) => {
+      if (section.type === 'relatedProducts') {
+        const box = document.createElement('section'); box.className = 'article-detail-related';
+        const heading = document.createElement('h2'); heading.textContent = t(section.title); box.append(heading);
+        const list = document.createElement('ul');
+        (section.items || []).forEach((item) => {
+          const li = document.createElement('li'); const link = document.createElement('a');
+          link.href = safeArticleUrl(item.url); link.textContent = t(item.title);
+          li.append(link); list.append(li);
+        });
+        box.append(list); content.append(box); return;
+      }
       if (section.type === 'sources') {
         const box = document.createElement('aside'); box.className = 'article-detail-sources';
         const heading = document.createElement('h2'); heading.textContent = t(section.title); box.append(heading);
@@ -67,6 +87,7 @@
     const isChefMethodArticle = currentArticle.id === 'arreter-dependre-recettes-cuisiner-methode';
     const isFacelessMarketingArticle = currentArticle.id === 'faceless-instagram-proof-before-passive-income';
     const isTravelBudgetArticle = currentArticle.id === 'travel-budget-separate-commitments-estimates';
+    const isPlrCatalogArticle = currentArticle.id === 'sell-plr-products-personalization-proof';
     if (productLink) {
       productLink.href = t(currentArticle.productUrl);
       productLink.textContent = isAiArticle
@@ -81,11 +102,13 @@
                 ? t({ fr: 'Découvrir Marketing sans visage ↗', en: 'Explore Faceless Marketing ↗' })
                 : isTravelBudgetArticle
                   ? t({ fr: 'Découvrir l’Organisateur de Voyage Pro ↗', en: 'Explore Vacation Planner Pro ↗' })
-                  : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
+                  : isPlrCatalogArticle
+                    ? t({ fr: 'Découvrir CDL Master Library ↗', en: 'Explore CDL Master Library ↗' })
+                    : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
     }
     const categoryLink = article.querySelector('.article-detail-end a:last-child');
     if (categoryLink) {
-      categoryLink.href = isTravelBudgetArticle ? '/shop.html?audience=lifestyle-hobbyist' : isFacelessMarketingArticle ? '/shop.html?audience=business-builder' : isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
+      categoryLink.href = isPlrCatalogArticle ? '/shop.html?audience=business-builder' : isTravelBudgetArticle ? '/shop.html?audience=lifestyle-hobbyist' : isFacelessMarketingArticle ? '/shop.html?audience=business-builder' : isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
       categoryLink.textContent = isAiArticle
         ? t({ fr: 'Explorer Learning & Guides ↗', en: 'Explore Learning & Guides ↗' })
         : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle)
@@ -94,7 +117,9 @@
             ? t({ fr: 'Explorer les ressources pour les entrepreneurs ↗', en: 'Explore resources for business builders ↗' })
             : isTravelBudgetArticle
               ? t({ fr: 'Explorer les ressources de voyage ↗', en: 'Explore travel resources ↗' })
-              : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
+              : isPlrCatalogArticle
+                ? t({ fr: 'Explorer les ressources pour les entrepreneurs ↗', en: 'Explore resources for business builders ↗' })
+                : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
     }
   }
 
