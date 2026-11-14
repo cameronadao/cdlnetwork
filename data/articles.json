@@ -1784,5 +1784,322 @@
         }
       }
     ]
+  },
+  {
+    "id": "travel-budget-separate-commitments-estimates",
+    "audience": "lifestyle-hobbyist",
+    "title": {
+      "fr": "Budget voyage : séparer les engagements des estimations pour éviter les dépassements",
+      "en": "Travel Budgeting: Separate Commitments from Estimates to Avoid Overspending"
+    },
+    "summary": {
+      "fr": "Distinguez les dépenses payées, les réservations à régler et les estimations pour connaître le coût réel de votre voyage.",
+      "en": "Separate paid expenses, unpaid bookings, and estimates to get a clearer picture of your trip costs."
+    },
+    "category": {
+      "fr": "Voyage · Budget",
+      "en": "Travel · Budgeting"
+    },
+    "publishedAt": "2026-11-13",
+    "image": "/assets/images/budget-voyage-engagements-estimations.png",
+    "url": "/article-budget-voyage-engagements-estimations.html",
+    "productUrl": "/product.html?id=vacation-planner-pro-digital-excel",
+    "status": "published",
+    "sections": [
+      {
+        "type": "lead",
+        "text": {
+          "fr": "Un voyageur réserve un vol, un hôtel et une activité. Trois semaines avant le départ, il additionne les montants de tête et conclut que tout tient dans son budget. Sur place, il règle le solde de l’hébergement, un transfert et quelques repas. À la fin du séjour, le total dépasse ce qu’il avait prévu. Le problème n’est pas le prix du voyage : c’est la méthode. Il a comparé un budget d’intentions à une réalité faite de paiements et d’engagements non payés.",
+          "en": "A traveler books a flight, a hotel, and an activity. Three weeks before departure, they add up the amounts they remember and conclude the trip fits their budget. On the trip, they pay the accommodation balance, a transfer, and a few meals. By the end, the total is higher than expected. The problem is not the trip price; it is the method. They compared a budget of intentions with a reality of payments and unpaid commitments."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un budget voyage qui tient ne se résume pas à une liste de prix. C’est une distinction entre quatre montants : ce qui est prévu, ce qui est déjà payé, ce qui est réservé mais pas encore réglé, et ce qui reste une simple estimation. Tant que ces quatre catégories sont mélangées, le total est trompeur. La méthode consiste à les séparer, puis à vérifier les données avant de se fier au résultat.",
+          "en": "A reliable travel budget is more than a list of prices. It distinguishes four amounts: what you planned, what you have paid, what is booked but still unpaid, and what remains an estimate. When these categories are mixed, the total can mislead you. Separate them, then check the underlying information before relying on the result."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Pourquoi les budgets voyage dérapent sans mauvaise gestion",
+          "en": "Why Travel Budgets Go Over Even with Careful Planning"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La première cause est confondre engagement et paiement. Une réservation d’hôtel à 600 € peut être partiellement payée : 150 € d’acompte, 450 € à l’arrivée. Si vous ne comptez que l’acompte, vous sous-estimez le coût réel. Si vous comptez la totalité comme payée, vous croyez avoir moins de trésorerie que nécessaire. Le bon indicateur est le solde restant dû, pas le montant total de la réservation.",
+          "en": "The first cause is confusing a commitment with a payment. A €600 hotel reservation might be partly paid: a €150 deposit and €450 due on arrival. Count only the deposit and you underestimate the real cost. Count the full amount as already paid and you may think you have less cash available than you do. Track the remaining balance due, not just the full booking price."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La deuxième cause est traiter une estimation comme un engagement. Une activité à 40 € prévue dans l’itinéraire n’est pas une dépense tant qu’elle n’est pas réservée. Elle doit rester dans une colonne « estimé », séparée du total projeté. Sinon, vous additionnez des envies et des engagements, et le chiffre obtenu ne correspond à aucune réalité.",
+          "en": "The second cause is treating an estimate like a commitment. A €40 activity in your itinerary is not yet a committed expense if it has not been booked. Keep it in an “estimated” column, separate from the projected total. Otherwise, you add up wishes and commitments to get a number that reflects neither."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La troisième cause est le change. Un paiement en devise étrangère ne vaut pas le montant affiché sur le site. Le taux appliqué par la banque, les frais et le moment du paiement changent le total en euros. Un budget qui mélange des montants en dollars, en livres et en euros sans conversion explicite devient rapidement illisible.",
+          "en": "The third cause is currency conversion. A payment in a foreign currency may not cost the amount shown on a website in euros. Your bank’s exchange rate, fees, and the payment date can all change the final amount. A budget that mixes dollars, pounds, and euros without recording the conversion quickly becomes hard to read."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La quatrième cause est l’accumulation de petites lignes non classées. Un transfert, un supplément de bagage, une taxe locale : chacune semble anodine. Additionnées, elles peuvent représenter une part significative du budget. Si elles ne sont pas rattachées à une catégorie, elles disparaissent des totaux par catégorie et faussent la lecture par poste.",
+          "en": "The fourth cause is a build-up of small, uncategorized costs. A transfer, a baggage fee, a local tax: each may seem minor. Together they can make up a meaningful part of the budget. If they are not assigned to a category, they disappear from category totals and distort your view of each expense area."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "La règle de base : distinguer quatre montants",
+          "en": "The Basic Rule: Track Four Different Amounts"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un budget voyage lisible repose sur quatre colonnes mentales, même si vous les tenez sur un simple tableur.",
+          "en": "A clear travel budget keeps four amounts separate, even if you track them in a basic spreadsheet."
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Le prévu. C’est le plafond que vous fixez par catégorie avant de réserver. Il sert de référence, pas de prévision de dépense.",
+            "Le payé. C’est ce qui est réellement sorti de votre compte : acomptes, billets, réservations réglées, achats sur place. Les remboursements se notent en négatif.",
+            "Le réservé non payé. C’est un engagement ferme dont le solde reste à régler. Il doit être compté dans le total projeté, car il correspond à une dépense future certaine, sauf annulation.",
+            "L’estimé. C’est une hypothèse de planification : repas, activités non réservées, transports locaux. Il ne doit pas entrer dans le total projeté tant qu’il n’est pas engagé. Sinon, vous confondez budget de projet et budget de réalité."
+          ],
+          "en": [
+            "Planned. The limit you set for each category before booking. It is a reference point, not a forecast of what you will spend.",
+            "Paid. Money that has actually left your account: deposits, tickets, settled bookings, and purchases during the trip. Record refunds as negative amounts.",
+            "Booked but unpaid. A firm commitment with a balance still due. Include it in the projected total because, unless canceled, it represents a certain future expense.",
+            "Estimated. A planning assumption for meals, unbooked activities, or local transport. Keep it out of the projected total until it becomes a commitment. Otherwise, you mix a planning budget with actual obligations."
+          ]
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le total projeté s’obtient ainsi : dépenses enregistrées + solde des réservations actives. Les estimations d’itinéraire restent à part, pour vérifier si le projet tient dans le budget prévu. Cette séparation est la clé : elle permet de savoir si vous pouvez encore réserver une activité, ou si le solde disponible est déjà engagé ailleurs.",
+          "en": "Calculate the projected total as recorded expenses plus the balances due on active bookings. Keep itinerary estimates separate so you can check whether the plan fits your budget. This distinction shows whether you can still book an activity or whether the available balance is already committed elsewhere."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Vérifier les données avant de faire confiance aux totaux",
+          "en": "Check the Data Before Trusting the Totals"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un total n’a de valeur que si les lignes qui le composent sont cohérentes. Trois contrôles suffisent à éviter la plupart des erreurs.",
+          "en": "A total is only useful when its component entries are consistent. Three checks can prevent most errors."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les références de réservation",
+          "en": "Booking References"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Chaque réservation doit avoir un identifiant unique, par exemple HTL-01 ou VOL-02. Si deux lignes portent la même référence, le modèle ne peut pas savoir laquelle est la bonne. Dans un tableur, une colonne de contrôle peut signaler « Référence en double ».",
+          "en": "Give each booking a unique reference, such as HTL-01 or FLT-02. If two entries share a reference, your spreadsheet cannot tell which one is correct. A validation column can flag duplicate references."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les catégories",
+          "en": "Categories"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une réservation classée « Hébergement » doit être rapprochée d’une dépense de même catégorie. Si vous saisissez un paiement dans « Transports locaux » pour une réservation d’hôtel, le solde par catégorie devient faux. Le contrôle doit signaler « Vérifier la catégorie » ou « Aligner la catégorie ».",
+          "en": "A booking categorized as “Accommodation” should be matched to a payment in the same category. If you enter a hotel payment under “Local transport,” the category balance becomes incorrect. Flag the mismatch and correct the category."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les dates, les taux et les lignes non classées",
+          "en": "Dates, Exchange Rates, and Uncategorized Entries"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une échéance de paiement doit être une date valide. Un taux de change doit être un nombre positif. Si le taux manque, le montant converti est vide et la ligne doit être signalée. Repérez aussi les dépenses et réservations qui n’entrent dans aucune catégorie. Mieux vaut corriger ces lignes avant de se fier au total que découvrir l’erreur sur place.",
+          "en": "A payment due date should be valid, and an exchange rate should be a positive number. If the rate is missing, the converted amount is blank and the entry should be flagged. Also check for expenses and bookings that do not fit any category. Correct these entries before relying on the totals, rather than discovering the error during the trip."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Le change : une ligne à part entière",
+          "en": "Treat Currency Conversion as Its Own Entry"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La conversion des devises est souvent traitée comme un détail. Elle mérite pourtant une règle simple : saisir le taux en euros pour une unité de la devise étrangère. Par exemple, si 1 dollar vaut 0,92 €, le taux est 0,92. Si votre relevé bancaire indique déjà le montant en euros, saisissez directement ce montant en euros, avec un taux de 1.",
+          "en": "Currency conversion is often treated as a minor detail, but it needs a simple rule: enter the euro value of one unit of foreign currency. For example, if one dollar is worth €0.92, enter 0.92. If your bank statement already shows the amount in euros, enter that euro amount directly and use a rate of 1."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Cette méthode évite deux erreurs fréquentes : appliquer le taux dans le mauvais sens et mélanger des montants en devises différentes dans une même colonne sans indication. Un tableur peut convertir si la devise et le taux sont renseignés ; il ne peut pas deviner ce que vous avez voulu faire.",
+          "en": "This avoids two common mistakes: applying the rate in the wrong direction and mixing amounts in different currencies in one column without labeling them. A spreadsheet can convert amounts when the currency and rate are provided; it cannot guess what you meant."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le taux saisi est celui que vous choisissez, pas un taux officiel garanti. Si le taux change entre la réservation et le paiement, le total réel peut différer. Le budget projeté reste une estimation, pas une promesse de prix final.",
+          "en": "The rate you enter is the one you choose; it is not a guaranteed official rate. If the rate changes between booking and payment, the actual total may differ. A projected budget is an estimate, not a promise of the final price."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Les réservations impayées et les échéances",
+          "en": "Unpaid Bookings and Due Dates"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une réservation non payée n’est pas un oubli : c’est un engagement avec une date. Si l’échéance est proche, elle doit apparaître dans les alertes. Si elle est dépassée, elle doit être traitée avant le départ. Si elle est annulée, elle doit être marquée comme telle pour ne pas compter dans le solde.",
+          "en": "An unpaid booking is not an oversight; it is a commitment with a due date. Show upcoming due dates in your alerts. Resolve overdue balances before departure. If a booking is canceled, mark it as canceled so it no longer counts in the balance."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Trois statuts suffisent : devis, réservé, confirmé. Un devis n’est pas un engagement et ne doit pas entrer dans le total projeté. Une réservation annulée ne doit pas non plus être comptée. Signalez les lignes sans échéance alors qu’un solde reste dû, ainsi que les paiements supérieurs au total convenu.",
+          "en": "Three statuses are enough: quoted, booked, and confirmed. A quote is not a commitment and should stay out of the projected total. A canceled booking should not count either. Flag entries that still have a balance but no due date, as well as payments that exceed the agreed total."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Cette logique évite une erreur classique : croire que le budget est respecté parce que les paiements déjà effectués sont faibles, alors que des soldes importants restent à régler à l’arrivée.",
+          "en": "This prevents a common mistake: assuming the budget is on track because payments so far are low, while large balances are still due on arrival."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce qu’un modèle structuré apporte — et ses limites",
+          "en": "What a Structured Planner Can—and Cannot—Do"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "L’Organisateur de Voyage Pro de CDL Network applique cette séparation dans un classeur Excel. La version française est libellée en euros ; la version anglaise permet de choisir une devise de suivi en USD ou GBP. Le modèle prévoit 100 réservations, 150 étapes et 300 dépenses. Il calcule un total projeté en ajoutant les dépenses enregistrées au solde des réservations actives, et laisse les estimations d’itinéraire en dehors de ce total.",
+          "en": "CDL Network’s Vacation Planner Pro applies this distinction in an Excel workbook. The French version is set up in euros; the English version lets you track amounts in USD or GBP. The planner accommodates 100 bookings, 150 itinerary stops, and 300 expenses. It calculates a projected total from recorded expenses and active booking balances, while keeping itinerary estimates out of that total."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Il signale les lignes à corriger : référence en double, catégorie incohérente, paiement supérieur au total, échéance manquante, devise ou taux incomplet. Il propose aussi un suivi des préparatifs, une liste de bagages et des notes de voyage pour les contacts et vérifications locales.",
+          "en": "It flags entries that need attention, including duplicate references, category mismatches, overpayments, missing due dates, and incomplete currency information. It also includes trip-preparation tracking, a packing list, and travel notes for contacts and local checks."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Ses limites doivent être claires. Le modèle ne garantit pas que le budget sera respecté : il montre où vous en êtes, il ne décide pas à votre place. Il ne fournit pas de taux de change officiels : vous saisissez le taux que vous jugez pertinent. Il ne remplace pas les confirmations des prestataires : conservez-les séparément. Enfin, n’y stockez pas de numéros de carte ou de passeport ; conservez des références ou des liens, pas des données sensibles.",
+          "en": "Its limits matter. The planner cannot guarantee that you will stay within budget; it shows where you stand but does not make decisions for you. It does not provide official exchange rates; you enter the rate you consider relevant. It does not replace confirmations from providers, which you should keep separately. Do not store card or passport numbers in it; use references or links instead of sensitive information."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un tableur personnel peut reproduire la même logique. Le modèle apporte surtout un cadre, des colonnes de contrôle et une capacité préformatée. Il ne dispense ni de la saisie rigoureuse ni de la vérification des données.",
+          "en": "You can reproduce the same logic in your own spreadsheet. A ready-made planner mainly provides a structure, validation columns, and preformatted capacity. It does not remove the need for careful data entry and review."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Une routine de dix minutes par semaine",
+          "en": "A Ten-Minute Weekly Routine"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un budget voyage ne se tient pas une fois, il se met à jour. Une fois par semaine, saisissez les nouveaux paiements et remboursements. Vérifiez les alertes d’échéance. Regardez le solde projeté, pas seulement le total dépensé. Ajustez les estimations d’itinéraire si nécessaire, sans les intégrer au total projeté.",
+          "en": "A travel budget is not a one-time calculation; it needs updates. Once a week, record new payments and refunds, review due-date alerts, and check the projected balance—not just the amount already spent. Adjust itinerary estimates when needed, but keep them out of the projected total."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Avant de réserver une nouvelle activité, vérifiez le solde disponible après les réservations non payées. Si le solde est négatif ou proche de zéro, la réservation n’est pas couverte par le budget prévu.",
+          "en": "Before booking another activity, check what remains after unpaid bookings. If the available balance is negative or close to zero, the new booking is not covered by the planned budget."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La veille du départ, contrôlez trois choses : les réservations non payées avec échéance à l’arrivée, les lignes non classées et les taux de change des devises encore utilisées. Quelques minutes suffisent pour éviter une mauvaise surprise.",
+          "en": "The day before departure, check three things: unpaid bookings due on arrival, uncategorized entries, and exchange rates for currencies you will still use. A few minutes can prevent an unwelcome surprise."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce qu’il faut retenir",
+          "en": "Key Takeaways"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un budget voyage réaliste ne consiste pas à prévoir un prix, mais à distinguer ce qui est payé, ce qui est engagé et ce qui reste estimé. Le total projeté n’a de sens que si les réservations non payées sont comptées et si les estimations en sont exclues. Les contrôles de références, de catégories et de devises évitent la plupart des erreurs. Un modèle structuré peut faire gagner du temps, mais il ne remplace ni la rigueur de saisie ni la vérification des confirmations.",
+          "en": "A realistic travel budget is not just a price forecast. It separates what is paid, what is committed, and what remains estimated. The projected total is meaningful only when unpaid bookings are included and estimates are kept separate. Checking references, categories, and currencies prevents many errors. A structured planner can save time, but it cannot replace careful entry or checking confirmations."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La prochaine étape est simple : prenez vos trois dernières réservations, notez pour chacune le montant total, l’acompte déjà payé et le solde restant dû. Additionnez les soldes. Comparez ce chiffre à votre budget prévu. Si l’écart vous surprend, c’est que le budget initial ne distinguait pas encore engagements et estimations.",
+          "en": "Start with your three most recent bookings. For each one, write down the full amount, the deposit already paid, and the remaining balance. Add the balances and compare them with your planned budget. If the difference surprises you, your original budget probably did not separate commitments from estimates."
+        }
+      },
+      {
+        "type": "cta",
+        "text": {
+          "fr": "Découvrez l’Organisateur de Voyage Pro et vérifiez les formats et fonctionnalités sur sa fiche produit.",
+          "en": "Explore Vacation Planner Pro and review its formats and features on the product page."
+        },
+        "button": {
+          "fr": "Voir l’Organisateur de Voyage Pro",
+          "en": "View Vacation Planner Pro"
+        }
+      }
+    ]
   }
 ]
