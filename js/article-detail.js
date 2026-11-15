@@ -88,6 +88,7 @@
     const isFacelessMarketingArticle = currentArticle.id === 'faceless-instagram-proof-before-passive-income';
     const isTravelBudgetArticle = currentArticle.id === 'travel-budget-separate-commitments-estimates';
     const isPlrCatalogArticle = currentArticle.id === 'sell-plr-products-personalization-proof';
+    const isBeautyInstagramArticle = currentArticle.id === 'instagram-beaute-identite-visuelle-reconnaissable';
     if (productLink) {
       productLink.href = t(currentArticle.productUrl);
       productLink.textContent = isAiArticle
@@ -104,11 +105,13 @@
                   ? t({ fr: 'Découvrir l’Organisateur de Voyage Pro ↗', en: 'Explore Vacation Planner Pro ↗' })
                   : isPlrCatalogArticle
                     ? t({ fr: 'Découvrir CDL Master Library ↗', en: 'Explore CDL Master Library ↗' })
-                    : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
+                    : isBeautyInstagramArticle
+                      ? t({ fr: 'Découvrir le Beauty Instagram Kit ↗', en: 'Explore the Beauty Instagram Kit ↗' })
+                      : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
     }
     const categoryLink = article.querySelector('.article-detail-end a:last-child');
     if (categoryLink) {
-      categoryLink.href = isPlrCatalogArticle ? '/shop.html?audience=business-builder' : isTravelBudgetArticle ? '/shop.html?audience=lifestyle-hobbyist' : isFacelessMarketingArticle ? '/shop.html?audience=business-builder' : isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
+      categoryLink.href = isBeautyInstagramArticle ? '/shop.html?audience=specialists' : isPlrCatalogArticle ? '/shop.html?audience=business-builder' : isTravelBudgetArticle ? '/shop.html?audience=lifestyle-hobbyist' : isFacelessMarketingArticle ? '/shop.html?audience=business-builder' : isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
       categoryLink.textContent = isAiArticle
         ? t({ fr: 'Explorer Learning & Guides ↗', en: 'Explore Learning & Guides ↗' })
         : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle)

@@ -2491,4 +2491,265 @@
       }
     ]
   }
+,
+  {
+    "id": "instagram-beaute-identite-visuelle-reconnaissable",
+    "audience": "specialists",
+    "title": {
+      "fr": "Instagram beauté : construire une identité visuelle reconnaissable (et non un simple catalogue de modèles)",
+      "en": "Beauty Instagram: Build a Recognizable Visual Identity, Not Just a Template Catalog"
+    },
+    "summary": {
+      "fr": "Une grille cohérente repose sur des choix de marque, des photos réelles et des modèles utilisés avec intention. Voici une méthode concrète pour y parvenir.",
+      "en": "A cohesive feed comes from intentional brand choices, real photos, and thoughtful use of templates. Here is a practical way to build one."
+    },
+    "category": {
+      "fr": "Beauté · Instagram · Identité visuelle",
+      "en": "Beauty · Instagram · Visual Identity"
+    },
+    "publishedAt": "2026-11-15",
+    "image": "/assets/images/identite-visuelle-instagram-beaute-kit.jpg",
+    "url": "/article-instagram-beaute-identite-visuelle.html",
+    "productUrl": "/product.html?id=beauty-instagram-kit-160-templates-fr-en",
+    "status": "published",
+    "sections": [
+      {
+        "type": "lead",
+        "text": {
+          "fr": "Une esthéticienne photographie un soin du visage. La lumière est belle et la peau lumineuse, mais la photo se perd dans un flux de contenus similaires. Elle télécharge alors un kit de modèles pour professionnaliser son compte. Le feed semble impeccable pendant deux semaines, puis les publications redeviennent improvisées. Le problème n’était pas le manque de modèles : c’était l’absence d’une identité visuelle.",
+          "en": "A beauty professional photographs a facial treatment. The light is beautiful and the skin looks radiant, yet the image disappears into a stream of similar posts. She downloads a template kit to make her account look more professional. The feed looks polished for two weeks, then posting becomes improvised again. The problem was not a lack of templates; it was the absence of a visual identity."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un compte Instagram beauté ne se résume pas à une grille esthétique. Il exprime une promesse de soin, une atmosphère et une preuve de savoir-faire. Les modèles peuvent structurer le contenu, mais ils ne choisissent pas votre palette, vos photos, votre ton ni l’expérience client que vous souhaitez montrer. Sans ces décisions, un kit peut devenir un catalogue interchangeable.",
+          "en": "A beauty Instagram account is more than an attractive grid. It communicates a promise of care, an atmosphere, and evidence of expertise. Templates can help organize content, but they cannot choose your palette, photos, tone, or the client experience you want to convey. Without those decisions, a kit can become an interchangeable catalog."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Pourquoi les modèles seuls ne suffisent pas",
+          "en": "Why Templates Alone Are Not Enough"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Les modèles font gagner du temps sur la mise en page, mais ils ne définissent pas votre marque. Un institut de soins botaniques n’a pas la même identité qu’un studio de cils au style affirmé. Si les deux entreprises utilisent les mêmes visuels sans les adapter, leurs comptes risquent de se ressembler.",
+          "en": "Templates save time on layout, but they do not define your brand. A botanical skincare studio does not need the same identity as a bold lash studio. If both businesses use the same visuals without adapting them, their accounts may look alike."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Trois risques apparaissent : l’effet « template », lorsque couleurs et compositions ne racontent rien de votre univers ; l’incohérence, lorsque les styles changent sans fil conducteur ; et l’absence de preuves réelles, lorsque les visuels parfaits ne montrent ni votre studio ni votre travail.",
+          "en": "Three risks follow: a generic template look, when colors and layouts say nothing about your business; inconsistency, when styles change without a clear thread; and a lack of real proof, when polished graphics never show your studio or your work."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Définir la direction visuelle avant de choisir les modèles",
+          "en": "Set Your Visual Direction Before Choosing Templates"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "1. Choisir une palette",
+          "en": "1. Choose a Color Palette"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Choisissez une palette et tenez-vous-y pendant quelques semaines avant de la réévaluer. Trois ou quatre couleurs bien choisies suffisent souvent à rendre un feed plus lisible. Si votre studio s’appuie sur des tons végétaux, une palette botanique, sauge, crème et bois, sera probablement plus cohérente qu’un univers nude choisi par défaut.",
+          "en": "Choose a palette and use it consistently for a few weeks before reviewing it. Three or four well-chosen colors are often enough to make a feed easier to recognize. If your studio uses natural tones, a botanical palette of sage, cream, and wood may feel more coherent than choosing a nude look by default."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "2. Limiter le nombre de polices",
+          "en": "2. Limit the Number of Fonts"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Deux polices suffisent généralement : une pour les titres, une pour le texte courant. Si vous ouvrez un modèle dans Canva ou dans un autre logiciel et qu’une police est remplacée, vérifiez les retours à la ligne, l’espacement et la lisibilité avant de publier.",
+          "en": "Two fonts are usually enough: one for headings and one for body text. If you open a template in Canva or another application and a font is substituted, check line breaks, spacing, and readability before publishing."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "3. Décider quelles photos montrer",
+          "en": "3. Decide Which Photos to Show"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Choisissez les sujets que vous voulez mettre en avant : portraits, gestes techniques, textures de produits ou espace du studio. Conservez une approche photo reconnaissable. Un feed cohérent ne mélange pas des images très sombres et très lumineuses sans raison.",
+          "en": "Decide what you want to feature: portraits, treatment techniques, product textures, or the studio itself. Keep a recognizable photographic approach. A cohesive feed does not mix very dark and very bright images without a reason."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Passer du catalogue à l’expérience client",
+          "en": "Move from a Catalog to a Client Experience"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Les exemples de marques fictives du kit illustrent plusieurs directions : montrer un portrait et un geste, mettre en scène la peau et le rituel, ou souligner l’espace et la lumière. Dans chaque cas, le visuel raconte une expérience, pas seulement une prestation.",
+          "en": "The kit’s fictional brand examples illustrate different directions: featuring a portrait and a treatment, focusing on skin and ritual, or highlighting the space and its light. In each case, the visual tells a story about an experience, not just a service."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Remplacez les photos génériques par des images réelles : une main qui applique un sérum, le fauteuil avant l’ouverture, un miroir ou le détail d’un flacon. Elles n’ont pas besoin d’être parfaites ; elles doivent être cohérentes avec votre univers et montrer votre lieu ou votre geste.",
+          "en": "Replace generic photos with real images: a hand applying serum, the treatment chair before opening, a mirror, or the detail of a product bottle. They do not have to be perfect; they should fit your visual direction and show your space or your work."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Utiliser le kit comme point de départ",
+          "en": "Use a Template Kit as a Starting Point"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le Beauty Instagram Kit de CDL Network rassemble 80 modèles de publications et 80 modèles de stories dans des fichiers PowerPoint éditables, avec six identités fictives, des palettes et des consignes d’export. Les identités et les témoignages présentés en exemple sont fictifs : remplacez-les par des contenus réels et autorisés.",
+          "en": "CDL Network’s Beauty Instagram Kit brings together 80 post templates and 80 story templates in editable PowerPoint files, with six fictional brand identities, color palettes, and export guidance. The sample identities and testimonials are fictional; replace them with real, authorized content."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le kit est proposé en français et en anglais. Il est conçu pour être personnalisé dans PowerPoint ou Canva. Après import dans Canva, vérifiez les polices, les masques photo et l’ordre des calques. Les modèles ne fournissent pas des textes universels à publier tels quels : adaptez chaque accroche à votre voix, à vos prestations et aux informations exactes de votre entreprise.",
+          "en": "The kit is available in French and English and is intended for customization in PowerPoint or Canva. After importing into Canva, check fonts, photo masks, and layer order. The templates are not universal copy to publish unchanged: adapt each headline to your voice, services, and accurate business information."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Personnaliser sans se disperser",
+          "en": "Customize Without Losing Focus"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Remplacer les photos",
+          "en": "Replace the Photos"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Utilisez vos propres images, même prises au téléphone. Une photo authentique et nette peut mieux représenter votre activité qu’une image de stock parfaite. Cadrez le visage ou le geste au centre et assurez-vous d’avoir l’autorisation nécessaire pour toute photo de cliente.",
+          "en": "Use your own images, even if they were taken on a phone. An authentic, clear photo may represent your work better than a perfect stock image. Keep the face or treatment in focus, and make sure you have permission to use any client photo."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Adapter les textes",
+          "en": "Adapt the Copy"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Réécrivez les accroches avec vos mots et des détails concrets. Au lieu d’une promesse vague comme « Révélez votre éclat », précisez par exemple la durée d’un soin et le besoin auquel il répond. Une information claire aide la personne à comprendre si la prestation lui correspond.",
+          "en": "Rewrite headlines in your own words and add concrete details. Instead of a vague promise such as “Reveal your glow,” describe how long a treatment takes and what need it addresses. Clear information helps people decide whether the service suits them."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Vérifier les formats d’export",
+          "en": "Check the Export Sizes"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Pour le feed, exportez en 1080 × 1350 px (format 4:5). Pour les stories, utilisez 1080 × 1920 px (format 9:16). Ajoutez les stickers interactifs dans Instagram après l’export et vérifiez la lisibilité sur téléphone avant de publier.",
+          "en": "For feed posts, export at 1080 × 1350 px (4:5). For stories, use 1080 × 1920 px (9:16). Add interactive stickers in Instagram after exporting, and check readability on a phone before posting."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Tester la direction sur sept jours",
+          "en": "Test Your Direction for Seven Days"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Jour 1 : présentez votre activité avec la palette choisie et une photo du studio.",
+            "Jour 2 : publiez un modèle de prestation avec des informations précises.",
+            "Jour 3 : partagez une story avec un sondage ou une question.",
+            "Jour 4 : montrez un geste technique ou un produit, avec peu de texte.",
+            "Jour 5 : partagez un témoignage autorisé ou un avant/après avec l’accord de la cliente.",
+            "Jour 6 : rappelez comment réserver, avec un lien ou des coordonnées à jour.",
+            "Jour 7 : publiez des coulisses ou posez une question à votre communauté."
+          ],
+          "en": [
+            "Day 1: introduce your business using the chosen palette and a photo of your studio.",
+            "Day 2: share a service template with specific information.",
+            "Day 3: post a story with a poll or a question.",
+            "Day 4: show a treatment technique or product with minimal text.",
+            "Day 5: share an authorized testimonial or a before-and-after with the client’s consent.",
+            "Day 6: remind followers how to book, using a current link or contact details.",
+            "Day 7: share a behind-the-scenes moment or ask your community a question."
+          ]
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "À la fin de la semaine, observez les enregistrements, les messages et les questions, pas uniquement les mentions « J’aime ». Un feed cohérent aide les visiteurs à comprendre ce que vous faites, à qui vous vous adressez et comment passer à l’étape suivante.",
+          "en": "At the end of the week, look at saves, messages, and questions—not only likes. A cohesive feed helps visitors understand what you do, who you serve, and what to do next."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "À retenir",
+          "en": "Key Takeaways"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un kit Instagram beauté est un outil de structure, pas une stratégie de marque complète. La cohérence vient des couleurs, des polices, des photos et des textes que vous choisissez. Les modèles accélèrent la mise en page ; ils ne remplacent ni les images originales ni la vérification des informations. Commencez par une palette, trois photos réelles et une publication qui vous ressemble, puis ajustez en fonction des réactions.",
+          "en": "A beauty Instagram kit is a structure tool, not a complete brand strategy. Consistency comes from the colors, fonts, photos, and copy you choose. Templates speed up layout; they do not replace original images or accurate information. Start with a palette, three real photos, and one post that feels like your business, then adjust based on the response."
+        }
+      },
+      {
+        "type": "cta",
+        "text": {
+          "fr": "Vous souhaitez organiser votre contenu beauté avec une direction visuelle cohérente ? Découvrez le Beauty Instagram Kit : 80 publications, 80 stories, six identités et les versions française et anglaise.",
+          "en": "Want to organize your beauty content around a cohesive visual direction? Explore the Beauty Instagram Kit: 80 posts, 80 stories, six identities, and French and English versions."
+        },
+        "button": {
+          "fr": "Découvrir le Beauty Instagram Kit",
+          "en": "Explore the Beauty Instagram Kit"
+        }
+      }
+    ]
+  }
 ]
