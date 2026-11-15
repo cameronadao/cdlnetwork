@@ -4,6 +4,7 @@
 
   const grid = root.querySelector('[data-catalog-grid]');
   const status = root.querySelector('[data-catalog-status]');
+  const pagination = root.querySelector('[data-catalog-pagination]');
   const audienceSelect = root.querySelector('#audience-filter');
   const subcategorySelect = root.querySelector('#subcategory-filter');
   const typeSelect = root.querySelector('#product-type-filter');
@@ -14,6 +15,8 @@
   const expectedGroup = new URLSearchParams(location.search).get('group') || '';
   let catalogProducts = null;
   let productTypeFamilies = [];
+  const pageSize = 15;
+  let currentPage = 1;
 
   const audiences = [
     ['business-builder', 'Business Builder'],
@@ -142,7 +145,28 @@
         matchesNow.sort((a, b) => dateOf(a) - dateOf(b));
         break;
     }
-    grid.innerHTML = matchesNow.map(card).join('');
+    const pageCount = Math.ceil(matchesNow.length / pageSize);
+    currentPage = Math.max(1, Math.min(currentPage, pageCount || 1));
+    const pageItems = matchesNow.slice((currentPage - 1) * pageSize, currentPage * pageSize);
+    grid.innerHTML = pageItems.map(card).join('');
+    if (pagination) {
+      pagination.hidden = pageCount <= 1;
+      pagination.replaceChildren();
+      if (pageCount > 1) {
+        const language = window.CDL_I18N?.language || 'en';
+        const previous = document.createElement('button');
+        previous.type = 'button'; previous.textContent = language === 'fr' ? 'Précédent' : 'Previous';
+        previous.disabled = currentPage === 1;
+        previous.addEventListener('click', () => { currentPage -= 1; render(products); grid.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+        const indicator = document.createElement('span');
+        indicator.textContent = language === 'fr' ? `Page ${currentPage} sur ${pageCount}` : `Page ${currentPage} of ${pageCount}`;
+        const next = document.createElement('button');
+        next.type = 'button'; next.textContent = language === 'fr' ? 'Suivant' : 'Next';
+        next.disabled = currentPage === pageCount;
+        next.addEventListener('click', () => { currentPage += 1; render(products); grid.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+        pagination.append(previous, indicator, next);
+      }
+    }
     if (matchesNow.length) {
       const countMessage = freeOnly
         ? (matchesNow.length === 1 ? '{count} free product found.' : '{count} free products found.')
@@ -184,8 +208,9 @@
       if (typeSelect && params.has('type')) typeSelect.value = slug(params.get('type'));
       if (languageSelect && params.has('language')) languageSelect.value = slug(params.get('language'));
 
-      [audienceSelect, subcategorySelect, typeSelect, languageSelect, sortSelect].forEach((select) => select?.addEventListener('change', () => render(products)));
+      [audienceSelect, subcategorySelect, typeSelect, languageSelect, sortSelect].forEach((select) => select?.addEventListener('change', () => { currentPage = 1; render(products); }));
       clearButton?.addEventListener('click', () => {
+        currentPage = 1;
         [audienceSelect, subcategorySelect, typeSelect, languageSelect].forEach((select) => { if (select) select.value = ''; });
         if (sortSelect) sortSelect.value = 'price-asc';
         render(products);

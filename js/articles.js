@@ -4,6 +4,7 @@
   const filterNav = document.querySelector('#article-audience-filters');
   const filterHeading = document.querySelector('#articles-audiences-heading');
   const filterEyebrow = document.querySelector('#article-filter-eyebrow');
+  const pagination = document.querySelector('#articles-pagination');
   if (!grid || !state || !filterNav) return;
 
   const audienceFilters = [
@@ -18,6 +19,8 @@
   const slug = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   let allArticles = [];
   let selectedAudience = '';
+  const pageSize = 15;
+  let currentPage = 1;
 
   function setState(title, message, isError = false) {
     state.hidden = false;
@@ -51,6 +54,7 @@
       button.setAttribute('aria-pressed', String(selectedAudience === option.id));
       button.addEventListener('click', () => {
         selectedAudience = option.id;
+        currentPage = 1;
         renderFilters(window.CDL_I18N?.language || 'en');
         renderArticles();
       });
@@ -72,17 +76,22 @@
     const visible = published.filter(articleMatchesAudience);
 
     if (!published.length) {
+      if (pagination) { pagination.hidden = true; pagination.replaceChildren(); }
       setState(language === 'fr' ? 'Aucun article publié pour le moment' : 'No articles published yet', language === 'fr' ? 'Les nouveaux articles de CDL Network apparaîtront ici. Revenez bientôt.' : 'New articles from CDL Network will appear here. Check back soon.');
       return;
     }
     if (!visible.length) {
+      if (pagination) { pagination.hidden = true; pagination.replaceChildren(); }
       setState(language === 'fr' ? 'Aucun article dans cette catégorie pour le moment' : 'No articles in this audience yet', language === 'fr' ? 'Choisissez un autre filtre pour parcourir les articles disponibles.' : 'Choose another filter to browse the available articles.');
       return;
     }
 
     state.hidden = true;
+    const pageCount = Math.ceil(visible.length / pageSize);
+    currentPage = Math.min(currentPage, pageCount);
+    const pageItems = visible.slice((currentPage - 1) * pageSize, currentPage * pageSize);
     grid.replaceChildren();
-    visible.forEach((article) => {
+    pageItems.forEach((article) => {
       const title = localized(article.title, language);
       const summary = localized(article.summary, language);
       const category = localized(article.category, language);
@@ -151,6 +160,23 @@
       card.append(content);
       grid.append(card);
     });
+    if (pagination) {
+      pagination.hidden = pageCount <= 1;
+      pagination.replaceChildren();
+      if (pageCount > 1) {
+        const previous = document.createElement('button');
+        previous.type = 'button'; previous.textContent = language === 'fr' ? 'Précédent' : 'Previous';
+        previous.disabled = currentPage === 1;
+        previous.addEventListener('click', () => { currentPage -= 1; renderArticles(); grid.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+        const indicator = document.createElement('span');
+        indicator.textContent = language === 'fr' ? `Page ${currentPage} sur ${pageCount}` : `Page ${currentPage} of ${pageCount}`;
+        const next = document.createElement('button');
+        next.type = 'button'; next.textContent = language === 'fr' ? 'Suivant' : 'Next';
+        next.disabled = currentPage === pageCount;
+        next.addEventListener('click', () => { currentPage += 1; renderArticles(); grid.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+        pagination.append(previous, indicator, next);
+      }
+    }
   }
 
   fetch('/data/articles.json', { headers: { Accept: 'application/json' } })
