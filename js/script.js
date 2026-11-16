@@ -1,3 +1,10 @@
+/* Load the shared privacy controls automatically on future pages using the site-wide script. */
+if (!document.querySelector('script[src="/js/cookie-consent.js"]')) {
+    const consentScript = document.createElement('script');
+    consentScript.src = '/js/cookie-consent.js';
+    document.head.append(consentScript);
+}
+
 
 /* =========================================
    CDL NETWORK — JAVASCRIPT
