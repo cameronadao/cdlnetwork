@@ -95,6 +95,69 @@
     document.head.append(script);
   }
 
+  const USER_DATA_COPY = {
+    en: 'Optional: I agree that CDL Network may send my email to Google, normalized and hashed for measurement of this inquiry. This is not required to submit the form and applies only when I have also enabled analytics cookies.',
+    fr: 'Facultatif : j’accepte que CDL Network transmette mon adresse e-mail à Google, normalisée et hachée, pour mesurer cette demande. Ce choix n’est pas nécessaire à l’envoi du formulaire et ne s’applique que si j’ai également autorisé les cookies de mesure d’audience.'
+  };
+
+  let userDataChoiceId = 0;
+
+  function addUserDataChoices() {
+    document.querySelectorAll('form[name="project-inquiry"]').forEach((form) => {
+      if (form.querySelector('[data-cdl-user-data-consent]')) return;
+      const email = form.querySelector('input[type="email"][name="email"]');
+      if (!email) return;
+      const group = document.createElement('div');
+      group.className = 'form-consent cdl-user-data-consent';
+      const label = document.createElement('label');
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.dataset.cdlUserDataConsent = 'true';
+      const copy = document.createElement('span');
+      copy.className = 'cdl-user-data-consent-copy';
+      copy.textContent = USER_DATA_COPY[language()];
+      const id = `cdl-user-data-consent-${++userDataChoiceId}`;
+      checkbox.id = id;
+      label.htmlFor = id;
+      label.append(checkbox, document.createTextNode(' '), copy);
+      group.append(label);
+      email.closest('.form-group')?.after(group);
+    });
+  }
+
+  function enableOptionalLeadMeasurement() {
+    addUserDataChoices();
+    document.addEventListener('submit', (event) => {
+      const form = event.target;
+      if (!(form instanceof HTMLFormElement) || form.name !== 'project-inquiry') return;
+      const choice = form.querySelector('[data-cdl-user-data-consent]');
+      const consent = readConsent();
+      const email = form.querySelector('input[type="email"][name="email"]')?.value.trim().toLowerCase();
+      if (!choice?.checked || !consent?.analytics || !email || form.dataset.cdlUserDataSent === 'true') return;
+
+      event.preventDefault();
+      form.dataset.cdlUserDataSent = 'true';
+      let resumed = false;
+      const resume = () => {
+        if (resumed) return;
+        resumed = true;
+        form.dataset.cdlUserDataSent = 'complete';
+        window.dataLayer.push({ user_data: null });
+        window.gtag?.('consent', 'update', { ad_user_data: 'denied' });
+        form.requestSubmit(event.submitter || undefined);
+      };
+      window.gtag?.('consent', 'update', { ad_user_data: 'granted' });
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'cdl_project_inquiry_user_data',
+        user_data: { email: email },
+        eventCallback: resume,
+        eventTimeout: 1200
+      });
+      window.setTimeout(resume, 1500);
+    }, true);
+  }
+
   function loadClarity() {
     if (document.getElementById(SCRIPT_IDS.clarity)) return;
     (function (c, l, a, r, i, t, y) {
@@ -180,6 +243,7 @@
 
   function applyCopy() {
     document.querySelectorAll('[data-cookie-language]').forEach((element) => { element.hidden = element.dataset.cookieLanguage !== language(); });
+    document.querySelectorAll('.cdl-user-data-consent-copy').forEach((element) => { element.textContent = USER_DATA_COPY[language()]; });
     document.querySelectorAll('[data-copy]').forEach((element) => { element.textContent = words(element.dataset.copy); });
     const manage = document.getElementById('cdl-cookie-manage');
     if (manage) manage.setAttribute('aria-label', words('manage'));
@@ -265,6 +329,7 @@
     }
 
     document.addEventListener('cdl:languagechange', applyCopy);
+    enableOptionalLeadMeasurement();
     document.addEventListener('click', (event) => {
       const action = event.target.closest('[data-consent-action]')?.dataset.consentAction;
       if (!action) return;

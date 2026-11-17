@@ -17,7 +17,7 @@
       "fr"
     ],
     "price": 6.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "EPUB"
     ],
@@ -40,7 +40,7 @@
     "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
     "language": "en",
     "price": 5.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "PDF"
     ],
@@ -62,7 +62,7 @@
     "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
     "language": "en",
     "price": 39.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "PDF"
     ],
@@ -84,7 +84,7 @@
     "audience": "Business Builder",
     "language": "en",
     "price": 14.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "EPUB",
       "PDF"
@@ -107,7 +107,7 @@
     "audience": "Business Builder",
     "language": "fr",
     "price": 14.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "EPUB",
       "PDF"
@@ -131,7 +131,7 @@
       "fr"
     ],
     "price": 7.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "EPUB",
       "PDF"
@@ -156,7 +156,7 @@
     "audience": "LOVE & RELATIONSHIPS",
     "language": "en",
     "price": 9.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "EPUB",
       "PDF"
@@ -182,7 +182,7 @@
       "fr"
     ],
     "price": 4.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "PDF"
     ],
@@ -208,7 +208,7 @@
     "audience": "Family & Niches Market",
     "language": "en",
     "price": 24.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "ZIP",
       "EPUB",
@@ -233,7 +233,7 @@
       "fr"
     ],
     "price": 9.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "EPUB",
       "PDF"
@@ -260,7 +260,7 @@
     "audience": "Specialists",
     "language": "en",
     "price": 14.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "PDF",
       "EPUB"
@@ -283,7 +283,7 @@
     "audience": "Specialists",
     "language": "en",
     "price": 0,
-    "currency": "USD",
+    "currency": "EUR",
     "isFree": true,
     "formats": [
       "PDF",
@@ -307,7 +307,7 @@
     "audience": "Lifestyle & Hobbyist",
     "language": "en",
     "price": 24.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "PDF",
       "EPUB"
@@ -330,7 +330,7 @@
     "audience": "Specialists",
     "language": "en",
     "price": 0,
-    "currency": "USD",
+    "currency": "EUR",
     "isFree": true,
     "formats": [
       "PDF",
@@ -354,7 +354,7 @@
     "audience": "Specialists",
     "language": "en",
     "price": 24.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "PDF",
       "EPUB"
@@ -380,7 +380,7 @@
       "fr"
     ],
     "price": 14.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "PDF",
       "EPUB"
@@ -413,7 +413,7 @@
       "fr"
     ],
     "price": 16.99,
-    "currency": "USD",
+    "currency": "EUR",
     "formats": [
       "PDF",
       "EPUB"
@@ -474,7 +474,7 @@
     "productType": "swipe-file",
     "audience": "Business Builder",
     "price": 0,
-    "currency": "USD",
+    "currency": "EUR",
     "isFree": true,
     "formats": [
       "PDF"
