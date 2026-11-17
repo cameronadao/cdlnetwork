@@ -1,0 +1,135 @@
+.payhip-success-page {
+  min-height: 100vh;
+  background: var(--gray);
+}
+
+.payhip-success {
+  width: min(100%, 760px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 30px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.payhip-success-brand {
+  display: grid;
+  justify-items: center;
+  color: var(--black);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: .14em;
+}
+
+.payhip-success-brand span {
+  margin-top: 2px;
+  color: var(--gray-dark);
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .04em;
+}
+
+.payhip-success-card {
+  width: 100%;
+  padding: clamp(28px, 7vw, 62px);
+  border: 1px solid var(--border);
+  background: var(--white);
+  text-align: center;
+}
+
+.payhip-success-card .eyebrow {
+  margin-bottom: 26px;
+  color: var(--gray-dark);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+}
+
+.payhip-success-mark {
+  display: grid;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 22px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--black);
+  color: var(--white);
+  font-size: 27px;
+}
+
+.payhip-success-card h1 {
+  margin: 0 0 15px;
+  font: 800 clamp(32px, 7vw, 52px)/1.08 var(--font-heading);
+  letter-spacing: -1.8px;
+}
+
+.payhip-success-message,
+.payhip-success-help {
+  color: var(--gray-dark);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.payhip-success-next {
+  margin: 28px 0 22px;
+  padding: 22px 24px;
+  background: var(--gray);
+  text-align: left;
+}
+
+.payhip-success-next h2 {
+  margin-bottom: 10px;
+  font: 700 17px/1.35 var(--font-heading);
+}
+
+.payhip-success-next ol {
+  padding-left: 20px;
+  color: var(--gray-dark);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.payhip-success-help a {
+  color: var(--black);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.payhip-success-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 15px 20px;
+  background: var(--black);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  transition: opacity .2s ease;
+}
+
+.payhip-success-button:hover { opacity: .78; }
+.payhip-success-button:focus-visible,
+.payhip-success-brand:focus-visible,
+.payhip-success-help a:focus-visible { outline: 2px solid var(--black); outline-offset: 4px; }
+
+.payhip-success-note {
+  max-width: 560px;
+  color: var(--gray-dark);
+  font-size: 11px;
+  text-align: center;
+}
+
+@media (max-width: 540px) {
+  .payhip-success { padding-inline: 14px; }
+  .payhip-success-card { padding: 28px 20px; }
+  .payhip-success-next { padding: 18px; }
+  .payhip-success-button { width: 100%; }
+}
