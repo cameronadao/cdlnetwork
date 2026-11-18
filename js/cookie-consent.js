@@ -1,4 +1,4 @@
-/* CDL Network consent manager. Non-essential services are not requested before consent. */
+/* CDB Projects consent manager. Non-essential services are not requested before consent. */
 (() => {
   'use strict';
 
@@ -15,7 +15,7 @@
       bannerTitle: 'Your privacy matters',
       bannerText: 'We use optional analytics to understand how the site is used and marketing tools to measure our campaigns. They stay off unless you enable them. The site remains usable if you reject them, and you can change your choice at any time.',
       accept: 'Accept all', reject: 'Reject all', settings: 'Customize',
-      settingsTitle: 'Cookie settings', settingsIntro: 'Choose which optional tools CDL Network may use. Essential storage keeps your choice and selected language; it cannot be switched off.',
+      settingsTitle: 'Cookie settings', settingsIntro: 'Choose which optional tools CDB Projects may use. Essential storage keeps your choice and selected language; it cannot be switched off.',
       essential: 'Essential', essentialText: 'Stores your consent choice and language preference. No advertising or analytics.',
       analytics: 'Audience measurement', analyticsText: 'Google Tag Manager / Google Analytics and Microsoft Clarity help us understand site use and improve the experience. Loaded only if enabled.',
       marketing: 'Marketing', marketingText: 'Meta Pixel measures the performance of our marketing campaigns. Loaded only if enabled.',
@@ -27,7 +27,7 @@
       bannerTitle: 'Votre vie privée compte',
       bannerText: 'Nous utilisons des outils facultatifs de mesure d’audience et de marketing. Ils restent désactivés tant que vous ne les autorisez pas. Le site reste utilisable si vous les refusez, et vous pouvez modifier votre choix à tout moment.',
       accept: 'Tout accepter', reject: 'Tout refuser', settings: 'Personnaliser',
-      settingsTitle: 'Paramètres des cookies', settingsIntro: 'Choisissez les outils facultatifs que CDL Network peut utiliser. Le stockage essentiel mémorise votre choix et votre langue ; il ne peut pas être désactivé.',
+      settingsTitle: 'Paramètres des cookies', settingsIntro: 'Choisissez les outils facultatifs que CDB Projects peut utiliser. Le stockage essentiel mémorise votre choix et votre langue ; il ne peut pas être désactivé.',
       essential: 'Essentiels', essentialText: 'Mémorise votre choix de consentement et votre préférence de langue. Aucun outil publicitaire ou de mesure d’audience.',
       analytics: 'Mesure d’audience', analyticsText: 'Google Tag Manager / Google Analytics et Microsoft Clarity nous aident à comprendre l’utilisation du site et à améliorer l’expérience. Ils ne sont chargés que si vous les autorisez.',
       marketing: 'Marketing', marketingText: 'Meta Pixel mesure les résultats de nos campagnes marketing. Il n’est chargé que si vous l’autorisez.',
@@ -96,8 +96,8 @@
   }
 
   const USER_DATA_COPY = {
-    en: 'Optional: I agree that CDL Network may send my email to Google, normalized and hashed for measurement of this inquiry. This is not required to submit the form and applies only when I have also enabled analytics cookies.',
-    fr: 'Facultatif : j’accepte que CDL Network transmette mon adresse e-mail à Google, normalisée et hachée, pour mesurer cette demande. Ce choix n’est pas nécessaire à l’envoi du formulaire et ne s’applique que si j’ai également autorisé les cookies de mesure d’audience.'
+    en: 'Optional: I agree that CDB Projects may send my email to Google, normalized and hashed for measurement of this inquiry. This is not required to submit the form and applies only when I have also enabled analytics cookies.',
+    fr: 'Facultatif : j’accepte que CDB Projects transmette mon adresse e-mail à Google, normalisée et hachée, pour mesurer cette demande. Ce choix n’est pas nécessaire à l’envoi du formulaire et ne s’applique que si j’ai également autorisé les cookies de mesure d’audience.'
   };
 
   let userDataChoiceId = 0;
@@ -221,7 +221,7 @@
       <div class="cdl-cookie-overlay" id="cdl-cookie-overlay" hidden>
         <section class="cdl-cookie-dialog" role="dialog" aria-modal="true" aria-labelledby="cdl-cookie-dialog-title" tabindex="-1">
           <button type="button" class="cdl-cookie-close" data-consent-action="close" aria-label="Close">×</button>
-          <p class="cdl-cookie-eyebrow">CDL NETWORK · PRIVACY</p>
+          <p class="cdl-cookie-eyebrow">CDB PROJECTS · PRIVACY</p>
           <h2 id="cdl-cookie-dialog-title" data-copy="settingsTitle"></h2>
           <p class="cdl-cookie-intro" data-copy="settingsIntro"></p>
           <div class="cdl-cookie-options">

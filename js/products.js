@@ -1,6 +1,6 @@
 
 /* =========================================
-   CDL NETWORK — PRODUCT DATA ENGINE
+   CDB PROJECTS — PRODUCT DATA ENGINE
 ========================================= */
 
 const CDL_DATA_PATHS = {
@@ -200,7 +200,7 @@ async function initializeCatalog() {
 
         window.CDL_CATALOG = data;
 
-        console.log("CDL Network catalog loaded successfully.");
+        console.log("CDB Projects catalog loaded successfully.");
 
         console.log({
             categories: categories.length,

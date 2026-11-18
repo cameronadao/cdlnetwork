@@ -100,7 +100,7 @@
     const coverPath = product.covers?.[window.CDL_I18N?.language] || product.cover;
     const cover = coverPath
       ? `<img class="catalog-card-cover" src="${escapeHtml(coverPath)}" alt="${escapeHtml(t('Cover of {title}', { title: product.title || 'Untitled product' }))}" loading="lazy">`
-      : '<div class="catalog-card-placeholder" aria-hidden="true">CDL</div>';
+      : '<div class="catalog-card-placeholder" aria-hidden="true">CDB</div>';
     const cardDescription = translation.shortDescription || translation.description || product.shortDescription || product.description;
     const description = cardDescription ? `<p>${escapeHtml(t(cardDescription))}</p>` : '';
     const category = t(product.subcategory || product.productGroup || '');

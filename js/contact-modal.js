@@ -109,7 +109,7 @@
     <button class="cal-booking-backdrop" type="button" data-cal-booking-close aria-label="Close booking options"></button>
     <section class="cal-booking-panel" role="dialog" aria-modal="true" aria-labelledby="cal-booking-heading" tabindex="-1">
       <button class="cal-booking-close" type="button" data-cal-booking-close aria-label="Close booking options">×</button>
-      <span class="section-tag">CDL NETWORK</span>
+      <span class="section-tag">CDB PROJECTS</span>
       <h2 id="cal-booking-heading">Book a video or phone appointment</h2>
       <p class="cal-booking-intro">Choose the kind of appointment you need, then select an available time.</p>
       <div class="cal-booking-options"></div>

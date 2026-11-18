@@ -1,6 +1,6 @@
 
 /* =========================================
-   CDL NETWORK — CATALOG FILTERS
+   CDB PROJECTS — CATALOG FILTERS
 ========================================= */
 
 document.addEventListener("cdlCatalogReady", function (event) {
@@ -262,6 +262,6 @@ document.addEventListener("cdlCatalogReady", function (event) {
     populateProductTypes();
     renderProducts();
 
-    console.log("CDL Network filters initialized.");
+    console.log("CDB Projects filters initialized.");
 
 });

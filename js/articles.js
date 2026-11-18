@@ -77,7 +77,7 @@
 
     if (!published.length) {
       if (pagination) { pagination.hidden = true; pagination.replaceChildren(); }
-      setState(language === 'fr' ? 'Aucun article publié pour le moment' : 'No articles published yet', language === 'fr' ? 'Les nouveaux articles de CDL Network apparaîtront ici. Revenez bientôt.' : 'New articles from CDL Network will appear here. Check back soon.');
+      setState(language === 'fr' ? 'Aucun article publié pour le moment' : 'No articles published yet', language === 'fr' ? 'Les nouveaux articles de CDB Projects apparaîtront ici. Revenez bientôt.' : 'New articles from CDB Projects will appear here. Check back soon.');
       return;
     }
     if (!visible.length) {

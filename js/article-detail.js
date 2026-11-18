@@ -27,7 +27,7 @@
     title.textContent = t(currentArticle.title);
     summary.textContent = t(currentArticle.summary);
     category.textContent = t(currentArticle.category);
-    document.title = `${t(currentArticle.title)} | CDL Network`;
+    document.title = `${t(currentArticle.title)} | CDB Projects`;
     if (currentArticle.publishedAt) {
       date.dateTime = currentArticle.publishedAt;
       date.textContent = new Intl.DateTimeFormat(language === 'fr' ? 'fr-FR' : 'en-US', { dateStyle: 'long' }).format(new Date(`${currentArticle.publishedAt}T12:00:00`));

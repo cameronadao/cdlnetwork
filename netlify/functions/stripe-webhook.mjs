@@ -27,9 +27,9 @@ function emailMarkup(product, links, locale) {
   const title = escapeHtml(product.translations?.[locale]?.title || product.title);
   const downloads = links.map((link) => `<li><a href="${escapeHtml(link.url)}">${escapeHtml(link.name)}</a></li>`).join('');
   if (locale === 'fr') {
-    return { subject: `Votre téléchargement : ${title}`, html: `<p>Merci pour votre achat !</p><h1>${title}</h1><p>Vos liens de téléchargement privés expirent dans 24 heures. Vous pouvez revenir à la page de confirmation pour en générer de nouveaux si nécessaire.</p><ul>${downloads}</ul><p>CDL Network</p>` };
+    return { subject: `Votre téléchargement : ${title}`, html: `<p>Merci pour votre achat !</p><h1>${title}</h1><p>Vos liens de téléchargement privés expirent dans 24 heures. Vous pouvez revenir à la page de confirmation pour en générer de nouveaux si nécessaire.</p><ul>${downloads}</ul><p>CDB Projects</p>` };
   }
-  return { subject: `Your download: ${title}`, html: `<p>Thank you for your purchase!</p><h1>${title}</h1><p>Your private download links expire in 24 hours. You can return to the confirmation page to generate new links if needed.</p><ul>${downloads}</ul><p>CDL Network</p>` };
+  return { subject: `Your download: ${title}`, html: `<p>Thank you for your purchase!</p><h1>${title}</h1><p>Your private download links expire in 24 hours. You can return to the confirmation page to generate new links if needed.</p><ul>${downloads}</ul><p>CDB Projects</p>` };
 }
 
 export default async function stripeWebhook(request) {

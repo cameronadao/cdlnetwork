@@ -7,7 +7,7 @@ if (!document.querySelector('script[src="/js/cookie-consent.js"]')) {
 
 
 /* =========================================
-   CDL NETWORK — JAVASCRIPT
+   CDB PROJECTS — JAVASCRIPT
 ========================================= */
 
 
@@ -327,14 +327,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    console.log("CDL Network — Website initialized successfully.");
+    console.log("CDB Projects — Website initialized successfully.");
 
 });
 
 
 
 /* =========================================
-   CDL NETWORK — SCROLL REVEAL
+   CDB PROJECTS — SCROLL REVEAL
 ========================================= */
 
 document.documentElement.classList.add("js");
@@ -388,7 +388,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* =========================================
-   CDL NETWORK — MOBILE NAVIGATION
+   CDB PROJECTS — MOBILE NAVIGATION
 ========================================= */
 
 document.addEventListener("DOMContentLoaded", () => {

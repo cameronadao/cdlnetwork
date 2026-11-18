@@ -1,4 +1,4 @@
-# CDL Network direct digital sales
+# CDB Projects direct digital sales
 
 The site now has a Netlify Functions + Stripe Managed Payments Checkout flow with private Supabase Storage delivery. It is intentionally dormant until its provider accounts and a product's private files are configured. Products without `"checkoutProvider": "stripe"` keep their current purchase link.
 
@@ -14,7 +14,7 @@ Add these values in Netlify Project configuration → Environment variables. Kee
 - `SUPABASE_SECRET_KEY` — server-only Supabase secret key (`sb_secret_...`). The code also accepts the legacy `SUPABASE_SERVICE_ROLE_KEY` temporarily. Secret keys bypass RLS and must stay only in Netlify, never in browser code or Git.
 - `SUPABASE_BUCKET` — name of a **private** Storage bucket for digital products.
 - `RESEND_API_KEY` — Resend API key for delivery email.
-- `RESEND_FROM_EMAIL` — verified sender address, for example `CDL Network <downloads@your-domain>`.
+- `RESEND_FROM_EMAIL` — verified sender address, for example `CDB Projects <downloads@your-domain>`.
 - `SITE_URL` — canonical site origin, for example `https://cdlnetwork.netlify.app`.
 
 After adding or changing Netlify variables, redeploy the site.

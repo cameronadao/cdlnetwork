@@ -50,8 +50,8 @@
   };
 
   const showState = (title, message) => {
-    target.innerHTML = `<div class="product-detail-state" role="status"><p class="eyebrow">${escapeHtml(t('CDL Network · Digital store'))}</p><h1>${escapeHtml(t(title))}</h1><p>${escapeHtml(t(message))}</p></div>`;
-    document.title = `${t(title)} | CDL Network`;
+    target.innerHTML = `<div class="product-detail-state" role="status"><p class="eyebrow">${escapeHtml(t('CDB Projects · Digital store'))}</p><h1>${escapeHtml(t(title))}</h1><p>${escapeHtml(t(message))}</p></div>`;
+    document.title = `${t(title)} | CDB Projects`;
   };
 
   async function loadProduct() {
@@ -132,8 +132,8 @@
     const relatedSection = relatedProduct
       ? `<section class="product-related" aria-labelledby="product-related-title"><h2 id="product-related-title">${escapeHtml(locale === 'fr' ? 'Produit similaire' : 'Similar product')}</h2><p>${escapeHtml(locale === 'fr' ? 'Voir aussi' : 'See also')}</p><a href="/product.html?id=${encodeURIComponent(relatedProduct.id)}">${escapeHtml(relatedTitle)} <span aria-hidden="true">↗</span></a></section>`
       : '';
-    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">${escapeHtml(t('CDL Network · Digital store'))}</p><h1>${title}</h1>${description}${localizedMetadata}${purchaseButton}${relatedSection}</div></article>`;
-    document.title = `${t(rawTitle)} | CDL Network`;
+    target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">${escapeHtml(t('CDB Projects · Digital store'))}</p><h1>${title}</h1>${description}${localizedMetadata}${purchaseButton}${relatedSection}</div></article>`;
+    document.title = `${t(rawTitle)} | CDB Projects`;
   }
 
   document.addEventListener('cdl:languagechange', loadProduct);
