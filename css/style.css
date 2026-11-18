@@ -5775,3 +5775,43 @@ html[lang="fr"] [data-home-lang="en"], html[lang="en"] [data-home-lang="fr"] { d
   .art-document-front { padding: 6px; }
   .art-document-front strong { font-size: clamp(8px, 2.4vw, 10px); }
 }
+
+
+/* Mobile homepage: keep CTA row centered and artwork labels readable within each card. */
+@media (max-width: 600px) {
+  .hero-text, .hero-buttons { min-width: 0; max-width: 100%; box-sizing: border-box; }
+  .hero-buttons {
+    width: 100%;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: stretch;
+    align-items: stretch;
+  }
+  .hero-buttons .btn {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+  .art-document-front span,
+  .art-document-front small {
+    display: block;
+    max-width: 100%;
+    font-size: clamp(3px, 1vw, 4px);
+    line-height: 1.15;
+    letter-spacing: 0;
+    overflow-wrap: anywhere;
+  }
+  .art-caption {
+    max-width: calc(100% - 12px);
+    right: 6px;
+    bottom: 6px;
+    font-size: clamp(4px, 1.2vw, 5px);
+    line-height: 1.15;
+    letter-spacing: .15px;
+    white-space: normal;
+    text-align: right;
+  }
+}
