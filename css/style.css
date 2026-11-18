@@ -5745,3 +5745,33 @@ html[lang="fr"] [data-home-lang="en"], html[lang="en"] [data-home-lang="fr"] { d
   .expertise-ai-card .ai-art-orbit { width: 180px; height: 180px; }
 }
 @media (prefers-reduced-motion: reduce) { .expertise-card, .expertise-ai-card .ai-art-panel { transition: none; } }
+
+
+/* Keep all three homepage calls to action and expertise cards in one compact mobile row. */
+.hero-buttons .btn { height: 64px; min-height: 64px; font-family: inherit; font-size: 11px; line-height: 1.2; }
+.hero-buttons .btn [data-home-lang] { font-size: inherit; }
+@media (max-width: 900px) { .expertise-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .hero-buttons { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
+  .hero-buttons .btn { height: 64px; min-height: 64px; padding: 6px 4px; gap: 3px; font-size: clamp(7px, 1.9vw, 8px); text-align: center; }
+  .hero-buttons .btn > span[aria-hidden="true"] { font-size: 11px; }
+  .expertise-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 6px; }
+  .expertise-card { padding: 6px; }
+  .card-index { min-height: 34px; padding: 4px 3px; font-size: 5.5px; line-height: 1.2; letter-spacing: .2px; }
+  .expertise-art { flex-basis: clamp(100px, 28vw, 118px); height: clamp(100px, 28vw, 118px); margin: 8px 0; }
+  .browser-window { width: 90%; height: clamp(82px, 24vw, 100px); }
+  .browser-content { padding: 7px; }
+  .browser-title { font-size: 12px; }
+  .expertise-info { gap: 3px; }
+  .expertise-info h3 { font-size: 8px; line-height: 1.2; }
+  .expertise-info p { font-size: 6px; line-height: 1.3; }
+  .round-arrow { width: 19px; height: 19px; font-size: 9px; }
+  .card-footer { gap: 3px; margin-top: 7px; padding-top: 6px; }
+  .card-footer span { font-size: 4px; letter-spacing: 0; }
+  .expertise-ai-card { padding: 6px; }
+  .expertise-ai-card .ai-art-panel { width: 82%; height: 86%; padding: 6px; }
+  .expertise-ai-card .ai-art-panel strong { font-size: 11px; letter-spacing: -.5px; }
+  .art-document { width: clamp(48px, 15vw, 62px); height: clamp(64px, 20vw, 82px); }
+  .art-document-front { padding: 6px; }
+  .art-document-front strong { font-size: clamp(8px, 2.4vw, 10px); }
+}
