@@ -396,7 +396,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.querySelector("#menu-toggle");
     const navMenu = document.querySelector("#primary-navigation");
     const dropdown = document.querySelector(".nav-dropdown");
-    const dropdownButton = document.querySelector(".dropdown-toggle");
+    const dropdownButton = document.querySelector(".mobile-dropdown-toggle") || document.querySelector(".dropdown-toggle");
 
     if (!menuButton || !navMenu || !dropdown || !dropdownButton) {
         return;
