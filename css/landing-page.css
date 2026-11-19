@@ -329,6 +329,22 @@
     line-height: 1.9;
 }
 
+.landing-playlist-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: var(--black);
+}
+
+.landing-playlist-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .landing-case-image {
     position: relative;
     display: block;
