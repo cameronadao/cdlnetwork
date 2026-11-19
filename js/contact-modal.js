@@ -121,7 +121,7 @@
     const link = document.createElement('button');
     link.type = 'button';
     link.className = 'cal-booking-option';
-    link.dataset.calLink = `cdlnetwork/${slug}`;
+    link.dataset.calLink = `cdbprojects/${slug}`;
     link.dataset.calNamespace = namespace;
     link.dataset.calConfig = JSON.stringify({ layout: 'month_view', useSlotsViewOnSmallScreen: 'true' });
     link.innerHTML = `<span>${name}</span><span aria-hidden="true">↗</span>`;
