@@ -209,9 +209,9 @@
           <a href="/privacy-policy.html" data-copy="privacy"></a>
         </div>
         <div class="cdl-cookie-actions">
-          <button type="button" data-consent-action="reject" class="cdl-cookie-button"></button>
-          <button type="button" data-consent-action="accept" class="cdl-cookie-button"></button>
-          <button type="button" data-consent-action="open" class="cdl-cookie-button"></button>
+          <button type="button" data-consent-action="reject" data-copy="reject" class="cdl-cookie-button"></button>
+          <button type="button" data-consent-action="accept" data-copy="accept" class="cdl-cookie-button"></button>
+          <button type="button" data-consent-action="open" data-copy="settings" class="cdl-cookie-button"></button>
         </div>
       </section>
       <button type="button" class="cdl-cookie-manage" id="cdl-cookie-manage" aria-label="Cookie settings" hidden>
@@ -230,9 +230,9 @@
             <div class="cdl-cookie-option"><div><h3 id="cdl-cookie-marketing-label" data-copy="marketing"></h3><p data-copy="marketingText"></p></div><label class="cdl-cookie-switch"><input type="checkbox" id="cdl-consent-marketing" aria-labelledby="cdl-cookie-marketing-label"><span></span></label></div>
           </div>
           <div class="cdl-cookie-dialog-actions">
-            <button type="button" data-consent-action="reject" class="cdl-cookie-button"></button>
-            <button type="button" data-consent-action="accept" class="cdl-cookie-button"></button>
-            <button type="button" data-consent-action="save" class="cdl-cookie-button cdl-cookie-save"></button>
+            <button type="button" data-consent-action="reject" data-copy="reject" class="cdl-cookie-button"></button>
+            <button type="button" data-consent-action="accept" data-copy="accept" class="cdl-cookie-button"></button>
+            <button type="button" data-consent-action="save" data-copy="save" class="cdl-cookie-button cdl-cookie-save"></button>
           </div>
         </section>
       </div>`;
