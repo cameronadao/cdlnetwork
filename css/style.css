@@ -503,9 +503,9 @@ img {
 }
 
 .visual-label {
-    --orbit-x: 160px;
-    --orbit-half-x: 80px;
-    --orbit-y: 139px;
+    --orbit-x: 185px;
+    --orbit-half-x: 92.5px;
+    --orbit-y: 160.2px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -2787,9 +2787,9 @@ img {
     }
 
     .visual-label {
-        --orbit-x: 110px;
-        --orbit-half-x: 55px;
-        --orbit-y: 95px;
+        --orbit-x: 116px;
+        --orbit-half-x: 58px;
+        --orbit-y: 100.5px;
         font-size: 6px;
     }
 
