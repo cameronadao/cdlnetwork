@@ -503,6 +503,9 @@ img {
 }
 
 .visual-label {
+    --orbit-x: 160px;
+    --orbit-half-x: 80px;
+    --orbit-y: 139px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -513,20 +516,29 @@ img {
 }
 
 .label-one {
-    left: 0;
-    top: 65px;
+    left: calc(50% - var(--orbit-x));
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .label-two {
-    right: 0;
-    bottom: 55px;
+    left: calc(50% + var(--orbit-half-x));
+    top: calc(50% - var(--orbit-y));
+    right: auto;
+    bottom: auto;
+    align-items: flex-end;
+    text-align: right;
+    transform: translate(-50%, -50%);
 }
 
 .label-three {
-    top: 65px;
-    right: 0;
+    left: calc(50% + var(--orbit-half-x));
+    top: calc(50% + var(--orbit-y));
+    right: auto;
+    bottom: auto;
     align-items: flex-end;
     text-align: right;
+    transform: translate(-50%, -50%);
 }
 
 .label-number {
@@ -2775,6 +2787,9 @@ img {
     }
 
     .visual-label {
+        --orbit-x: 110px;
+        --orbit-half-x: 55px;
+        --orbit-y: 95px;
         font-size: 6px;
     }
 
