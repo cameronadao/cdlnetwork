@@ -12,6 +12,20 @@ export function jsonResponse(body, status = 200) {
   });
 }
 
+export async function readJsonResponse(response, context, { allowEmpty = false } = {}) {
+  const body = await response.text();
+  if (!body.trim()) {
+    if (allowEmpty) return null;
+    throw new Error(`${context} returned an empty response (${response.status}).`);
+  }
+
+  try {
+    return JSON.parse(body);
+  } catch {
+    throw new Error(`${context} returned invalid JSON (${response.status}).`);
+  }
+}
+
 export async function getProducts() {
   return JSON.parse(await readFile(productsPath, 'utf8'));
 }
@@ -25,7 +39,8 @@ export async function getStripeProducts() {
 }
 
 export function getSiteUrl() {
-  const value = process.env.SITE_URL || process.env.URL || 'https://cdlnetwork.netlify.app';
+  const previewUrl = process.env.CONTEXT === 'deploy-preview' ? process.env.DEPLOY_PRIME_URL : '';
+  const value = previewUrl || process.env.SITE_URL || process.env.URL || 'https://cdlnetwork.netlify.app';
   const url = new URL(value);
   if (url.protocol !== 'https:' && url.hostname !== 'localhost') throw new Error('SITE_URL must use HTTPS.');
   return url.origin;
@@ -68,20 +83,26 @@ export async function createSignedDownloads(productId) {
   const bucket = encodeURIComponent(process.env.SUPABASE_BUCKET);
   const links = [];
   for (const entry of entries) {
-    const objectPath = entry.path.split('/').map(encodeURIComponent).join('/');
+    // Supabase signs colon-bearing object names with the literal colon in the
+    // route. Percent-encoding it here makes Storage verify a different path.
+    const objectPath = entry.path.split('/').map((segment) => encodeURIComponent(segment).replace(/%3A/gi, ':')).join('/');
     const response = await fetch(`${base}/storage/v1/object/sign/${bucket}/${objectPath}`, {
       method: 'POST',
       headers: supabaseAuthHeaders({ 'content-type': 'application/json' }),
       body: JSON.stringify({ expiresIn: 86400 })
     });
     if (!response.ok) throw new Error(`Private file signing failed (${response.status}).`);
-    const data = await response.json();
+    const data = await readJsonResponse(response, 'Supabase Storage signing endpoint');
     const signedUrl = data.signedURL || data.signedUrl;
     if (!signedUrl) throw new Error('Storage did not return a signed download URL.');
     const downloadUrl = /^https?:\/\//i.test(signedUrl)
       ? signedUrl
       : `${base}/storage/v1${signedUrl.startsWith('/') ? signedUrl : `/${signedUrl}`}`;
-    links.push({ name: entry.name, url: downloadUrl });
+    // Supabase may return an already-escaped object path (for example `%3A`)
+    // alongside literal spaces. Encode spaces without escaping those existing
+    // path escapes a second time, or Storage verifies a different object path.
+    const safeDownloadUrl = encodeURI(downloadUrl).replace(/%25(?=[0-9a-f]{2})/gi, '%');
+    links.push({ name: entry.name, url: safeDownloadUrl });
   }
   return links;
 }

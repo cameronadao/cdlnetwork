@@ -1,5 +1,5 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
-import { createSignedDownloads, escapeHtml, getProducts, jsonResponse, supabaseAuthHeaders } from './_shared/commerce.mjs';
+import { createSignedDownloads, escapeHtml, getProducts, jsonResponse, readJsonResponse, supabaseAuthHeaders } from './_shared/commerce.mjs';
 
 function isValidSignature(rawBody, header, secret) {
   const parts = header.split(',').map((part) => part.trim().split('='));
@@ -20,7 +20,9 @@ async function supabaseRequest(path, options = {}) {
     headers: supabaseAuthHeaders({ 'content-type': 'application/json', ...(options.headers || {}) })
   });
   if (!response.ok) throw new Error(`Order database request failed (${response.status}).`);
-  return response.status === 204 ? null : response.json();
+  const method = (options.method || 'GET').toUpperCase();
+  const allowEmpty = response.status === 204 || ['POST', 'PATCH', 'PUT', 'DELETE'].includes(method);
+  return readJsonResponse(response, 'Supabase order database', { allowEmpty });
 }
 
 function emailMarkup(product, links, locale) {
@@ -34,7 +36,11 @@ function emailMarkup(product, links, locale) {
 
 export default async function stripeWebhook(request) {
   if (request.method !== 'POST') return jsonResponse({ error: 'Method not allowed.' }, 405);
-  const secret = process.env.STRIPE_WEBHOOK_SECRET;
+  const hostname = new URL(request.url).hostname;
+  const isNetlifyPreview = /^[a-z0-9-]+--cdlnetwork\.netlify\.app$/i.test(hostname);
+  const secret = isNetlifyPreview
+    ? process.env.STRIPE_WEBHOOK_SECRET_PREVIEW
+    : process.env.STRIPE_WEBHOOK_SECRET;
   if (!secret) return jsonResponse({ error: 'Webhook is not configured.' }, 503);
   const rawBody = await request.text();
   const signature = request.headers.get('stripe-signature') || '';
