@@ -5817,3 +5817,14 @@ html[lang="fr"] [data-home-lang="en"], html[lang="en"] [data-home-lang="fr"] { d
     text-align: right;
   }
 }
+
+
+/* Keep the display headline within narrow phone screens. */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: clamp(38px, 11vw, 50px);
+    letter-spacing: -3px;
+    line-height: 0.98;
+    overflow-wrap: anywhere;
+  }
+}

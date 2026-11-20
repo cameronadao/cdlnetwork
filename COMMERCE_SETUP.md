@@ -15,7 +15,7 @@ Add these values in Netlify Project configuration → Environment variables. Kee
 - `SUPABASE_BUCKET` — name of a **private** Storage bucket for digital products.
 - `RESEND_API_KEY` — Resend API key for delivery email.
 - `RESEND_FROM_EMAIL` — verified sender address, for example `CDB Projects <downloads@your-domain>`.
-- `SITE_URL` — canonical site origin, for example `https://cdlnetwork.netlify.app`.
+- `SITE_URL` — canonical site origin, for example `https://cdbprojects.com`.
 
 After adding or changing Netlify variables, redeploy the site.
 
@@ -25,7 +25,7 @@ After adding or changing Netlify variables, redeploy the site.
 2. Create a private Supabase Storage bucket and upload product deliverables into it. Do not put paid files in the website's public `assets` folder.
 3. In Stripe Dashboard → Settings → Managed Payments, review the terms and pricing and activate the product if Stripe offers it to your account. Eligibility is determined by Stripe.
 4. Verify the sender domain in Resend.
-5. In Stripe, create a webhook destination at `https://cdlnetwork.netlify.app/api/stripe-webhook` (or the configured production domain) for `checkout.session.completed` and `checkout.session.async_payment_succeeded`. Store its signing secret in `STRIPE_WEBHOOK_SECRET`.
+5. In Stripe, create a webhook destination at `https://cdbprojects.com/api/stripe-webhook` (or the configured production domain) for `checkout.session.completed` and `checkout.session.async_payment_succeeded`. Store its signing secret in `STRIPE_WEBHOOK_SECRET`.
 6. Add each product's files to `netlify/functions/_shared/delivery-assets.json`. Example:
 
 ```json
