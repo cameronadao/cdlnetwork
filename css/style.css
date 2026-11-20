@@ -503,9 +503,6 @@ img {
 }
 
 .visual-label {
-    --orbit-x: 185px;
-    --orbit-half-x: 92.5px;
-    --orbit-y: 160.2px;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -516,29 +513,22 @@ img {
 }
 
 .label-one {
-    left: calc(50% - var(--orbit-x));
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 16%;
+    left: 0;
 }
 
 .label-two {
-    left: calc(50% + var(--orbit-half-x));
-    top: calc(50% - var(--orbit-y));
-    right: auto;
-    bottom: auto;
+    top: 16%;
+    right: 0;
     align-items: flex-end;
     text-align: right;
-    transform: translate(-50%, -50%);
 }
 
 .label-three {
-    left: calc(50% + var(--orbit-half-x));
-    top: calc(50% + var(--orbit-y));
-    right: auto;
-    bottom: auto;
+    right: 0;
+    bottom: 16%;
     align-items: flex-end;
     text-align: right;
-    transform: translate(-50%, -50%);
 }
 
 .label-number {
@@ -2787,9 +2777,6 @@ img {
     }
 
     .visual-label {
-        --orbit-x: 116px;
-        --orbit-half-x: 58px;
-        --orbit-y: 100.5px;
         font-size: 6px;
     }
 
