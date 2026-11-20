@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cdlnetwork.com/sitemap.xml
+Sitemap: https://cdbprojects.com/sitemap.xml

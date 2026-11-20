@@ -49,9 +49,54 @@
     }
   };
 
+  function setMeta(selector, attribute, key, value) {
+    let element = document.head.querySelector(`${selector}[${attribute}="${key}"]`);
+    if (!element) {
+      element = document.createElement('meta');
+      element.setAttribute(attribute, key);
+      document.head.append(element);
+    }
+    element.content = value;
+  }
+
+  function updateProductMetadata(product, title, description, coverPath, price) {
+    const canonicalUrl = new URL(`/product.html?id=${encodeURIComponent(product.id)}`, window.location.origin).href;
+    const image = coverPath ? new URL(coverPath, window.location.origin).href : new URL('/assets/images/logo-black.png', window.location.origin).href;
+    const summary = String(product.shortDescription || description || '').replace(/[#*_`]/g, '').replace(/\s+/g, ' ').trim().slice(0, 300);
+    const canonical = document.head.querySelector('link[rel="canonical"]') || document.head.appendChild(document.createElement('link'));
+    canonical.rel = 'canonical';
+    canonical.href = canonicalUrl;
+    setMeta('meta', 'name', 'description', summary || `${title} — a digital product from CDB Projects.`);
+    setMeta('meta', 'property', 'og:title', `${title} | CDB Projects`);
+    setMeta('meta', 'property', 'og:description', summary);
+    setMeta('meta', 'property', 'og:url', canonicalUrl);
+    setMeta('meta', 'property', 'og:image', image);
+    setMeta('meta', 'name', 'twitter:title', `${title} | CDB Projects`);
+    setMeta('meta', 'name', 'twitter:description', summary);
+    setMeta('meta', 'name', 'twitter:image', image);
+    let structuredData = document.getElementById('product-structured-data');
+    if (!structuredData) {
+      structuredData = document.createElement('script');
+      structuredData.id = 'product-structured-data';
+      structuredData.type = 'application/ld+json';
+      document.head.append(structuredData);
+    }
+    const schema = { '@context': 'https://schema.org', '@type': 'Product', name: title, description: summary, image: [image], sku: product.id, brand: { '@type': 'Brand', name: 'CDB Projects' }, url: canonicalUrl };
+    if (product.price !== undefined && product.currency) {
+      schema.offers = { '@type': 'Offer', priceCurrency: product.currency, price: Number(price ?? product.price), availability: 'https://schema.org/InStock', url: canonicalUrl };
+    }
+    structuredData.textContent = JSON.stringify(schema);
+    const robots = document.head.querySelector('meta[name="robots"]');
+    if (robots?.content.toLowerCase().includes('noindex')) robots.remove();
+  }
+
   const showState = (title, message) => {
     target.innerHTML = `<div class="product-detail-state" role="status"><p class="eyebrow">${escapeHtml(t('CDB Projects · Digital store'))}</p><h1>${escapeHtml(t(title))}</h1><p>${escapeHtml(t(message))}</p></div>`;
     document.title = `${t(title)} | CDB Projects`;
+    const robots = document.head.querySelector('meta[name="robots"]') || document.head.appendChild(document.createElement('meta'));
+    robots.name = 'robots';
+    robots.content = 'noindex,follow';
+    document.head.querySelector('link[rel="canonical"]')?.remove();
   };
 
   async function loadProduct() {
@@ -92,6 +137,7 @@
     const description = productDescription
       ? `<div class="product-detail-description">${renderDescription(productDescription)}</div>`
       : `<p>${escapeHtml(t('Product information will be added soon.'))}</p>`;
+    const plainDescription = productDescription ? String(productDescription).replace(/[#*_`]/g, '').replace(/\s+/g, ' ').trim() : '';
     const cover = coverPath ? `<img class="product-detail-cover" src="${escapeHtml(coverPath)}" alt="${escapeHtml(t('Cover of {title}', { title: rawTitle }))}">` : '';
     const fields = [
       ['Category', product.category], ['Format', Array.isArray(product.formats) ? product.formats.join(', ') : product.format],
@@ -134,6 +180,8 @@
       : '';
     target.innerHTML = `<article class="product-detail-layout">${cover}<div class="product-detail-copy"><p class="eyebrow">${escapeHtml(t('CDB Projects · Digital store'))}</p><h1>${title}</h1>${description}${localizedMetadata}${purchaseButton}${relatedSection}</div></article>`;
     document.title = `${t(rawTitle)} | CDB Projects`;
+    const schemaPrice = promoActive ? window.CDL_PROMOTION_PRICING.discountedAmount(product.price) : product.price;
+    updateProductMetadata(product, t(rawTitle), plainDescription, coverPath, schemaPrice);
   }
 
   document.addEventListener('cdl:languagechange', loadProduct);

@@ -1,61 +1,56 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    <url>
-        <loc>https://cdlnetwork.com/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
-    <url>
-        <loc>https://cdlnetwork.com/legal-notice.html</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-
-    <url>
-        <loc>https://cdlnetwork.com/privacy-policy.html</loc>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-
-    <url>
-        <loc>https://cdlnetwork.com/landing-page.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://cdlnetwork.com/web-design.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://cdlnetwork.com/e-commerce.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://cdlnetwork.com/website-redesign.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://cdlnetwork.com/maintenance.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <url>
-        <loc>https://cdlnetwork.com/articles.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-  <url><loc>https://cdlnetwork.netlify.app/article-instagram-beaute-identite-visuelle.html</loc></url>
+  <url><loc>https://cdbprojects.com/</loc></url>
+  <url><loc>https://cdbprojects.com/ai-content.html</loc></url>
+  <url><loc>https://cdbprojects.com/ai-tools-resources.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-analyser-discographie.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-budget-voyage-engagements-estimations.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-choisir-chantier-ia-marketing.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-cuisiner-avec-methode.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-instagram-beaute-identite-visuelle.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-instagram-sans-visage-preuve-valeur.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-organiser-repas-famille.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-routine-developpement-personnel.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-science-enfants-maison.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-strategie-marketing-ia.html</loc></url>
+  <url><loc>https://cdbprojects.com/article-vendre-produits-plr.html</loc></url>
+  <url><loc>https://cdbprojects.com/articles.html</loc></url>
+  <url><loc>https://cdbprojects.com/bundles-collections.html</loc></url>
+  <url><loc>https://cdbprojects.com/business-resources.html</loc></url>
+  <url><loc>https://cdbprojects.com/courses-learning.html</loc></url>
+  <url><loc>https://cdbprojects.com/digital-products.html</loc></url>
+  <url><loc>https://cdbprojects.com/digital-systems.html</loc></url>
+  <url><loc>https://cdbprojects.com/e-commerce.html</loc></url>
+  <url><loc>https://cdbprojects.com/free-products.html</loc></url>
+  <url><loc>https://cdbprojects.com/landing-page.html</loc></url>
+  <url><loc>https://cdbprojects.com/legal-notice.html</loc></url>
+  <url><loc>https://cdbprojects.com/maintenance.html</loc></url>
+  <url><loc>https://cdbprojects.com/planners-journals.html</loc></url>
+  <url><loc>https://cdbprojects.com/pricing/tarifs.html</loc></url>
+  <url><loc>https://cdbprojects.com/privacy-policy.html</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=beauty-instagram-kit-160-templates-fr-en</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=cdl-master-library-400000-digital-products</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=digitals-planners-journals-canva-templates</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=faceless-marketing-faceless-instagram-ebook-template</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=instagram-b-roll-hooks-bonus</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=marketing-sans-visage-faceless-instagram-ebook-template-fr</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=michael-jackson-songs-context-truth</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-ai-marketing-edge</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-ai-marketing-edge-bundle</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-ai-marketing-edge-cheat-sheet</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-ai-marketing-edge-resources-report</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-art-of-the-first-date-masterclass-guide</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-bible-explained-a-complete-guide-to-the-66-books</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-chefs-method</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-power-of-affirmative-prayer-complete-guide-co-creating-reality</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-resonance-blueprint</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-thanksgiving-method</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=the-ultimate-junior-explorer-collection</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=vacation-planner-pro-digital-excel</loc></url>
+  <url><loc>https://cdbprojects.com/product.html?id=walking-with-jesus-through-lent-46-day-devotional-ash-wednesday-resurrection-sunday</loc></url>
+  <url><loc>https://cdbprojects.com/shop.html</loc></url>
+  <url><loc>https://cdbprojects.com/templates.html</loc></url>
+  <url><loc>https://cdbprojects.com/web-design.html</loc></url>
+  <url><loc>https://cdbprojects.com/website-redesign.html</loc></url>
+  <url><loc>https://cdbprojects.com/workbooks-guides.html</loc></url>
 </urlset>

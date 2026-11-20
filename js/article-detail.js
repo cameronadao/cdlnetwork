@@ -20,6 +20,53 @@
     }
   };
 
+  function setMeta(selector, attribute, key, value) {
+    let element = document.head.querySelector(`${selector}[${attribute}="${key}"]`);
+    if (!element) {
+      element = document.createElement('meta');
+      element.setAttribute(attribute, key);
+      document.head.append(element);
+    }
+    element.content = value;
+  }
+
+  function updateArticleMetadata(language) {
+    const canonicalUrl = new URL(window.location.pathname, window.location.origin).href;
+    const headline = text(currentArticle.title, language);
+    const description = text(currentArticle.summary, language);
+    const image = new URL(currentArticle.image || '/assets/images/logo-black.png', window.location.origin).href;
+    const canonical = document.head.querySelector('link[rel="canonical"]') || document.head.appendChild(document.createElement('link'));
+    canonical.rel = 'canonical';
+    canonical.href = canonicalUrl;
+    setMeta('meta', 'name', 'description', description);
+    setMeta('meta', 'property', 'og:title', `${headline} | CDB Projects`);
+    setMeta('meta', 'property', 'og:description', description);
+    setMeta('meta', 'property', 'og:url', canonicalUrl);
+    setMeta('meta', 'property', 'og:image', image);
+    setMeta('meta', 'name', 'twitter:title', `${headline} | CDB Projects`);
+    setMeta('meta', 'name', 'twitter:description', description);
+    setMeta('meta', 'name', 'twitter:image', image);
+    let structuredData = document.getElementById('article-structured-data');
+    if (!structuredData) {
+      structuredData = document.createElement('script');
+      structuredData.id = 'article-structured-data';
+      structuredData.type = 'application/ld+json';
+      document.head.append(structuredData);
+    }
+    structuredData.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'BlogPosting',
+      headline,
+      description,
+      image: [image],
+      datePublished: currentArticle.publishedAt,
+      inLanguage: language,
+      mainEntityOfPage: canonicalUrl,
+      author: { '@type': 'Organization', name: 'CDB Projects', url: 'https://cdbprojects.com/' },
+      publisher: { '@type': 'Organization', name: 'CDB Projects', url: 'https://cdbprojects.com/' }
+    });
+  }
+
   function render() {
     if (!currentArticle) return;
     const language = window.CDL_I18N?.language || 'en';
@@ -28,6 +75,7 @@
     summary.textContent = t(currentArticle.summary);
     category.textContent = t(currentArticle.category);
     document.title = `${t(currentArticle.title)} | CDB Projects`;
+    updateArticleMetadata(language);
     if (currentArticle.publishedAt) {
       date.dateTime = currentArticle.publishedAt;
       date.textContent = new Intl.DateTimeFormat(language === 'fr' ? 'fr-FR' : 'en-US', { dateStyle: 'long' }).format(new Date(`${currentArticle.publishedAt}T12:00:00`));
