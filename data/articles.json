@@ -41,11 +41,11 @@
       { "type": "p", "text": { "fr": "À essayer : demandez-vous « Qu’est-ce qui m’a donné de l’énergie aujourd’hui ? » ou « Quelle petite action m’a rapproché de ce qui compte pour moi ? ». L’objectif est de remarquer, pas de vous condamner.", "en": "Try this: ask yourself, “What gave me energy today?” or “What small action brought me closer to what matters to me?” The goal is to notice, not to criticize yourself." } },
       { "type": "h2", "text": { "fr": "Passer de la théorie à la pratique", "en": "Moving from Theory to Practice" } },
       { "type": "p", "text": { "fr": "Les journées longues, les responsabilités familiales et la fatigue font partie de la vie. Une routine n’a pas besoin d’une heure de silence pour « compter ». Trois à cinq minutes régulières peuvent être plus faciles à maintenir qu’une longue séance prévue trop rarement.", "en": "Long workdays, family responsibilities, and tiredness are part of life. A routine does not need an hour of silence to “count.” Three to five consistent minutes may be easier to maintain than a long session you rarely have time for." } },
-      { "type": "p", "text": { "fr": "La page blanche est un autre obstacle courant. Si vous ne savez pas quoi noter, un modèle de page, une question guidée ou un tracker peut vous aider à démarrer. L’important est que le support simplifie la pratique au lieu d’ajouter une obligation.", "en": "The blank page is another common obstacle. If you are not sure what to write, a page template, guided prompt, or tracker can help you get started. The tool should make the practice simpler, not add another obligation." } },
+      { "type": "p", "text": { "fr": "La page blanche est un autre obstacle courant. Si vous ne savez pas quoi noter, un template de page, une question guidée ou un tracker peut vous aider à démarrer. L’important est que le support simplifie la pratique au lieu d’ajouter une obligation.", "en": "The blank page is another common obstacle. If you are not sure what to write, a page template, guided prompt, or tracker can help you get started. The tool should make the practice simpler, not add another obligation." } },
       { "type": "h2", "text": { "fr": "S’organiser avec des supports adaptés", "en": "Stay Organized with the Right Tools" } },
       { "type": "p", "text": { "fr": "Pour instaurer une routine sans créer chaque page soi-même, les Digitals Planners & Journals (Canva Templates) peuvent servir de point de départ. Cette collection de planificateurs et de journaux numériques couvre notamment la foi, la prière, la gratitude, la dévotion et la manifestation.", "en": "If you want a routine without designing every page yourself, Digitals Planners & Journals (Canva Templates) can be a useful starting point. This collection of digital planners and journals covers topics including faith, prayer, gratitude, devotion, and manifestation." } },
-      { "type": "p", "text": { "fr": "Un support structuré peut réduire le temps passé à préparer sa page, proposer des questions auxquelles on n’aurait pas pensé et rendre les habitudes visibles au fil des semaines. Personnalisez-le selon votre pratique : un modèle est un cadre, pas une solution automatique. C’est votre attention et votre engagement qui lui donnent du sens.", "en": "A structured tool can reduce the time spent preparing a page, offer prompts you might not have thought of, and make habits easier to track over time. Personalize it to suit your practice: a template is a framework, not an automatic solution. Your attention and commitment are what give it meaning." } },
-      { "type": "cta", "text": { "fr": "Découvrez les planificateurs et journaux numériques personnalisables de CDB Projects.", "en": "Explore CDB Projects’s customizable digital planners and journals." }, "button": { "fr": "Découvrir les modèles", "en": "Explore the templates" } },
+      { "type": "p", "text": { "fr": "Un support structuré peut réduire le temps passé à préparer sa page, proposer des questions auxquelles on n’aurait pas pensé et rendre les habitudes visibles au fil des semaines. Personnalisez-le selon votre pratique : un template est un cadre, pas une solution automatique. C’est votre attention et votre engagement qui lui donnent du sens.", "en": "A structured tool can reduce the time spent preparing a page, offer prompts you might not have thought of, and make habits easier to track over time. Personalize it to suit your practice: a template is a framework, not an automatic solution. Your attention and commitment are what give it meaning." } },
+      { "type": "cta", "text": { "fr": "Découvrez les planificateurs et journaux numériques personnalisables de CDB Projects.", "en": "Explore CDB Projects’s customizable digital planners and journals." }, "button": { "fr": "Découvrir les templates", "en": "Explore the templates" } },
       { "type": "h2", "text": { "fr": "Les erreurs fréquentes à éviter", "en": "Common Mistakes to Avoid" } },
       { "type": "h3", "text": { "fr": "Vouloir tout faire dès le premier jour", "en": "Trying to Do Everything on Day One" } },
       { "type": "p", "text": { "fr": "Commencer par vingt minutes de méditation, du journaling et plusieurs chapitres de lecture peut vite devenir épuisant. Choisissez une seule micro-habitude. Vous pourrez en ajouter une autre lorsqu’elle sera devenue familière.", "en": "Starting with twenty minutes of meditation, journaling, and several chapters of reading can quickly become exhausting. Choose one small habit. You can add another once it feels familiar." } },
@@ -57,7 +57,7 @@
       { "type": "list", "items": { "fr": ["Choisissez un déclencheur : associez votre pratique à un geste déjà ancré, par exemple écrire une phrase après votre café.", "Préparez une version minimale : les jours chargés, notez une seule phrase ou prenez trois respirations conscientes.", "Faites un bilan mensuel : demandez-vous ce qui vous a aidé, ce qui a créé de la friction et quel ajustement vous voulez essayer."], "en": ["Choose a cue: connect your practice to an existing habit, such as writing one sentence after your coffee.", "Prepare a minimum version: on busy days, write one sentence or take three mindful breaths.", "Review once a month: ask what helped, what created friction, and what small adjustment you want to try." ] } },
       { "type": "h2", "text": { "fr": "En conclusion", "en": "In Conclusion" } },
       { "type": "p", "text": { "fr": "Construire une routine de développement personnel est un processus d’ajustement, pas un sprint. La gratitude, la clarification des intentions et l’introspection ne sont pas des remèdes miracles ; ce sont des pratiques que l’on peut adapter et reprendre au fil du temps.", "en": "Building a personal growth routine is an ongoing process, not a sprint. Gratitude, clarifying intentions, and reflection are not instant fixes; they are practices you can adapt and return to over time." } },
-      { "type": "p", "text": { "fr": "Commencez petit, soyez indulgent envers vous-même et choisissez des outils qui vous facilitent réellement la vie. Prenez une grande respiration, choisissez une habitude qui vous attire, ouvrez votre cahier ou votre modèle et écrivez votre première ligne. C’est un petit geste, mais c’est un début.", "en": "Start small, be kind to yourself, and choose tools that genuinely make life easier. Take a deep breath, choose one habit that appeals to you, open your journal or template, and write your first line. It is a small action, but it is a beginning." } }
+      { "type": "p", "text": { "fr": "Commencez petit, soyez indulgent envers vous-même et choisissez des outils qui vous facilitent réellement la vie. Prenez une grande respiration, choisissez une habitude qui vous attire, ouvrez votre cahier ou votre template et écrivez votre première ligne. C’est un petit geste, mais c’est un début.", "en": "Start small, be kind to yourself, and choose tools that genuinely make life easier. Take a deep breath, choose one habit that appeals to you, open your journal or template, and write your first line. It is a small action, but it is a beginning." } }
     ]
   },
   {
@@ -915,7 +915,7 @@
     {
       "type": "p",
       "text": {
-        "fr": "La première fois, créer une liste d’invités, une matrice des besoins, un budget, un calendrier à rebours et une liste de courses demande un peu de préparation. Ces modèles peuvent ensuite être réutilisés et adaptés d’une année à l’autre.",
+        "fr": "La première fois, créer une liste d’invités, une matrice des besoins, un budget, un calendrier à rebours et une liste de courses demande un peu de préparation. Ces templates peuvent ensuite être réutilisés et adaptés d’une année à l’autre.",
         "en": "The first time, building a guest list, needs matrix, budget, backward timeline, and shopping list takes some preparation. You can reuse and adapt those templates from one year to the next."
       }
     },
@@ -1331,7 +1331,7 @@
     {
       "type": "p",
       "text": {
-        "fr": "Une prédiction a besoin d’un historique approprié. Une aide à la rédaction a besoin de références éditoriales et d’une voix de marque identifiable. Un assistant conversationnel doit s’appuyer sur de vraies questions et prévoir un transfert vers une personne. Si les données manquent, le premier projet consiste peut-être à les collecter proprement plutôt qu’à activer un modèle.",
+        "fr": "Une prédiction a besoin d’un historique approprié. Une aide à la rédaction a besoin de références éditoriales et d’une voix de marque identifiable. Un assistant conversationnel doit s’appuyer sur de vraies questions et prévoir un transfert vers une personne. Si les données manquent, le premier projet consiste peut-être à les collecter proprement plutôt qu’à activer un template.",
         "en": "A prediction needs suitable history. Writing assistance needs editorial references and a recognizable brand voice. A conversational assistant should be based on real questions and include a handoff to a person. If the data is missing, your first project may be to collect it properly rather than turn on a model."
       }
     },
@@ -1408,7 +1408,7 @@
     {
       "type": "p",
       "text": {
-        "fr": "Un assistant peut aider sur un périmètre limité de questions fréquentes, avec des réponses validées et une possibilité de joindre une personne. Suivez les demandes qu’il ne résout pas et les corrections apportées. La qualité dépend autant des contenus de référence et du processus de transfert que du modèle utilisé.",
+        "fr": "Un assistant peut aider sur un périmètre limité de questions fréquentes, avec des réponses validées et une possibilité de joindre une personne. Suivez les demandes qu’il ne résout pas et les corrections apportées. La qualité dépend autant des contenus de référence et du processus de transfert que du template utilisé.",
         "en": "An assistant can help with a limited set of common questions, using approved answers and offering a way to reach a person. Track the requests it cannot resolve and the corrections needed. Quality depends as much on reference materials and handoff procedures as on the model itself."
       }
     },
@@ -1534,7 +1534,7 @@
       {
         "type": "lead",
         "text": {
-          "fr": "Un créateur ouvre un compte Instagram sans visage. Il choisit une palette beige, télécharge des modèles Canva, programme trente hooks et publie régulièrement. Au bout de six semaines, les abonnés progressent, mais aucune vente n’arrive. Le problème n’est pas le rythme de publication. C’est l’absence de preuve : le compte montre une esthétique, pas encore une raison de croire à ce qu’il promet.",
+          "fr": "Un créateur ouvre un compte Instagram sans visage. Il choisit une palette beige, télécharge des templates Canva, programme trente hooks et publie régulièrement. Au bout de six semaines, les abonnés progressent, mais aucune vente n’arrive. Le problème n’est pas le rythme de publication. C’est l’absence de preuve : le compte montre une esthétique, pas encore une raison de croire à ce qu’il promet.",
           "en": "A creator launches a faceless Instagram account. They choose a beige palette, download Canva templates, prepare thirty hooks, and post regularly. Six weeks later, followers are growing, but no sales have come in. The problem is not the posting schedule. It is the lack of proof: the account shows an aesthetic, but not yet a reason to believe its promise."
         }
       },
@@ -1628,28 +1628,28 @@
       {
         "type": "p",
         "text": {
-          "fr": "Ce pilier sert deux objectifs. Il aide le public à résoudre un problème immédiat. Il fournit aussi la matière d’une offre future : une checklist, un modèle, un guide. La vente devient la prolongation logique du contenu, pas une rupture.",
+          "fr": "Ce pilier sert deux objectifs. Il aide le public à résoudre un problème immédiat. Il fournit aussi la matière d’une offre future : une checklist, un template, un guide. La vente devient la prolongation logique du contenu, pas une rupture.",
           "en": "This pillar serves two purposes. It helps the audience solve an immediate problem and provides the basis for a future offer—a checklist, template, or guide. Selling then becomes a logical extension of the content, not a sudden change of direction."
         }
       },
       {
         "type": "h2",
         "text": {
-          "fr": "Curation et modèles : gagner du temps sans perdre sa voix",
+          "fr": "Curation et templates : gagner du temps sans perdre sa voix",
           "en": "Curation and Templates: Save Time Without Losing Your Voice"
         }
       },
       {
         "type": "p",
         "text": {
-          "fr": "Les modèles Canva et les banques d’images réduisent le temps de production. Le guide Les bases de Canva peut aider à modifier un modèle, à ajuster un texte et à conserver une cohérence visuelle. Le guide Marketing sans visage (CDB Projects) propose un cadre plus large : chapitres sur la niche et le profil, conseils de curation, hooks et légendes, idées de B-roll. Ces ressources sont utiles pour démarrer, mais elles ne remplacent pas une décision éditoriale.",
+          "fr": "Les templates Canva et les banques d’images réduisent le temps de production. Le guide Les bases de Canva peut aider à modifier un template, à ajuster un texte et à conserver une cohérence visuelle. Le guide Marketing sans visage (CDB Projects) propose un cadre plus large : chapitres sur la niche et le profil, conseils de curation, hooks et légendes, idées de B-roll. Ces ressources sont utiles pour démarrer, mais elles ne remplacent pas une décision éditoriale.",
           "en": "Canva templates and stock libraries can reduce production time. The Canva basics guide can help you customize a template, edit its text, and maintain a consistent visual style. CDB Projects’s Marketing Sans Visage guide offers a broader framework, with sections on niche and profile choices, curation, hooks and captions, and B-roll ideas. These resources can help you get started, but they cannot make editorial decisions for you."
         }
       },
       {
         "type": "p",
         "text": {
-          "fr": "Un modèle ne dit pas quel problème vous résolvez. Il ne choisit pas votre angle. Il ne vérifie pas si votre promesse est crédible. Utilisez donc les modèles pour la forme, et réservez votre jugement pour le fond. Trois règles suffisent : une palette limitée, deux ou trois formats récurrents, une phrase de promesse visible sur chaque publication. Le reste doit pouvoir changer sans casser l’identité.",
+          "fr": "Un template ne dit pas quel problème vous résolvez. Il ne choisit pas votre angle. Il ne vérifie pas si votre promesse est crédible. Utilisez donc les templates pour la forme, et réservez votre jugement pour le fond. Trois règles suffisent : une palette limitée, deux ou trois formats récurrents, une phrase de promesse visible sur chaque publication. Le reste doit pouvoir changer sans casser l’identité.",
           "en": "A template cannot tell you which problem you solve, choose your point of view, or check whether your promise is credible. Use templates for presentation and apply your own judgment to the substance. Three rules are enough to start: use a limited palette, repeat two or three formats, and make the promise clear in every post. Other details can change without breaking the identity."
         }
       },
@@ -1698,7 +1698,7 @@
       {
         "type": "p",
         "text": {
-          "fr": "Alternez un carrousel explicatif, un Reel court avec texte à l’écran et une publication de preuve (processus, erreur corrigée, exemple). Utilisez si besoin un modèle, mais gardez la même structure de titre et la même conclusion.",
+          "fr": "Alternez un carrousel explicatif, un Reel court avec texte à l’écran et une publication de preuve (processus, erreur corrigée, exemple). Utilisez si besoin un template, mais gardez la même structure de titre et la même conclusion.",
           "en": "Rotate between an explanatory carousel, a short Reel with on-screen text, and a proof post showing a process, corrected mistake, or example. Use a template if helpful, while keeping the same title structure and conclusion."
         }
       },
@@ -1740,7 +1740,7 @@
       {
         "type": "p",
         "text": {
-          "fr": "L’anonymat protège la vie privée, mais il réduit la proximité. Certains publics achètent davantage auprès d’une personne identifiable ; d’autres se moquent du visage si la valeur est claire. Il faut le savoir avant de choisir ce modèle.",
+          "fr": "L’anonymat protège la vie privée, mais il réduit la proximité. Certains publics achètent davantage auprès d’une personne identifiable ; d’autres se moquent du visage si la valeur est claire. Il faut le savoir avant de choisir ce template.",
           "en": "Anonymity can protect privacy, but it may reduce a sense of closeness. Some audiences prefer buying from an identifiable person; others care little about a face if the value is clear. Consider this before choosing the model."
         }
       },
@@ -1768,7 +1768,7 @@
       {
         "type": "p",
         "text": {
-          "fr": "Un compte Instagram sans visage devient crédible lorsqu’il prouve une utilité avant de promettre un revenu. La niche, le format et la preuve comptent davantage que la palette graphique ou le nombre de hooks. Les guides et les modèles peuvent accélérer la mise en place, mais ils ne remplacent ni le test auprès d’un public réel ni la vérification des limites de l’offre. La prochaine étape : écrivez votre phrase de promesse en trois lignes, choisissez un pilier de cinq publications, et fixez dès maintenant le signal que vous observerez à la fin du mois. Si vous ne pouvez pas nommer ce signal, le compte n’est pas encore prêt à être monétisé.",
+          "fr": "Un compte Instagram sans visage devient crédible lorsqu’il prouve une utilité avant de promettre un revenu. La niche, le format et la preuve comptent davantage que la palette graphique ou le nombre de hooks. Les guides et les templates peuvent accélérer la mise en place, mais ils ne remplacent ni le test auprès d’un public réel ni la vérification des limites de l’offre. La prochaine étape : écrivez votre phrase de promesse en trois lignes, choisissez un pilier de cinq publications, et fixez dès maintenant le signal que vous observerez à la fin du mois. Si vous ne pouvez pas nommer ce signal, le compte n’est pas encore prêt à être monétisé.",
           "en": "A faceless Instagram account becomes credible when it proves its usefulness before promising income. Niche, format, and proof matter more than a color palette or the number of hooks. Guides and templates can speed up setup, but they cannot replace testing with a real audience or checking the limits of your offer. Next, write your three-line promise, choose a five-post proof pillar, and decide which signal you will measure at the end of the month. If you cannot name that signal, the account is not ready to monetize."
         }
       },
@@ -1917,7 +1917,7 @@
       {
         "type": "p",
         "text": {
-          "fr": "Chaque réservation doit avoir un identifiant unique, par exemple HTL-01 ou VOL-02. Si deux lignes portent la même référence, le modèle ne peut pas savoir laquelle est la bonne. Dans un tableur, une colonne de contrôle peut signaler « Référence en double ».",
+          "fr": "Chaque réservation doit avoir un identifiant unique, par exemple HTL-01 ou VOL-02. Si deux lignes portent la même référence, le template ne peut pas savoir laquelle est la bonne. Dans un tableur, une colonne de contrôle peut signaler « Référence en double ».",
           "en": "Give each booking a unique reference, such as HTL-01 or FLT-02. If two entries share a reference, your spreadsheet cannot tell which one is correct. A validation column can flag duplicate references."
         }
       },
@@ -2008,14 +2008,14 @@
       {
         "type": "h2",
         "text": {
-          "fr": "Ce qu’un modèle structuré apporte — et ses limites",
+          "fr": "Ce qu’un template structuré apporte — et ses limites",
           "en": "What a Structured Planner Can—and Cannot—Do"
         }
       },
       {
         "type": "p",
         "text": {
-          "fr": "L’Organisateur de Voyage Pro de CDB Projects applique cette séparation dans un classeur Excel. La version française est libellée en euros ; la version anglaise permet de choisir une devise de suivi en USD ou GBP. Le modèle prévoit 100 réservations, 150 étapes et 300 dépenses. Il calcule un total projeté en ajoutant les dépenses enregistrées au solde des réservations actives, et laisse les estimations d’itinéraire en dehors de ce total.",
+          "fr": "L’Organisateur de Voyage Pro de CDB Projects applique cette séparation dans un classeur Excel. La version française est libellée en euros ; la version anglaise permet de choisir une devise de suivi en USD ou GBP. Le template prévoit 100 réservations, 150 étapes et 300 dépenses. Il calcule un total projeté en ajoutant les dépenses enregistrées au solde des réservations actives, et laisse les estimations d’itinéraire en dehors de ce total.",
           "en": "CDB Projects’s Vacation Planner Pro applies this distinction in an Excel workbook. The French version is set up in euros; the English version lets you track amounts in USD or GBP. The planner accommodates 100 bookings, 150 itinerary stops, and 300 expenses. It calculates a projected total from recorded expenses and active booking balances, while keeping itinerary estimates out of that total."
         }
       },
@@ -2029,14 +2029,14 @@
       {
         "type": "p",
         "text": {
-          "fr": "Ses limites doivent être claires. Le modèle ne garantit pas que le budget sera respecté : il montre où vous en êtes, il ne décide pas à votre place. Il ne fournit pas de taux de change officiels : vous saisissez le taux que vous jugez pertinent. Il ne remplace pas les confirmations des prestataires : conservez-les séparément. Enfin, n’y stockez pas de numéros de carte ou de passeport ; conservez des références ou des liens, pas des données sensibles.",
+          "fr": "Ses limites doivent être claires. Le template ne garantit pas que le budget sera respecté : il montre où vous en êtes, il ne décide pas à votre place. Il ne fournit pas de taux de change officiels : vous saisissez le taux que vous jugez pertinent. Il ne remplace pas les confirmations des prestataires : conservez-les séparément. Enfin, n’y stockez pas de numéros de carte ou de passeport ; conservez des références ou des liens, pas des données sensibles.",
           "en": "Its limits matter. The planner cannot guarantee that you will stay within budget; it shows where you stand but does not make decisions for you. It does not provide official exchange rates; you enter the rate you consider relevant. It does not replace confirmations from providers, which you should keep separately. Do not store card or passport numbers in it; use references or links instead of sensitive information."
         }
       },
       {
         "type": "p",
         "text": {
-          "fr": "Un tableur personnel peut reproduire la même logique. Le modèle apporte surtout un cadre, des colonnes de contrôle et une capacité préformatée. Il ne dispense ni de la saisie rigoureuse ni de la vérification des données.",
+          "fr": "Un tableur personnel peut reproduire la même logique. Le template apporte surtout un cadre, des colonnes de contrôle et une capacité préformatée. Il ne dispense ni de la saisie rigoureuse ni de la vérification des données.",
           "en": "You can reproduce the same logic in your own spreadsheet. A ready-made planner mainly provides a structure, validation columns, and preformatted capacity. It does not remove the need for careful data entry and review."
         }
       },
@@ -2078,7 +2078,7 @@
       {
         "type": "p",
         "text": {
-          "fr": "Un budget voyage réaliste ne consiste pas à prévoir un prix, mais à distinguer ce qui est payé, ce qui est engagé et ce qui reste estimé. Le total projeté n’a de sens que si les réservations non payées sont comptées et si les estimations en sont exclues. Les contrôles de références, de catégories et de devises évitent la plupart des erreurs. Un modèle structuré peut faire gagner du temps, mais il ne remplace ni la rigueur de saisie ni la vérification des confirmations.",
+          "fr": "Un budget voyage réaliste ne consiste pas à prévoir un prix, mais à distinguer ce qui est payé, ce qui est engagé et ce qui reste estimé. Le total projeté n’a de sens que si les réservations non payées sont comptées et si les estimations en sont exclues. Les contrôles de références, de catégories et de devises évitent la plupart des erreurs. Un template structuré peut faire gagner du temps, mais il ne remplace ni la rigueur de saisie ni la vérification des confirmations.",
           "en": "A realistic travel budget is not just a price forecast. It separates what is paid, what is committed, and what remains estimated. The projected total is meaningful only when unpaid bookings are included and estimates are kept separate. Checking references, categories, and currencies prevents many errors. A structured planner can save time, but it cannot replace careful entry or checking confirmations."
         }
       },
@@ -2234,7 +2234,7 @@
       {
         "type": "p",
         "text": {
-          "fr": "Réécrivez l’introduction et la conclusion avec votre ton. Ajoutez une page de ressources, une checklist ou un modèle que vous avez créé. Même courte, cette couche supplémentaire signale que vous avez travaillé le contenu.",
+          "fr": "Réécrivez l’introduction et la conclusion avec votre ton. Ajoutez une page de ressources, une checklist ou un template que vous avez créé. Même courte, cette couche supplémentaire signale que vous avez travaillé le contenu.",
           "en": "Rewrite the introduction and conclusion in your own voice. Add a resource page, checklist, or template you created. Even a small original contribution shows that you have worked on the material."
         }
       },
@@ -2496,11 +2496,11 @@
     "id": "instagram-beaute-identite-visuelle-reconnaissable",
     "audience": "specialists",
     "title": {
-      "fr": "Instagram beauté : construire une identité visuelle reconnaissable (et non un simple catalogue de modèles)",
+      "fr": "Instagram beauté : construire une identité visuelle reconnaissable (et non un simple catalogue de templates)",
       "en": "Beauty Instagram: Build a Recognizable Visual Identity, Not Just a Template Catalog"
     },
     "summary": {
-      "fr": "Une grille cohérente repose sur des choix de marque, des photos réelles et des modèles utilisés avec intention. Voici une méthode concrète pour y parvenir.",
+      "fr": "Une grille cohérente repose sur des choix de marque, des photos réelles et des templates utilisés avec intention. Voici une méthode concrète pour y parvenir.",
       "en": "A cohesive feed comes from intentional brand choices, real photos, and thoughtful use of templates. Here is a practical way to build one."
     },
     "category": {
@@ -2516,28 +2516,28 @@
       {
         "type": "lead",
         "text": {
-          "fr": "Une esthéticienne photographie un soin du visage. La lumière est belle et la peau lumineuse, mais la photo se perd dans un flux de contenus similaires. Elle télécharge alors un kit de modèles pour professionnaliser son compte. Le feed semble impeccable pendant deux semaines, puis les publications redeviennent improvisées. Le problème n’était pas le manque de modèles : c’était l’absence d’une identité visuelle.",
+          "fr": "Une esthéticienne photographie un soin du visage. La lumière est belle et la peau lumineuse, mais la photo se perd dans un flux de contenus similaires. Elle télécharge alors un kit de templates pour professionnaliser son compte. Le feed semble impeccable pendant deux semaines, puis les publications redeviennent improvisées. Le problème n’était pas le manque de templates : c’était l’absence d’une identité visuelle.",
           "en": "A beauty professional photographs a facial treatment. The light is beautiful and the skin looks radiant, yet the image disappears into a stream of similar posts. She downloads a template kit to make her account look more professional. The feed looks polished for two weeks, then posting becomes improvised again. The problem was not a lack of templates; it was the absence of a visual identity."
         }
       },
       {
         "type": "p",
         "text": {
-          "fr": "Un compte Instagram beauté ne se résume pas à une grille esthétique. Il exprime une promesse de soin, une atmosphère et une preuve de savoir-faire. Les modèles peuvent structurer le contenu, mais ils ne choisissent pas votre palette, vos photos, votre ton ni l’expérience client que vous souhaitez montrer. Sans ces décisions, un kit peut devenir un catalogue interchangeable.",
+          "fr": "Un compte Instagram beauté ne se résume pas à une grille esthétique. Il exprime une promesse de soin, une atmosphère et une preuve de savoir-faire. Les templates peuvent structurer le contenu, mais ils ne choisissent pas votre palette, vos photos, votre ton ni l’expérience client que vous souhaitez montrer. Sans ces décisions, un kit peut devenir un catalogue interchangeable.",
           "en": "A beauty Instagram account is more than an attractive grid. It communicates a promise of care, an atmosphere, and evidence of expertise. Templates can help organize content, but they cannot choose your palette, photos, tone, or the client experience you want to convey. Without those decisions, a kit can become an interchangeable catalog."
         }
       },
       {
         "type": "h2",
         "text": {
-          "fr": "Pourquoi les modèles seuls ne suffisent pas",
+          "fr": "Pourquoi les templates seuls ne suffisent pas",
           "en": "Why Templates Alone Are Not Enough"
         }
       },
       {
         "type": "p",
         "text": {
-          "fr": "Les modèles font gagner du temps sur la mise en page, mais ils ne définissent pas votre marque. Un institut de soins botaniques n’a pas la même identité qu’un studio de cils au style affirmé. Si les deux entreprises utilisent les mêmes visuels sans les adapter, leurs comptes risquent de se ressembler.",
+          "fr": "Les templates font gagner du temps sur la mise en page, mais ils ne définissent pas votre marque. Un institut de soins botaniques n’a pas la même identité qu’un studio de cils au style affirmé. Si les deux entreprises utilisent les mêmes visuels sans les adapter, leurs comptes risquent de se ressembler.",
           "en": "Templates save time on layout, but they do not define your brand. A botanical skincare studio does not need the same identity as a bold lash studio. If both businesses use the same visuals without adapting them, their accounts may look alike."
         }
       },
@@ -2551,7 +2551,7 @@
       {
         "type": "h2",
         "text": {
-          "fr": "Définir la direction visuelle avant de choisir les modèles",
+          "fr": "Définir la direction visuelle avant de choisir les templates",
           "en": "Set Your Visual Direction Before Choosing Templates"
         }
       },
@@ -2579,7 +2579,7 @@
       {
         "type": "p",
         "text": {
-          "fr": "Deux polices suffisent généralement : une pour les titres, une pour le texte courant. Si vous ouvrez un modèle dans Canva ou dans un autre logiciel et qu’une police est remplacée, vérifiez les retours à la ligne, l’espacement et la lisibilité avant de publier.",
+          "fr": "Deux polices suffisent généralement : une pour les titres, une pour le texte courant. Si vous ouvrez un template dans Canva ou dans un autre logiciel et qu’une police est remplacée, vérifiez les retours à la ligne, l’espacement et la lisibilité avant de publier.",
           "en": "Two fonts are usually enough: one for headings and one for body text. If you open a template in Canva or another application and a font is substituted, check line breaks, spacing, and readability before publishing."
         }
       },
@@ -2628,14 +2628,14 @@
       {
         "type": "p",
         "text": {
-          "fr": "Le Beauty Instagram Kit de CDB Projects rassemble 80 modèles de publications et 80 modèles de stories dans des fichiers PowerPoint éditables, avec six identités fictives, des palettes et des consignes d’export. Les identités et les témoignages présentés en exemple sont fictifs : remplacez-les par des contenus réels et autorisés.",
+          "fr": "Le Beauty Instagram Kit de CDB Projects rassemble 80 templates de publications et 80 templates de stories dans des fichiers PowerPoint éditables, avec six identités fictives, des palettes et des consignes d’export. Les identités et les témoignages présentés en exemple sont fictifs : remplacez-les par des contenus réels et autorisés.",
           "en": "CDB Projects’s Beauty Instagram Kit brings together 80 post templates and 80 story templates in editable PowerPoint files, with six fictional brand identities, color palettes, and export guidance. The sample identities and testimonials are fictional; replace them with real, authorized content."
         }
       },
       {
         "type": "p",
         "text": {
-          "fr": "Le kit est proposé en français et en anglais. Il est conçu pour être personnalisé dans PowerPoint ou Canva. Après import dans Canva, vérifiez les polices, les masques photo et l’ordre des calques. Les modèles ne fournissent pas des textes universels à publier tels quels : adaptez chaque accroche à votre voix, à vos prestations et aux informations exactes de votre entreprise.",
+          "fr": "Le kit est proposé en français et en anglais. Il est conçu pour être personnalisé dans PowerPoint ou Canva. Après import dans Canva, vérifiez les polices, les masques photo et l’ordre des calques. Les templates ne fournissent pas des textes universels à publier tels quels : adaptez chaque accroche à votre voix, à vos prestations et aux informations exactes de votre entreprise.",
           "en": "The kit is available in French and English and is intended for customization in PowerPoint or Canva. After importing into Canva, check fonts, photo masks, and layer order. The templates are not universal copy to publish unchanged: adapt each headline to your voice, services, and accurate business information."
         }
       },
@@ -2700,7 +2700,7 @@
         "items": {
           "fr": [
             "Jour 1 : présentez votre activité avec la palette choisie et une photo du studio.",
-            "Jour 2 : publiez un modèle de prestation avec des informations précises.",
+            "Jour 2 : publiez un template de prestation avec des informations précises.",
             "Jour 3 : partagez une story avec un sondage ou une question.",
             "Jour 4 : montrez un geste technique ou un produit, avec peu de texte.",
             "Jour 5 : partagez un témoignage autorisé ou un avant/après avec l’accord de la cliente.",
@@ -2735,7 +2735,7 @@
       {
         "type": "p",
         "text": {
-          "fr": "Un kit Instagram beauté est un outil de structure, pas une stratégie de marque complète. La cohérence vient des couleurs, des polices, des photos et des textes que vous choisissez. Les modèles accélèrent la mise en page ; ils ne remplacent ni les images originales ni la vérification des informations. Commencez par une palette, trois photos réelles et une publication qui vous ressemble, puis ajustez en fonction des réactions.",
+          "fr": "Un kit Instagram beauté est un outil de structure, pas une stratégie de marque complète. La cohérence vient des couleurs, des polices, des photos et des textes que vous choisissez. Les templates accélèrent la mise en page ; ils ne remplacent ni les images originales ni la vérification des informations. Commencez par une palette, trois photos réelles et une publication qui vous ressemble, puis ajustez en fonction des réactions.",
           "en": "A beauty Instagram kit is a structure tool, not a complete brand strategy. Consistency comes from the colors, fonts, photos, and copy you choose. Templates speed up layout; they do not replace original images or accurate information. Start with a palette, three real photos, and one post that feels like your business, then adjust based on the response."
         }
       },
