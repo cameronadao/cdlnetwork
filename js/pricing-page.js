@@ -5,8 +5,8 @@
     document.title = current === 'fr' ? 'Tarifs | CDB Projects' : 'Pricing | CDB Projects';
     const description = document.querySelector('meta[name="description"]');
     if (description) description.content = current === 'fr'
-      ? 'Découvrez les tarifs des services web et des forfaits CDB Projects.'
-      : 'Explore CDB Projects web design, landing page, e-commerce, redesign, maintenance and package rates.';
+      ? 'Découvrez les tarifs des services web, du contenu IA et des forfaits CDB Projects.'
+      : 'Explore CDB Projects rates for web design, AI content creation, maintenance and service packages.';
     document.querySelectorAll('[data-pricing-language]').forEach((section) => {
       section.hidden = section.dataset.pricingLanguage !== current;
     });
