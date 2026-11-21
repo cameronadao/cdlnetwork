@@ -13,6 +13,7 @@
   const clearButton = root.querySelector('[data-clear-filters]');
   const freeOnly = root.dataset.freeOnly === 'true';
   const expectedGroup = new URLSearchParams(location.search).get('group') || '';
+  const expectedProductIds = (root.dataset.productIds || '').split(',').map((id) => id.trim()).filter(Boolean);
   let catalogProducts = null;
   let productTypeFamilies = [];
   const pageSize = 15;
@@ -90,7 +91,8 @@
     const languageMatch = !languageSelect?.value || asValues(product.language).some((language) => slug(language) === languageSelect.value);
     const groupMatch = !expectedGroup || slug(product.productGroup || product.group) === slug(expectedGroup);
     const freeMatch = !freeOnly || product.isFree === true;
-    return audienceMatch && subcategoryMatch && typeMatch && languageMatch && groupMatch && freeMatch;
+    const productIdMatch = !expectedProductIds.length || expectedProductIds.includes(product.id);
+    return audienceMatch && subcategoryMatch && typeMatch && languageMatch && groupMatch && freeMatch && productIdMatch;
   }
 
   function card(product) {
@@ -103,7 +105,7 @@
       : '<div class="catalog-card-placeholder" aria-hidden="true">CDB</div>';
     const cardDescription = translation.shortDescription || translation.description || product.shortDescription || product.description;
     const description = cardDescription ? `<p>${escapeHtml(t(cardDescription))}</p>` : '';
-    const category = t(product.subcategory || product.productGroup || '');
+    const category = t(translation.subcategory || product.subcategory || product.productGroup || '');
     const paidPrice = product.isFree !== true && product.price !== undefined && Number(product.price) > 0;
     const promoActive = paidPrice && window.CDL_PROMOTION_PRICING?.isActive();
     const regularPrice = product.price !== undefined ? formatPrice(product.price, product.currency) : '';
@@ -125,6 +127,10 @@
       const timestamp = Date.parse(product.publishedAt || product.createdAt || '');
       return Number.isFinite(timestamp) ? timestamp : 0;
     };
+    if (!sortSelect && expectedProductIds.length) {
+      const order = new Map(expectedProductIds.map((id, index) => [id, index]));
+      matchesNow.sort((a, b) => (order.get(a.id) ?? Infinity) - (order.get(b.id) ?? Infinity));
+    }
     switch (sortSelect?.value) {
       case 'price-asc':
         matchesNow.sort((a, b) => priceOf(a) - priceOf(b));
