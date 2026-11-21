@@ -5915,3 +5915,6 @@ html[lang="en"] .newsletter-form details[lang="fr"] { display: none; }
 .hero-proof-links a:hover{opacity:1}
 .hero-proof-links .proof-index{font-size:.62rem;letter-spacing:.12em;color:#b99b69}
 @media(max-width:600px){.hero-proof-links{gap:.55rem 1rem}.hero-proof-links a{font-size:.66rem}}
+
+/* Visually hidden labels remain available to assistive technology */
+.sr-only:not(:focus):not(:active){position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
