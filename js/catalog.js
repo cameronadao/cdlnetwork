@@ -73,8 +73,9 @@
   function fillProductTypeSelect() {
     if (!typeSelect) return;
     const groups = productTypeFamilies.map((family) => {
+      const allFormats = `<option value="${escapeHtml(family.id)}">${escapeHtml(t(family.name))} — ${escapeHtml(t('All product types'))}</option>`;
       const options = family.types.map((type) => `<option value="${escapeHtml(type.id)}">${escapeHtml(t(type.name))}</option>`).join('');
-      return `<optgroup label="${escapeHtml(t(family.name))}">${options}</optgroup>`;
+      return `<optgroup label="${escapeHtml(t(family.name))}">${allFormats}${options}</optgroup>`;
     }).join('');
     typeSelect.innerHTML = `<option value="">${escapeHtml(t('All product types'))}</option>${groups}`;
   }
@@ -87,7 +88,11 @@
     const audienceValue = (product.audiences || product.audience || product.marketSegments || []);
     const audienceMatch = !audienceSelect?.value || asValues(audienceValue).some((value) => slug(value) === audienceSelect.value);
     const subcategoryMatch = !subcategorySelect?.value || slug(product.subcategory) === subcategorySelect.value;
-    const typeMatch = !typeSelect?.value || product.productType === typeSelect.value;
+    const selectedType = typeSelect?.value || '';
+    const selectedFamily = productTypeFamilies.find((family) => family.id === selectedType);
+    const typeMatch = !selectedType || (selectedFamily
+      ? selectedFamily.types.some((type) => type.id === product.productType)
+      : product.productType === selectedType);
     const languageMatch = !languageSelect?.value || asValues(product.language).some((language) => slug(language) === languageSelect.value);
     const groupMatch = !expectedGroup || slug(product.productGroup || product.group) === slug(expectedGroup);
     const freeMatch = !freeOnly || product.isFree === true;
