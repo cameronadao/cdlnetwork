@@ -5932,3 +5932,13 @@ html[lang="en"] .newsletter-form details[lang="fr"] { display: none; }
   .products#products .product-card h3{margin:5px 0 0;font-size:clamp(8px,2.8vw,11px);line-height:1.18;overflow-wrap:anywhere}
   .products#products .product-card p,.products#products .product-explore{display:none}
 }
+
+
+/* Prevent the French free-resource cover title from overflowing on narrow cards. */
+.resource-sheet.sheet-one strong {
+    max-width: 100%;
+    font-size: clamp(18px, 2vw, 26px);
+    line-height: .98;
+    letter-spacing: -.05em;
+    overflow-wrap: anywhere;
+}
