@@ -5761,6 +5761,35 @@ html[lang="fr"] [data-home-lang="en"], html[lang="en"] [data-home-lang="fr"] { d
 /* Keep all three homepage calls to action and expertise cards in one compact mobile row. */
 .hero-buttons .btn { height: 64px; min-height: 64px; font-family: inherit; font-size: 11px; line-height: 1.2; }
 .hero-buttons .btn [data-home-lang] { font-size: inherit; }
+
+/* Homepage proof cards use real client work and link directly to each result. */
+.portfolio-image-live,
+.portfolio-image-video { position: relative; display: block; height: auto; overflow: hidden; background: #111; aspect-ratio: 1.55; }
+.portfolio-image-live img,
+.portfolio-image-video img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .5s ease; }
+.portfolio-image-live:hover img,
+.portfolio-image-video:hover img { transform: scale(1.035); }
+.portfolio-live-badge { position: absolute; left: 14px; top: 14px; padding: 8px 10px; background: rgba(8,8,8,.82); color: #fff; font-size: 10px; font-weight: 700; letter-spacing: .12em; }
+.portfolio-video-kicker { position: absolute; top: 20%; left: 10%; color: rgba(255,255,255,.65); font-size: 10px; font-weight: 700; letter-spacing: .16em; }
+.portfolio-video-title { position: absolute; top: 34%; left: 10%; color: #fff; font-family: var(--font-heading); font-size: clamp(28px, 5vw, 58px); font-weight: 800; letter-spacing: -.04em; line-height: .9; }
+.portfolio-video-title em { color: #c6a96b; font-style: normal; }
+.portfolio-play { position: absolute; inset: 50% auto auto 50%; display: grid; width: 58px; height: 58px; place-items: center; border-radius: 50%; background: #fff; color: #080808; transform: translate(-50%,-50%); }
+.portfolio-case-link { font-size: 12px; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.portfolio-case-link:hover { text-decoration: underline; }
+@media (max-width: 600px) {
+  .portfolio-video-kicker { top: 16%; font-size: 7px; }
+  .portfolio-video-title { top: 30%; font-size: clamp(23px, 7vw, 34px); }
+  .portfolio-live-badge { left: 7px; top: 7px; padding: 5px 6px; font-size: 6px; letter-spacing: .06em; }
+  .portfolio-play { width: 38px; height: 38px; font-size: 12px; }
+  .portfolio-caption { flex-wrap: wrap; }
+  .portfolio-case-link { font-size: 9px; }
+}
+
+/* Show only the newsletter signup that matches the active site language. */
+html[lang="fr"] .newsletter-form details[lang="en"],
+html[lang="en"] .newsletter-form details[lang="fr"] { display: none; }
+.newsletter-form details[lang="fr"],
+.newsletter-form details[lang="en"] { margin-bottom: 0 !important; }
 @media (max-width: 900px) { .expertise-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 600px) {
   .hero-buttons { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
