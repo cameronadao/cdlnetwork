@@ -13,3 +13,5 @@
 .article-detail-feature-image { margin: clamp(1.5rem, 4vw, 3rem) auto; overflow: hidden; border: 1px solid var(--border); }
 .article-detail-feature-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
 @media (max-width: 760px) { .article-detail-aside { display: block; } }
+.article-detail-product-cover { display: block; margin: 0 0 1.25rem; overflow: hidden; border: 1px solid var(--border); }
+.article-detail-product-cover img { display: block; width: 100%; height: auto; }
