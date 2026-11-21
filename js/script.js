@@ -27,6 +27,21 @@ window.CDL_PROMOTION_PRICING = Object.freeze({
 
 document.addEventListener("DOMContentLoaded", () => {
 
+    // Keep marketplace links available in the shared footer on every page.
+    const footerMain = document.querySelector(".footer-main");
+    if (footerMain && !footerMain.querySelector(".footer-stores")) {
+        const stores = document.createElement("div");
+        stores.className = "footer-column footer-stores";
+        stores.innerHTML = `
+            <h4><span data-home-lang="en">OUR STORES</span><span data-home-lang="fr">NOS BOUTIQUES</span></h4>
+            <a href="https://payhip.com/cdlnetwork" target="_blank" rel="noopener noreferrer">Payhip ↗</a>
+            <a href="https://www.etsy.com/shop/CDLNetwork" target="_blank" rel="noopener noreferrer">Etsy ↗</a>
+            <a href="https://books.apple.com/us/author/cdl-network/id6802080396" target="_blank" rel="noopener noreferrer">Apple Books ↗</a>
+        `;
+        const social = footerMain.querySelector(".footer-social");
+        footerMain.insertBefore(stores, social || null);
+    }
+
     /* =====================================
        1. MOBILE NAVIGATION
     ===================================== */
