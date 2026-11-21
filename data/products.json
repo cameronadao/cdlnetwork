@@ -24,7 +24,14 @@
     "publishedAt": "2026-11-06T10:23:14+01:00",
     "cover": "/assets/images/the-bible-explained-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=yl9RI"
+    "purchaseUrl": "https://payhip.com/buy?link=yl9RI",
+    "translations": {
+      "fr": {
+        "title": "La Bible expliquée : guide complet des 66 livres",
+        "shortDescription": "De la Genèse à l’Apocalypse : votre guide complet de la plus grande histoire du monde.",
+        "subcategory": "SPIRITUALITÉ"
+      }
+    }
   },
   {
     "id": "walking-with-jesus-through-lent-46-day-devotional-ash-wednesday-resurrection-sunday",
@@ -47,7 +54,14 @@
     "publishedAt": "2026-11-06T14:18:57+01:00",
     "cover": "/assets/images/walking-with-jesus-through-lent-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=VaABc"
+    "purchaseUrl": "https://payhip.com/buy?link=VaABc",
+    "translations": {
+      "fr": {
+        "title": "Marcher avec Jésus pendant le Carême : dévotionnel de 46 jours, du mercredi des Cendres au dimanche de la Résurrection",
+        "shortDescription": "Un parcours doux de 46 jours pendant le Carême, du mercredi des Cendres au matin de Pâques.",
+        "subcategory": "SPIRITUALITÉ"
+      }
+    }
   },
   {
     "id": "digitals-planners-journals-canva-templates",
@@ -92,7 +106,14 @@
     "publishedAt": "2026-11-06T20:38:15+01:00",
     "cover": "/assets/images/faceless-marketing-instagram-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=RgzFi"
+    "purchaseUrl": "https://payhip.com/buy?link=RgzFi",
+    "translations": {
+      "fr": {
+        "title": "Faceless Marketing & Faceless Instagram eBook and Template",
+        "shortDescription": "You don't have to show your face to make your fortune.",
+        "subcategory": "RÉSEAUX SOCIAUX"
+      }
+    }
   },
   {
     "id": "marketing-sans-visage-faceless-instagram-ebook-template-fr",
@@ -115,7 +136,14 @@
     "publishedAt": "2026-11-06T21:18:42+01:00",
     "cover": "/assets/images/marketing-sans-visage-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=UAiKP"
+    "purchaseUrl": "https://payhip.com/buy?link=UAiKP",
+    "translations": {
+      "fr": {
+        "title": "Marketing Sans Visage & Faceless Instagram eBook and Template",
+        "shortDescription": "Créer une marque rentable sans montrer son visage : le guide ultime pour développer ses réseaux sociaux anonymement, créer du contenu et générer des revenus passifs",
+        "subcategory": "RÉSEAUX SOCIAUX"
+      }
+    }
   },
   {
     "id": "the-art-of-the-first-date-masterclass-guide",
@@ -143,7 +171,13 @@
       "fr": "/assets/images/lart-du-premier-rendez-vous-cover-fr.png"
     },
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=R7wHG"
+    "purchaseUrl": "https://payhip.com/buy?link=R7wHG",
+    "translations": {
+      "fr": {
+        "title": "L’Art du Premier Rendez-vous : Le Guide Masterclass",
+        "subcategory": "AMOUR ET RELATIONS"
+      }
+    }
   },
   {
     "id": "the-resonance-blueprint",
@@ -245,7 +279,13 @@
       "fr": "/assets/images/affirmative-prayer-cover-fr.png"
     },
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=6s1S3"
+    "purchaseUrl": "https://payhip.com/buy?link=6s1S3",
+    "translations": {
+      "fr": {
+        "title": "La Puissance de la Prière Affirmative / Guide Complet pour Cocréer sa Réalité",
+        "subcategory": "SPIRITUALITÉ"
+      }
+    }
   },
   {
     "id": "the-ai-marketing-edge",
@@ -268,7 +308,14 @@
     "publishedAt": "2026-11-07T12:00:00+01:00",
     "cover": "/assets/images/the-ai-marketing-edge-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=81CMy"
+    "purchaseUrl": "https://payhip.com/buy?link=81CMy",
+    "translations": {
+      "fr": {
+        "title": "L’AVANTAGE DU MARKETING PAR L’IA",
+        "shortDescription": "Un guide complet de l’intelligence artificielle appliquée au marketing numérique.",
+        "subcategory": "INFORMATIQUE ET TECHNOLOGIE"
+      }
+    }
   },
   {
     "id": "the-ai-marketing-edge-cheat-sheet",
@@ -292,7 +339,14 @@
     "publishedAt": "2026-11-07T13:00:00+01:00",
     "cover": "/assets/images/the-ai-marketing-edge-cheatsheet-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=2YlwJ"
+    "purchaseUrl": "https://payhip.com/buy?link=2YlwJ",
+    "translations": {
+      "fr": {
+        "title": "THE AI MARKETING EDGE – Fiche mémo",
+        "shortDescription": "Guide de référence rapide sur l’intelligence artificielle dans le marketing numérique.",
+        "subcategory": "INFORMATIQUE ET TECHNOLOGIE"
+      }
+    }
   },
   {
     "id": "michael-jackson-songs-context-truth",
@@ -315,7 +369,14 @@
     "publishedAt": "2026-11-07T14:00:00+01:00",
     "cover": "/assets/images/michael-jackson-songs-context-truth-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=M2JKH"
+    "purchaseUrl": "https://payhip.com/buy?link=M2JKH",
+    "translations": {
+      "fr": {
+        "title": "MICHAEL JACKSON / Songs, Context, Truth",
+        "shortDescription": "Pour la première fois, découvrez l’intégralité du parcours musical du roi de la pop dans un ouvrage de référence.",
+        "subcategory": "MUSIQUE"
+      }
+    }
   },
   {
     "id": "the-ai-marketing-edge-resources-report",
