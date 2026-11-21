@@ -97,6 +97,16 @@
 
   function setLanguage(nextLanguage) {
     if (nextLanguage !== 'en' && nextLanguage !== 'fr') return;
+    const alternatePage = document.querySelector(`link[rel="alternate"][hreflang="${nextLanguage}"]`);
+    if (alternatePage?.href && new URL(alternatePage.href).pathname !== window.location.pathname) {
+      try {
+        localStorage.setItem(languageStorageKey, nextLanguage);
+      } catch (error) {
+        // Keep the selected language in the destination page URL.
+      }
+      window.location.assign(alternatePage.href);
+      return;
+    }
     language = nextLanguage;
     try {
       localStorage.setItem(languageStorageKey, language);
