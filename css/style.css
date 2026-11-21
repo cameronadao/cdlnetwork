@@ -5908,3 +5908,10 @@ html[lang="en"] .newsletter-form details[lang="fr"] { display: none; }
   .services-list .service-row .service-starting-price{grid-column:2;grid-row:2;margin-top:.35rem}
   .services-list .service-row .service-arrow{grid-column:3;grid-row:1 / span 2}
 }
+
+/* Early proof links, kept compact so real work is visible before the long page */
+.hero-proof-links{display:flex;flex-wrap:wrap;gap:.65rem 1.25rem;margin-top:1.35rem}
+.hero-proof-links a{display:inline-flex;align-items:center;gap:.5rem;color:inherit;text-decoration:none;font-size:.73rem;font-weight:700;letter-spacing:.04em;opacity:.82}
+.hero-proof-links a:hover{opacity:1}
+.hero-proof-links .proof-index{font-size:.62rem;letter-spacing:.12em;color:#b99b69}
+@media(max-width:600px){.hero-proof-links{gap:.55rem 1rem}.hero-proof-links a{font-size:.66rem}}
