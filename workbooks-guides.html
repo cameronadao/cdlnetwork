@@ -80,61 +80,49 @@
     <span></span>
 </button>
 
-<nav class="nav-menu" id="primary-navigation">
-
-    <a href="/" class="nav-link active">Home</a>
-    <a href="/digital-products" class="nav-link">Digital Products</a>
+<nav class="nav-menu" id="primary-navigation" aria-label="Main navigation">
+    <a href="/" class="nav-link">Home</a>
+    <div class="nav-item nav-dropdown mega-dropdown">
+        <a href="/digital-products" class="nav-link dropdown-toggle digital-products-link" aria-haspopup="true" aria-controls="digital-products-menu">Digital Products <span class="dropdown-arrow" aria-hidden="true">⌄</span></a><button class="mobile-dropdown-toggle" type="button" aria-label="Show digital product categories" aria-expanded="false" aria-controls="digital-products-menu"><span class="dropdown-arrow" aria-hidden="true">⌄</span></button>
+        <div class="dropdown-menu mega-menu" id="digital-products-menu">
+            <div class="mega-column">
+                <p class="mega-heading">Browse product categories</p>
+                <ul>                    <li><a href="/shop.html?group=learning-guides">Learning & Guides</a></li>
+                    <li><a href="/shop.html?group=planning-tracking">Planning & Tracking</a></li>
+                    <li><a href="/shop.html?group=templates-documents">Templates & Documents</a></li>
+                    <li><a href="/shop.html?group=ai-digital-tools">AI & Digital Tools</a></li>
+                    <li><a href="/shop.html?group=systems-operations">Systems & Operations</a></li>
+                    <li><a href="/shop.html?group=courses-training">Courses & Training</a></li>
+                    <li><a href="/shop.html?group=strategy-frameworks">Strategy & Frameworks</a></li>
+                    <li><a href="/shop.html?group=data-organization">Data & Organization</a></li>
+                    <li><a href="/shop.html?group=libraries-collections">Libraries & Collections</a></li>
+                    <li><a href="/shop.html?group=kits-bundles">Kits & Bundles</a></li>
+                </ul>
+            </div>
+            <div class="mega-column mega-audiences">
+                <p class="mega-heading">Shop by audience</p>
+                <ul>                    <li><a href="/shop.html?audience=business-builder">For Business Builder</a></li>
+                    <li><a href="/shop.html?audience=digital-creators">For Digital Creator</a></li>
+                    <li><a href="/shop.html?audience=family-niches-market">For Family & Niche Markets</a></li>
+                    <li><a href="/shop.html?audience=lifestyle-hobbyist">For Lifestyle & Hobbyist</a></li>
+                    <li><a href="/shop.html?audience=personal-growth-coach">For Personal Growth Coach</a></li>
+                    <li><a href="/shop.html?audience=specialists">For Specialist</a></li>
+                </ul>
+            </div>
+                <div class="mega-column mega-quicklinks">
+                    <p class="mega-heading">Explore</p>
+                    <ul>
+                        <li><a href="/shop.html">All Products</a></li>
+                        <li><a href="/free-products.html">Free Products</a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
     <a href="/web-design.html" class="nav-link">Web Design</a><a href="/ai-content" class="nav-link ai-content-nav-link">AI Content</a><a href="/pricing/tarifs.html" class="nav-link">Pricing</a>
     <a href="/articles.html" class="nav-link">Articles</a>
-    <a href="#portfolio" class="nav-link">Portfolio</a>
-    <a href="#resources" class="nav-link">Resources</a>
-    <a href="#about" class="nav-link">About</a>
-    <a href="#faq" class="nav-link">FAQ</a>
-
-    <div class="nav-item nav-dropdown">
-
-        <button
-            class="nav-link dropdown-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-haspopup="true"
-        >
-            Shop
-            <span class="dropdown-arrow">⌄</span>
-        </button>
-
-        <ul class="dropdown-menu">
-
-            <li>
-                <a href="https://kdp.amazon.com/"
-                   target="_blank"
-                   rel="noopener noreferrer">Amazon KDP</a>
-            </li>
-
-            <li>
-                <a href="https://books.apple.com/us/author/cdl-network/id6802080396"
-                   target="_blank"
-                   rel="noopener noreferrer">Apple Books</a>
-            </li>
-
-            <li>
-                <a href="https://www.etsy.com/shop/CDLNetwork"
-                   target="_blank"
-                   rel="noopener noreferrer">Etsy</a>
-            </li>
-
-            <li>
-                <a href="https://payhip.com/cdlnetwork"
-                   target="_blank"
-                   rel="noopener noreferrer">Payhip</a>
-            </li>
-
-        </ul>
-
-    </div>
-
+    <a href="/#about" class="nav-link">About</a>
+    <a href="/#faq" class="nav-link">FAQ</a>
     <a href="/#contact" class="nav-cta">Let’s Talk <span aria-hidden="true">↗</span></a>
-
 </nav>
 
 
