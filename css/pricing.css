@@ -34,3 +34,6 @@
 [data-pricing-language][hidden] { display: none !important; }
 @media(max-width:900px) { .pricing-hero { min-height: 55vh; } .pricing-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .pricing-card { min-height: 370px; } }
 @media(max-width:600px) { .pricing-hero-inner { padding-top: 80px; padding-bottom: 75px; } .pricing-hero h1 { font-size: clamp(43px,14vw,68px); } .pricing-hero-inner > div > p:not(.pricing-tax-note) { font-size: 14px; } .pricing-down { bottom: 22px; } .pricing-catalog { padding-top: 55px; padding-bottom: 75px; } .pricing-section-heading { display: block; } .pricing-section-heading > p { margin-top: 12px; } .pricing-grid { grid-template-columns: 1fr; } .pricing-card { min-height: 0; padding: 21px 18px; } .pricing-card-top { margin-bottom: 25px; } .pricing-card p { min-height: 0; } .pricing-bottom-note { align-items: flex-start; flex-direction: column; } }
+
+.pricing-price-summary{margin:.35rem 0 .8rem;font-weight:700;color:var(--gold,#c6a56b);line-height:1.45}
+.pricing-card .pricing-price-summary{min-height:0;font-size:.94rem}
