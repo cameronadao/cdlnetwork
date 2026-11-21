@@ -33,17 +33,18 @@
   function updateArticleMetadata(language) {
     const canonicalUrl = new URL(window.location.pathname, window.location.origin).href;
     const headline = text(currentArticle.title, language);
-    const description = text(currentArticle.summary, language);
+    const seoTitle = text(currentArticle.seoTitle, language) || `${headline} | CDB Projects`;
+    const description = text(currentArticle.metaDescription, language) || text(currentArticle.summary, language);
     const image = new URL(currentArticle.image || '/assets/images/logo-black.png', window.location.origin).href;
     const canonical = document.head.querySelector('link[rel="canonical"]') || document.head.appendChild(document.createElement('link'));
     canonical.rel = 'canonical';
     canonical.href = canonicalUrl;
     setMeta('meta', 'name', 'description', description);
-    setMeta('meta', 'property', 'og:title', `${headline} | CDB Projects`);
+    setMeta('meta', 'property', 'og:title', seoTitle);
     setMeta('meta', 'property', 'og:description', description);
     setMeta('meta', 'property', 'og:url', canonicalUrl);
     setMeta('meta', 'property', 'og:image', image);
-    setMeta('meta', 'name', 'twitter:title', `${headline} | CDB Projects`);
+    setMeta('meta', 'name', 'twitter:title', seoTitle);
     setMeta('meta', 'name', 'twitter:description', description);
     setMeta('meta', 'name', 'twitter:image', image);
     let structuredData = document.getElementById('article-structured-data');
@@ -74,7 +75,7 @@
     title.textContent = t(currentArticle.title);
     summary.textContent = t(currentArticle.summary);
     category.textContent = t(currentArticle.category);
-    document.title = `${t(currentArticle.title)} | CDB Projects`;
+    document.title = text(currentArticle.seoTitle, language) || `${t(currentArticle.title)} | CDB Projects`;
     updateArticleMetadata(language);
     if (currentArticle.publishedAt) {
       date.dateTime = currentArticle.publishedAt;

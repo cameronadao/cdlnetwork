@@ -3294,5 +3294,223 @@
         }
       }
     ]
+  },
+  {
+    "id": "beauty-training-structure-progression-before-templates",
+    "audience": "specialists",
+    "title": {
+      "fr": "Structurer une formation beauté : la progression avant les modèles",
+      "en": "How to Structure Beauty Training: Progression Before Templates"
+    },
+    "seoTitle": {
+      "fr": "Formation beauté : comment structurer un support de cours efficace | CDB Projects",
+      "en": "Beauty Training: How to Structure an Effective Course Workbook | CDB Projects"
+    },
+    "metaDescription": {
+      "fr": "Un support de cours beauté ne se résume pas à des modèles. Découvrez comment structurer une progression pédagogique, de l’accueil à l’évaluation.",
+      "en": "A beauty course workbook is more than templates. Learn how to build a clear progression from orientation and practice to assessment."
+    },
+    "summary": {
+      "fr": "Un support de cours beauté ne se résume pas à des modèles. Voici comment construire une progression pédagogique cohérente, de l’accueil à l’évaluation.",
+      "en": "A beauty course workbook is more than a set of templates. Learn how to build a clear learning progression from orientation to assessment."
+    },
+    "category": {
+      "fr": "Formation · Beauté",
+      "en": "Beauty Education · Training"
+    },
+    "publishedAt": "2026-11-21",
+    "image": "/assets/images/article-structurer-formation-beaute-progression.jpg",
+    "imageAlt": {
+      "fr": "Ordinateur affichant un plan de cours à côté d’un carnet de préparation de formation.",
+      "en": "Laptop displaying a course plan beside a training-planning notebook."
+    },
+    "url": "/article-structurer-formation-beaute-progression.html",
+    "productUrl": {
+      "fr": "/product.html?id=beauty-academy-workbook-template-bundle",
+      "en": "/product.html?id=beauty-academy-workbook-template-bundle"
+    },
+    "status": "published",
+    "sections": [
+      {
+        "type": "lead",
+        "text": {
+          "fr": "Une formatrice indépendante en beauté peut maîtriser parfaitement son geste et pourtant peiner à le transmettre. Elle prépare des démonstrations, des fiches d’exercices et des diapositives, mais ses élèves ne savent pas toujours ce qu’ils doivent retenir ni comment évaluer leurs progrès. Le problème tient souvent moins à la technique qu’à l’absence d’un parcours pédagogique lisible.",
+          "en": "A beauty educator may be highly skilled at a technique and still find it difficult to teach it clearly. They prepare demonstrations, worksheets, and slides, yet students may leave unsure of what they learned or how their progress was assessed. Often, the missing piece is not technical expertise but a clear learning progression."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un support de cours ne se résume pas à une suite de pages bien présentées. Il accompagne l’élève d’un objectif annoncé vers une pratique guidée, puis vers une évaluation compréhensible. Un classeur de modèles peut accélérer la mise en page ; il ne peut pas choisir les objectifs, rédiger les protocoles ni remplacer le jugement d’un formateur qualifié.",
+          "en": "A course workbook is more than a sequence of polished pages. It guides learners from a stated objective through supported practice and toward an understandable assessment. A template workbook can speed up layout work; it cannot choose learning objectives, write procedures, or replace the judgment of a qualified educator."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "1. Définir les acquis avant de choisir un modèle",
+          "en": "1. Define learning outcomes before choosing a template"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Commencez par écrire ce que l’élève devra être capable de faire à la fin de la session. Par exemple : réaliser une pose classique de cils en respectant les règles d’hygiène retenues pour la formation. Précisez ensuite comment vous observerez cet acquis : une démonstration commentée, un exercice supervisé ou une grille de critères observables. Délimitez aussi le périmètre : une formation courte ne couvre pas nécessairement toutes les techniques d’un métier.",
+          "en": "Start by writing what a student should be able to do by the end of the session. For example: perform a classic lash set while following the hygiene practices taught in the course. Decide how you will observe that outcome: a narrated demonstration, a supervised exercise, or a rubric with observable criteria. Set clear boundaries too; a short course may not cover every technique in a profession."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "2. Construire une progression que l’élève peut suivre",
+          "en": "2. Build a progression learners can follow"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une progression cohérente relie quatre temps : l’accueil et le cadrage, l’explication, la pratique, puis le retour et l’évaluation. Chaque partie prépare la suivante. Les consignes de sécurité et les prérequis doivent apparaître avant les activités concernées, et non seulement à la fin du classeur.",
+          "en": "A coherent progression connects four stages: orientation, explanation, practice, then feedback and assessment. Each stage prepares the next. Safety guidance and prerequisites should appear before the relevant activities, not only at the end of the workbook."
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Accueil : présenter les objectifs, le déroulé, le matériel et les règles de sécurité.",
+            "Explication : introduire les notions et montrer les étapes en nommant les décisions et points de vigilance.",
+            "Pratique : proposer des exercices progressifs avec des consignes et des espaces de prise de notes.",
+            "Retour : observer les critères définis, donner un feedback précis et indiquer la prochaine étape."
+          ],
+          "en": [
+            "Orientation: explain the outcomes, schedule, materials, and safety expectations.",
+            "Explanation: introduce key concepts and demonstrate each step, including decisions and watch points.",
+            "Practice: provide scaffolded exercises with clear instructions and room for notes.",
+            "Feedback: review the stated criteria, give specific feedback, and identify the next step."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "3. Relier les exercices et les évaluations aux objectifs",
+          "en": "3. Connect practice and assessment to the outcomes"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un exercice doit permettre de s’entraîner à ce qui sera évalué. Si l’objectif porte sur l’hygiène, la posture et la maîtrise d’un geste, ces critères doivent être visibles dans la démonstration, la fiche de pratique et la grille d’évaluation. Un retour formatif aide l’élève à ajuster sa méthode en cours de session ; une évaluation finale peut vérifier les acquis annoncés.",
+          "en": "Practice should prepare learners for what will be assessed. If the outcome concerns hygiene, posture, and control of a technique, those criteria should appear in the demonstration, practice sheet, and assessment rubric. Formative feedback can help students adjust during the session; a final assessment can check the stated outcomes."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "4. Utiliser le portfolio comme trace de progression",
+          "en": "4. Use a portfolio to document progress"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un portfolio peut réunir les essais, les retours et les réalisations de l’élève. Pour le rendre utile, demandez de noter la date, le contexte, l’objectif travaillé et le point à améliorer. Les photos de personnes identifiables nécessitent leur accord ; adaptez aussi la conservation et l’utilisation des images aux règles applicables dans votre contexte.",
+          "en": "A portfolio can bring together a learner’s attempts, feedback, and completed work. Make it useful by recording the date, context, skill practiced, and next improvement. Identifiable photos require consent; adapt image storage and use to the rules that apply in your setting."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce que le Beauty Academy Workbook apporte — et ses limites",
+          "en": "What the Beauty Academy Workbook provides—and its limits"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le Beauty Academy Workbook est un pack payant de 180 modèles PowerPoint modifiables, répartis en 10 collections : identité et accueil de l’académie, architecture de cours, leçons, démonstrations pratiques, exercices, évaluations, suivi des élèves, références professionnelles, portfolio et clôture de formation. Il comprend des corrigés destinés aux formateurs et des instructions pour exporter les pages en PDF au format A4.",
+          "en": "The Beauty Academy Workbook is a paid pack of 180 editable PowerPoint templates organized into 10 collections: academy identity and orientation, course architecture, lessons, practical demonstrations, worksheets, assessments, learner progress tracking, professional references, portfolio, and course completion. It includes instructor answer keys and instructions for exporting pages to A4 PDF."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Il fournit un cadre de mise en page, pas un programme prêt à enseigner. Le formateur doit rédiger ses propres leçons, protocoles, critères et corrigés, puis vérifier leur adéquation à sa spécialité. Les exemples, noms d’académies, élèves et résultats sont fictifs. Les photos sont des illustrations générées ; elles ne remplacent pas des démonstrations réelles et peuvent ne pas convenir à une impression haute résolution. L’import Canva est documenté, mais n’a pas été vérifié ; PowerPoint reste le format de référence. Enfin, les pages de clôture ne confèrent aucune accréditation officielle.",
+          "en": "It provides a layout framework, not a ready-to-teach curriculum. Educators must write their own lessons, procedures, criteria, and answer keys, then check that they fit their specialty. Academy names, students, and results in the examples are fictional. The photos are generated illustrations; they do not replace real demonstrations and may not be suitable for high-resolution printing. Canva import instructions are included but have not been verified; PowerPoint remains the reference format. Completion pages do not grant official accreditation."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Vérifier la cohérence avant la première session",
+          "en": "Check consistency before the first session"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Avant de remettre le support aux élèves, faites un parcours complet du début à la fin. Vérifiez que chaque étape sert l’objectif principal, que les exercices préparent aux évaluations et que les consignes sont suffisamment précises pour être comprises sans explication implicite.",
+          "en": "Before sharing the workbook with students, review it from beginning to end. Check that each stage supports the main outcome, that practice prepares learners for assessment, and that instructions are clear without relying on assumptions."
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Les objectifs sont formulés avec des actions que l’on peut observer.",
+            "Les démonstrations et exercices suivent un ordre progressif.",
+            "Les critères d’évaluation correspondent aux objectifs annoncés.",
+            "Les pages de portfolio indiquent quoi documenter et comment.",
+            "Les consignes de sécurité et les limites de la formation sont explicites."
+          ],
+          "en": [
+            "Outcomes use actions that can be observed.",
+            "Demonstrations and exercises follow a gradual sequence.",
+            "Assessment criteria match the stated outcomes.",
+            "Portfolio pages explain what to document and how.",
+            "Safety guidance and course boundaries are explicit."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Prévoir la sécurité et vérifier les obligations locales",
+          "en": "Plan for safety and check local requirements"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Les règles applicables à la formation professionnelle, aux conditions de vente, à l’assurance et à l’utilisation de modèles varient selon les pays et les activités. Renseignez-vous auprès des organismes compétents de votre région avant de proposer une formation. Pour les activités utilisant des adhésifs, des produits chimiques, des objets tranchants ou des équipements réglementés, suivez les consignes des fabricants et faites intervenir une supervision qualifiée.",
+          "en": "Requirements for professional training, sales terms, insurance, and the use of models vary by location and activity. Check with the relevant local authorities before offering a course. For activities involving adhesives, chemicals, sharp tools, or regulated equipment, follow manufacturer instructions and ensure qualified supervision."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "À retenir",
+          "en": "Key takeaway"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Pour structurer une formation beauté, partez des acquis attendus, construisez une progression, reliez la pratique aux évaluations et prévoyez une trace des progrès. Les modèles peuvent aider à organiser le support, mais la qualité pédagogique dépend du contenu, des protocoles et de l’encadrement fournis par le formateur.",
+          "en": "To structure a beauty training course, begin with the intended outcomes, build a progression, connect practice to assessment, and document learner progress. Templates can help organize the workbook, but educational quality depends on the content, procedures, and supervision provided by the educator."
+        }
+      },
+      {
+        "type": "cta",
+        "text": {
+          "fr": "Le Beauty Academy Workbook rassemble 180 modèles PPTX en anglais pour structurer les supports d’une académie de beauté. Découvrez le contenu, les formats et les conditions d’achat sur sa fiche.",
+          "en": "The Beauty Academy Workbook brings together 180 English-language PPTX templates for structuring a beauty academy’s training materials. See the contents, format, and purchase details on its product page."
+        },
+        "button": {
+          "fr": "Découvrir le classeur",
+          "en": "View the workbook"
+        }
+      }
+    ]
   }
 ]
