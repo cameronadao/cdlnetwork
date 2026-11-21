@@ -95,7 +95,7 @@
       const title = localized(article.title, language);
       const summary = localized(article.summary, language);
       const category = localized(article.category, language);
-      const url = safeArticleUrl(article.url);
+      const url = safeArticleUrl(localized(article.url, language));
       const date = article.publishedAt ? new Date(`${article.publishedAt}T12:00:00`) : null;
       const dateText = date && !Number.isNaN(date.valueOf())
         ? new Intl.DateTimeFormat(language === 'fr' ? 'fr-FR' : 'en-US', { dateStyle: 'medium' }).format(date)
