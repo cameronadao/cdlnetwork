@@ -5866,3 +5866,22 @@ html[lang="en"] .newsletter-form details[lang="fr"] { display: none; }
     overflow-wrap: anywhere;
   }
 }
+
+/* Desktop mega menu: keep the full panel inside the viewport. */
+@media (min-width: 901px) {
+  .nav-item.mega-dropdown {
+    position: static;
+  }
+
+  .nav-item.mega-dropdown > .mega-menu {
+    left: max(24px, calc((100vw - 1000px) / 2));
+    width: min(1000px, calc(100vw - 48px));
+    transform: translateY(10px);
+  }
+
+  .nav-item.mega-dropdown:hover > .mega-menu,
+  .nav-item.mega-dropdown:focus-within > .mega-menu,
+  .nav-item.mega-dropdown.is-open > .mega-menu {
+    transform: translateY(0);
+  }
+}
