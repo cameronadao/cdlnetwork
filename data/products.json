@@ -636,6 +636,45 @@
     "cover": "/assets/images/beauty-business-templates-bundle-150.png"
   },
   {
+    "id": "beauty-business-studio-complete-template-collection",
+    "title": "Beauty Business Studio — Complete Beauty Business Template Collection",
+    "shortDescription": "A complete beauty-business toolkit with 10 digital products, in French and English, delivered as 20 editable PowerPoint files.",
+    "description": "**Your beauty business deserves tools that work together.**\n\nBeauty Business Studio brings together resources to help you build your brand identity, present your services, plan Instagram content, organize your studio, and improve the client experience.\n\nThe collection includes 10 digital products in French and English, delivered in 20 editable PowerPoint files. Choose the resources you need now and adapt the fictional examples to your own business.\n\nDigital download delivered by Payhip after purchase. No physical product is shipped.",
+    "category": "Templates & Documents",
+    "subcategory": "BEAUTY BUSINESS",
+    "productGroup": "Templates & Documents",
+    "productFamily": "templates-documents",
+    "productType": "templates",
+    "audience": "Beauty professionals",
+    "language": [
+      "en",
+      "fr"
+    ],
+    "price": 99,
+    "currency": "EUR",
+    "formats": [
+      "PowerPoint"
+    ],
+    "publishedAt": "2026-11-21T00:00:00+01:00",
+    "cover": "/assets/images/beauty-business-templates-bundle-150.png",
+    "status": "published",
+    "purchaseUrl": "https://payhip.com/b/IEpCY",
+    "translations": {
+      "en": {
+        "title": "Beauty Business Studio — Complete Beauty Business Template Collection",
+        "shortDescription": "A complete toolkit with 10 digital products in French and English, delivered as 20 editable PowerPoint files.",
+        "description": "**Your beauty business deserves tools that work together.**\n\nBeauty Business Studio brings together resources to help you build your brand identity, present your services, plan Instagram content, organize your studio, and improve the client experience.\n\nThe collection includes 10 digital products in French and English, delivered in 20 editable PowerPoint files. Choose the resources you need now and adapt the fictional examples to your own business.\n\nDigital download delivered by Payhip after purchase. No physical product is shipped.",
+        "subcategory": "BEAUTY BUSINESS"
+      },
+      "fr": {
+        "title": "Beauty Business Studio — Collection complète de templates pour les professionnels de la beauté",
+        "shortDescription": "Une collection complète de 10 produits numériques bilingues, fournis dans 20 fichiers PowerPoint modifiables.",
+        "description": "**Votre activité beauté mérite des supports qui fonctionnent ensemble.**\n\nBeauty Business Studio réunit des ressources pour construire votre identité de marque, présenter vos prestations, planifier vos contenus Instagram, organiser votre studio et soigner l’expérience client.\n\nLa collection comprend 10 produits numériques en français et en anglais, fournis dans 20 fichiers PowerPoint modifiables. Choisissez les ressources dont vous avez besoin et adaptez les exemples fictifs à votre activité.\n\nTéléchargement numérique fourni par Payhip après l’achat. Aucun article physique n’est expédié.",
+        "subcategory": "BEAUTÉ ET BIEN-ÊTRE"
+      }
+    }
+  },
+  {
     "id": "beauty-instagram-kit-160-templates-fr-en",
     "title": "Beauty Instagram Kit: 160 Editable Templates for Beauty Brands (FR/EN)",
     "shortDescription": "80 feed posts, 80 stories, six brand identities, and French and English versions for beauty professionals.",
