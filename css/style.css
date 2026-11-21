@@ -5885,3 +5885,26 @@ html[lang="en"] .newsletter-form details[lang="fr"] { display: none; }
     transform: translateY(0);
   }
 }
+
+/* Clear prices and project steps */
+.service-starting-price,.web-service-price{display:block;margin-top:.55rem;font-size:.82rem;font-weight:700;line-height:1.45;color:inherit}
+.services-inline-cta{display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin-top:2rem;padding:1.2rem 0;border-top:1px solid rgba(255,255,255,.18)}
+.services-inline-cta p{margin:0 auto 0 0;max-width:34rem}
+.services-inline-cta .text-link{white-space:nowrap}
+.project-process-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem;margin:2rem 0}
+.project-process-grid article{padding:1.25rem;border:1px solid rgba(128,128,128,.28);border-radius:14px}
+.project-process-grid article>span{font-size:.75rem;font-weight:700;letter-spacing:.12em;color:var(--gold,#c6a56b)}
+.project-process-grid h3{margin:.8rem 0 .4rem}
+.project-process-grid p{margin:0;line-height:1.55}
+@media(max-width:760px){.services-inline-cta{align-items:flex-start;gap:.8rem;flex-direction:column}.project-process-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem}.project-process-grid article{padding:.9rem}.service-starting-price,.web-service-price{font-size:.72rem}}
+
+.services-list .service-row{grid-template-columns:60px 1.1fr minmax(190px,1fr) minmax(150px,auto) 40px}
+#about .about-header{margin-bottom:2rem}
+@media(max-width:768px){
+  .services-list .service-row{grid-template-columns:30px minmax(0,1fr) 30px;grid-template-rows:auto auto}
+  .services-list .service-row .service-number{grid-column:1;grid-row:1}
+  .services-list .service-row .service-name{grid-column:2;grid-row:1}
+  .services-list .service-row .service-description{display:none}
+  .services-list .service-row .service-starting-price{grid-column:2;grid-row:2;margin-top:.35rem}
+  .services-list .service-row .service-arrow{grid-column:3;grid-row:1 / span 2}
+}
