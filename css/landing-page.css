@@ -624,3 +624,5 @@ html[lang="fr"] [data-service-lang="en"], html[lang="en"] [data-service-lang="fr
 .service-brochure-link span { font-size: 15px; line-height: 1; transition: transform .2s ease; }
 .service-brochure-link:hover { color: #f3f3f3; background: transparent; transform: translateY(-1px); }
 .service-brochure-link:hover span { transform: translate(2px, -2px); }
+.landing-rate-card-cta { margin-top: 26px; text-align: center; }
+.landing-rate-card-cta .service-brochure-link { margin: 0; }
