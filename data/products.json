@@ -1,5 +1,47 @@
 [
   {
+    "id": "beauty-feed-method-30-day-workbook",
+    "title": "The 30-Day Beauty Feed Method",
+    "shortDescription": "A free Instagram content-planning workbook for beauty studios.",
+    "description": "Plan a more consistent Instagram feed with this practical 30-day workbook for beauty studios. Download the English PDF directly from CDB Projects—no checkout required.",
+    "category": "Learning & Guides",
+    "subcategory": "FASHION & BEAUTY",
+    "productGroup": "Learning & Guides",
+    "productFamily": "learning-guides",
+    "productType": "workbooks",
+    "audience": "Lifestyle & Hobbyist",
+    "language": [
+      "en",
+      "fr"
+    ],
+    "price": 0,
+    "currency": "EUR",
+    "isFree": true,
+    "formats": [
+      "PDF"
+    ],
+    "publishedAt": "2026-11-21T00:00:00+01:00",
+    "status": "published",
+    "downloadUrl": {
+      "en": "/assets/downloads/Beauty_Feed_Method_EN.pdf",
+      "fr": "/assets/downloads/Beauty_Feed_Method_FR.pdf"
+    },
+    "translations": {
+      "en": {
+        "title": "The 30-Day Beauty Feed Method",
+        "shortDescription": "A free Instagram content-planning workbook for beauty studios.",
+        "description": "Plan a more consistent Instagram feed with this practical 30-day workbook for beauty studios. Download the English PDF directly from CDB Projects—no checkout required.",
+        "subcategory": "FASHION & BEAUTY"
+      },
+      "fr": {
+        "title": "La Méthode Feed Beauté en 30 jours",
+        "shortDescription": "Un cahier gratuit pour planifier 30 jours de contenu Instagram pour un studio de beauté.",
+        "description": "Planifiez un feed Instagram plus cohérent grâce à ce cahier pratique de 30 jours, conçu pour les studios de beauté. Téléchargez directement le PDF en français depuis CDB Projects, sans passer par une commande.",
+        "subcategory": "FASHION & BEAUTY"
+      }
+    }
+  },
+  {
     "id": "the-bible-explained-a-complete-guide-to-the-66-books",
     "title": "The Bible Explained: A Complete Guide to the 66 Books",
     "author": "Daily Grace Room",

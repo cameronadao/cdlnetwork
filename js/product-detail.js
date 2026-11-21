@@ -148,9 +148,23 @@
       ? `<span class="product-price-promo"><del class="price-original">${formatPrice(product.price, product.currency)}</del><strong class="price-sale">${formatPrice(window.CDL_PROMOTION_PRICING.discountedAmount(product.price), product.currency)}</strong><span class="price-discount-badge">-50%</span></span>`
       : formatPrice(product.price, product.currency);
     let purchaseButton = '';
-    if (product.checkoutProvider === 'stripe') {
+    const requestedDownloadPath = typeof product.downloadUrl === 'string'
+      ? product.downloadUrl
+      : product.downloadUrl?.[locale] || product.downloadUrl?.en || product.downloadUrl?.fr || '';
+    if (requestedDownloadPath) {
+      try {
+        const downloadUrl = new URL(requestedDownloadPath, window.location.origin);
+        if (downloadUrl.origin === window.location.origin && downloadUrl.pathname.startsWith('/assets/downloads/')) {
+          const fileName = downloadUrl.pathname.split('/').pop() || 'download.pdf';
+          purchaseButton = `<a class="product-detail-buy" href="${escapeHtml(downloadUrl.pathname)}" download="${escapeHtml(fileName)}">${escapeHtml(locale === 'fr' ? 'Télécharger gratuitement' : 'Download for free')} ↧</a>`;
+        }
+      } catch (error) {
+        console.error('Invalid product download URL:', error);
+      }
+    }
+    if (!purchaseButton && product.checkoutProvider === 'stripe') {
       purchaseButton = `<button class="product-detail-buy" type="button" data-stripe-checkout data-product-id="${escapeHtml(product.id)}">${escapeHtml(t('Buy now'))}${product.price !== undefined ? ` · ${formatPrice(promoActive ? window.CDL_PROMOTION_PRICING.discountedAmount(product.price) : product.price, product.currency)}` : ''}</button><p class="checkout-status" data-checkout-status role="status" aria-live="polite"></p>`;
-    } else if (product.purchaseUrl) {
+    } else if (!purchaseButton && product.purchaseUrl) {
       try {
         const purchaseUrl = new URL(product.purchaseUrl);
         const isPayhip = purchaseUrl.protocol === 'https:' && ['payhip.com', 'www.payhip.com'].includes(purchaseUrl.hostname);
