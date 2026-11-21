@@ -39,6 +39,11 @@
         "description": "Planifiez un feed Instagram plus cohérent grâce à ce cahier pratique de 30 jours, conçu pour les studios de beauté. Téléchargez directement le PDF en français depuis CDB Projects, sans passer par une commande.",
         "subcategory": "FASHION & BEAUTY"
       }
+    },
+    "cover": "/assets/images/beauty-feed-method-cover-en.jpg",
+    "covers": {
+      "en": "/assets/images/beauty-feed-method-cover-en.jpg",
+      "fr": "/assets/images/beauty-feed-method-cover-fr.jpg"
     }
   },
   {
