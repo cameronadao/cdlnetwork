@@ -1694,7 +1694,7 @@ img {
 /* ABOUT HEADER */
 
 .about-header {
-    max-width: 850px;
+    max-width: none;
     margin-bottom: 90px;
 }
 
@@ -1713,7 +1713,8 @@ img {
 }
 
 .about-intro {
-    max-width: 650px;
+    width: 100%;
+    max-width: none;
     color: #999;
     font-size: 1.05rem;
     line-height: 1.9;
