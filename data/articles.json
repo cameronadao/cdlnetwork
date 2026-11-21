@@ -1,5 +1,21 @@
 [
   {
+    "id": "identite-visuelle-institut-beaute",
+    "audience": "specialists",
+    "title": {
+      "fr": "Créer une identité visuelle cohérente pour son activité beauté : le guide pratique"
+    },
+    "summary": {
+      "fr": "Une belle publication Instagram ne suffit pas à construire une marque. Découvrez comment définir votre univers, harmoniser vos supports et créer une communication professionnelle qui aide vos clientes à vous reconnaître, à comprendre vos prestations et à réserver plus facilement."
+    },
+    "category": {
+      "fr": "Marketing & communication"
+    },
+    "publishedAt": "2026-11-21",
+    "url": "/identite-visuelle-institut-beaute.html",
+    "status": "published"
+  },
+  {
     "id": "routine-developpement-personnel-durable",
     "audience": "personal-growth-coach",
     "title": {

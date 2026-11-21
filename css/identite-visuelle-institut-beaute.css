@@ -1,0 +1,11 @@
+.article-detail-content ul { padding-inline-start: 1.4rem; }
+.article-table-scroll { overflow-x: auto; margin-block: 1.5rem; }
+.article-table-scroll table { width: 100%; border-collapse: collapse; line-height: 1.5; }
+.article-table-scroll th, .article-table-scroll td {
+  min-width: 7rem;
+  padding: .75rem;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid var(--border);
+}
+.article-table-scroll th { background: #f4f4f4; }
