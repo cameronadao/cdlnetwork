@@ -3353,6 +3353,13 @@ html[lang="fr"] .testimonial-quote-fr {
     font-weight: 600;
 }
 
+.testimonial-source {
+    margin-top: 6px;
+    color: #a8a29b;
+    font-size: 0.68rem;
+    letter-spacing: 0.04em;
+}
+
 .testimonial-divider {
     height: 1px;
     margin: 30px 0 25px;
