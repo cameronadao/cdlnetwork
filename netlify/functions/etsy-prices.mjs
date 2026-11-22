@@ -26,7 +26,10 @@ function normalizePrice(price) {
   const currency = String(price?.currency_code || '').toUpperCase();
   if (!Number.isFinite(amount) || !Number.isFinite(divisor) || divisor <= 0 || !/^[A-Z]{3}$/.test(currency)) return null;
   const value = amount / divisor;
-  return Number.isFinite(value) && value > 0 ? { amount: value, currency } : null;
+  if (!Number.isFinite(value) || value <= 0) return null;
+  // Etsy's API price is before VAT; the French storefront shows the consumer price including 20% VAT.
+  const displayAmount = currency === 'EUR' ? Math.round((value * 1.2 + Number.EPSILON) * 100) / 100 : value;
+  return { amount: displayAmount, currency };
 }
 
 export default async function etsyPrices(request) {
