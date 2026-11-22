@@ -707,6 +707,11 @@
         "description": "Structurez les supports de votre académie de beauté grâce à 180 templates PowerPoint modifiables répartis en 10 collections. Le pack comprend l’architecture du programme, des pages de théorie et de démonstration, des exercices, des évaluations, le suivi des élèves, des références de sécurité, un portfolio, des pages de fin de formation, des corrigés formateur et un guide d’utilisation. Il s’agit de templates à compléter, et non d’un cours déjà rédigé. Les fichiers sont en anglais et sont disponibles en téléchargement numérique instantané après achat sur Etsy.",
         "subcategory": "BEAUTÉ ET BIEN-ÊTRE"
       }
+    },
+    "cover": "/assets/images/beauty-academy-workbook-cover-en.png",
+    "covers": {
+      "en": "/assets/images/beauty-academy-workbook-cover-en.png",
+      "fr": "/assets/images/beauty-academy-workbook-cover-fr.png"
     }
   },
   {
