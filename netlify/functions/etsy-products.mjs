@@ -42,7 +42,7 @@ function priceForDisplay(price, taxable = true) {
 }
 
 function classifyListing(listing) {
-  const text = [listing.title, listing.description, ...(listing.tags || [])].join(' ').toLowerCase();
+  const text = [listing.title, ...(listing.tags || [])].join(' ').toLowerCase();
   const isBeauty = /beauty|salon|lash|eyelash|nail|esthetic|skincare|hair|makeup|maquillage|ongle|beauté|cils/.test(text);
   let family = 'templates-documents';
   let group = 'Templates & Documents';
@@ -54,6 +54,8 @@ function classifyListing(listing) {
   } else if (/planner|planificateur|journal|calendar|calendrier|tracker/.test(text)) {
     family = 'planning-tracking'; group = 'Planning & Tracking';
     type = /journal/.test(text) ? 'journals' : (/calendar|calendrier/.test(text) ? 'calendars' : 'planners');
+  } else if (/template|form|canva|powerpoint|price list|social media/.test(text)) {
+    family = 'templates-documents'; group = 'Templates & Documents'; type = 'templates';
   } else if (/bundle|collection|starter kit|toolkit|pack complet|coffret/.test(text)) {
     family = 'kits-bundles'; group = 'Kits & Bundles'; type = 'all-in-one-kit';
   } else if (/spreadsheet|excel|calculator|calculateur/.test(text)) {
@@ -125,16 +127,25 @@ export default async function etsyProducts(request) {
     const params = new URL(request.url).searchParams;
     const requestedId = (params.get('listing_id') || '').replace(/^etsy-/, '');
     let listings = [];
+    let total = 0;
+    let sample = [];
     if (requestedId) {
       if (!/^\d+$/.test(requestedId)) return json({ error: 'Invalid Etsy listing ID.' }, 400);
       const listing = await etsyGet(`/listings/${requestedId}?includes=Images`, apiKey);
       if (String(listing.shop_id) !== shopId || listing.state !== 'active') return json({ products: [] }, 200, true);
       listings = [listing];
     } else {
-      let total = 0;
       for (let offset = 0; offset < MAX_LISTINGS; offset += PAGE_SIZE) {
         const page = await etsyGet(`/shops/${shopId}/listings/active?limit=${PAGE_SIZE}&offset=${offset}&sort_on=created&sort_order=desc&includes=Images`, apiKey);
         const results = Array.isArray(page.results) ? page.results : [];
+        if (!sample.length) sample = results.slice(0, 3).map((listing) => ({
+          id: listing.listing_id,
+          state: listing.state,
+          type: listing.listing_type,
+          shopId: listing.shop_id,
+          imageCount: Array.isArray(listing.images) ? listing.images.length : null,
+          title: listing.title
+        }));
         listings.push(...results);
         total = Number(page.count) || listings.length;
         if (!results.length || listings.length >= total || listings.length >= MAX_LISTINGS) break;
@@ -145,6 +156,9 @@ export default async function etsyProducts(request) {
       .filter((listing) => String(listing.shop_id) === shopId && listing.state === 'active')
       .map(normalizeListing)
       .filter(Boolean);
+    if (params.get('debug') === '1' && !requestedId) {
+      return json({ products, count: products.length, diagnostic: { shopId, total, fetched: listings.length, sample } }, 200, true);
+    }
     return json({ products, count: products.length }, 200, true);
   } catch {
     return json({ error: 'Etsy products are temporarily unavailable.' }, 502);
