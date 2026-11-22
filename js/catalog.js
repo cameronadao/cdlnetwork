@@ -220,24 +220,35 @@
 
   async function init() {
     try {
-      const [productsResponse, productTypesResponse, etsyResponse] = await Promise.all([
+      const [productsResponse, productTypesResponse, etsyResponse, payhipResponse] = await Promise.all([
         fetch('/data/products.json', { headers: { Accept: 'application/json' } }),
         fetch('/data/product-types.json', { headers: { Accept: 'application/json' } }),
-        fetch('/api/etsy-products', { headers: { Accept: 'application/json' } }).catch(() => null)
+        fetch('/api/etsy-products', { headers: { Accept: 'application/json' } }).catch(() => null),
+        fetch('/api/payhip-products', { headers: { Accept: 'application/json' } }).catch(() => null)
       ]);
       if (!productsResponse.ok) throw new Error(`Product data returned ${productsResponse.status}`);
       if (!productTypesResponse.ok) throw new Error(`Product type data returned ${productTypesResponse.status}`);
-      const [sourceProducts, families, etsyPayload] = await Promise.all([
+      const [sourceProducts, families, etsyPayload, payhipPayload] = await Promise.all([
         productsResponse.json(),
         productTypesResponse.json(),
-        etsyResponse?.ok ? etsyResponse.json().catch(() => ({})) : Promise.resolve({})
+        etsyResponse?.ok ? etsyResponse.json().catch(() => ({})) : Promise.resolve({}),
+        payhipResponse?.ok ? payhipResponse.json().catch(() => ({})) : Promise.resolve({})
       ]);
       if (!Array.isArray(sourceProducts)) throw new Error('Product data must be a JSON array');
       if (!Array.isArray(families)) throw new Error('Product type data must be a JSON array');
       const knownListingIds = new Set(sourceProducts.map((product) => String(product?.etsyListingId || '')).filter(Boolean));
       const importedProducts = (Array.isArray(etsyPayload.products) ? etsyPayload.products : [])
         .filter((product) => !knownListingIds.has(String(product?.etsyListingId || '')));
-      const products = await syncEtsyPrices([...sourceProducts, ...importedProducts]);
+      const payhipKeyFromUrl = (value) => {
+        const url = String(value || '');
+        return url.match(/\/b\/([a-z0-9]{4,32})(?:[/?#]|$)/i)?.[1]
+          || url.match(/[?&]link=([a-z0-9]{4,32})(?:&|$)/i)?.[1]
+          || '';
+      };
+      const knownPayhipKeys = new Set(sourceProducts.map((product) => String(product?.payhipProductKey || payhipKeyFromUrl(product?.purchaseUrl))).filter(Boolean));
+      const importedPayhip = (Array.isArray(payhipPayload.products) ? payhipPayload.products : [])
+        .filter((product) => !knownPayhipKeys.has(String(product?.payhipProductKey || '')));
+      const products = await syncEtsyPrices([...sourceProducts, ...importedProducts, ...importedPayhip]);
       catalogProducts = products;
       productTypeFamilies = families;
 

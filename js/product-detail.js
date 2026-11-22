@@ -150,6 +150,20 @@
         console.error('Unable to load the Etsy product:', error);
       }
     }
+    if (!product && /^payhip-[a-z0-9]{4,32}$/i.test(id)) {
+      try {
+        const productKey = id.slice('payhip-'.length);
+        const response = await fetch(`/api/payhip-products?product_key=${encodeURIComponent(productKey)}`, {
+          headers: { Accept: 'application/json' }
+        });
+        if (response.ok) {
+          const payload = await response.json();
+          product = Array.isArray(payload.products) ? payload.products.find((item) => item.id === id) : null;
+        }
+      } catch (error) {
+        console.error('Unable to load the Payhip product:', error);
+      }
+    }
     if (!product) {
       showState('Product not found', 'We could not find a product with this identifier.');
       return;
