@@ -1,4 +1,4 @@
-const ETSY_LISTING_IDS = new Set(['4622518758', '4622702952', '4617847784']);
+const ETSY_LISTING_IDS = new Set(['4517484275', '4622518758', '4622702952', '4617847784']);
 
 function json(body, status, cache = false) {
   const headers = { 'content-type': 'application/json; charset=utf-8' };
@@ -19,7 +19,7 @@ function readEtsyApiKey() {
   }
 }
 
-function normalizePrice(price) {
+function normalizePrice(price, taxable = true) {
   if (typeof price === 'number') return { amount: price, currency: 'EUR' };
   const amount = Number(price?.amount);
   const divisor = Number(price?.divisor);
@@ -28,7 +28,7 @@ function normalizePrice(price) {
   const value = amount / divisor;
   if (!Number.isFinite(value) || value <= 0) return null;
   // Etsy's API price is before VAT; the French storefront shows the consumer price including 20% VAT.
-  const displayAmount = currency === 'EUR' ? Math.round((value * 1.2 + Number.EPSILON) * 100) / 100 : value;
+  const displayAmount = currency === 'EUR' && taxable ? Math.round((value * 1.2 + Number.EPSILON) * 100) / 100 : value;
   return { amount: displayAmount, currency };
 }
 
@@ -49,7 +49,7 @@ export default async function etsyPrices(request) {
     });
     if (!response.ok) throw new Error(`Etsy listing request failed (${response.status}).`);
     const listing = await response.json();
-    const price = normalizePrice(listing.price);
+    const price = normalizePrice(listing.price, listing.is_taxable !== false);
     if (String(listing.listing_id) !== listingId || !price) throw new Error('Etsy returned invalid listing data.');
     return [listingId, price];
   }));

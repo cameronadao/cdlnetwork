@@ -562,6 +562,7 @@
     "cover": "/assets/images/planificateur-de-voyage.png",
     "status": "published",
     "purchaseUrl": "https://www.etsy.com/fr/listing/4517484275/vacation-planner-pro-digital-excel",
+    "etsyListingId": "4517484275",
     "translations": {
       "fr": {
         "title": "Organisateur de Voyage Pro",
@@ -692,6 +693,7 @@
     "publishedAt": "2026-11-21T00:00:00+01:00",
     "status": "published",
     "purchaseUrl": "https://cdbproject.etsy.com/fr/listing/4622702952/beauty-academy-workbook-template-bundle",
+    "etsyListingId": "4622702952",
     "translations": {
       "en": {
         "title": "Beauty Academy Workbook Template Bundle",

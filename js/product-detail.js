@@ -136,6 +136,20 @@
     }
 
     let product = products.find((item) => item && item.id === id);
+    if (!product && /^etsy-\d+$/.test(id)) {
+      try {
+        const listingId = id.slice('etsy-'.length);
+        const response = await fetch(`/api/etsy-products?listing_id=${encodeURIComponent(listingId)}`, {
+          headers: { Accept: 'application/json' }
+        });
+        if (response.ok) {
+          const payload = await response.json();
+          product = Array.isArray(payload.products) ? payload.products.find((item) => item.id === id) : null;
+        }
+      } catch (error) {
+        console.error('Unable to load the Etsy product:', error);
+      }
+    }
     if (!product) {
       showState('Product not found', 'We could not find a product with this identifier.');
       return;

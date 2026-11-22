@@ -25,6 +25,7 @@
     ['lifestyle-hobbyist', 'Lifestyle & Hobbyist'],
     ['digital-creators', 'Digital Creators'],
     ['specialists', 'Specialists'],
+    ['beauty-professionals', 'Beauty professionals'],
     ['love-relationships', 'LOVE & RELATIONSHIPS'],
     ['personal-growth-coach', 'Personal Growth Coach'],
     ['daily-grace-room-spirituality', 'DAILY GRACE ROOM (SPIRITUALITY)']
@@ -219,16 +220,24 @@
 
   async function init() {
     try {
-      const [productsResponse, productTypesResponse] = await Promise.all([
+      const [productsResponse, productTypesResponse, etsyResponse] = await Promise.all([
         fetch('/data/products.json', { headers: { Accept: 'application/json' } }),
-        fetch('/data/product-types.json', { headers: { Accept: 'application/json' } })
+        fetch('/data/product-types.json', { headers: { Accept: 'application/json' } }),
+        fetch('/api/etsy-products', { headers: { Accept: 'application/json' } }).catch(() => null)
       ]);
       if (!productsResponse.ok) throw new Error(`Product data returned ${productsResponse.status}`);
       if (!productTypesResponse.ok) throw new Error(`Product type data returned ${productTypesResponse.status}`);
-      const [sourceProducts, families] = await Promise.all([productsResponse.json(), productTypesResponse.json()]);
-      const products = await syncEtsyPrices(sourceProducts);
-      if (!Array.isArray(products)) throw new Error('Product data must be a JSON array');
+      const [sourceProducts, families, etsyPayload] = await Promise.all([
+        productsResponse.json(),
+        productTypesResponse.json(),
+        etsyResponse?.ok ? etsyResponse.json().catch(() => ({})) : Promise.resolve({})
+      ]);
+      if (!Array.isArray(sourceProducts)) throw new Error('Product data must be a JSON array');
       if (!Array.isArray(families)) throw new Error('Product type data must be a JSON array');
+      const knownListingIds = new Set(sourceProducts.map((product) => String(product?.etsyListingId || '')).filter(Boolean));
+      const importedProducts = (Array.isArray(etsyPayload.products) ? etsyPayload.products : [])
+        .filter((product) => !knownListingIds.has(String(product?.etsyListingId || '')));
+      const products = await syncEtsyPrices([...sourceProducts, ...importedProducts]);
       catalogProducts = products;
       productTypeFamilies = families;
 
