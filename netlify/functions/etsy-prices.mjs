@@ -13,9 +13,9 @@ function json(body, status, cache = false) {
 
 function readEtsyApiKey() {
   try {
-    return Netlify.env.get('ETSY_API_KEY') || '';
+    return Netlify.env.get('ETSY_API_KEY') || process.env.ETSY_API_KEY || '';
   } catch {
-    return '';
+    return process.env.ETSY_API_KEY || '';
   }
 }
 
