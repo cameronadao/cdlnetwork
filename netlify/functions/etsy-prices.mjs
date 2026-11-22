@@ -13,7 +13,7 @@ function json(body, status, cache = false) {
 
 function readEtsyApiKey() {
   try {
-    return globalThis.Netlify?.env?.get('ETSY_API_KEY') || '';
+    return Netlify.env.get('ETSY_API_KEY') || '';
   } catch {
     return '';
   }
