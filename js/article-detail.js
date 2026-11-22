@@ -138,6 +138,7 @@
     const isTravelBudgetArticle = currentArticle.id === 'travel-budget-separate-commitments-estimates';
     const isPlrCatalogArticle = currentArticle.id === 'sell-plr-products-personalization-proof';
     const isBeautyInstagramArticle = currentArticle.id === 'instagram-beaute-identite-visuelle-reconnaissable';
+    const isBeautyPriceListArticle = currentArticle.id === 'carte-tarifs-beaute-reference-unique';
     if (productLink) {
       productLink.href = t(currentArticle.productUrl);
       productLink.textContent = isAiArticle
@@ -154,13 +155,15 @@
                   ? t({ fr: 'Découvrir l’Organisateur de Voyage Pro ↗', en: 'Explore Vacation Planner Pro ↗' })
                   : isPlrCatalogArticle
                     ? t({ fr: 'Découvrir CDL Master Library ↗', en: 'Explore CDL Master Library ↗' })
-                    : isBeautyInstagramArticle
+                    : isBeautyPriceListArticle
+                      ? t({ fr: 'Découvrir le Beauty Price List Bundle ↗', en: 'Explore the Beauty Price List Bundle ↗' })
+                      : isBeautyInstagramArticle
                       ? t({ fr: 'Découvrir le Beauty Instagram Kit ↗', en: 'Explore the Beauty Instagram Kit ↗' })
                       : t({ fr: 'Découvrir les planificateurs ↗', en: 'Explore the planners ↗' });
     }
     const categoryLink = article.querySelector('.article-detail-end a:last-child');
     if (categoryLink) {
-      categoryLink.href = isBeautyInstagramArticle ? '/shop.html?audience=specialists' : isPlrCatalogArticle ? '/shop.html?audience=business-builder' : isTravelBudgetArticle ? '/shop.html?audience=lifestyle-hobbyist' : isFacelessMarketingArticle ? '/shop.html?audience=business-builder' : isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
+      categoryLink.href = (isBeautyInstagramArticle || isBeautyPriceListArticle) ? '/shop.html?audience=specialists' : isPlrCatalogArticle ? '/shop.html?audience=business-builder' : isTravelBudgetArticle ? '/shop.html?audience=lifestyle-hobbyist' : isFacelessMarketingArticle ? '/shop.html?audience=business-builder' : isAiArticle ? '/shop.html?group=learning-guides' : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle) ? '/shop.html?group=strategy-frameworks' : '/shop.html?group=planning-tracking';
       categoryLink.textContent = isAiArticle
         ? t({ fr: 'Explorer Learning & Guides ↗', en: 'Explore Learning & Guides ↗' })
         : (isDiscographyArticle || isFamilyHostingArticle || isChefMethodArticle)
@@ -171,7 +174,9 @@
               ? t({ fr: 'Explorer les ressources de voyage ↗', en: 'Explore travel resources ↗' })
               : isPlrCatalogArticle
                 ? t({ fr: 'Explorer les ressources pour les entrepreneurs ↗', en: 'Explore resources for business builders ↗' })
-                : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
+                : isBeautyPriceListArticle
+          ? t({ fr: 'Explorer les ressources beauté ↗', en: 'Explore beauty resources ↗' })
+          : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
     }
   }
 

@@ -1,5 +1,347 @@
 [
   {
+    "id": "carte-tarifs-beaute-reference-unique",
+    "audience": "specialists",
+    "title": {
+      "fr": "Carte de tarifs beauté : une référence unique pour tous vos supports",
+      "en": "Beauty Price Lists: One Source of Truth for Every Channel"
+    },
+    "seoTitle": {
+      "fr": "Carte de tarifs beauté : comment éviter les incohérences entre supports",
+      "en": "Beauty Price Lists: How to Keep Every Channel Consistent"
+    },
+    "metaDescription": {
+      "fr": "Une carte de tarifs beauté doit rester identique sur le site, Instagram et l’impression. Voici la méthode pour construire une référence unique et éviter les incohérences.",
+      "en": "A beauty price list should stay consistent across your website, Instagram and print. Use this method to create one source of truth and prevent conflicting prices."
+    },
+    "summary": {
+      "fr": "Apprenez à créer une carte de tarifs de référence, puis à la décliner pour l’impression, Instagram et les stories sans créer d’écarts entre vos prix et vos durées.",
+      "en": "Learn how to create a master beauty price list and adapt it for print, Instagram and Stories without introducing conflicting prices or service times."
+    },
+    "category": {
+      "fr": "Beauté · Gestion",
+      "en": "Beauty · Business"
+    },
+    "publishedAt": "2026-11-22",
+    "url": {
+      "fr": "/article-carte-tarifs-beaute-reference-unique.html",
+      "en": "/article-carte-tarifs-beaute-reference-unique.html"
+    },
+    "status": "published",
+    "image": "/assets/images/identite-visuelle-institut-beaute.webp",
+    "productUrl": {
+      "fr": "https://cdbprojects.com/product.html?id=etsy-4623098079",
+      "en": "https://cdbprojects.com/product.html?id=etsy-4623098079"
+    },
+    "sections": [
+      {
+        "type": "lead",
+        "text": {
+          "fr": "Une prothésiste ongulaire met à jour le prix d’une prestation sur son site, publie une story avec un autre tarif, puis imprime une carte où la durée annoncée est différente. À la première réservation, le client demande une confirmation. Les trois versions ne disent pas la même chose. Le problème n’est pas l’outil : c’est l’absence d’une référence unique.",
+          "en": "A nail technician updates a service price on her website, posts a Story with a different price, then prints a menu with a different appointment time. When the first client books, they ask which version is correct. The problem is not the tool; it is the lack of one reliable source."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une carte de tarifs beauté n’est pas qu’un document visuel. Elle fixe les prix, les durées et ce qui est inclus dans chaque prestation. Tant que cette référence n’est pas stabilisée, chaque support risque de créer sa propre version. Un bundle de modèles peut accélérer la mise en forme, mais il ne choisit pas les informations de référence. C’est ce travail qui rend la carte claire et crédible.",
+          "en": "A beauty price list is more than a visual document. It defines the price, appointment time and inclusions for each service. Until that reference is stable, every channel can drift into its own version. A template bundle can speed up the design, but it cannot decide which information is authoritative. That work is what makes the menu clear and trustworthy."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Construire la référence avant de choisir un modèle",
+          "en": "Create the master list before choosing a template"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La première étape ne se fait pas dans PowerPoint ou Canva. Elle se fait dans un document simple, texte ou tableur, avec quatre colonnes : la prestation, le prix, la durée et ce qui est inclus. Cette liste devient la source unique pour tous les supports.",
+          "en": "Start outside PowerPoint or Canva. Create a simple document or spreadsheet with four columns: service, price, duration and what is included. This becomes the single source for every version of your menu."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Trois règles rendent cette référence plus fiable. Nommez chaque prestation de façon compréhensible : évitez les noms poétiques qui ne précisent pas ce qui est fait. Affichez le prix complet et indiquez clairement les suppléments, forfaits ou abonnements. Enfin, estimez une durée réaliste en incluant l’installation, le nettoyage et la consultation, pas seulement le temps technique.",
+          "en": "Three rules make the master list more reliable. Name each service clearly instead of relying on poetic labels that do not explain what a client receives. Show the full price and clearly describe any extras, packages or memberships. Set a realistic appointment time that includes setup, cleanup and consultation, not only the hands-on treatment."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une fois cette référence stabilisée, le modèle devient un outil de mise en forme. Il présente le contenu ; il ne le décide pas.",
+          "en": "Once the master list is stable, the template becomes a design tool. It presents your information; it does not decide it."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Choisir les formats en fonction du support",
+          "en": "Choose formats for the channel"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Les formats se choisissent selon l’usage. Pour commencer, trois destinations principales suffisent.",
+          "en": "Choose formats according to how people will use them. Three main destinations are enough to start."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Impression : A4 ou carte",
+          "en": "Print: A4 or a small service card"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une carte ou un document A4 se lit en main ou sur un comptoir. La lisibilité prime : choisissez une taille de police confortable, un contraste suffisant et des colonnes de prix bien alignées.",
+          "en": "A small menu or A4 sheet is read in someone’s hand or on a counter. Prioritize readability: use a comfortable font size, clear contrast and neatly aligned prices."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Feed Instagram : 1080 × 1350 px",
+          "en": "Instagram feed: 1080 × 1350 px"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Ce format est conçu pour le téléphone et le défilement rapide. Il doit transmettre l’essentiel en quelques secondes : le nom de la prestation, le prix et la durée. Les textes trop petits ou trop longs se perdent.",
+          "en": "This portrait format is designed for phone screens and quick scrolling. It should communicate the essentials in a few seconds: service name, price and duration. Small or lengthy copy is easy to miss."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Story Instagram : 1080 × 1920 px",
+          "en": "Instagram Story: 1080 × 1920 px"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le format vertical et éphémère convient aux promotions, aux rappels de réservation et aux mises en avant ponctuelles. Il est moins adapté à une liste exhaustive de prestations.",
+          "en": "The tall, temporary format works well for promotions, booking reminders and occasional highlights. It is less suited to a complete service list."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le bundle comprend aussi un format carré (1080 × 1080 px) et le format US Letter. Ces variantes peuvent servir selon votre marché, mais elles ne sont pas indispensables pour un studio français.",
+          "en": "The bundle also includes a square format (1080 × 1080 px) and US Letter. These options can be useful for other markets, but they are not essential for a studio in France."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Le bundle comme accélérateur, pas comme décision",
+          "en": "Use a bundle to speed up design, not to make decisions"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le Beauty Price List Bundle de CDB Projects est une ressource payante qui rassemble 100 modèles PowerPoint répartis en 10 collections, six palettes de couleurs, cinq formats d’export et des instructions de personnalisation. Il comprend notamment des menus, des exemples de prix et de durées, ainsi que des lignes de réservation pour des studios fictifs.",
+          "en": "CDB Projects’ paid Beauty Price List Bundle brings together 100 PowerPoint templates across 10 collections, six color palettes, five export formats and customization instructions. It includes menus, sample prices and durations, and booking lines for fictional studios."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le bundle documente aussi l’import dans Canva, avec des limites indiquées de 300 diapositives, 1 400 éléments et 300 Mo, et propose des polices de remplacement : Playfair Display, DM Sans et Barlow Condensed. Ces indications viennent de la documentation fournie avec le bundle ; vérifiez le résultat après import.",
+          "en": "The bundle also documents importing into Canva, with stated limits of 300 slides, 1,400 elements and 300 MB, and suggests Playfair Display, DM Sans and Barlow Condensed as replacement fonts. These details come from the bundle documentation; check the result after importing."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Ses limites sont à garder en tête. Les prix, identités et adresses en .example sont fictifs et doivent être remplacés. Les photos sont générées pour le bundle et ne conviennent pas nécessairement à une impression haute résolution. La conversion Canva est documentée mais n’a pas été testée dans un environnement réel : vérifiez les sauts de ligne, les accents, les cadrages et les tableaux. Le bundle ne calcule pas le seuil de rentabilité et ne fournit pas de politique d’annulation complète. Il ne remplace pas non plus la vérification de vos prix ni celle des règles locales qui s’appliquent à votre activité.",
+          "en": "Keep the bundle’s limits in mind. Prices, business identities and .example addresses are fictional and must be replaced. The generated photos may not be suitable for high-resolution printing. Canva conversion is documented but has not been tested in a real environment, so check line breaks, accents, crops and tables. The bundle does not calculate your break-even point or provide a complete cancellation policy. It also does not replace checking your prices or the local rules that apply to your business."
+        }
+      },
+      {
+        "type": "cta",
+        "text": {
+          "fr": "Découvrez le Beauty Price List Bundle et ses modèles de menus pour les activités beauté.",
+          "en": "Explore the Beauty Price List Bundle and its menu templates for beauty businesses."
+        },
+        "button": {
+          "fr": "Voir le produit",
+          "en": "View the product"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Vérifier la cohérence avant de publier",
+          "en": "Check consistency before publishing"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Avant de publier, comparez trois supports : la carte imprimée, le feed Instagram et la confirmation de réservation. Posez-vous ces trois questions.",
+          "en": "Before publishing, compare three places: the printed menu, your Instagram feed and the booking confirmation. Ask these three questions."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les prix sont-ils identiques ?",
+          "en": "Are the prices identical?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un écart de 5 € entre le site et la carte imprimée crée immédiatement de la confusion. Le prix de référence doit être unique et repris à l’identique sur chaque support.",
+          "en": "A €5 difference between your website and printed menu creates instant confusion. Keep one master price and reproduce it exactly across every channel."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les durées sont-elles cohérentes ?",
+          "en": "Are appointment times consistent?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une prestation annoncée à 45 minutes sur le site et à 60 minutes sur la carte peut compliquer la planification. Utilisez la même durée de référence partout.",
+          "en": "A service listed as 45 minutes on your website and 60 minutes on your menu can disrupt scheduling. Use the same master duration everywhere."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les conditions sont-elles visibles ?",
+          "en": "Can clients find the relevant terms?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Acompte, annulation et suppléments doivent être accessibles avant le paiement et rappelés dans la confirmation. Un modèle ne remplace pas cette vérification.",
+          "en": "Deposit, cancellation and extra-charge terms should be available before payment and repeated in the confirmation. A template does not replace this check."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Adapter le bundle à son activité",
+          "en": "Adapt the bundle to your business"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Trois niveaux de personnalisation suffisent pour éviter l’effet catalogue.",
+          "en": "Three rounds of customization can help the final menu feel specific to your business rather than like a catalog."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Le nom et la promesse",
+          "en": "Your business name and promise"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Remplacez l’identité fictive par la vôtre et ajoutez une phrase qui précise votre activité et votre clientèle. Si vous êtes spécialisée dans les soins du visage, concentrez la carte sur les prestations que vous maîtrisez au lieu de conserver un menu généraliste.",
+          "en": "Replace the fictional business identity with your own and add one sentence explaining what you do and who you serve. If you specialize in facials, focus the menu on the services you offer instead of keeping a generic list."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les prix et les durées",
+          "en": "Your prices and durations"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Remplacez tous les exemples par vos valeurs réelles. Vérifiez que les suppléments et les forfaits sont clairement indiqués. Si vous proposez des abonnements, précisez leurs conditions.",
+          "en": "Replace every sample with your real information. Make sure extras and packages are clearly described. If you offer memberships, spell out their terms."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les photos",
+          "en": "The photos"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Remplacez les images générées par vos propres photos, même prises au smartphone. Une photo de votre studio ou de vos gestes vaut mieux qu’une image générique. Pour un tirage de 3 pouces à 300 ppp, prévoyez au moins 900 pixels de large.",
+          "en": "Replace generated images with your own photos, even if they were taken on a phone. A picture of your studio or your work is more personal than a generic stock image. For a 3-inch print at 300 ppi, plan for at least 900 pixels in width."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Checklist avant publication",
+          "en": "Pre-publication checklist"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Les mêmes prix figurent sur le site, Instagram, le menu imprimé et la réservation.",
+            "Les durées incluent l’installation, le nettoyage et la consultation si nécessaire.",
+            "Les suppléments, forfaits, abonnements et conditions sont expliqués.",
+            "Les textes restent lisibles sur téléphone et en impression.",
+            "Les photos ont une résolution adaptée à leur usage.",
+            "Les prix et mentions applicables à votre activité ont été vérifiés."
+          ],
+          "en": [
+            "The website, Instagram, printed menu and booking flow show the same prices.",
+            "Durations include setup, cleanup and consultation where needed.",
+            "Extras, packages, memberships and terms are explained.",
+            "Text remains readable on a phone and in print.",
+            "Photos have enough resolution for their intended use.",
+            "Prices and notices relevant to your business have been checked."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce qu’il faut retenir",
+          "en": "Key takeaway"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une carte de tarifs beauté n’est pas un support isolé : c’est une référence qui doit rester identique sur tous les canaux. La cohérence se construit avant le modèle, à partir d’une liste claire de prestations, de prix et de durées. Le bundle accélère la mise en forme et propose plusieurs formats, mais il ne remplace ni la vérification de vos prix, ni la personnalisation des photos, ni les contrôles liés aux règles applicables.",
+          "en": "A beauty price list is not a one-off design; it is a reference that should stay consistent across channels. Build consistency before choosing a template, using a clear list of services, prices and durations. A bundle speeds up design and offers multiple formats, but it does not replace checking your prices, personalizing the photos or reviewing the rules that apply to your business."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Commencez par vos trois prestations principales. Notez pour chacune le prix, la durée et ce qui est inclus, puis vérifiez que votre carte imprimée, votre feed Instagram et votre confirmation de réservation affichent exactement les mêmes informations.",
+          "en": "Start with your three most popular services. Record the price, duration and inclusions for each, then make sure your printed menu, Instagram feed and booking confirmation show exactly the same information."
+        }
+      }
+    ]
+  },
+  {
     "id": "identite-visuelle-institut-beaute",
     "audience": "specialists",
     "title": {
