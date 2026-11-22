@@ -3353,6 +3353,14 @@ html[lang="fr"] .testimonial-quote-fr {
     font-weight: 600;
 }
 
+.testimonial-role {
+    display: inline-block;
+    margin-top: 4px;
+    color: #a8a29b;
+    font-size: 0.72rem;
+    font-weight: 400;
+}
+
 .testimonial-source {
     margin-top: 6px;
     color: #a8a29b;
