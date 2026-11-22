@@ -61,6 +61,25 @@
     }
   };
 
+  async function syncEtsyPrices(products) {
+    const listingIds = [...new Set(products.map((product) => product?.etsyListingId).filter(Boolean))];
+    if (!listingIds.length) return products;
+    try {
+      const query = listingIds.map((id) => `id=${encodeURIComponent(id)}`).join('&');
+      const response = await fetch(`/api/etsy-prices?${query}`, { headers: { Accept: 'application/json' } });
+      if (!response.ok) return products;
+      const { prices = {} } = await response.json();
+      return products.map((product) => {
+        const latest = prices[String(product?.etsyListingId)];
+        return latest && Number.isFinite(Number(latest.amount)) && latest.currency
+          ? { ...product, price: Number(latest.amount), currency: latest.currency }
+          : product;
+      });
+    } catch {
+      return products;
+    }
+  }
+
   function fillSelect(select, values, firstLabel) {
     if (!select) return;
     select.innerHTML = `<option value="">${escapeHtml(firstLabel)}</option>` + values.map((item) => {
@@ -91,10 +110,11 @@
     const selectedType = typeSelect?.value || '';
     const selectedFamily = productTypeFamilies.find((family) => family.id === selectedType);
     const typeMatch = !selectedType || (selectedFamily
-      ? selectedFamily.types.some((type) => type.id === product.productType)
-      : product.productType === selectedType);
+      ? selectedFamily.types.some((type) => type.id === product.productType || asValues(product.productTypes).includes(type.id))
+      : product.productType === selectedType || asValues(product.productTypes).includes(selectedType));
     const languageMatch = !languageSelect?.value || asValues(product.language).some((language) => slug(language) === languageSelect.value);
-    const groupMatch = !expectedGroup || slug(product.productGroup || product.group) === slug(expectedGroup);
+    const groups = asValues(product.productGroups || product.productGroup || product.group);
+    const groupMatch = !expectedGroup || groups.some((group) => slug(group) === slug(expectedGroup));
     const freeMatch = !freeOnly || product.isFree === true;
     const productIdMatch = !expectedProductIds.length || expectedProductIds.includes(product.id);
     return audienceMatch && subcategoryMatch && typeMatch && languageMatch && groupMatch && freeMatch && productIdMatch;
@@ -205,7 +225,8 @@
       ]);
       if (!productsResponse.ok) throw new Error(`Product data returned ${productsResponse.status}`);
       if (!productTypesResponse.ok) throw new Error(`Product type data returned ${productTypesResponse.status}`);
-      const [products, families] = await Promise.all([productsResponse.json(), productTypesResponse.json()]);
+      const [sourceProducts, families] = await Promise.all([productsResponse.json(), productTypesResponse.json()]);
+      const products = await syncEtsyPrices(sourceProducts);
       if (!Array.isArray(products)) throw new Error('Product data must be a JSON array');
       if (!Array.isArray(families)) throw new Error('Product type data must be a JSON array');
       catalogProducts = products;

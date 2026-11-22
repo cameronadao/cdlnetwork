@@ -703,6 +703,7 @@
     "cover": "/assets/images/ETSY_01.jpg",
     "status": "published",
     "purchaseUrl": "https://www.etsy.com/listing/4617847784",
+    "etsyListingId": "4617847784",
     "translations": {
       "fr": {
         "title": "Beauty Instagram Kit : 160 templates personnalisables pour les professionnels de la beauté (FR/EN)",
@@ -743,6 +744,45 @@
         "shortDescription": "180 templates PowerPoint modifiables pour créer des supports de formation en beauté. Édition anglaise.",
         "description": "Structurez les supports de votre académie de beauté grâce à 180 templates PowerPoint modifiables répartis en 10 collections. Le pack comprend l’architecture du programme, des pages de théorie et de démonstration, des exercices, des évaluations, le suivi des élèves, des références de sécurité, un portfolio, des pages de fin de formation, des corrigés formateur et un guide d’utilisation. Il s’agit de templates à compléter, et non d’un cours déjà rédigé. Les fichiers sont en anglais et sont disponibles en téléchargement numérique instantané après achat sur Etsy.",
         "subcategory": "BEAUTÉ ET BIEN-ÊTRE"
+      }
+    }
+  },
+  {
+    "id": "beauty-business-templates-bundle-150",
+    "title": "Beauty Business Studio: 150 Editable Templates",
+    "shortDescription": "A 150-template collection for shaping a beauty studio’s brand, social content, client materials and organisation.",
+    "description": "**150 editable templates for a beauty business**\n\nBeauty Business Studio is a digital template collection for beauty professionals who want a more consistent way to present and organise their business. The product cover presents templates for visual identity, social media, beauty service cards, client consultations and appointment organisation.\n\nThe cover identifies PowerPoint and Canva as editing tools and describes the collection for professional use. This is a digital product; no physical item is shipped.",
+    "category": "Templates & Documents",
+    "subcategory": "FASHION & BEAUTY",
+    "productGroup": "Templates & Documents",
+    "productGroups": [
+      "Templates & Documents",
+      "Kits & Bundles"
+    ],
+    "productFamily": "templates-documents",
+    "productType": "templates",
+    "audience": "Specialists",
+    "language": "fr",
+    "price": 16.8,
+    "currency": "EUR",
+    "formats": [
+      "PPTX"
+    ],
+    "publishedAt": "2026-11-22T00:00:00+01:00",
+    "cover": "/assets/images/beauty-business-studio-cover.png",
+    "status": "published",
+    "purchaseUrl": "https://www.etsy.com/fr/listing/4622518758/beauty-business-templates-bundle-150",
+    "etsyListingId": "4622518758",
+    "translations": {
+      "fr": {
+        "title": "Beauty Business Studio : 150 modèles modifiables",
+        "shortDescription": "Une collection de 150 modèles pour l’identité, les réseaux sociaux, les supports clients et l’organisation d’un studio de beauté.",
+        "description": "**150 modèles modifiables pour votre activité beauté**\n\nBeauty Business Studio est une collection numérique destinée aux professionnelles de la beauté qui souhaitent présenter et organiser leur activité de façon cohérente. La couverture présente des modèles pour l’identité visuelle, les réseaux sociaux, les cartes de prestations, les consultations clients et l’organisation des rendez-vous.\n\nLa couverture indique PowerPoint et Canva comme outils de modification et présente la collection pour un usage professionnel. Il s’agit d’un produit numérique ; aucun article physique ne sera envoyé."
+      },
+      "en": {
+        "title": "Beauty Business Studio: 150 Editable Templates",
+        "shortDescription": "A 150-template collection for shaping a beauty studio’s brand, social content, client materials and organisation.",
+        "description": "**150 editable templates for a beauty business**\n\nBeauty Business Studio is a digital template collection for beauty professionals who want a more consistent way to present and organise their business. The product cover presents templates for visual identity, social media, beauty service cards, client consultations and appointment organisation.\n\nThe cover identifies PowerPoint and Canva as editing tools and describes the collection for professional use. This is a digital product; no physical item is shipped."
       }
     }
   }

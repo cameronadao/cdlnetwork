@@ -49,6 +49,23 @@
     }
   };
 
+  async function syncEtsyPrice(product) {
+    if (!product?.etsyListingId) return product;
+    try {
+      const response = await fetch(`/api/etsy-prices?id=${encodeURIComponent(product.etsyListingId)}`, {
+        headers: { Accept: 'application/json' }
+      });
+      if (!response.ok) return product;
+      const { prices = {} } = await response.json();
+      const latest = prices[String(product.etsyListingId)];
+      return latest && Number.isFinite(Number(latest.amount)) && latest.currency
+        ? { ...product, price: Number(latest.amount), currency: latest.currency }
+        : product;
+    } catch {
+      return product;
+    }
+  }
+
   function setMeta(selector, attribute, key, value) {
     let element = document.head.querySelector(`${selector}[${attribute}="${key}"]`);
     if (!element) {
@@ -118,7 +135,7 @@
       return;
     }
 
-    const product = products.find((item) => item && item.id === id);
+    let product = products.find((item) => item && item.id === id);
     if (!product) {
       showState('Product not found', 'We could not find a product with this identifier.');
       return;
@@ -127,6 +144,7 @@
       showState('Product not published', 'This product is not currently available to the public.');
       return;
     }
+    product = await syncEtsyPrice(product);
 
     const locale = window.CDL_I18N?.language || 'en';
     const translation = product.translations?.[locale] || {};
