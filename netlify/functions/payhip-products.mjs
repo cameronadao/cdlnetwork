@@ -37,6 +37,16 @@ function extractProductKey(source) {
   return url.match(/\/b\/([a-z0-9]{4,32})(?:[/?#]|$)/i)?.[1] || '';
 }
 
+function isZapierPlaceholder(source) {
+  if (source?._zap_data_was_skipped === true || source?._zap_data_was_skipped === 'true') return true;
+  const key = extractProductKey(source);
+  const title = String(source?.product_name || source?.name || source?.title || '').trim().toLowerCase();
+  const rawPrice = String(source?.price ?? source?.product_price ?? source?.amount ?? '').trim();
+  const currency = String(source?.currency || source?.currency_code || '').trim().toUpperCase();
+  // Zapier's built-in Payhip sample can be mapped without its hidden skip marker.
+  return key === '796T' && title === 'my ebook' && rawPrice === '1100' && currency === 'USD';
+}
+
 function parsePrice(source) {
   const raw = source.price ?? source.product_price ?? source.amount;
   const value = Number(String(raw ?? '').replace(/[^\d.,-]/g, '').replace(',', '.'));
@@ -130,7 +140,7 @@ export default async function payhipProducts(request) {
     if (!isAuthorized(request, readSecret())) return json({ error: 'Unauthorized.' }, 401);
     try {
       const payload = await request.json();
-      if (payload?._zap_data_was_skipped === true || payload?._zap_data_was_skipped === 'true') {
+      if (isZapierPlaceholder(payload?.product && typeof payload.product === 'object' ? payload.product : payload)) {
         return json({ ok: true, skipped: true, reason: 'Zapier placeholder test records are ignored.' });
       }
       let product = normalizeProduct(payload);
