@@ -1,5 +1,21 @@
 [
   {
+    "id": "conseils-apres-soin-beaute-support-ecrit",
+    "audience": "specialists",
+    "title": {
+      "fr": "Conseils après-soin en beauté : remettre un support clair sans remplacer le praticien"
+    },
+    "summary": {
+      "fr": "Comment préparer une carte après-soin, l’adapter à chaque prestation et l’utiliser pour assurer le suivi des clientes et clients."
+    },
+    "category": {
+      "fr": "Beauté · Relation client"
+    },
+    "publishedAt": "2026-11-22",
+    "url": "/conseils-apres-soin-beaute-support-ecrit.html",
+    "status": "published"
+  },
+  {
     "id": "carte-tarifs-beaute-reference-unique",
     "audience": "specialists",
     "title": {
