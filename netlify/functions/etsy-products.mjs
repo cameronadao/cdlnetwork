@@ -2,6 +2,7 @@ const SHOP_SEED_LISTING_ID = '4622518758';
 const ETSY_API_BASE = 'https://openapi.etsy.com/v3/application';
 const PAGE_SIZE = 100;
 const MAX_LISTINGS = 1000;
+const DETAIL_BATCH_SIZE = 8;
 
 function json(body, status = 200, cache = false) {
   const headers = { 'content-type': 'application/json; charset=utf-8' };
@@ -128,7 +129,6 @@ export default async function etsyProducts(request) {
     const requestedId = (params.get('listing_id') || '').replace(/^etsy-/, '');
     let listings = [];
     let total = 0;
-    let sample = [];
     if (requestedId) {
       if (!/^\d+$/.test(requestedId)) return json({ error: 'Invalid Etsy listing ID.' }, 400);
       const listing = await etsyGet(`/listings/${requestedId}?includes=Images`, apiKey);
@@ -136,19 +136,26 @@ export default async function etsyProducts(request) {
       listings = [listing];
     } else {
       for (let offset = 0; offset < MAX_LISTINGS; offset += PAGE_SIZE) {
-        const page = await etsyGet(`/shops/${shopId}/listings/active?limit=${PAGE_SIZE}&offset=${offset}&sort_on=created&sort_order=desc&includes=Images`, apiKey);
+        const page = await etsyGet(`/shops/${shopId}/listings/active?limit=${PAGE_SIZE}&offset=${offset}&sort_on=created&sort_order=desc`, apiKey);
         const results = Array.isArray(page.results) ? page.results : [];
-        if (!sample.length) sample = results.slice(0, 3).map((listing) => ({
-          id: listing.listing_id,
-          state: listing.state,
-          type: listing.listing_type,
-          shopId: listing.shop_id,
-          imageCount: Array.isArray(listing.images) ? listing.images.length : null,
-          title: listing.title
-        }));
         listings.push(...results);
         total = Number(page.count) || listings.length;
         if (!results.length || listings.length >= total || listings.length >= MAX_LISTINGS) break;
+      }
+
+      // Etsy's shop listings response omits image objects even with includes=Images.
+      // Fetch each active digital listing's detail so the catalogue gets its real cover.
+      for (let index = 0; index < listings.length; index += DETAIL_BATCH_SIZE) {
+        const batch = listings.slice(index, index + DETAIL_BATCH_SIZE);
+        const details = await Promise.all(batch.map(async (listing) => {
+          if (listing.state !== 'active' || listing.listing_type !== 'download') return listing;
+          try {
+            return await etsyGet(`/listings/${listing.listing_id}?includes=Images`, apiKey);
+          } catch {
+            return listing;
+          }
+        }));
+        listings.splice(index, batch.length, ...details);
       }
     }
 
@@ -156,9 +163,6 @@ export default async function etsyProducts(request) {
       .filter((listing) => String(listing.shop_id) === shopId && listing.state === 'active')
       .map(normalizeListing)
       .filter(Boolean);
-    if (params.get('debug') === '1' && !requestedId) {
-      return json({ products, count: products.length, diagnostic: { shopId, total, fetched: listings.length, sample } }, 200, true);
-    }
     return json({ products, count: products.length }, 200, true);
   } catch {
     return json({ error: 'Etsy products are temporarily unavailable.' }, 502);
