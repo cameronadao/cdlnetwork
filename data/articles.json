@@ -4285,5 +4285,253 @@
         }
       }
     ]
+  },
+  {
+    "id": "beauty-brand-identity-consistent-touchpoints",
+    "audience": "lifestyle-hobbyist",
+    "title": {
+      "fr": "Identité visuelle d’un institut de beauté : garder une marque cohérente sur tous les supports",
+      "en": "Beauty Salon Brand Identity: Keep Every Touchpoint Consistent"
+    },
+    "seoTitle": {
+      "fr": "Institut de beauté : une identité visuelle cohérente sur chaque support | CDB Projects",
+      "en": "Beauty Salon Branding: Keep Visuals Consistent Across Platforms | CDB Projects"
+    },
+    "metaDescription": {
+      "fr": "Logo, couleurs, publications et supports commerciaux doivent parler le même langage. Voici une méthode simple pour rendre l’identité visuelle d’un institut de beauté cohérente.",
+      "en": "Your logo, colors, social posts, and sales materials should feel like one brand. Use this practical method to create a consistent visual identity for a beauty studio."
+    },
+    "summary": {
+      "fr": "Posez quelques repères de marque, puis déclinez-les sur vos menus, publications et stories sans rendre chaque support identique.",
+      "en": "Set a few clear brand rules, then use them across menus, posts, and stories without making every format look the same."
+    },
+    "category": {
+      "fr": "Mode de vie",
+      "en": "Lifestyle"
+    },
+    "publishedAt": "2026-11-23",
+    "image": "/assets/images/beauty-visual-identity-kit-cover.jpg",
+    "imageAlt": {
+      "fr": "Couverture du kit d’identité visuelle beauté montrant des modèles coordonnés pour un studio indépendant.",
+      "en": "Cover of the beauty visual identity kit showing coordinated templates for an independent studio."
+    },
+    "url": "/identite-visuelle-institut-beaute-coherence-supports.html",
+    "productUrl": {
+      "fr": "https://cdbprojects.com/product.html?id=etsy-4623813287",
+      "en": "https://cdbprojects.com/product.html?id=etsy-4623813287"
+    },
+    "status": "published",
+    "sections": [
+      {
+        "type": "lead",
+        "text": {
+          "fr": "Une cliente découvre votre institut sur Instagram, consulte votre menu de prestations, puis reçoit une confirmation de réservation. Si les couleurs, les photos et le ton changent à chaque étape, elle peut avoir l’impression de passer d’une marque à une autre. Le problème ne se règle pas en ajoutant des modèles : il faut quelques repères visuels stables.",
+          "en": "A client discovers your studio on Instagram, checks your service menu, then receives a booking confirmation. If the colors, photos, and tone change at every step, it can feel like she is dealing with different businesses. The answer is not more templates; it is a small set of consistent visual rules."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une identité visuelle aide à reconnaître votre activité avant même de lire son nom. Elle se construit avec des choix qui se répètent : logo, couleurs, typographies, style des images et façon de présenter les informations. La cohérence ne signifie pas que chaque publication doit être identique. Elle signifie que les supports partagent des repères assez clairs pour sembler appartenir au même studio.",
+          "en": "A visual identity helps people recognize your business before they read its name. It comes from repeated choices: logo, colors, type, image style, and the way information is presented. Consistency does not mean every post must look the same. It means your materials share enough cues to feel like they belong to the same studio."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "1. Choisir les repères avant de créer les supports",
+          "en": "1. Choose your visual cues before making materials"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Commencez par décrire en quelques mots l’expérience que vous voulez faire ressentir : apaisante, précise, chaleureuse, audacieuse ou minimaliste. Ces mots vous aident à évaluer vos choix. Une typographie très décorative peut convenir à un univers éditorial, mais devenir difficile à lire sur une liste de prix. Une palette douce peut être cohérente avec un studio calme, mais manquer de contraste si les textes sont trop pâles.",
+          "en": "Start by describing the experience you want clients to feel in a few words: calm, precise, warm, bold, or minimal. Use those words to judge your design choices. A highly decorative typeface may suit an editorial look but become hard to read on a price list. A soft palette may fit a serene studio, yet lose contrast if the text is too light."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Définir une palette utilisable",
+          "en": "Build a usable color palette"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Retenez une couleur principale, une ou deux couleurs secondaires et une teinte de contraste pour les textes ou les boutons. Notez les codes couleur dans un document partagé. Cela évite de choisir à l’œil une nuance presque identique à chaque nouveau support. Vérifiez aussi que le texte reste lisible sur les fonds clairs et foncés que vous utilisez.",
+          "en": "Choose a main color, one or two supporting colors, and a contrasting shade for text or calls to action. Record the color codes in one shared reference. That prevents you from picking a nearly identical shade by eye each time you make something new. Check that text remains readable on both light and dark backgrounds."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Limiter les choix de typographie",
+          "en": "Keep typography choices manageable"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Attribuez à chaque police un rôle : titres, textes courants ou accent. Limitez les variations décoratives et testez les accents, les chiffres et les symboles monétaires, souvent présents dans les menus de prestations. Une police qui paraît élégante en grand peut être peu lisible sur un écran de téléphone.",
+          "en": "Give each typeface a role: headings, body text, or accents. Limit decorative variations, and test accented characters, numbers, and currency symbols, which appear often on service menus. A typeface that looks elegant at a large size may be hard to read on a phone."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "2. Créer une référence unique de marque",
+          "en": "2. Create one source of truth for your brand"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Rassemblez vos règles sur une page de référence : versions du logo, codes couleur, polices et usages, style photo, ton rédactionnel et coordonnées à jour. Ajoutez quelques exemples de ce qui correspond à votre marque et de ce qui s’en éloigne. Cette fiche n’a pas besoin d’être complexe ; elle doit permettre à vous-même ou à un prestataire de refaire un support sans deviner les choix précédents.",
+          "en": "Gather your rules on one reference page: logo variations, color codes, typefaces and their uses, photo style, writing tone, and current contact details. Add a few examples of what fits your brand and what does not. This guide does not need to be complex. It should help you or a contractor reproduce a material without guessing what you chose before."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Faites de cette référence la source de vos menus, publications, stories et supports commerciaux. Quand vous changez une couleur ou un logo, mettez à jour la fiche en premier, puis les supports concernés. Vous réduisez ainsi le risque de conserver une ancienne version dans un dossier ou de publier des informations différentes selon le canal.",
+          "en": "Use this reference as the starting point for menus, posts, stories, and sales materials. When you change a color or logo, update the guide first, then revise the materials that use it. This lowers the chance of leaving an old version in a folder or publishing different information across channels."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "3. Adapter le format au canal sans perdre les repères",
+          "en": "3. Adapt each format without losing your brand cues"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un menu imprimé, une publication et une story n’ont pas le même usage. Le menu doit rendre les prestations et les prix faciles à parcourir. Une publication doit transmettre une idée principale rapidement. Une story peut attirer l’attention sur une réservation, une nouveauté ou une information ponctuelle. Gardez vos couleurs, vos polices et votre style photo, mais adaptez la quantité de texte et la hiérarchie à l’espace disponible.",
+          "en": "A printed menu, a feed post, and a story serve different purposes. A menu should make services and prices easy to scan. A post should communicate one main idea quickly. A story can draw attention to bookings, a new service, or a timely detail. Keep your colors, type, and photo style, but adapt the amount of copy and its hierarchy to the space available."
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Menu et supports commerciaux : rendez les prestations, les prix et les modalités de réservation immédiatement repérables.",
+            "Publications : alternez les contenus utiles, les présentations de services et les preuves de votre travail, en gardant une mise en page reconnaissable.",
+            "Stories : privilégiez une seule information ou action par écran, avec un texte lisible sur téléphone.",
+            "Lancement : reprenez les mêmes repères visuels dans l’annonce, les rappels et le lien de réservation."
+          ],
+          "en": [
+            "Menus and sales materials: make services, prices, and booking details easy to find.",
+            "Feed posts: alternate useful information, service introductions, and examples of your work while keeping a recognizable layout.",
+            "Stories: focus on one piece of information or action per screen, with text that is easy to read on a phone.",
+            "Launch materials: carry the same visual cues through the announcement, reminders, and booking link."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "4. Personnaliser les modèles pour qu’ils vous ressemblent",
+          "en": "4. Personalize templates so they feel like your studio"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un modèle fournit une structure de départ. Il ne connaît ni votre clientèle, ni votre spécialité, ni les prestations que vous proposez. Remplacez les textes génériques par des formulations précises, vos vraies coordonnées et vos propres photos. Gardez uniquement les éléments qui servent votre message. Supprimer une décoration ou une page inutile peut rendre le support plus clair.",
+          "en": "A template gives you a starting structure. It does not know your clients, specialty, or actual services. Replace generic copy with precise wording, your real contact details, and your own photos. Keep only the elements that support your message. Removing a decorative detail or an unnecessary page can make a material clearer."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Avant de décliner un modèle en série, créez une version et vérifiez-la sur le support prévu. Regardez-la sur téléphone pour les réseaux sociaux et imprimez une épreuve pour les documents papier. Contrôlez les coupures de texte, le contraste, la taille des prix et la qualité des images. Une fois la mise en page validée, créez les autres variantes à partir de cette version.",
+          "en": "Before adapting a template into a full set, make one version and check it in its intended setting. View social content on a phone and print a proof for paper materials. Look for awkward line breaks, weak contrast, tiny prices, and poor image quality. Once the layout works, build the other variations from that approved version."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce que le Beauty Visual Identity Kit apporte — et ses limites",
+          "en": "What the Beauty Visual Identity Kit provides—and its limits"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le Beauty Visual Identity Kit de CDB Projects rassemble 160 modèles en français dans un fichier PPTX de 160 pages. Ses huit collections couvrent la stratégie (15 modèles), les logos (15), les couleurs et la typographie (10), la charte (10), les supports commerciaux (20), les publications Instagram (40), les stories (40) et le lancement (10). Le kit comprend aussi des instructions de modification et trois grilles de neuf publications à composer.",
+          "en": "CDB Projects’ Beauty Visual Identity Kit brings together 160 French-language templates in a 160-page PPTX. Its eight collections cover strategy (15 templates), logos (15), color and typography (10), brand guidelines (10), sales materials (20), Instagram posts (40), stories (40), and launches (10). It also includes editing instructions and three ready-to-compose grids of nine posts."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le fichier peut être ouvert dans PowerPoint et sa fiche indique une importation dans Canva ou Google Slides. Le canevas commun de 1 280 × 800 unités propose des repères d’export pour les publications en 1 080 × 1 350 px et les stories en 1 080 × 1 920 px. Après import, vérifiez la mise en page, les polices, les accents, les retours à la ligne et le cadrage avant de publier : le résultat peut varier d’un outil à l’autre.",
+          "en": "The file opens in PowerPoint, and the listing describes importing it into Canva or Google Slides. Its shared 1,280 × 800-unit canvas includes export guides for 1,080 × 1,350 px feed posts and 1,080 × 1,920 px stories. After importing, check the layout, typefaces, accented characters, line breaks, and cropping before publishing; results can vary between tools."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le kit accélère la mise en page, mais ne constitue pas une identité visuelle créée sur mesure. Les logos sont des modèles à personnaliser. Maison Éclat et les données d’exemple (équipe, tarifs, avis et adresse) sont fictifs et doivent être remplacés. Les images d’exemple sont générées par IA : utilisez vos propres photos pour montrer votre studio et vos prestations. Le contenu final et les informations commerciales restent à vérifier par votre activité.",
+          "en": "The kit can speed up layout work, but it is not a custom-designed brand identity. The logos are templates to personalize. Maison Éclat and its sample details (team, prices, reviews, and address) are fictional and must be replaced. Example images are AI-generated; use your own photos to show your studio and services. You are still responsible for checking the final copy and business information."
+        }
+      },
+      {
+        "type": "cta",
+        "text": {
+          "fr": "Le Beauty Visual Identity Kit propose 160 modèles PPTX en français pour décliner une identité visuelle sur les supports d’un studio de beauté. Consultez sa fiche produit pour voir le kit et ses conditions.",
+          "en": "The Beauty Visual Identity Kit offers 160 French-language PPTX templates for applying a visual identity across a beauty studio’s materials. Visit the product page to see the kit and its details."
+        },
+        "button": {
+          "fr": "Découvrir le Beauty Visual Identity Kit",
+          "en": "Explore the Beauty Visual Identity Kit"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Checklist avant de publier",
+          "en": "A checklist before publishing"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Le logo, les couleurs et les polices correspondent à votre référence de marque.",
+            "Les prix, noms de prestations, durées et coordonnées sont exacts et à jour.",
+            "Chaque support est lisible à sa taille réelle, surtout sur téléphone.",
+            "Les photos montrent votre activité et sont adaptées au format choisi.",
+            "Les éléments fictifs et les textes de démonstration ont été remplacés.",
+            "Les fichiers exportés ont été relus et, si besoin, imprimés à titre d’essai."
+          ],
+          "en": [
+            "The logo, colors, and typefaces match your brand reference.",
+            "Prices, service names, durations, and contact details are accurate and current.",
+            "Each material is readable at its actual size, especially on a phone.",
+            "Photos represent your business and suit the selected format.",
+            "Fictional details and sample copy have been replaced.",
+            "Exported files have been reviewed and, where useful, test-printed."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "À retenir",
+          "en": "Key takeaway"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Pour garder une identité visuelle cohérente, définissez d’abord vos repères, rassemblez-les dans une référence unique, puis adaptez chaque support à son canal. Les modèles peuvent simplifier la mise en page, mais ils ne choisissent pas votre positionnement et ne remplacent pas vos photos, vos textes ni la vérification des informations. Commencez par un menu ou une publication, validez-la sur son support réel, puis déclinez le reste à partir de cette base.",
+          "en": "To keep your visual identity consistent, define your cues first, collect them in one reference, then adapt each material to its channel. Templates can simplify layout, but they do not choose your positioning or replace your photos, copy, or information checks. Start with a menu or a post, review it in its actual setting, then build the rest from that foundation."
+        }
+      }
+    ]
   }
 ]
