@@ -264,7 +264,7 @@
       clearButton?.addEventListener('click', () => {
         currentPage = 1;
         [audienceSelect, subcategorySelect, typeSelect, languageSelect].forEach((select) => { if (select) select.value = ''; });
-        if (sortSelect) sortSelect.value = 'price-asc';
+        if (sortSelect) sortSelect.value = 'newest';
         render(products);
       });
       render(products);
