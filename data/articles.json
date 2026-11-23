@@ -1,7 +1,7 @@
 [
   {
     "id": "livret-accueil-client-institut-beaute",
-    "audience": "specialists",
+    "audience": "lifestyle-hobbyist",
     "title": {
       "fr": "Livret d’accueil client en institut de beauté : poser le cadre dès la première visite",
       "en": "Beauty Client Welcome Guide: Set Expectations Before the First Visit"
@@ -18,10 +18,7 @@
       "fr": "Construisez un livret d’accueil qui répond aux questions récurrentes, clarifie les règles et prépare vos nouveaux clients à leur première visite.",
       "en": "Create a welcome guide that answers recurring questions, clarifies studio policies and prepares new clients for their first appointment."
     },
-    "category": {
-      "fr": "Beauté · Relation client",
-      "en": "Beauty · Client Experience"
-    },
+    "category": {"fr": "Mode de vie", "en": "Lifestyle"},
     "publishedAt": "2026-11-23",
     "url": {
       "fr": "/article-livret-accueil-client-institut-beaute.html",
@@ -416,23 +413,21 @@
   {
     "id": "conseils-apres-soin-beaute-support-ecrit",
     "image": "/assets/images/cartes-conseils-apres-soin-beaute.jpg",
-    "audience": "specialists",
+    "audience": "lifestyle-hobbyist",
     "title": {
       "fr": "Conseils après-soin en beauté : remettre un support clair sans remplacer le praticien"
     },
     "summary": {
       "fr": "Comment préparer une carte après-soin, l’adapter à chaque prestation et l’utiliser pour assurer le suivi des clientes et clients."
     },
-    "category": {
-      "fr": "Beauté · Relation client"
-    },
+    "category": {"fr": "Mode de vie"},
     "publishedAt": "2026-11-22",
     "url": "/conseils-apres-soin-beaute-support-ecrit.html",
     "status": "published"
   },
   {
     "id": "carte-tarifs-beaute-reference-unique",
-    "audience": "specialists",
+    "audience": "lifestyle-hobbyist",
     "title": {
       "fr": "Carte de tarifs beauté : une référence unique pour tous vos supports",
       "en": "Beauty Price Lists: One Source of Truth for Every Channel"
@@ -449,10 +444,7 @@
       "fr": "Apprenez à créer une carte de tarifs de référence, puis à la décliner pour l’impression, Instagram et les stories sans créer d’écarts entre vos prix et vos durées.",
       "en": "Learn how to create a master beauty price list and adapt it for print, Instagram and Stories without introducing conflicting prices or service times."
     },
-    "category": {
-      "fr": "Beauté · Gestion",
-      "en": "Beauty · Business"
-    },
+    "category": {"fr": "Mode de vie", "en": "Lifestyle"},
     "publishedAt": "2026-11-22",
     "url": {
       "fr": "/article-carte-tarifs-beaute-reference-unique.html",
@@ -774,7 +766,7 @@
   },
   {
     "id": "identite-visuelle-institut-beaute",
-    "audience": "specialists",
+    "audience": "lifestyle-hobbyist",
     "title": {
       "fr": "Créer une identité visuelle cohérente pour son activité beauté : le guide pratique",
       "en": "Build a Consistent Visual Identity for Your Beauty Business: A Practical Guide"
@@ -783,10 +775,7 @@
       "fr": "Une belle publication Instagram ne suffit pas à construire une marque. Découvrez comment définir votre univers, harmoniser vos supports et créer une communication professionnelle qui aide vos clientes à vous reconnaître, à comprendre vos prestations et à réserver plus facilement.",
       "en": "A polished Instagram post is only one part of a strong brand. Learn how to define your visual world, align your business materials and create clear communication that helps clients recognize your studio, understand your services and book with confidence."
     },
-    "category": {
-      "fr": "Marketing & communication",
-      "en": "Marketing & communication"
-    },
+    "category": {"fr": "Mode de vie", "en": "Lifestyle"},
     "publishedAt": "2026-11-21",
     "url": {
       "fr": "/identite-visuelle-institut-beaute.html",
@@ -3810,7 +3799,7 @@
   },
   {
     "id": "instagram-beaute-identite-visuelle-reconnaissable",
-    "audience": "specialists",
+    "audience": "lifestyle-hobbyist",
     "title": {
       "fr": "Instagram beauté : construire une identité visuelle reconnaissable (et non un simple catalogue de templates)",
       "en": "Beauty Instagram: Build a Recognizable Visual Identity, Not Just a Template Catalog"
@@ -3819,10 +3808,7 @@
       "fr": "Une grille cohérente repose sur des choix de marque, des photos réelles et des templates utilisés avec intention. Voici une méthode concrète pour y parvenir.",
       "en": "A cohesive feed comes from intentional brand choices, real photos, and thoughtful use of templates. Here is a practical way to build one."
     },
-    "category": {
-      "fr": "Beauté · Instagram · Identité visuelle",
-      "en": "Beauty · Instagram · Visual Identity"
-    },
+    "category": {"fr": "Mode de vie", "en": "Lifestyle"},
     "publishedAt": "2026-11-15",
     "image": "/assets/images/identite-visuelle-instagram-beaute-kit.jpg",
     "url": "/article-instagram-beaute-identite-visuelle.html",
@@ -4070,7 +4056,7 @@
   },
   {
     "id": "beauty-training-structure-progression-before-templates",
-    "audience": "specialists",
+    "audience": "lifestyle-hobbyist",
     "title": {
       "fr": "Structurer une formation beauté : la progression avant les modèles",
       "en": "How to Structure Beauty Training: Progression Before Templates"
@@ -4087,10 +4073,7 @@
       "fr": "Un support de cours beauté ne se résume pas à des modèles. Voici comment construire une progression pédagogique cohérente, de l’accueil à l’évaluation.",
       "en": "A beauty course workbook is more than a set of templates. Learn how to build a clear learning progression from orientation to assessment."
     },
-    "category": {
-      "fr": "Formation · Beauté",
-      "en": "Beauty Education · Training"
-    },
+    "category": {"fr": "Mode de vie", "en": "Lifestyle"},
     "publishedAt": "2026-11-21",
     "image": "/assets/images/article-structurer-formation-beaute-progression.jpg",
     "imageAlt": {
