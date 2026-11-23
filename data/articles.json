@@ -1,5 +1,419 @@
 [
   {
+    "id": "livret-accueil-client-institut-beaute",
+    "audience": "specialists",
+    "title": {
+      "fr": "Livret d’accueil client en institut de beauté : poser le cadre dès la première visite",
+      "en": "Beauty Client Welcome Guide: Set Expectations Before the First Visit"
+    },
+    "seoTitle": {
+      "fr": "Livret d’accueil institut de beauté : à quoi doit-il servir ?",
+      "en": "Beauty Salon Welcome Guide: What Should It Include?"
+    },
+    "metaDescription": {
+      "fr": "Un livret d’accueil ne sert pas qu’à faire joli. Il aligne les attentes avant la première visite : préparation, étiquette, annulation et suivi. Voici comment le construire.",
+      "en": "A welcome guide does more than look polished. It aligns expectations before a first visit, from preparation and etiquette to cancellations and follow-up."
+    },
+    "summary": {
+      "fr": "Construisez un livret d’accueil qui répond aux questions récurrentes, clarifie les règles et prépare vos nouveaux clients à leur première visite.",
+      "en": "Create a welcome guide that answers recurring questions, clarifies studio policies and prepares new clients for their first appointment."
+    },
+    "category": {
+      "fr": "Beauté · Relation client",
+      "en": "Beauty · Client Experience"
+    },
+    "publishedAt": "2026-11-23",
+    "url": {
+      "fr": "/article-livret-accueil-client-institut-beaute.html",
+      "en": "/article-livret-accueil-client-institut-beaute.html"
+    },
+    "status": "published",
+    "image": "/assets/images/beauty-business-studio-cover.jpg",
+    "productUrl": {
+      "fr": "https://cdbprojects.com/product.html?id=etsy-4623387359",
+      "en": "https://cdbprojects.com/product.html?id=etsy-4623387359"
+    },
+    "sections": [
+      {
+        "type": "lead",
+        "text": {
+          "fr": "Une nouvelle cliente réserve un soin du visage. Elle reçoit une confirmation par email, puis un rappel la veille. Le jour J, elle arrive sans savoir qu’elle doit venir démaquillée, combien de temps prévoir ni ce qui se passe en cas d’annulation. Le professionnel répond aux mêmes questions à chaque nouveau rendez-vous, parfois avec des variantes. La relation commence par une série de petites incertitudes.",
+          "en": "A new client books a facial. She receives a confirmation email and a reminder the day before. On the day, she arrives unsure whether to remove her makeup, how much time to allow or what happens if she needs to cancel. The professional answers the same questions before every first appointment, sometimes with slightly different details. The relationship begins with a series of small uncertainties."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un livret d’accueil client ne résout pas tout. Il ne remplace ni la conversation au rendez-vous, ni le protocole de soin, ni les conditions générales de vente. Mais il aligne les attentes avant la première visite : comment se préparer, comment se déroule le rendez-vous, quelles sont les règles de réservation et comment fonctionne le suivi. C’est un outil de cadrage, pas un document décoratif.",
+          "en": "A client welcome guide cannot solve everything. It does not replace a conversation at the appointment, a treatment protocol or your terms and conditions. But it can align expectations before the first visit: how to prepare, what will happen during the appointment, how booking policies work and what follow-up to expect. It is a tool for setting expectations, not a decorative document."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Le rôle d’un livret d’accueil",
+          "en": "What a welcome guide is for"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un livret d’accueil remplit trois fonctions. Il réduit les questions répétitives en donnant au client les informations de base avant qu’il les demande. Il pose un cadre en clarifiant les règles de retard, d’annulation, d’acompte et de paiement. Il prépare le rendez-vous en indiquant comment venir, quoi apporter et quelles informations signaler au professionnel, comme des allergies ou des traitements récents.",
+          "en": "A welcome guide has three jobs. It reduces repeated questions by sharing essential information before a client has to ask. It sets expectations by explaining lateness, cancellation, deposit and payment policies. It helps clients prepare by telling them what to bring and what to disclose, such as allergies or recent treatments."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce qu’il ne remplace pas",
+          "en": "What it does not replace"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Trois documents doivent rester distincts. Les conditions générales de vente fixent les obligations du studio et du client. Le protocole de soin décrit les étapes techniques, les produits et les précautions propres à la prestation. La fiche de consultation recueille les informations personnelles nécessaires au soin et doit être conservée dans un système adapté et sécurisé.",
+          "en": "Keep three other documents separate. Your terms and conditions define the studio’s and client’s obligations. The treatment protocol describes the technical steps, products and precautions for a service. The consultation form collects personal information needed for the treatment and should be stored in an appropriate, secure system."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un livret qui prétend remplacer ces documents crée de la confusion. Il peut les présenter ou y renvoyer, mais il ne doit pas tenir lieu de conditions contractuelles, de protocole professionnel ou de dossier client.",
+          "en": "A welcome guide that tries to replace these documents creates confusion. It can introduce them or point clients to them, but it should not stand in for contractual terms, professional procedures or a client record."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Les informations indispensables",
+          "en": "The information clients need"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Présenter le studio et l’équipe",
+          "en": "Introduce the studio and team"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Expliquez qui accueille le client, quelles sont les spécialités du studio et à quoi ressemble l’expérience. Cette présentation crée un premier lien, mais restez concise et fidèle à ce que le client vivra réellement.",
+          "en": "Explain who will welcome the client, what the studio specializes in and what the experience feels like. This helps establish a connection, but keep it concise and true to what clients will actually experience."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Expliquer les prestations",
+          "en": "Explain the services"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Indiquez les prix, les durées et ce qui est inclus, ou renvoyez vers la carte détaillée. Le livret et le menu doivent reprendre les mêmes informations afin d’éviter la création de deux références différentes.",
+          "en": "Show prices, durations and what each service includes, or link to your detailed menu. The guide and the menu should use the same information so they do not become competing sources."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Donner les informations pratiques",
+          "en": "Share practical details"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Ajoutez l’adresse, les horaires, les indications d’accès et, si utile, les informations de stationnement. Précisez comment se préparer : venir démaquillée, éviter le mascara ou signaler une allergie, uniquement lorsque ces consignes correspondent au soin proposé.",
+          "en": "Include the address, opening hours, directions and, where useful, parking details. Explain how to prepare, such as arriving without makeup or avoiding mascara, only when those instructions fit the service being booked. Invite clients to mention relevant allergies."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Clarifier les règles de réservation",
+          "en": "Clarify booking policies"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Présentez clairement les modalités d’acompte, le délai d’annulation, la gestion des retards, les possibilités de report et les moyens de paiement. Assurez-vous que ces informations correspondent aux conditions générales du studio et renvoient vers celles-ci lorsqu’elles existent.",
+          "en": "Clearly explain deposits, cancellation notice, lateness, rescheduling and payment methods. Make sure these details match the studio’s terms and conditions, and point clients to the full terms where available."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Ajouter la fidélité seulement si les règles sont claires",
+          "en": "Include loyalty details only when the rules are clear"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un programme de fidélité peut compléter le livret. Expliquez simplement comment les visites sont comptabilisées, le montant du crédit ou de la récompense, sa durée de validité et ses conditions d’utilisation. Adaptez le programme à votre activité et aux règles applicables.",
+          "en": "A loyalty program can be included as an optional section. Explain how visits are counted, the value of the reward or credit, its validity period and any terms of use. Adapt the program to your business and applicable rules."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Structurer un document qui sera lu",
+          "en": "Make the guide easy to read"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un livret trop long ou difficile à parcourir ne sera pas consulté. Trois principes aident à le rendre utile.",
+          "en": "A guide that is too long or hard to scan is unlikely to be used. Three principles help keep it practical."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Prévoir un sommaire clair",
+          "en": "Add a clear contents page"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le client doit trouver en quelques secondes comment annuler, comment se préparer ou comment réserver. Des titres explicites et un sommaire simple rendent les réponses faciles à repérer.",
+          "en": "Clients should be able to find cancellation details, preparation instructions or booking information in seconds. Clear headings and a simple contents page make answers easy to locate."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Une page, un message",
+          "en": "One page, one message"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Séparez la préparation, le déroulé du rendez-vous et les règles de réservation. Des pages courtes, chacune consacrée à un sujet, sont plus faciles à lire que de longs blocs qui mélangent plusieurs informations.",
+          "en": "Separate preparation, appointment flow and booking policies. Short pages, each focused on one subject, are easier to read than long blocks that combine several topics."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Choisir un ton fidèle au studio",
+          "en": "Use a tone that reflects the studio"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un studio calme et posé n’a pas besoin d’un livret pressé et promotionnel. Un studio plus ludique peut adopter un ton léger. Le document doit refléter l’expérience que le client va réellement vivre.",
+          "en": "A calm, considered studio does not need a rushed, promotional guide. A more playful studio can use a lighter tone. The document should reflect the experience clients will actually have."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce que le Beauty Client Welcome Pack apporte — et ses limites",
+          "en": "What the Beauty Client Welcome Pack offers—and its limits"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le Beauty Client Welcome Pack de CDB Projects est une ressource payante en anglais, au format PPTX, composée de 19 pages pour un studio fictif, Maison Muse. Il couvre l’accueil, l’équipe, le menu des prestations, la première visite, les conseils avant et après soin, l’étiquette du studio, la réservation et un programme de fidélité.",
+          "en": "CDB Projects’ paid Beauty Client Welcome Pack is an English-language PPTX resource with 19 pages for the fictional studio Maison Muse. It covers the welcome, team, service menu, first visit, pre- and post-treatment guidance, studio etiquette, booking and a loyalty program."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le pack comprend un menu avec prix et durées pour les sourcils, les cils, les soins du visage et un rituel signature ; une première visite en quatre étapes ; des règles sur le retard, l’annulation et un acompte illustratif de 20 € ; ainsi qu’un exemple de fidélité où cinq visites payantes donnent 15 € de crédit. Les instructions de réservation par email sont également prévues.",
+          "en": "The pack includes a menu with sample prices and durations for brows, lashes, facials and a signature ritual; a four-step first-visit page; example guidance on lateness, cancellations and a €20 deposit; and a loyalty example where five paid visits earn €15 in credit. It also includes instructions for booking by email."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Ces éléments sont des exemples, pas des valeurs à reprendre tels quels. Les prix, durées, adresses et emails sont fictifs ; les identités de Camille Laurent, Inès, Mei et Nora sont également fictives. Remplacez-les par vos informations. Les photos sont générées pour le pack et doivent être vérifiées avant utilisation, notamment pour l’impression. Adaptez les règles de fidélité à votre modèle et aux règles applicables ; faites correspondre les conseils après-soin à votre protocole réel. Le pack ne remplace ni vos conditions générales de vente ni vos mentions légales.",
+          "en": "These details are examples, not figures to copy as-is. Prices, durations, addresses and email addresses are fictional, as are the identities Camille Laurent, Inès, Mei and Nora. Replace them with your own information. The photos were generated for the pack and should be checked before use, especially for print. Adapt the loyalty rules to your business model and applicable requirements, and align aftercare advice with your actual protocol. The pack does not replace your terms and conditions or required legal notices."
+        }
+      },
+      {
+        "type": "cta",
+        "text": {
+          "fr": "Découvrez le Beauty Client Welcome Pack et ses pages personnalisables pour préparer l’accueil de vos clientes.",
+          "en": "Explore the Beauty Client Welcome Pack and its customizable pages for welcoming clients."
+        },
+        "button": {
+          "fr": "Voir le pack",
+          "en": "View the pack"
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Vérifier la cohérence avant de remettre le livret",
+          "en": "Check consistency before sharing the guide"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Avant de l’imprimer ou de l’envoyer, comparez-le à vos documents et à votre façon réelle de travailler. Trois vérifications évitent les contradictions.",
+          "en": "Before printing or sending the guide, compare it with your other documents and your actual way of working. Three checks help prevent contradictions."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les prix et les durées correspondent-ils au menu ?",
+          "en": "Do prices and durations match the service menu?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un écart entre le livret et la carte de prestations crée immédiatement un doute. Utilisez une carte de référence et reprenez les mêmes valeurs partout.",
+          "en": "A difference between the guide and the service menu immediately creates doubt. Maintain one master menu and use the same values everywhere."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les règles de réservation correspondent-elles aux CGV ?",
+          "en": "Do booking policies match the terms and conditions?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Vérifiez que l’acompte, le délai d’annulation et les conditions de report sont cohérents dans les deux documents. Si vous modifiez une règle, mettez à jour chaque support concerné.",
+          "en": "Check that deposits, cancellation notice and rescheduling terms match in both places. If a policy changes, update every affected document."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Les informations pratiques sont-elles à jour ?",
+          "en": "Are the practical details up to date?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Adresse, horaires, accès et coordonnées peuvent changer. Relisez-les à chaque nouvelle version du livret avant de le transmettre.",
+          "en": "Addresses, hours, directions and contact details can change. Review them every time you prepare a new version of the guide."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Utiliser le livret avant et après la visite",
+          "en": "Use the guide before and after the appointment"
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "L’envoyer avant le rendez-vous",
+          "en": "Send it before the appointment"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Joint à la confirmation, le livret aide le client à se préparer et lui permet de poser ses questions en amont.",
+          "en": "Sent with the booking confirmation, the guide helps clients prepare and gives them a chance to ask questions ahead of time."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "Le remettre à l’accueil",
+          "en": "Offer it at reception"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un exemplaire imprimé peut être consulté pendant l’attente et emporté comme référence. Assurez-vous que les textes et les photos restent lisibles sur papier.",
+          "en": "A printed copy can be browsed while waiting and taken home as a reference. Check that text and photos remain legible on paper."
+        }
+      },
+      {
+        "type": "h3",
+        "text": {
+          "fr": "S’en servir pour le suivi",
+          "en": "Use it for follow-up"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Les conseils après-soin peuvent être consultés à nouveau après la visite, à condition qu’ils correspondent au protocole réellement suivi. Le livret devient alors un support de suivi, pas seulement un document d’accueil.",
+          "en": "Clients can refer back to aftercare guidance after their visit, provided it matches the actual treatment protocol. The guide then supports follow-up as well as the first welcome."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Checklist avant remise",
+          "en": "Checklist before sharing"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Les prix et durées correspondent à la carte de prestations.",
+            "Les règles de retard, d’annulation et d’acompte correspondent aux CGV.",
+            "L’adresse, les horaires et les coordonnées sont à jour.",
+            "Les conseils de préparation et d’après-soin correspondent aux protocoles réels.",
+            "Le programme de fidélité est expliqué et adapté au studio.",
+            "Les noms, emails, prix et autres exemples fictifs ont été remplacés.",
+            "Les photos sont adaptées au support, notamment à l’impression."
+          ],
+          "en": [
+            "Prices and durations match the service menu.",
+            "Lateness, cancellation and deposit policies match the terms and conditions.",
+            "The address, opening hours and contact details are current.",
+            "Preparation and aftercare advice match actual protocols.",
+            "The loyalty program is clearly explained and adapted to the studio.",
+            "Fictional names, emails, prices and other examples have been replaced.",
+            "Photos are suitable for the intended format, especially print."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce qu’il faut retenir",
+          "en": "Key takeaway"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Un livret d’accueil client ne sert pas qu’à faire joli. Il aligne les attentes avant la première visite : préparation, déroulé, règles de réservation et suivi. Il doit rester cohérent avec la carte des prestations, les conditions générales et le protocole de soin. Un pack de bienvenue accélère la mise en forme, mais ne remplace ni la vérification des informations, ni l’adaptation au studio, ni les obligations applicables.",
+          "en": "A client welcome guide does more than look polished. It aligns expectations before the first visit: preparation, appointment flow, booking policies and follow-up. It should stay consistent with the service menu, terms and conditions, and treatment protocols. A template pack can speed up formatting, but it does not replace checking the details, adapting them to the studio or meeting applicable requirements."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Commencez par noter les trois questions que vos nouveaux clients posent le plus souvent. Vérifiez qu’elles trouvent une réponse claire dans votre livret actuel ; sinon, ce sont les premières informations à ajouter.",
+          "en": "Start by writing down the three questions new clients ask most often. Check that your current guide answers them clearly; if it does not, those are the first details to add."
+        }
+      }
+    ]
+  },
+  {
     "id": "conseils-apres-soin-beaute-support-ecrit",
     "image": "/assets/images/cartes-conseils-apres-soin-beaute.jpg",
     "audience": "specialists",
