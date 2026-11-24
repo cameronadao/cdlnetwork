@@ -68,6 +68,63 @@
     });
   }
 
+  let linkedProduct = null;
+
+  function productIdFromUrl(rawUrl) {
+    try {
+      const url = new URL(rawUrl, window.location.origin);
+      const explicitId = url.searchParams.get('id');
+      if (explicitId) return explicitId;
+      const listingId = url.pathname.match(/\\/listing\\/(\\d+)(?:\\/|$)/)?.[1];
+      if (listingId) return `etsy-${listingId}`;
+      const payhipKey = url.searchParams.get('product_key') || url.pathname.match(/\\/b\\/([A-Za-z0-9]+)(?:\\/|$)/)?.[1];
+      if (payhipKey) return `payhip-${payhipKey}`;
+    } catch (error) {
+      console.error('Unable to read the linked product URL:', error);
+    }
+    return '';
+  }
+
+  async function loadLinkedProduct() {
+    const productUrl = text(currentArticle?.productUrl, window.CDL_I18N?.language || 'en');
+    const id = productIdFromUrl(productUrl);
+    if (!id) return null;
+    try {
+      const catalogResponse = await fetch('/data/products.json', { headers: { Accept: 'application/json' } });
+      if (catalogResponse.ok) {
+        const catalog = await catalogResponse.json();
+        const product = Array.isArray(catalog) ? catalog.find((item) => item?.id === id && item.status === 'published') : null;
+        if (product) return product;
+      }
+    } catch (error) {
+      console.error('Unable to load product covers from the catalogue:', error);
+    }
+    let endpoint = '';
+    if (/^etsy-\\d+$/.test(id)) endpoint = `/api/etsy-products?listing_id=${encodeURIComponent(id.slice(5))}`;
+    else if (/^payhip-[a-z0-9]{4,32}$/i.test(id)) endpoint = `/api/payhip-products?product_key=${encodeURIComponent(id.slice(7))}`;
+    if (!endpoint) return null;
+    try {
+      const response = await fetch(endpoint, { headers: { Accept: 'application/json' } });
+      if (!response.ok) return null;
+      const payload = await response.json();
+      return Array.isArray(payload.products) ? payload.products.find((item) => item?.id === id) || null : null;
+    } catch (error) {
+      console.error('Unable to load the linked product cover:', error);
+      return null;
+    }
+  }
+
+  function renderLinkedProductCover(language) {
+    const image = article.querySelector('.article-detail-aside > img');
+    if (!image || !linkedProduct) return;
+    const cover = linkedProduct.covers?.[language] || linkedProduct.cover;
+    if (!cover) return;
+    const productTitle = linkedProduct.translations?.[language]?.title || linkedProduct.title || '';
+    image.src = cover;
+    image.alt = language === 'fr' ? `Couverture du produit : ${productTitle}` : `Product cover: ${productTitle}`;
+    image.dataset.productId = linkedProduct.id;
+  }
+
   function render() {
     if (!currentArticle) return;
     const language = window.CDL_I18N?.language || 'en';
@@ -77,6 +134,7 @@
     category.textContent = t(currentArticle.category);
     document.title = text(currentArticle.seoTitle, language) || `${t(currentArticle.title)} | CDB Projects`;
     updateArticleMetadata(language);
+    renderLinkedProductCover(language);
     if (currentArticle.publishedAt) {
       date.dateTime = currentArticle.publishedAt;
       date.textContent = new Intl.DateTimeFormat(language === 'fr' ? 'fr-FR' : 'en-US', { dateStyle: 'long' }).format(new Date(`${currentArticle.publishedAt}T12:00:00`));
@@ -194,6 +252,10 @@
       currentArticle = articles.find((item) => item.id === article.dataset.articleId && item.status === 'published');
       if (!currentArticle) throw new Error('Article not found');
       render();
+      loadLinkedProduct().then((product) => {
+        linkedProduct = product;
+        renderLinkedProductCover(window.CDL_I18N?.language || 'en');
+      });
       document.addEventListener('cdl:languagechange', render);
     })
     .catch((error) => { console.error('Unable to load article:', error); title.textContent = 'Article unavailable'; content.textContent = 'Please return to the articles page and try again.'; });
