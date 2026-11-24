@@ -1,5 +1,5 @@
 (() => {
-  const article = document.querySelector('[data-article-id]');
+  const article = document.querySelector('[data-article-id]') || document.querySelector('article.article-detail');
   if (!article) return;
   const title = article.querySelector('[data-article-title]');
   const summary = article.querySelector('[data-article-summary]');
@@ -86,7 +86,7 @@
   }
 
   async function loadLinkedProduct() {
-    const productUrl = text(currentArticle?.productUrl, window.CDL_I18N?.language || 'en');
+    const productUrl = text(currentArticle?.productUrl, window.CDL_I18N?.language || 'en') || article.querySelector('.article-detail-product-link')?.href || '';
     const id = productIdFromUrl(productUrl);
     if (!id) return null;
     try {
@@ -115,8 +115,15 @@
   }
 
   function renderLinkedProductCover(language) {
-    const image = article.querySelector('.article-detail-aside > img');
-    if (!image || !linkedProduct) return;
+    const aside = article.querySelector('.article-detail-aside');
+    const productLink = aside?.querySelector('.article-detail-product-link');
+    if (!aside || !productLink || !linkedProduct) return;
+    let image = aside.querySelector(':scope > img');
+    if (!image) {
+      image = document.createElement('img');
+      image.loading = 'lazy';
+      productLink.before(image);
+    }
     const cover = linkedProduct.covers?.[language] || linkedProduct.cover;
     if (!cover) return;
     const productTitle = linkedProduct.translations?.[language]?.title || linkedProduct.title || '';
@@ -244,6 +251,15 @@
           ? t({ fr: 'Explorer les ressources beauté ↗', en: 'Explore beauty resources ↗' })
           : t({ fr: 'Explorer Planning & Tracking ↗', en: 'Explore Planning & Tracking ↗' });
     }
+  }
+
+  if (!article.dataset.articleId) {
+    loadLinkedProduct().then((product) => {
+      linkedProduct = product;
+      renderLinkedProductCover(window.CDL_I18N?.language || 'en');
+    });
+    document.addEventListener('cdl:languagechange', () => renderLinkedProductCover(window.CDL_I18N?.language || 'en'));
+    return;
   }
 
   fetch('/data/articles.json', { headers: { Accept: 'application/json' } })
