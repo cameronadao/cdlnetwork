@@ -75,9 +75,9 @@
       const url = new URL(rawUrl, window.location.origin);
       const explicitId = url.searchParams.get('id');
       if (explicitId) return explicitId;
-      const listingId = url.pathname.match(/\\/listing\\/(\\d+)(?:\\/|$)/)?.[1];
+      const listingId = url.pathname.match(/\/listing\/(\d+)(?:\/|$)/)?.[1];
       if (listingId) return `etsy-${listingId}`;
-      const payhipKey = url.searchParams.get('product_key') || url.pathname.match(/\\/b\\/([A-Za-z0-9]+)(?:\\/|$)/)?.[1];
+      const payhipKey = url.searchParams.get('product_key') || url.pathname.match(/\/b\/([A-Za-z0-9]+)(?:\/|$)/)?.[1];
       if (payhipKey) return `payhip-${payhipKey}`;
     } catch (error) {
       console.error('Unable to read the linked product URL:', error);
@@ -100,7 +100,7 @@
       console.error('Unable to load product covers from the catalogue:', error);
     }
     let endpoint = '';
-    if (/^etsy-\\d+$/.test(id)) endpoint = `/api/etsy-products?listing_id=${encodeURIComponent(id.slice(5))}`;
+    if (/^etsy-\d+$/.test(id)) endpoint = `/api/etsy-products?listing_id=${encodeURIComponent(id.slice(5))}`;
     else if (/^payhip-[a-z0-9]{4,32}$/i.test(id)) endpoint = `/api/payhip-products?product_key=${encodeURIComponent(id.slice(7))}`;
     if (!endpoint) return null;
     try {
