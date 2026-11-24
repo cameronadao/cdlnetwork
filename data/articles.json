@@ -1,5 +1,242 @@
 [
   {
+    "id": "consultation-client-facialiste-methode-structurer",
+    "audience": "lifestyle-hobbyist",
+    "title": {
+      "fr": "Comment structurer une consultation client professionnelle dans un institut de soins du visage",
+      "en": "How to Structure a Professional Client Consultation in a Facial Studio"
+    },
+    "seoTitle": {
+      "fr": "Consultation client facialiste : la méthode pour structurer vos soins",
+      "en": "Facialist Client Consultations: A Practical Structure for Every Appointment"
+    },
+    "metaDescription": {
+      "fr": "Découvrez comment structurer une consultation client professionnelle pour vos soins du visage : étapes, méthode et erreurs à éviter pour une expérience plus claire.",
+      "en": "Learn how to structure a professional facial consultation, from first contact and safety checks to treatment planning and follow-up."
+    },
+    "summary": {
+      "fr": "Une consultation structurée aide les facialistes à comprendre les attentes, examiner les besoins et préparer un soin adapté, du premier contact au suivi.",
+      "en": "A structured consultation helps facialists understand client goals, assess needs and plan an appropriate treatment, from first contact through follow-up."
+    },
+    "category": {
+      "fr": "Mode de vie",
+      "en": "Lifestyle"
+    },
+    "publishedAt": "2026-11-24",
+    "url": {
+      "fr": "/consultation-client-facialiste-methode-structurer.html",
+      "en": "/consultation-client-facialiste-methode-structurer.html"
+    },
+    "status": "published",
+    "image": "/assets/images/consultation-client-facialiste-cover.jpg",
+    "imageAlt": {
+      "fr": "Une esthéticienne échange avec une cliente autour d’un formulaire de consultation.",
+      "en": "An esthetician and client review a consultation form together."
+    },
+    "productUrl": {
+      "fr": "https://cdbproject.etsy.com/fr/listing/4624733718/beauty-consultation-forms-facial-client",
+      "en": "https://cdbproject.etsy.com/fr/listing/4624733718/beauty-consultation-forms-facial-client"
+    },
+    "sections": [
+      {
+        "type": "lead",
+        "text": {
+          "fr": "Une cliente réserve un soin du visage pour retrouver de l’éclat. Au début du rendez-vous, elle mentionne une peau réactive et un produit récemment introduit dans sa routine. Ces détails peuvent changer les questions à poser et la façon de préparer la séance. Une consultation structurée aide à les recueillir avant de décider de la suite.",
+          "en": "A client books a facial to refresh her complexion. At the start of the appointment, she mentions reactive skin and a product recently added to her routine. Those details may change what you ask and how you prepare the session. A structured consultation helps you gather them before deciding what comes next."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "La consultation n’est pas une formalité à expédier ni un diagnostic médical. C’est un échange professionnel qui permet de comprendre les attentes, de relever les informations utiles, d’expliquer le soin envisagé et, si nécessaire, de le modifier ou de le reporter. Le document soutient la conversation ; il ne remplace ni votre jugement ni vos protocoles.",
+          "en": "A consultation is neither a box-ticking exercise nor a medical diagnosis. It is a professional conversation to understand goals, record relevant information, explain the proposed treatment and, when needed, adapt or postpone it. The form supports the conversation; it does not replace your judgment or protocols."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "1. Préparer le premier contact",
+          "en": "1. Prepare for the first contact"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Avant le rendez-vous, confirmez les informations pratiques : prestation réservée, durée prévue, adresse, moyen de contact et consignes de préparation réellement nécessaires. Vous pouvez demander ce que la cliente souhaite améliorer ou ce qu’elle attend de la séance. Évitez de collecter des renseignements personnels qui ne servent pas à préparer ou réaliser le soin.",
+          "en": "Before the appointment, confirm practical details: the booked service, expected duration, address, contact method and any preparation instructions that are genuinely needed. You can ask what the client hopes to address or get from the session. Avoid collecting personal information that is not needed to prepare for or provide the treatment."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "2. Écouter les objectifs et l’historique",
+          "en": "2. Listen to goals and history"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Commencez par des questions ouvertes : qu’aimerait-elle changer ou préserver ? A-t-elle déjà reçu un soin similaire ? Qu’a-t-elle apprécié ou mal toléré ? Laissez-la décrire ses priorités avec ses propres mots, puis reformulez pour vérifier que vous avez bien compris. Une fiche courte facilite l’échange sans transformer la rencontre en interrogatoire.",
+          "en": "Start with open questions: what would she like to change or maintain? Has she had a similar treatment before? What did she like or find uncomfortable? Let her describe her priorities in her own words, then paraphrase to check your understanding. A concise form can guide the conversation without making it feel like an interrogation."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "3. Recueillir les informations utiles à la sécurité",
+          "en": "3. Gather information relevant to safety"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Demandez, dans le cadre de votre compétence et de vos procédures, les informations qui peuvent influer sur le soin : sensibilités ou réactions connues, produits utilisés, soins récents et éléments que votre protocole demande de vérifier. Expliquez pourquoi vous posez ces questions et comment les réponses seront utilisées. En cas de doute ou de contre-indication possible, suivez votre protocole et reportez-vous à un professionnel de santé lorsque cela relève de son expertise.",
+          "en": "Within your scope and procedures, ask about information that may affect the treatment: known sensitivities or reactions, products in use, recent treatments and any checks required by your protocol. Explain why you are asking and how the answers will be used. If you are unsure or a possible contraindication arises, follow your protocol and refer to a healthcare professional when the question falls within their expertise."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "4. Observer, expliquer et convenir d’un plan",
+          "en": "4. Observe, explain and agree on a plan"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Après l’échange, partagez vos observations dans un langage simple et demandez à la cliente si elles correspondent à son ressenti. Présentez le soin envisagé, ses étapes, les sensations possibles et les limites du résultat attendu. Vérifiez son accord avant de commencer. Si le soin doit être adapté, exposez les options et convenez ensemble de la suite.",
+          "en": "After listening, share your observations in plain language and ask whether they match the client’s experience. Explain the proposed treatment, its steps, possible sensations and limits on the expected outcome. Confirm consent before starting. If the treatment needs to change, explain the options and agree on what happens next."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "5. Documenter le soin et organiser le suivi",
+          "en": "5. Record the treatment and plan follow-up"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Consignez de manière factuelle les éléments utiles : date, soin réalisé, ajustements convenus, produits utilisés si votre protocole le prévoit et recommandations données. Après le soin, transmettez des consignes adaptées au protocole, avec un moyen de vous recontacter en cas de question. Au rendez-vous suivant, vérifiez comment la cliente a vécu le soin et actualisez les informations nécessaires.",
+          "en": "Record relevant facts: date, treatment provided, agreed adjustments, products used where your protocol requires it and guidance given. After the session, share aftercare instructions that match your protocol and tell the client how to contact you with questions. At the next visit, ask how the treatment went and update information where needed."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Un formulaire prêt à personnaliser peut faire gagner du temps",
+          "en": "A customizable form can save setup time"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le kit Maison Éclat Beauty Consultation Forms comprend 18 pages PPTX pour structurer différentes étapes du parcours : premier contact, découverte des objectifs, historique cutané, audit de routine, observations, plan de soin, checklist avant traitement, compte rendu et suivi. Les champs sont personnalisables et les exemples sont fictifs. Le kit est en anglais ; il faut donc traduire et adapter les contenus avant usage si votre clientèle est francophone.",
+          "en": "Maison Éclat Beauty Consultation Forms is an 18-page PPTX kit for organizing parts of the client journey: first contact, goals, skin history, routine review, observations, treatment plan, pre-treatment checklist, session record and follow-up. Fields can be customized and examples are fictional. The kit is in English, so translate and adapt it before using it with French-speaking clients."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le fichier est une présentation PowerPoint, pas un PDF remplissable ni un formulaire Word interactif. Prévoyez de le modifier, de l’imprimer ou de le convertir selon votre façon de travailler, puis vérifiez la mise en page obtenue. Le modèle ne remplace pas vos protocoles, votre appréciation professionnelle ni la vérification des règles qui s’appliquent à la collecte et à la conservation des informations clients.",
+          "en": "The file is a PowerPoint presentation, not a fillable PDF or interactive Word form. Plan to edit, print or convert it to fit your workflow, then check the resulting layout. A template does not replace your protocols, professional judgment or a review of the rules that apply to collecting and storing client information."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Les erreurs à éviter",
+          "en": "Mistakes to avoid"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Poser toutes les questions d’un bloc sans expliquer leur utilité.",
+            "Employer un vocabulaire trop technique ou promettre un résultat garanti.",
+            "Commencer le soin avant d’avoir clarifié les doutes et obtenu l’accord de la cliente.",
+            "Noter des informations superflues ou conserver les formulaires sans procédure définie.",
+            "Oublier de consigner les adaptations et les consignes de suivi."
+          ],
+          "en": [
+            "Asking every question at once without explaining why it matters.",
+            "Using overly technical language or promising a guaranteed result.",
+            "Starting before concerns are resolved and the client has agreed.",
+            "Recording unnecessary information or keeping forms without a defined procedure.",
+            "Failing to note adaptations and follow-up guidance."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Checklist avant chaque consultation",
+          "en": "A checklist for every consultation"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Les informations pratiques du rendez-vous sont confirmées.",
+            "Les objectifs et les attentes de la cliente sont compris.",
+            "Les vérifications requises par votre protocole ont été faites.",
+            "Le soin proposé et ses limites ont été expliqués.",
+            "L’accord de la cliente est confirmé avant de commencer.",
+            "Les observations utiles et les conseils de suivi sont consignés."
+          ],
+          "en": [
+            "Appointment details have been confirmed.",
+            "The client’s goals and expectations are understood.",
+            "Checks required by your protocol have been completed.",
+            "The proposed treatment and its limits have been explained.",
+            "The client’s agreement is confirmed before starting.",
+            "Relevant observations and follow-up guidance are recorded."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "À retenir",
+          "en": "Key takeaway"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une consultation professionnelle suit un fil simple : écouter, vérifier les informations pertinentes, expliquer, convenir du soin, puis assurer le suivi. Un formulaire bien conçu aide à garder ce fil et à gagner du temps, à condition de le personnaliser et de l’utiliser dans le cadre de vos compétences et procédures. Commencez par relire votre parcours actuel et repérez les questions qui reviennent à chaque premier rendez-vous.",
+          "en": "A professional consultation follows a clear sequence: listen, check relevant information, explain, agree on a treatment and follow up. A well-designed form helps maintain that flow and save time when it is customized and used within your scope and procedures. Start by reviewing your current process and noting which questions come up at every first appointment."
+        }
+      },
+      {
+        "type": "sources",
+        "title": {
+          "fr": "Documentation et références",
+          "en": "Documentation and references"
+        },
+        "items": [
+          {
+            "label": {
+              "fr": "Brief éditorial et fiche de contenu du kit fournis pour la rédaction",
+              "en": "Editorial brief and kit content sheet supplied for this article"
+            },
+            "url": "https://cdbproject.etsy.com/fr/listing/4624733718/beauty-consultation-forms-facial-client"
+          },
+          {
+            "label": {
+              "fr": "Fiche Etsy — Beauty Consultation Forms for Facial Client",
+              "en": "Etsy listing — Beauty Consultation Forms for Facial Client"
+            },
+            "url": "https://cdbproject.etsy.com/fr/listing/4624733718/beauty-consultation-forms-facial-client"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "livret-accueil-client-institut-beaute",
     "audience": "lifestyle-hobbyist",
     "title": {
@@ -410,6 +647,29 @@
           "fr": "Commencez par noter les trois questions que vos nouveaux clients posent le plus souvent. Vérifiez qu’elles trouvent une réponse claire dans votre livret actuel ; sinon, ce sont les premières informations à ajouter.",
           "en": "Start by writing down the three questions new clients ask most often. Check that your current guide answers them clearly; if it does not, those are the first details to add."
         }
+      },
+      {
+        "type": "sources",
+        "title": {
+          "fr": "Documentation et références",
+          "en": "Documentation and references"
+        },
+        "items": [
+          {
+            "label": {
+              "fr": "Brief éditorial et caractéristiques du Beauty Client Welcome Pack fournis pour l’article",
+              "en": "Editorial brief and Beauty Client Welcome Pack specifications supplied for this article"
+            },
+            "url": "https://cdbprojects.com/product.html?id=etsy-4623387359"
+          },
+          {
+            "label": {
+              "fr": "Fiche produit — Beauty Client Welcome Pack",
+              "en": "Product page — Beauty Client Welcome Pack"
+            },
+            "url": "https://cdbprojects.com/product.html?id=etsy-4623387359"
+          }
+        ]
       }
     ]
   },
@@ -769,6 +1029,29 @@
           "fr": "Commencez par vos trois prestations principales. Notez pour chacune le prix, la durée et ce qui est inclus, puis vérifiez que votre carte imprimée, votre feed Instagram et votre confirmation de réservation affichent exactement les mêmes informations.",
           "en": "Start with your three most popular services. Record the price, duration and inclusions for each, then make sure your printed menu, Instagram feed and booking confirmation show exactly the same information."
         }
+      },
+      {
+        "type": "sources",
+        "title": {
+          "fr": "Documentation et références",
+          "en": "Documentation and references"
+        },
+        "items": [
+          {
+            "label": {
+              "fr": "Brief et inventaire du Beauty Price List Bundle fournis pour l’article",
+              "en": "Beauty Price List Bundle brief and inventory supplied for this article"
+            },
+            "url": "https://cdbprojects.com/product.html?id=etsy-4623098079"
+          },
+          {
+            "label": {
+              "fr": "Fiche produit liée à l’article",
+              "en": "Product page linked from this article"
+            },
+            "url": "https://cdbprojects.com/product.html?id=etsy-4623098079"
+          }
+        ]
       }
     ]
   },
@@ -4531,6 +4814,29 @@
           "fr": "Pour garder une identité visuelle cohérente, définissez d’abord vos repères, rassemblez-les dans une référence unique, puis adaptez chaque support à son canal. Les modèles peuvent simplifier la mise en page, mais ils ne choisissent pas votre positionnement et ne remplacent pas vos photos, vos textes ni la vérification des informations. Commencez par un menu ou une publication, validez-la sur son support réel, puis déclinez le reste à partir de cette base.",
           "en": "To keep your visual identity consistent, define your cues first, collect them in one reference, then adapt each material to its channel. Templates can simplify layout, but they do not choose your positioning or replace your photos, copy, or information checks. Start with a menu or a post, review it in its actual setting, then build the rest from that foundation."
         }
+      },
+      {
+        "type": "sources",
+        "title": {
+          "fr": "Documentation et références",
+          "en": "Documentation and references"
+        },
+        "items": [
+          {
+            "label": {
+              "fr": "Brief éditorial et caractéristiques du Beauty Branding Kit fournis pour l’article",
+              "en": "Editorial brief and Beauty Branding Kit specifications supplied for this article"
+            },
+            "url": "https://cdbprojects.com/product.html?id=etsy-4623813287"
+          },
+          {
+            "label": {
+              "fr": "Fiche produit — Beauty Branding Kit",
+              "en": "Product page — Beauty Branding Kit"
+            },
+            "url": "https://cdbprojects.com/product.html?id=etsy-4623813287"
+          }
+        ]
       }
     ]
   }
