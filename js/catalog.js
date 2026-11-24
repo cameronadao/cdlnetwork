@@ -248,7 +248,28 @@
       const knownPayhipKeys = new Set(sourceProducts.map((product) => String(product?.payhipProductKey || payhipKeyFromUrl(product?.purchaseUrl))).filter(Boolean));
       const importedPayhip = (Array.isArray(payhipPayload.products) ? payhipPayload.products : [])
         .filter((product) => !knownPayhipKeys.has(String(product?.payhipProductKey || '')));
-      const products = await syncEtsyPrices([...sourceProducts, ...importedProducts, ...importedPayhip]);
+      const uniqueProducts = (items) => {
+        const seenIdentities = new Set();
+        const seenLocalizedTitles = new Set();
+        return items.filter((product) => {
+          const listingId = String(product?.etsyListingId || product?.id?.match(/^etsy-(\\d+)$/)?.[1] || '');
+          const payhipKey = String(product?.payhipProductKey || payhipKeyFromUrl(product?.purchaseUrl) || '');
+          const externalIdentity = listingId ? `etsy:${listingId}`
+            : payhipKey ? `payhip:${payhipKey}`
+              : product?.purchaseUrl ? `url:${String(product.purchaseUrl).trim().replace(/\\?.*$/, '').replace(/#.*$/, '').replace(/\\/$/, '').toLowerCase()}`
+                : '';
+          const title = String(product?.title || '').normalize('NFD').replace(/[\\u0300-\\u036f]/g, '')
+            .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+          const languages = (Array.isArray(product?.language) ? product.language : [product?.language])
+            .filter(Boolean).map((language) => String(language).toLowerCase().slice(0, 2));
+          const titleKeys = title ? (languages.length ? languages : ['unknown']).map((language) => `title:${language}:${title}`) : [];
+          if ((externalIdentity && seenIdentities.has(externalIdentity)) || titleKeys.some((key) => seenLocalizedTitles.has(key))) return false;
+          if (externalIdentity) seenIdentities.add(externalIdentity);
+          titleKeys.forEach((key) => seenLocalizedTitles.add(key));
+          return true;
+        });
+      };
+      const products = await syncEtsyPrices(uniqueProducts([...sourceProducts, ...importedProducts, ...importedPayhip]));
       catalogProducts = products;
       productTypeFamilies = families;
 
