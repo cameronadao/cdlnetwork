@@ -252,13 +252,13 @@
         const seenIdentities = new Set();
         const seenLocalizedTitles = new Set();
         return items.filter((product) => {
-          const listingId = String(product?.etsyListingId || product?.id?.match(/^etsy-(\\d+)$/)?.[1] || '');
+          const listingId = String(product?.etsyListingId || product?.id?.match(/^etsy-(\d+)$/)?.[1] || '');
           const payhipKey = String(product?.payhipProductKey || payhipKeyFromUrl(product?.purchaseUrl) || '');
           const externalIdentity = listingId ? `etsy:${listingId}`
             : payhipKey ? `payhip:${payhipKey}`
-              : product?.purchaseUrl ? `url:${String(product.purchaseUrl).trim().replace(/\\?.*$/, '').replace(/#.*$/, '').replace(/\\/$/, '').toLowerCase()}`
+              : product?.purchaseUrl ? `url:${String(product.purchaseUrl).trim().replace(/\?.*$/, '').replace(/#.*$/, '').replace(/\/$/, '').toLowerCase()}`
                 : '';
-          const title = String(product?.title || '').normalize('NFD').replace(/[\\u0300-\\u036f]/g, '')
+          const title = String(product?.title || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
             .toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
           const languages = (Array.isArray(product?.language) ? product.language : [product?.language])
             .filter(Boolean).map((language) => String(language).toLowerCase().slice(0, 2));
