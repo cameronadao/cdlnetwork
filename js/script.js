@@ -1,5 +1,5 @@
 /* Register Trustpilot's site-wide invitation integration. */
-if (!window.__cdbTrustpilotRegistered) {
+if (!window.__cdbTrustpilotRegistered && window.TrustpilotObject !== 'tp') {
     window.__cdbTrustpilotRegistered = true;
     (function (w, d, s, r, n) {
         w.TrustpilotObject = n;
