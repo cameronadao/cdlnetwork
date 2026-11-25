@@ -59,7 +59,11 @@ function priceForDisplay(price, taxable = true) {
 
 function classifyListing(listing) {
   const text = [listing.title, ...(listing.tags || [])].join(' ').toLowerCase();
+  const listingId = String(listing.listing_id || '');
   const isBeauty = /beauty|salon|lash|eyelash|nail|esthetic|skincare|hair|makeup|maquillage|ongle|beauté|cils/.test(text);
+  const isSpiritual = /spiritual|bible|prayer|prière|faith|religion|devotional/.test(text);
+  const isRelationship = /relationship|dating|rendez-vous|love|couples/.test(text);
+  
   let family = 'templates-documents';
   let group = 'Templates & Documents';
   let type = 'templates';
@@ -78,26 +82,78 @@ function classifyListing(listing) {
     family = 'planning-tracking'; group = 'Planning & Tracking'; type = 'planners';
   }
 
-  const subcategory = FASHION_BEAUTY_LISTING_IDS.has(String(listing.listing_id || '')) ? 'FASHION & BEAUTY'
-    : /spiritual|bible|prayer|prière|faith|religion/.test(text) ? 'SPIRITUALITY'
-    : /instagram|social media|réseaux sociaux|tiktok|pinterest/.test(text) ? 'SOCIAL MEDIA'
-      : /marketing|seo|content/.test(text) ? 'MARKETING'
-        : /ai|artificial intelligence|technology|technologie/.test(text) ? 'COMPUTER & TECHNOLOGY'
-          : /relationship|dating|rendez-vous|love/.test(text) ? 'LOVE & RELATIONSHIPS'
-            : /travel|voyage/.test(text) ? 'TRAVEL'
-              : /music|musique/.test(text) ? 'MUSIC'
-                : isBeauty ? 'FASHION & BEAUTY' : 'BUSINESS & MONEY';
+  let audience = 'Business Builder';
+  let subcategory = 'BUSINESS & MONEY';
+  if (FASHION_BEAUTY_LISTING_IDS.has(listingId) || isBeauty) {
+    audience = 'Lifestyle & Hobbyist'; subcategory = 'FASHION & BEAUTY';
+  } else if (isSpiritual) {
+    audience = 'Spirituality'; subcategory = null;
+  } else if (isRelationship) {
+    audience = 'Love & Relationships'; subcategory = null;
+  } else if (/holiday|christmas|thanksgiving|halloween|seasonal/.test(text)) {
+    audience = 'Family & Niches Market'; subcategory = 'HOLIDAYS';
+  } else if (/pet|animal/.test(text)) {
+    audience = 'Family & Niches Market'; subcategory = 'PETS & ANIMALS';
+  } else if (/parent|family|families|kids|children|child|coloring book/.test(text)) {
+    audience = 'Family & Niches Market'; subcategory = 'PARENTING';
+  } else if (/audiobook|audio book/.test(text)) {
+    audience = 'Specialists'; subcategory = 'AUDIOBOOKS';
+  } else if (/language learning|learn english|learn french|language course/.test(text)) {
+    audience = 'Specialists'; subcategory = 'LANGUAGE LEARNING';
+  } else if (/plr|print on demand|print-on-demand/.test(text)) {
+    audience = 'Specialists'; subcategory = 'PLR & PRINT ON DEMAND';
+  } else if (/canva|planner|planificateur|journal|tracker/.test(text)) {
+    audience = 'Specialists'; subcategory = 'CANVA PLANNERS';
+  } else if (/seo|search engine optimization|traffic/.test(text)) {
+    audience = 'Digital Creators'; subcategory = 'SEO';
+  } else if (/blog|blogging/.test(text)) {
+    audience = 'Digital Creators'; subcategory = 'BLOGGING';
+  } else if (/writing|writer|publishing|écriture|édition/.test(text)) {
+    audience = 'Digital Creators'; subcategory = 'WRITING & PUBLISHING';
+  } else if (/instagram|social media|réseaux sociaux|tiktok|pinterest|faceless/.test(text)) {
+    audience = 'Digital Creators'; subcategory = 'SOCIAL MEDIA & NETWORKING';
+  } else if (/internet marketing|online marketing/.test(text)) {
+    audience = 'Business Builder'; subcategory = 'INTERNET MARKETING';
+  } else if (/e-?commerce|online store|shopify/.test(text)) {
+    audience = 'Business Builder'; subcategory = 'ECOMMERCE';
+  } else if (/affiliate/.test(text)) {
+    audience = 'Business Builder'; subcategory = 'AFFILIATE MARKETING';
+  } else if (/freelance|freelancer/.test(text)) {
+    audience = 'Business Builder'; subcategory = 'FREELANCE';
+  } else if (/marketing|seo|content strategy|advertising/.test(text)) {
+    audience = 'Business Builder'; subcategory = 'MARKETING';
+  } else if (/internet|website|web design/.test(text)) {
+    audience = 'Specialists'; subcategory = 'INTERNET';
+  } else if (/technology|tech|artificial intelligence|\bai\b|software|computer|digital tools|learning guide|how to/.test(text)) {
+    audience = 'Specialists'; subcategory = 'TECHNOLOGY & LEARNING';
+  } else if (/diet|nutrition|meal plan/.test(text)) {
+    audience = 'Lifestyle & Hobbyist'; subcategory = 'DIET & COOKING';
+  } else if (/recipe|cooking|cookbook|cuisine/.test(text)) {
+    audience = 'Lifestyle & Hobbyist'; subcategory = 'COOKING & RECIPES';
+  } else if (/music|song|guitar|piano/.test(text)) {
+    audience = 'Lifestyle & Hobbyist'; subcategory = 'MUSIC';
+  } else if (/travel|voyage|vacation|trip/.test(text)) {
+    audience = 'Lifestyle & Hobbyist'; subcategory = 'LIFESTYLE & TRAVEL';
+  } else if (/hobby|craft|diy|free time/.test(text)) {
+    audience = 'Lifestyle & Hobbyist'; subcategory = 'HOBBIES & FREE TIME';
+  } else if (/sport|outdoor/.test(text)) {
+    audience = 'Lifestyle & Hobbyist'; subcategory = 'SPORTS & OUTDOORS';
+  } else if (/health|fitness|self improvement|personal development|self-help/.test(text)) {
+    audience = 'Personal Growth'; subcategory = /health|fitness/.test(text) ? 'HEALTH & FITNESS' : 'SELF IMPROVEMENT';
+  } else if (/business|money|finance|entrepreneur|startup/.test(text)) {
+    audience = 'Business Builder'; subcategory = 'BUSINESS & MONEY';
+  }
 
+  const override = AUDIENCE_OVERRIDES[listingId];
   return {
     category: group,
     productGroup: group,
     productFamily: family,
     productType: type,
-    audience: (FASHION_BEAUTY_LISTING_IDS.has(String(listing.listing_id || '')) ? 'Lifestyle & Hobbyist' : AUDIENCE_OVERRIDES[String(listing.listing_id || '')]) || (isBeauty ? 'Specialists' : (/spiritual|bible|prayer|prière|faith|religion/.test(text) ? 'Spirituality' : 'Lifestyle & Hobbyist')),
+    audience: override || audience,
     subcategory
   };
 }
-
 function normalizeListing(listing) {
   const listingId = String(listing?.listing_id || '');
   const price = priceForDisplay(listing?.price, listing?.is_taxable !== false);
