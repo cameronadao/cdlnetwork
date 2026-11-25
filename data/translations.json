@@ -41,7 +41,6 @@
     "For Digital Creator": "Pour les créateurs numériques",
     "For Family & Niche Markets": "Pour les familles et les marchés de niche",
     "For Lifestyle & Hobbyist": "Pour les loisirs et le mode de vie",
-    "For Personal Growth Coach": "Pour les coachs en développement personnel",
     "For Specialist": "Pour les spécialistes",
     "Digital products.": "Produits numériques.",
     "Free products.": "Produits gratuits.",
@@ -84,7 +83,6 @@
     "Lifestyle & Hobbyist": "Mode de vie et loisirs",
     "Digital Creators": "Créateurs numériques",
     "Digital Creator": "Créateur numérique",
-    "Personal Growth Coach": "Coach en développement personnel",
     "Specialists": "Spécialistes",
     "Specialist": "Spécialiste",
     "LOVE & RELATIONSHIPS": "AMOUR ET RELATIONS",
@@ -1206,7 +1204,13 @@
     "with intention.": "créées avec intention.",
     "Discover the Beauty Visual Identity Kit ↗": "Découvrir le kit d’identité visuelle beauté ↗",
     "Explore beauty professional resources ↗": "Découvrir les ressources pour les professionnels de la beauté ↗",
-    "A beauty professional reviews color and visual identity samples with her client.": "Une professionnelle de la beauté présente à sa cliente les couleurs et les supports visuels de son institut."
+    "A beauty professional reviews color and visual identity samples with her client.": "Une professionnelle de la beauté présente à sa cliente les couleurs et les supports visuels de son institut.",
+    "For Personal Growth": "Pour le développement personnel",
+    "For Spirituality": "Pour la spiritualité",
+    "For Love & Relationships": "Pour l’amour et les relations",
+    "Personal Growth": "Développement personnel",
+    "Spirituality": "Spiritualité",
+    "Love & Relationships": "Amour & relations"
   },
   "en": {
     "Marketing Sans Visage & Faceless Instagram eBook and Template": "Faceless Marketing & Faceless Instagram eBook and Template",
