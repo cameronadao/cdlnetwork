@@ -25,10 +25,9 @@
     ['lifestyle-hobbyist', 'Lifestyle & Hobbyist'],
     ['digital-creators', 'Digital Creators'],
     ['specialists', 'Specialists'],
-    ['beauty-professionals', 'Beauty professionals'],
-    ['love-relationships', 'LOVE & RELATIONSHIPS'],
-    ['personal-growth-coach', 'Personal Growth Coach'],
-    ['daily-grace-room-spirituality', 'DAILY GRACE ROOM (SPIRITUALITY)']
+        ['love-relationships', 'Love & Relationships'],
+    ['personal-growth', 'Personal Growth'],
+    ['spirituality', 'Spirituality']
   ];
 
   const subcategories = [
