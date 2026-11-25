@@ -3,6 +3,7 @@ const ETSY_API_BASE = 'https://openapi.etsy.com/v3/application';
 const PAGE_SIZE = 100;
 const MAX_LISTINGS = 1000;
 const DETAIL_BATCH_SIZE = 8;
+const FASHION_BEAUTY_LISTING_IDS = new Set(['4624836019', '4624733718', '4623813287', '4623387359', '4623375699']);
 const HIDDEN_LISTING_IDS = new Set(['4475628519', '4475159726']);
 const AUDIENCE_OVERRIDES = {
   '4561064631': ['Business Builder', 'Specialists'],
@@ -77,7 +78,8 @@ function classifyListing(listing) {
     family = 'planning-tracking'; group = 'Planning & Tracking'; type = 'planners';
   }
 
-  const subcategory = /spiritual|bible|prayer|prière|faith|religion/.test(text) ? 'SPIRITUALITY'
+  const subcategory = FASHION_BEAUTY_LISTING_IDS.has(String(listing.listing_id || '')) ? 'FASHION & BEAUTY'
+    : /spiritual|bible|prayer|prière|faith|religion/.test(text) ? 'SPIRITUALITY'
     : /instagram|social media|réseaux sociaux|tiktok|pinterest/.test(text) ? 'SOCIAL MEDIA'
       : /marketing|seo|content/.test(text) ? 'MARKETING'
         : /ai|artificial intelligence|technology|technologie/.test(text) ? 'COMPUTER & TECHNOLOGY'
@@ -91,7 +93,7 @@ function classifyListing(listing) {
     productGroup: group,
     productFamily: family,
     productType: type,
-    audience: AUDIENCE_OVERRIDES[String(listing.listing_id || '')] || (isBeauty ? 'Specialists' : (/spiritual|bible|prayer|prière|faith|religion/.test(text) ? 'Spirituality' : 'Lifestyle & Hobbyist')),
+    audience: (FASHION_BEAUTY_LISTING_IDS.has(String(listing.listing_id || '')) ? 'Lifestyle & Hobbyist' : AUDIENCE_OVERRIDES[String(listing.listing_id || '')]) || (isBeauty ? 'Specialists' : (/spiritual|bible|prayer|prière|faith|religion/.test(text) ? 'Spirituality' : 'Lifestyle & Hobbyist')),
     subcategory
   };
 }
