@@ -3,48 +3,91 @@
     "id": "business-builder",
     "name": "Business Builder",
     "description": "Digital resources for entrepreneurs, freelancers and online business owners.",
-    "order": 1
+    "order": 1,
+    "subcategories": [
+      "Affiliate Marketing",
+      "Business & Money",
+      "Freelance",
+      "Marketing",
+      "Internet Marketing",
+      "Ecommerce"
+    ]
   },
   {
     "id": "family-niches-market",
     "name": "Family & Niches Market",
     "description": "Digital products for families, parents, pet lovers and specialized interests.",
-    "order": 2
+    "order": 2,
+    "subcategories": [
+      "Entertainment",
+      "Holidays",
+      "Parenting",
+      "Pets & Animals"
+    ]
   },
   {
     "id": "lifestyle-hobbyist",
     "name": "Lifestyle & Hobbyist",
     "description": "Resources for everyday living, hobbies, creativity, travel and personal interests.",
-    "order": 3
+    "order": 3,
+    "subcategories": [
+      "Cooking & Recipes",
+      "Music",
+      "Diet & Cooking",
+      "Lifestyle & Travel",
+      "Hobbies & Free Time",
+      "Sports & Outdoors",
+      "Fashion & Beauty"
+    ]
   },
   {
     "id": "digital-creators",
     "name": "Digital Creators",
     "description": "Tools and resources for bloggers, writers, publishers and content creators.",
-    "order": 4
+    "order": 4,
+    "subcategories": [
+      "Blogging",
+      "Social Media & Networking",
+      "Writing & Publishing",
+      "SEO"
+    ]
   },
   {
     "id": "specialists",
     "name": "Specialists",
     "description": "Specialized digital resources, technical tools and professional learning materials.",
-    "order": 5
+    "order": 5,
+    "subcategories": [
+      "PLR & PRINT ON DEMAND",
+      "Internet",
+      "Language Learning",
+      "Audiobooks",
+      "Technology & Learning",
+      "Canva Planners"
+    ]
   },
   {
     "id": "personal-growth",
     "name": "Personal Growth",
     "description": "Resources for self-improvement, personal development, health and fitness.",
-    "order": 6
+    "order": 6,
+    "subcategories": [
+      "Self Improvement",
+      "Health & Fitness"
+    ]
   },
   {
     "id": "love-relationships",
     "name": "Love & Relationships",
     "description": "Digital resources dedicated to relationships, love and emotional connection.",
-    "order": 7
+    "order": 7,
+    "subcategories": []
   },
   {
     "id": "spirituality",
     "name": "Spirituality",
     "description": "Inspirational and spiritual resources for reflection, faith and daily growth.",
-    "order": 8
+    "order": 8,
+    "subcategories": []
   }
 ]
