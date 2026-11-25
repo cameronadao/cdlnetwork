@@ -107,9 +107,20 @@
 
   fillSelect(audienceSelect, audiences, 'All audiences');
   const fillSubcategorySelect = (audienceId = '', selectedValue = '') => {
-    const values = audienceId ? (subcategoriesByAudience[audienceId] || []) : subcategories;
-    fillSelect(subcategorySelect, values, 'All subcategories');
-    if (selectedValue && [...(subcategorySelect?.options || [])].some((option) => option.value === selectedValue)) {
+    if (!subcategorySelect) return;
+    const groups = audienceId
+      ? audiences.filter(([id]) => id === audienceId)
+      : audiences;
+    const options = groups.map(([id, label]) => {
+      const values = subcategoriesByAudience[id] || [];
+      if (!values.length) return '';
+      const items = values.map((value) =>
+        `<option value="${escapeHtml(slug(value))}">${escapeHtml(t(value))}</option>`
+      ).join('');
+      return `<optgroup label="${escapeHtml(t(label))}">${items}</optgroup>`;
+    }).join('');
+    subcategorySelect.innerHTML = `<option value="">${escapeHtml(t('All subcategories'))}</option>${options}`;
+    if (selectedValue && [...subcategorySelect.options].some((option) => option.value === selectedValue)) {
       subcategorySelect.value = selectedValue;
     }
   };
