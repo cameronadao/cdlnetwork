@@ -1,4 +1,3 @@
-
 [
   {
     "id": "business-builder",
@@ -31,8 +30,8 @@
     "order": 5
   },
   {
-    "id": "personal-growth-coach",
-    "name": "Personal Growth Coach",
+    "id": "personal-growth",
+    "name": "Personal Growth",
     "description": "Resources for self-improvement, personal development, health and fitness.",
     "order": 6
   },
@@ -43,8 +42,8 @@
     "order": 7
   },
   {
-    "id": "daily-grace-room",
-    "name": "Daily Grace Room (Spirituality)",
+    "id": "spirituality",
+    "name": "Spirituality",
     "description": "Inspirational and spiritual resources for reflection, faith and daily growth.",
     "order": 8
   }
