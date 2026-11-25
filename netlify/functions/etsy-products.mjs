@@ -3,6 +3,20 @@ const ETSY_API_BASE = 'https://openapi.etsy.com/v3/application';
 const PAGE_SIZE = 100;
 const MAX_LISTINGS = 1000;
 const DETAIL_BATCH_SIZE = 8;
+const HIDDEN_LISTING_IDS = new Set(['4475628519', '4475159726']);
+const AUDIENCE_OVERRIDES = {
+  '4561064631': ['Business Builder', 'Specialists'],
+  '4561057643': ['Business Builder', 'Specialists'],
+  '4561074930': ['Business Builder', 'Specialists'],
+  '4556776979': ['Business Builder', 'Specialists'],
+  '4556772568': ['Business Builder', 'Specialists'],
+  '4542956167': 'Business Builder',
+  '4556937409': 'Specialists',
+  '4556212319': 'Spirituality',
+  '4556210697': 'Spirituality',
+  '4556201877': 'Spirituality',
+  '4556203420': 'Spirituality'
+};
 
 function json(body, status = 200, cache = false) {
   const headers = { 'content-type': 'application/json; charset=utf-8' };
@@ -77,7 +91,7 @@ function classifyListing(listing) {
     productGroup: group,
     productFamily: family,
     productType: type,
-    audience: isBeauty ? 'Beauty professionals' : 'Lifestyle & Hobbyist',
+    audience: AUDIENCE_OVERRIDES[String(listing.listing_id || '')] || (isBeauty ? 'Specialists' : (/spiritual|bible|prayer|prière|faith|religion/.test(text) ? 'Spirituality' : 'Lifestyle & Hobbyist')),
     subcategory
   };
 }
@@ -160,7 +174,7 @@ export default async function etsyProducts(request) {
     }
 
     const products = listings
-      .filter((listing) => String(listing.shop_id) === shopId && listing.state === 'active')
+      .filter((listing) => String(listing.shop_id) === shopId && listing.state === 'active' && !HIDDEN_LISTING_IDS.has(String(listing.listing_id || '')))
       .map(normalizeListing)
       .filter(Boolean);
     return json({ products, count: products.length }, 200, true);
