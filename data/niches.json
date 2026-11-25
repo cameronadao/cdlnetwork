@@ -1,4 +1,3 @@
-
 [
   {
     "id": "affiliate-marketing",
@@ -81,13 +80,13 @@
   {
     "id": "health-fitness-ebooks",
     "name": "Health & Fitness E-books",
-    "categoryId": "personal-growth-coach",
+    "categoryId": "personal-growth",
     "order": 14
   },
   {
     "id": "health-fitness-videos",
     "name": "Health & Fitness Videos",
-    "categoryId": "personal-growth-coach",
+    "categoryId": "personal-growth",
     "order": 15
   },
   {
@@ -147,7 +146,7 @@
   {
     "id": "new-age",
     "name": "New Age",
-    "categoryId": "daily-grace-room",
+    "categoryId": "spirituality",
     "order": 25
   },
   {
@@ -177,13 +176,13 @@
   {
     "id": "self-help-personal-development-ebooks",
     "name": "Self-help & Personal Development E-books",
-    "categoryId": "personal-growth-coach",
+    "categoryId": "personal-growth",
     "order": 30
   },
   {
     "id": "self-help-personal-development-videos",
     "name": "Self-help & Personal Development Videos",
-    "categoryId": "personal-growth-coach",
+    "categoryId": "personal-growth",
     "order": 31
   },
   {
