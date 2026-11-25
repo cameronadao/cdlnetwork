@@ -42,6 +42,12 @@
     'SPORTS & OUTDOORS', 'TRAFFIC & SEO', 'TRAVEL', 'WRITING & PUBLISHING'
   ];
   const productLanguages = [['en', 'English'], ['fr', 'French']];
+  const fashionBeautyProductIds = new Set([
+    'etsy-4624836019', 'etsy-4624733718', 'etsy-4623813287', 'etsy-4623387359', 'etsy-4623375699',
+    'beauty-business-templates-bundle-150', 'beauty-feed-method-30-day-workbook',
+    'beauty-business-studio-complete-template-collection', 'beauty-academy-workbook-template-bundle',
+    'beauty-instagram-kit-160-templates-fr-en'
+  ]);
 
   const slug = (value) => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '')
     .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
@@ -268,7 +274,16 @@
           return true;
         });
       };
-      const products = await syncEtsyPrices(uniqueProducts([...sourceProducts, ...importedProducts, ...importedPayhip]));
+      const normalizedProducts = uniqueProducts([...sourceProducts, ...importedProducts, ...importedPayhip]).map((product) => {
+        const listingId = String(product?.etsyListingId || '');
+        if (!fashionBeautyProductIds.has(String(product?.id || '')) && !fashionBeautyProductIds.has(`etsy-${listingId}`)) return product;
+        const translations = { ...(product.translations || {}) };
+        for (const language of ['en', 'fr']) {
+          translations[language] = { ...(translations[language] || {}), subcategory: language === 'fr' ? 'MODE ET BEAUTÉ' : 'FASHION & BEAUTY' };
+        }
+        return { ...product, audience: 'Lifestyle & Hobbyist', subcategory: 'FASHION & BEAUTY', translations };
+      });
+      const products = await syncEtsyPrices(normalizedProducts);
       catalogProducts = products;
       productTypeFamilies = families;
 
