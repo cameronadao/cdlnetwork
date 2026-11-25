@@ -57,7 +57,10 @@
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "reference-guide",
-    "audience": "Personal Growth Coach",
+    "audience": [
+      "Personal Growth",
+      "Spirituality"
+    ],
     "subject": "Religion et spiritualité",
     "language": [
       "en",
@@ -91,7 +94,7 @@
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "guidebook",
-    "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
+    "audience": "Spirituality",
     "language": "en",
     "price": 5.99,
     "currency": "EUR",
@@ -120,7 +123,7 @@
     "productGroup": "Planning & Tracking",
     "productFamily": "planning-tracking",
     "productType": "planners",
-    "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
+    "audience": "Specialists",
     "language": "en",
     "price": 39.99,
     "currency": "EUR",
@@ -308,7 +311,7 @@
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "guidebook",
-    "audience": "DAILY GRACE ROOM (SPIRITUALITY)",
+    "audience": "Spirituality",
     "language": [
       "en",
       "fr"
@@ -611,7 +614,7 @@
     "productGroup": "Kits & Bundles",
     "productFamily": "kits-bundles",
     "productType": "templates",
-    "audience": "Beauty professionals",
+    "audience": "Specialists",
     "language": [
       "en",
       "fr"
@@ -683,7 +686,7 @@
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "workbooks",
-    "audience": "Beauty educators and training academies",
+    "audience": "Specialists",
     "language": "en",
     "price": 38.4,
     "currency": "EUR",
