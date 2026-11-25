@@ -53,7 +53,7 @@
     "shortDescription": "From Genesis to Revelation: Your Complete Guide to the World’s Greatest Story.",
     "description": "**From Genesis to Revelation: Your Complete Guide to the World’s Greatest Story.**\n\nFeeling lost when you open the Bible? You’re holding the map. 📖\n\nThe Compendium of the 66 Books is the ultimate guide to understanding Scripture. Whether you're a first-time reader or a seasoned scholar, this guide breaks down every single book of the Bible—its history, its themes, and its relevance for your life today.\n\n**What’s Inside:**\n\n4-Part Breakdown: Clear summaries of The Law, History, Prophets, and New Testament.\n\nKey Interpretations: Understand the different ways scholars read these texts.\n\nSpiritual Lessons: Apply ancient wisdom to modern life.\n\nFull Coverage: From the Creation in Genesis to the New Jerusalem in Revelation.\n\n**Stop struggling with the hard parts and start seeing the big picture.**",
     "category": "Learning & Guides",
-    "subcategory": "SPIRITUALITY",
+    "subcategory": null,
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "reference-guide",
@@ -78,8 +78,7 @@
     "translations": {
       "fr": {
         "title": "La Bible expliquée : guide complet des 66 livres",
-        "shortDescription": "De la Genèse à l’Apocalypse : votre guide complet de la plus grande histoire du monde.",
-        "subcategory": "SPIRITUALITÉ"
+        "shortDescription": "De la Genèse à l’Apocalypse : votre guide complet de la plus grande histoire du monde."
       }
     }
   },
@@ -90,7 +89,7 @@
     "shortDescription": "A gentle 46-day journey through Lent, from Ash Wednesday to Easter morning.",
     "description": "**Friend, are you longing for a Lent that feels less like a checklist and more like a homecoming?**\n\nI created this devotional for the weary soul—for anyone who feels like they need to \"clean up\" before coming to God. The truth is, He’s not waiting for perfection. He’s just waiting for you.\n\n\"Create in me\" is a 46-day journey designed to be your gentle companion through this holy season. Starting on Ash Wednesday, we’ll walk together through the wilderness, learn the art of surrender, and sit at the foot of the cross before stepping into the hope of Easter morning.\n\nThis guide is simple enough to fit into your busy life but deep enough to truly change your heart. With daily Scripture, reflections, and gentle prompts, it’s an invitation to stop striving and simply be with Jesus.\n\n**In this devotional, you’ll find:**\n\n- A daily rhythm of prayer, practice, and reflection.\n- Weekly themes to guide your focus.\n- A special guide for Holy Week and the Stations of the Cross.\n- Space to journal and listen for God’s voice.\n- Let’s walk this 46-day road together.\n- Tap the link to get your copy and let’s return to Him with our whole hearts. ❤️",
     "category": "Learning & Guides",
-    "subcategory": "SPIRITUALITY",
+    "subcategory": null,
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "guidebook",
@@ -108,8 +107,7 @@
     "translations": {
       "fr": {
         "title": "Marcher avec Jésus pendant le Carême : dévotionnel de 46 jours, du mercredi des Cendres au dimanche de la Résurrection",
-        "shortDescription": "Un parcours doux de 46 jours pendant le Carême, du mercredi des Cendres au matin de Pâques.",
-        "subcategory": "SPIRITUALITÉ"
+        "shortDescription": "Un parcours doux de 46 jours pendant le Carême, du mercredi des Cendres au matin de Pâques."
       }
     }
   },
@@ -133,7 +131,8 @@
     "publishedAt": "2026-11-06T14:49:37+01:00",
     "cover": "/assets/images/digital-planners-journals-canva-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=6laoM"
+    "purchaseUrl": "https://payhip.com/buy?link=6laoM",
+    "translations": {}
   },
   {
     "id": "faceless-marketing-faceless-instagram-ebook-template",
@@ -141,11 +140,11 @@
     "shortDescription": "You don't have to show your face to make your fortune.",
     "description": "Build a Profitable Brand Without Showing Your Face: The Ultimate Guide to Anonymous Social Media Growth, Content Creation, and Passive Income\n\n**You don't have to show your face to make your fortune.**\n\nThink you need to be an influencer to succeed online? Think again. Some of the most profitable digital brands are built by creators you've never seen.\n\n**Faceless Marketing** is the complete blueprint for building a thriving online business from the shadows. No camera. No selfies. Just smart strategy and scalable systems.\n\n**Here's what you'll discover inside:**\n\n- **Niche Selection:** How to find profitable, low-competition niches perfect for faceless content.\n- **Content Creation:** The exact types of content that go viral without showing a face—stock footage, animations, text-on-screen, aesthetic visuals, and more.\n- **Visual Sourcing:** How to ethically source high-quality stock footage, images, and audio without copyright issues.\n- **Monetization Strategies:** Proven ways to turn your anonymous audience into passive income—affiliate marketing, digital products, brand deals, and ad revenue.\n- **Platform Mastery:** Tactics tailored for TikTok, Instagram Reels, YouTube Shorts, and Pinterest.\n- **Automation and Outsourcing:** How to systemize your workflow and build a hands-off income machine.\n\n**Perfect for:**\n\n- Introverts who value their privacy\n- Creators who hate being on camera\n- Entrepreneurs building scalable, anonymous brands\n- Anyone who wants passive income without the spotlight",
     "category": "Learning & Guides",
-    "subcategory": "SOCIAL MEDIA",
+    "subcategory": "SOCIAL MEDIA & NETWORKING",
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "guidebook",
-    "audience": "Business Builder",
+    "audience": "Digital Creators",
     "language": "en",
     "price": 14.99,
     "currency": "EUR",
@@ -161,7 +160,7 @@
       "fr": {
         "title": "Faceless Marketing & Faceless Instagram eBook and Template",
         "shortDescription": "You don't have to show your face to make your fortune.",
-        "subcategory": "RÉSEAUX SOCIAUX"
+        "subcategory": "SOCIAL MEDIA & NETWORKING"
       }
     }
   },
@@ -171,11 +170,11 @@
     "shortDescription": "Créer une marque rentable sans montrer son visage : le guide ultime pour développer ses réseaux sociaux anonymement, créer du contenu et générer des revenus passifs",
     "description": "Créer une marque rentable sans montrer son visage : le guide ultime pour développer ses réseaux sociaux anonymement, créer du contenu et générer des revenus passifs\n\n## Pas besoin de montrer votre visage pour faire fortune.\n\nVous pensez qu’il faut être influenceur pour réussir en ligne ? Détrompez-vous. Certaines des marques numériques les plus rentables sont créées par des personnes que vous n’avez jamais vues.\n\n**Le marketing sans visage** est le plan complet pour bâtir une entreprise en ligne florissante dans l’anonymat. Pas de caméra. Pas de selfies. Juste une stratégie réfléchie et des systèmes évolutifs.\n\n## Voici ce que vous découvrirez :\n\n- **Choix de niche :** comment trouver des niches rentables et peu concurrentielles, idéales pour créer du contenu sans montrer son visage.\n- **Création de contenu :** les types de contenus qui deviennent viraux sans montrer son visage : vidéos d’archives, animations, textes à l’écran, visuels esthétiques et bien plus.\n- **Ressources visuelles :** comment trouver légalement des vidéos, images et fichiers audio de qualité, sans problème de droits d’auteur.\n- **Stratégies de monétisation :** des méthodes éprouvées pour transformer une audience anonyme en revenus passifs : marketing d’affiliation, produits numériques, partenariats de marque et revenus publicitaires.\n- **Maîtrise des plateformes :** des stratégies adaptées à TikTok, Instagram Reels, YouTube Shorts et Pinterest.\n- **Automatisation et externalisation :** comment organiser votre flux de travail et bâtir une source de revenus qui fonctionne avec un minimum d’intervention.\n\n## Idéal pour :\n\n- Les personnes introverties qui tiennent à leur vie privée\n- Les créateurs qui n’aiment pas apparaître à l’écran\n- Les entrepreneurs qui bâtissent des marques anonymes et évolutives\n- Toute personne qui souhaite générer des revenus passifs sans être sous les projecteurs",
     "category": "Learning & Guides",
-    "subcategory": "SOCIAL MEDIA",
+    "subcategory": "SOCIAL MEDIA & NETWORKING",
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "guidebook",
-    "audience": "Business Builder",
+    "audience": "Digital Creators",
     "language": "fr",
     "price": 14.99,
     "currency": "EUR",
@@ -191,7 +190,7 @@
       "fr": {
         "title": "Marketing Sans Visage & Faceless Instagram eBook and Template",
         "shortDescription": "Créer une marque rentable sans montrer son visage : le guide ultime pour développer ses réseaux sociaux anonymement, créer du contenu et générer des revenus passifs",
-        "subcategory": "RÉSEAUX SOCIAUX"
+        "subcategory": "SOCIAL MEDIA & NETWORKING"
       }
     }
   },
@@ -199,11 +198,11 @@
     "id": "the-art-of-the-first-date-masterclass-guide",
     "title": "The Art of the First Date: The Masterclass Guide",
     "category": "Learning & Guides",
-    "subcategory": "LOVE & RELATIONSHIPS",
+    "subcategory": null,
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "guidebook",
-    "audience": "LOVE & RELATIONSHIPS",
+    "audience": "Love & Relationships",
     "language": [
       "en",
       "fr"
@@ -224,8 +223,7 @@
     "purchaseUrl": "https://payhip.com/buy?link=R7wHG",
     "translations": {
       "fr": {
-        "title": "L’Art du Premier Rendez-vous : Le Guide Masterclass",
-        "subcategory": "AMOUR ET RELATIONS"
+        "title": "L’Art du Premier Rendez-vous : Le Guide Masterclass"
       }
     }
   },
@@ -233,11 +231,11 @@
     "id": "the-resonance-blueprint",
     "title": "The Resonance Blueprint",
     "category": "Strategy & Frameworks",
-    "subcategory": "LOVE & RELATIONSHIPS",
+    "subcategory": null,
     "productGroup": "Strategy & Frameworks",
     "productFamily": "strategy-frameworks",
     "productType": "blueprint",
-    "audience": "LOVE & RELATIONSHIPS",
+    "audience": "Love & Relationships",
     "language": "en",
     "price": 9.99,
     "currency": "EUR",
@@ -248,7 +246,8 @@
     "publishedAt": "2026-11-06T22:24:19+01:00",
     "cover": "/assets/images/the-resonance-blueprint-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=s59kM"
+    "purchaseUrl": "https://payhip.com/buy?link=s59kM",
+    "translations": {}
   },
   {
     "id": "cdl-master-library-400000-digital-products",
@@ -260,7 +259,7 @@
     "productGroup": "Libraries & Collections",
     "productFamily": "libraries-collections",
     "productType": "resource-library",
-    "audience": "Business Builder",
+    "audience": "Specialists",
     "language": [
       "en",
       "fr"
@@ -277,7 +276,8 @@
       "fr": "/assets/images/cdl-master-library-cover-fr.png"
     },
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=CloX2"
+    "purchaseUrl": "https://payhip.com/buy?link=CloX2",
+    "translations": {}
   },
   {
     "id": "the-ultimate-junior-explorer-collection",
@@ -285,7 +285,7 @@
     "shortDescription": "Unlock the Wonders of the World! From the Pyramids to Coding – The Complete Library for Curious Minds.",
     "description": "**Unlock the Wonders of the World! From the Pyramids to Coding – The Complete Library for Curious Minds.**\n\nGive your child the gift of knowledge with the complete *The Discovery Chronicles collection*! This massive digital library contains 48 beautifully crafted ebooks designed to spark curiosity, fuel imagination, and build a solid foundation in STEM, History, Geography, and Health.\n\nWhether it’s exploring the depths of the Great Blue Hole, mastering the basics of coding, or launching a backyard rocket, this bundle covers it all. Perfect for home-schooling, bedtime reading, or supplemental classroom material.\n\n### What’s included in this 48-Ebook Mega Bundle?\n\n- ✅ **🌍 Ancient Wonders & History:** Journey to Petra, the Great Wall of China, and the Great Pyramids.\n- ✅ **🔬 STEM & Technology:** Discover the Art of Coding, the Science of Flight, and the Physics of Sound.\n- ✅ **🦁 Nature & Wildlife:** Meet the giants of the ocean in \"Whale Wonders\" and the tiny \"Insects All Around Us.\"\n- ✅ **🌋 Earth Sciences:** Become a \"Dirt Detective\" and explore the depths of the Grand Canyon.\n- ✅ **🍎 Health & Human Body:** Learn about nutrition in \"Healthy Plate, Happy Tummy\" and the secrets of \"Snooze Science.\"\n- ✅ **🚀 Hands-On Projects:** Step-by-step guides like the Baking Soda Rocket experiment!\n\n### **Why choose this bundle?**\n\n**Unbeatable Value**: Get all 48 books for a fraction of their individual price.\n\n**Comprehensive Learning**: A wide range of topics to keep children engaged for years.\n\n**Kid-Friendly Language**: Complex subjects simplified for ages 6 to 12.\n\n**Instant Access**: Download the entire library immediately after purchase in EPUB.",
     "category": "Libraries & Collections",
-    "subcategory": "KIDS COLLECTION",
+    "subcategory": "PARENTING",
     "productGroup": "Libraries & Collections",
     "productFamily": "libraries-collections",
     "productType": "anthology",
@@ -301,13 +301,14 @@
     "publishedAt": "2026-11-07T00:14:40+01:00",
     "cover": "/assets/images/the-ultimate-junior-explorer-collection.jpg",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=o4rYj"
+    "purchaseUrl": "https://payhip.com/buy?link=o4rYj",
+    "translations": {}
   },
   {
     "id": "the-power-of-affirmative-prayer-complete-guide-co-creating-reality",
     "title": "The Power of Affirmative Prayer / Complete Guide to Co-creating Reality",
     "category": "Learning & Guides",
-    "subcategory": "SPIRITUALITY",
+    "subcategory": null,
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "guidebook",
@@ -332,8 +333,7 @@
     "purchaseUrl": "https://payhip.com/buy?link=6s1S3",
     "translations": {
       "fr": {
-        "title": "La Puissance de la Prière Affirmative / Guide Complet pour Cocréer sa Réalité",
-        "subcategory": "SPIRITUALITÉ"
+        "title": "La Puissance de la Prière Affirmative / Guide Complet pour Cocréer sa Réalité"
       }
     }
   },
@@ -343,7 +343,7 @@
     "shortDescription": "A Complete Guide to Artificial Intelligence in Digital Marketing.",
     "description": "**Future-proof your marketing. Master the AI revolution.**\n\nAI is transforming digital marketing at breakneck speed. From Google’s SGE to ChatGPT and predictive analytics, the old playbook is fading. Are you ready for what’s next?\n\n**THE AI MARKETING EDGE** is your no-fluff guide to understanding and leveraging AI across every facet of digital marketing. Whether you’re a seasoned marketer or just starting out, this book gives you the strategies to stay ahead of 99% of your competitors.\n\n**📖 WHAT'S INSIDE:**\n\n- **AI & ML Demystified:** Neural networks, NLP, computer vision—explained simply.\n- **Google’s AI-First Evolution:** SEO for SGE, BERT, MUM, and semantic search.\n- **Semantic Search & Entity SEO:** Topic clusters, structured data, entity optimization.\n- **Big Data & Predictive Analytics:** Forecast behavior, reduce churn, boost ROI.\n- **Computer Vision:** Visual search, AR, synthetic imagery—ethical use.\n- **Programmatic 2.0:** AI bidding, privacy-first targeting.\n- **AI Email Marketing:** Hyper-personalization, lead scoring, churn prediction.\n- **Chatbots & Conversational AI:** Bots that qualify leads and drive sales.\n- **Generative AI for Content:** ChatGPT, Midjourney, Synthesia—keeping your brand voice.\n- **Data Science Essentials:** SQL, Python concepts, no-code tools.\n- **Future-Proofing Your Strategy:** Principles to stay resilient.\n- **Bonus: AI Tools Every Marketer Should Know:** Curated list of top tools.\n- **Glossary:** Key terms demystified.\n\n**✨ PERFECT FOR:**\n\n- Digital marketers & entrepreneurs 💻\n- Business owners future-proofing their brand 🚀\n- SEO specialists adapting to generative search 🔍\n- Content creators using AI ethically ✍️\n- Anyone who wants to understand AI in marketing 🧠\n\n**Stop guessing. Start leading.**\n\nTap the link to get your copy and master the AI marketing edge today. 📈",
     "category": "Learning & Guides",
-    "subcategory": "COMPUTER & TECHNOLOGY",
+    "subcategory": "TECHNOLOGY & LEARNING",
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "guidebook",
@@ -363,7 +363,7 @@
       "fr": {
         "title": "L’AVANTAGE DU MARKETING PAR L’IA",
         "shortDescription": "Un guide complet de l’intelligence artificielle appliquée au marketing numérique.",
-        "subcategory": "INFORMATIQUE ET TECHNOLOGIE"
+        "subcategory": "TECHNOLOGY & LEARNING"
       }
     }
   },
@@ -373,7 +373,7 @@
     "shortDescription": "Quick Reference Guide to Artificial Intelligence in Digital Marketing.",
     "description": "**Quick Reference Guide to Artificial Intelligence in Digital Marketing: AI Fundamentals, Google SGE, Predictive Analytics, Generative AI Tools & Future-Proof Strategies**\n\n**Master AI marketing in minutes.**\n\nArtificial intelligence is transforming digital marketing at lightning speed. But with so many concepts, tools, and strategies to absorb, keeping everything straight can be overwhelming. That’s where this cheat sheet comes in.\n\n\"THE AI MARKETING EDGE – Cheat Sheet\" distills the most critical insights from the complete guide into a concise, actionable reference. Perfect for busy marketers, entrepreneurs, and business owners who need to stay ahead—without spending hours reading.\n\n**Here's exactly what you'll get (at a glance):**\n\n- **AI & Machine Learning Fundamentals:** Narrow AI, General AI, generative AI, LLMs—with action steps.\n- **Google’s AI-First Evolution:** RankBrain, BERT, MUM, SGE—SEO adaptation strategies.\n- **Semantic Search & Entity-Based SEO:** Entities, structured data (schema), topic clusters—implementation tips.\n- **Big Data & Predictive Analytics:** The 3 Vs, predictive analytics use cases (churn, lead scoring), data centralization.\n- **Computer Vision in Marketing:** Visual search, AR, image optimization.\n- **Programmatic Advertising 2.0:** RTB, AI-driven optimization, cookieless strategies.\n- **AI-Powered Email Marketing:** Predictive segmentation, hyper-personalization, lead scoring—and tools.\n- **Chatbots & Conversational AI:** LLM-powered bots, use cases, best practices.\n- **Generative AI for Content Creation:** Tools for text, images, video, audio—ethical considerations.\n- **Data Science Essentials for Marketers:** SQL basics, no-code AI tools, key concepts.\n- **Future-Proofing Your Strategy:** Key trends and principles for resilience.\n- **Action Steps:** Every section includes clear, practical actions you can take immediately.\n\n**Perfect for:**\n\n- Busy marketers needing quick reference\n- Business owners implementing AI strategies\n- Teams needing training handouts\n- Anyone who wants AI marketing essentials in one place\n\n**Instant Download.** Get your edge today.",
     "category": "Learning & Guides",
-    "subcategory": "COMPUTER & TECHNOLOGY",
+    "subcategory": "TECHNOLOGY & LEARNING",
     "productGroup": "Learning & Guides",
     "productFamily": "learning-guides",
     "productType": "cheat-sheets",
@@ -394,7 +394,7 @@
       "fr": {
         "title": "THE AI MARKETING EDGE – Fiche mémo",
         "shortDescription": "Guide de référence rapide sur l’intelligence artificielle dans le marketing numérique.",
-        "subcategory": "INFORMATIQUE ET TECHNOLOGIE"
+        "subcategory": "TECHNOLOGY & LEARNING"
       }
     }
   },
@@ -424,7 +424,7 @@
       "fr": {
         "title": "MICHAEL JACKSON / Songs, Context, Truth",
         "shortDescription": "Pour la première fois, découvrez l’intégralité du parcours musical du roi de la pop dans un ouvrage de référence.",
-        "subcategory": "MUSIQUE"
+        "subcategory": "MUSIC"
       }
     }
   },
@@ -434,7 +434,7 @@
     "shortDescription": "The Ultimate Curated Toolkit: 50+ AI Tools, Platforms, and Learning Resources for Smarter Digital Marketing",
     "description": "**The Ultimate Curated Toolkit: 50+ AI Tools, Platforms, and Learning Resources for Smarter Digital Marketing**\n\n**Your essential toolkit for AI-powered marketing success.**\n\nYou’ve read the strategies. Now it’s time to put them into practice. \"THE AI MARKETING EDGE – Resources Report\" is your curated, ready-to-use directory of the most powerful AI tools, platforms, and learning resources available today.\n\nFrom generative AI and conversational chatbots to predictive analytics and programmatic advertising, this report brings together everything you need to start experimenting and scaling with AI—all in one place.\n\n**Here’s exactly what you’ll get:**\n\n- **Semantic SEO & Structured Data:** Surfer SEO, Clearscope, Schema Markup Generator, Google Markup Helper.\n- **Generative AI for Content:** ChatGPT, Claude, Jasper, Midjourney, DALL‑E, Synthesia, ElevenLabs.\n- **Programmatic Advertising:** Google Ads Smart Bidding, The Trade Desk, Adzooma, SmartyAds.\n- **AI-Powered Email Marketing:** Klaviyo, Mailchimp, ActiveCampaign, Seventh Sense.\n- **Chatbots & Conversational AI:** ManyChat, Landbot, Intercom, Custom GPTs.\n- **Computer Vision & Visual Search:** Google Vision AI, Pinterest Lens, Canva AI.\n- **Data & Analytics:** Google Analytics 4, BigQuery, Tableau, Zapier, Make.\n- **SQL & Data Science Learning:** SQL Primer, Mode Analytics Tutorial, Kaggle.\n- **Open Source AI & Advanced Tools:** TensorFlow, Hugging Face.\n- **Communities & Learning:** Marketing AI Institute, LinkedIn AI in Marketing group, and the official course hub.\n- **Direct links** to each resource for instant access.\n\n**Perfect for:**\n\n- Marketers building their AI stack\n- Entrepreneurs researching tools\n- Business owners implementing AI strategies\n- Anyone who wants a curated shortcut to the best AI resources\n\n**Instant Download.** Stop searching. Start doing.",
     "category": "Libraries & Collections",
-    "subcategory": "COMPUTER & TECHNOLOGY",
+    "subcategory": "TECHNOLOGY & LEARNING",
     "productGroup": "Libraries & Collections",
     "productFamily": "libraries-collections",
     "productType": "resource-library",
@@ -450,7 +450,8 @@
     "publishedAt": "2026-11-07T14:30:00+01:00",
     "cover": "/assets/images/the-ai-marketing-edge-resources-report-cover.png",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=MSWoR"
+    "purchaseUrl": "https://payhip.com/buy?link=MSWoR",
+    "translations": {}
   },
   {
     "id": "the-ai-marketing-edge-bundle",
@@ -458,7 +459,7 @@
     "shortDescription": "Stop guessing. Start growing.",
     "description": "**Stop guessing. Start growing.**\n\nThe digital landscape has fundamentally changed. Artificial Intelligence is no longer a futuristic concept—it is the engine driving Google, the voice behind chatbots, and the force reshaping how customers find and buy from you.\n\nIf you are a marketer, business owner, freelancer, or web developer, you are competing against an internet flooded with AI-generated content and algorithms that prioritize intent over keywords. To win, you need to understand the rules of this new game.\n\nThis curated **10-PDF bundle** is your complete roadmap to navigating the AI-driven marketing era. Created from in-depth research, these guides strip away the hype and deliver the actionable strategies you need to future-proof your business today.\n\n### What’s Inside the Bundle:\n\n**1. Why Intent Matters for SEO and AI**\n\nLearn why Google’s AI (RankBrain, BERT, MUM, SGE) cares more about *why* someone searches than *what* they type. Master the four pillars of search intent (Informational, Commercial, Transactional, Navigational) to capture high-converting traffic.\n\n**2. How Google is Getting Smarter – And What It Means for You**\n\nA deep dive into the evolution of search. Discover how to optimize for AI-driven results like featured snippets and generative answers so you stay visible even in a zero-click world.\n\n**3. How to Do Semantic SEO the Right Way**\n\nForget \"LSI keywords.\" Learn how to build topic clusters, use entities, and structure content so Google’s AI understands your expertise and ranks you as an authority.\n\n**4. Top Ways AI Is Affecting Internet Marketing (And What’s Coming Next)**\n\nA high-level overview of the current AI landscape, covering predictive analytics, voice search, computer vision, and the rise of autonomous marketing agents.\n\n**5. How AI Is Already Changing the Face of the Internet**\n\nExplore the double-edged sword of AI: deepfakes, synthetic media, and information overload. Learn how to build trust and authenticity in an era where content is infinite.\n\n**6. The AI-Built Websites of the Future (Are Already Here)**\n\nDiscover how platforms like Wix ADI and Framer AI are generating fully functional websites from text prompts. Learn how to leverage AI for dynamic personalization, layout optimization, and faster development.\n\n**7. 4 Ways to Future-Proof Your Website**\n\nA practical checklist to ensure your site survives the next wave of changes. Focus on fluid responsive design, visual search optimization, conversational content, and core web vitals.\n\n**8. How AI-Powered Chatbots Boost Traffic, Sales, and Customer Experience**\n\nLearn how to deploy modern LLM-powered chatbots (like ManyChat, Landbot, and Custom GPTs) to reduce bounce rates, capture intent data, and automate customer support 24/7.\n\n**9. How Programmatic Advertising Uses AI to Make Smarter Campaigns**\n\nUnlock the power of real-time bidding (RTB) and predictive targeting. Learn how to use AI to maximize ROI, fight ad fraud, and navigate the cookieless future.\n\n**10. How Machine Learning is Transforming Internet Marketing**\n\nGo beyond the buzzwords. Understand the algorithms behind personalized recommendations (Amazon/Netflix style), predictive lead scoring, and customer lifetime value (CLV) prediction.\n\n### Why You Need This Bundle:\n\n- **Save 100+ Hours of Research:** We’ve distilled the most complex AI marketing concepts into digestible, actionable PDFs.\n- **Future-Proof Your Skills:** Whether Google updates its algorithm or a new AI tool goes viral, these principles will keep you ahead of the curve.\n- **Practical, Not Theoretical:** Each guide ends with \"What to do today\" sections, giving you immediate steps to improve your SEO, PPC, and conversion rates.\n- **Perfect for All Levels:** Whether you are a beginner trying to understand BERT or a pro looking to implement predictive analytics, this bundle has you covered.\n\n### Who Is This For?\n\n- **E-commerce Owners:** Increase sales with intent-based SEO and personalized shopping experiences.\n- **Digital Marketers:** Master the tools that will define the next decade of advertising.\n- **Content Creators & Bloggers:** Learn how to beat AI-generated content with genuine authority and semantic structure.\n- **Web Developers:** Discover how AI is changing front-end design and user experience.\n\n**Download instantly and start marketing smarter today.**",
     "category": "Kits & Bundles",
-    "subcategory": "COMPUTER & TECHNOLOGY",
+    "subcategory": "TECHNOLOGY & LEARNING",
     "productGroup": "Kits & Bundles",
     "productFamily": "kits-bundles",
     "productType": "all-in-one-kit",
@@ -473,7 +474,8 @@
     "publishedAt": "2026-11-07T16:00:00+01:00",
     "cover": "/assets/images/o_1jkq171li1st1r8f19hn11cred17.png.avif",
     "status": "published",
-    "purchaseUrl": "https://payhip.com/buy?link=382An"
+    "purchaseUrl": "https://payhip.com/buy?link=382An",
+    "translations": {}
   },
   {
     "id": "the-chefs-method",
@@ -504,7 +506,8 @@
       "fr": {
         "title": "La Méthode du Chef",
         "shortDescription": "Arrêtez de deviner. Cuisinez avec l’assurance d’un professionnel.",
-        "description": "**Arrêtez de deviner. Cuisinez avec l’assurance d’un professionnel.**\n\nVous connaissez cette sensation. Vous avez suivi la recette à la lettre, mais le dîner est… correct. Pas excellent. Juste correct. La prochaine fois que vous préparez le même plat, le résultat est différent et vous ne savez pas pourquoi. Vous avez enregistré des centaines de recettes, mais vous avez l’impression de tourner en rond, incapable d’improviser ou de rattraper un plat quand quelque chose ne se passe pas comme prévu. Le problème ne vient pas de vous, mais de la méthode qu’on vous a enseignée.\n\nLa plupart des conseils de cuisine sont une succession d’astuces isolées et de règles résumées en une phrase. C’est une liste, pas un système. Voilà pourquoi vous pouvez suivre une recette à la perfection tout en ayant l’impression d’exécuter mécaniquement des instructions. On vous a appris à suivre un script, alors que cuisiner consiste en une suite de décisions liées entre elles qu’aucune recette ne peut vous apprendre. Résultat : des plats inégaux, de la frustration et une cuisine qui devient une source de stress plutôt qu’un espace de créativité.\n\n**La Méthode du Chef** est un système complet conçu pour vous sortir de la dépendance aux recettes. Ce n’est pas un livre de recettes, mais une méthodologie. Elle remplace le recours systématique aux recettes par un template de réflexion durable, fondé sur les principes qui régissent la cuisine.\n\nVous y trouverez des outils d’aide à la décision qui vous expliquent non seulement *quoi* faire, mais aussi *pourquoi* et *quand*.\n\n**Ce que vous apprendrez :**\n\n- **Le système C.H.E.F. :** un cadre simple (Contexte, Chaleur, Exécution, Saveur) qui rend chaque plat prévisible.\n- **Les quatre leviers :** apprenez à diagnostiquer rapidement un déséquilibre de saveurs et à le corriger en ajustant la chaleur, le sel, le gras ou l’acidité.\n- **L’architecture du sel :** le guide de référence pour saler correctement vos aliments. Vous ne servirez plus jamais de plats fades.\n- **La matrice de cuisson des protéines :** découvrez pourquoi la température est le seul indicateur fiable pour réussir viandes, volailles et poissons.\n- **Le guide de rattrapage :** des arbres de décision pratiques pour sauver les plats qui ont mal tourné. Une erreur devient un simple ajustement, pas une catastrophe.\n\n**Ce qui est inclus :**\n\n- Le guide complet numérique « La Méthode du Chef » aux formats PDF et EPUB.\n- Une analyse approfondie de 64 pages sur les principes de la cuisine professionnelle.\n- Des matrices essentielles et des tableaux de référence rapide pour la cuisine.\n- Un programme de maîtrise structuré sur 30 jours pour intégrer durablement le système.\n\n**À qui s’adresse ce guide :**\n\n- Aux cuisiniers amateurs lassés des résultats inégaux.\n- Aux débutants ambitieux qui veulent acquérir de solides bases.\n- À toute personne qui souhaite cesser de dépendre des recettes et gagner en assurance en cuisine.\n\n**Ce qui rend cette méthode différente :**\n\nCe livre ne vous demande pas de mémoriser davantage de recettes : il vous aide à comprendre les principes qui les sous-tendent. Il a été conçu pour resservir. Vous le garderez sur le comptoir, ouvert à la page de dépannage, plutôt que de le laisser prendre la poussière sur une étagère. Il vous transmet un savoir-faire réutilisable, pas seulement une recette toute faite.\n\nPrêt à cesser de suivre des instructions et à comprendre ce que vous faites ? Procurez-vous « La Méthode du Chef » et transformez votre cuisine : d’une source de stress, elle deviendra un lieu de confiance et de créativité."
+        "description": "**Arrêtez de deviner. Cuisinez avec l’assurance d’un professionnel.**\n\nVous connaissez cette sensation. Vous avez suivi la recette à la lettre, mais le dîner est… correct. Pas excellent. Juste correct. La prochaine fois que vous préparez le même plat, le résultat est différent et vous ne savez pas pourquoi. Vous avez enregistré des centaines de recettes, mais vous avez l’impression de tourner en rond, incapable d’improviser ou de rattraper un plat quand quelque chose ne se passe pas comme prévu. Le problème ne vient pas de vous, mais de la méthode qu’on vous a enseignée.\n\nLa plupart des conseils de cuisine sont une succession d’astuces isolées et de règles résumées en une phrase. C’est une liste, pas un système. Voilà pourquoi vous pouvez suivre une recette à la perfection tout en ayant l’impression d’exécuter mécaniquement des instructions. On vous a appris à suivre un script, alors que cuisiner consiste en une suite de décisions liées entre elles qu’aucune recette ne peut vous apprendre. Résultat : des plats inégaux, de la frustration et une cuisine qui devient une source de stress plutôt qu’un espace de créativité.\n\n**La Méthode du Chef** est un système complet conçu pour vous sortir de la dépendance aux recettes. Ce n’est pas un livre de recettes, mais une méthodologie. Elle remplace le recours systématique aux recettes par un template de réflexion durable, fondé sur les principes qui régissent la cuisine.\n\nVous y trouverez des outils d’aide à la décision qui vous expliquent non seulement *quoi* faire, mais aussi *pourquoi* et *quand*.\n\n**Ce que vous apprendrez :**\n\n- **Le système C.H.E.F. :** un cadre simple (Contexte, Chaleur, Exécution, Saveur) qui rend chaque plat prévisible.\n- **Les quatre leviers :** apprenez à diagnostiquer rapidement un déséquilibre de saveurs et à le corriger en ajustant la chaleur, le sel, le gras ou l’acidité.\n- **L’architecture du sel :** le guide de référence pour saler correctement vos aliments. Vous ne servirez plus jamais de plats fades.\n- **La matrice de cuisson des protéines :** découvrez pourquoi la température est le seul indicateur fiable pour réussir viandes, volailles et poissons.\n- **Le guide de rattrapage :** des arbres de décision pratiques pour sauver les plats qui ont mal tourné. Une erreur devient un simple ajustement, pas une catastrophe.\n\n**Ce qui est inclus :**\n\n- Le guide complet numérique « La Méthode du Chef » aux formats PDF et EPUB.\n- Une analyse approfondie de 64 pages sur les principes de la cuisine professionnelle.\n- Des matrices essentielles et des tableaux de référence rapide pour la cuisine.\n- Un programme de maîtrise structuré sur 30 jours pour intégrer durablement le système.\n\n**À qui s’adresse ce guide :**\n\n- Aux cuisiniers amateurs lassés des résultats inégaux.\n- Aux débutants ambitieux qui veulent acquérir de solides bases.\n- À toute personne qui souhaite cesser de dépendre des recettes et gagner en assurance en cuisine.\n\n**Ce qui rend cette méthode différente :**\n\nCe livre ne vous demande pas de mémoriser davantage de recettes : il vous aide à comprendre les principes qui les sous-tendent. Il a été conçu pour resservir. Vous le garderez sur le comptoir, ouvert à la page de dépannage, plutôt que de le laisser prendre la poussière sur une étagère. Il vous transmet un savoir-faire réutilisable, pas seulement une recette toute faite.\n\nPrêt à cesser de suivre des instructions et à comprendre ce que vous faites ? Procurez-vous « La Méthode du Chef » et transformez votre cuisine : d’une source de stress, elle deviendra un lieu de confiance et de créativité.",
+        "subcategory": "COOKING & RECIPES"
       }
     }
   },
@@ -537,7 +540,8 @@
       "fr": {
         "title": "La Méthode Thanksgiving",
         "shortDescription": "Ne subissez plus Thanksgiving. Organisez cette journée avec méthode.",
-        "description": "**Ne subissez plus Thanksgiving. Organisez cette journée avec méthode.**\n\nVous connaissez cette sensation. Le jour arrive et vous êtes déjà épuisé. La dinde est au four, les invités arrivent dans une heure, et vous êtes encore en train de couper les légumes, de mettre la table et d’essayer de vous rappeler si vous avez salé l’eau des pommes de terre. La journée passe dans un tourbillon de cuisine et de ménage. Lorsque vous vous asseyez enfin — si vous vous asseyez — le repas est presque terminé et vous êtes trop fatigué pour en profiter. Vous vous demandez pourquoi vous vous infligez cela chaque année.\n\nLa plupart des conseils pour Thanksgiving sont un assemblage de recettes, d’astuces et de règles résumées en une phrase. C’est une liste, pas un système. Voilà pourquoi vous pouvez suivre une centaine de recettes et avoir malgré tout l’impression de courir dans tous les sens. On vous a appris à suivre un scénario, alors qu’organiser un repas est un événement complexe, limité dans le temps et impliquant de nombreuses personnes, qu’aucune recette ne peut vous apprendre à gérer. Cela entraîne des résultats inégaux, du stress familial et une fête qui ressemble à une épreuve d’endurance plutôt qu’à une célébration de la gratitude.\n\n**La Méthode Thanksgiving** est un système complet conçu pour vous sortir de la course annuelle. Ce n’est pas un livre de recettes, mais une méthodologie. Elle remplace le chaos par une pratique reproductible et améliorable, fondée sur les principes qui permettent à tout rassemblement de bien se dérouler.\n\nVous y trouverez des outils d’aide à la décision qui vous expliquent non seulement *quoi* faire, mais aussi *pourquoi* et *quand*.\n\n**Ce que vous allez maîtriser :**\n\n- **Le système F.E.A.S.T. :** un cadre en cinq phases — Fondations, Organisation, Ambiance, Repas et Mise en scène — qui suit le déroulement réel de l’accueil.\n- **Le calendrier à rebours :** planifiez à partir du moment où le repas sera servi, plutôt qu’à partir de votre réveil. Ce simple changement révèle plusieurs semaines à l’avance les tâches qui risquent de se chevaucher.\n- **Le plan de capacité :** découvrez pourquoi aucun plat ne doit monopoliser le four pendant la cuisson de la dinde, sauf s’il peut y cuire en même temps. Cette règle évite la plupart des problèmes de Thanksgiving.\n- **La matrice de délégation :** apprenez à confier des tâches précises à des personnes précises, à des moments précis. Les propositions vagues d’aide ne sont pas utiles le jour même.\n- **Le système d’organisation du menu :** une répartition en quatre quadrants qui permet de nourrir chaque invité, de répondre aux besoins alimentaires et de répartir la charge de préparation.\n- **La pratique de gratitude :** un système en cinq étapes, fondé sur la recherche, qui transforme la gratitude d’une formalité en une pratique porteuse de sens.\n- **Le protocole CALM :** une séquence en quatre gestes pour désamorcer les moments difficiles sans prendre parti.\n- **Le plan de reprise :** considérez les imprévus comme un résultat à anticiper, et non comme un échec personnel.\n\n**Ce qui est inclus :**\n\n- Le guide numérique complet **La Méthode Thanksgiving** aux formats PDF et EPUB.\n- Une analyse approfondie de 86 pages sur les principes d’un accueil réussi.\n- Des matrices essentielles, des feuilles de travail et des tableaux de référence rapide pour la planification.\n- Un **programme de mise en pratique sur 8 semaines** pour intégrer durablement le système.\n- Des outils imprimables : matrice des invités, feuille de budget, matrice de délégation, tableau de réussite et feuille de suivi sur cinq ans.\n\n**À qui s’adresse ce guide :**\n\n- Aux personnes qui organisent leur premier repas et veulent partir sur de bonnes bases.\n- Aux hôtes expérimentés qui en ont assez de la course annuelle.\n- Aux personnes qui doivent composer avec des relations familiales difficiles ou une liste d’invités complexe.\n- À toute personne qui souhaite cesser de compter sur l’adrénaline et recevoir avec assurance.\n\nCe livre ne vous demande pas de mémoriser davantage de recettes : il vous aide à comprendre les principes qui permettent de réussir un rassemblement. Il a été conçu pour resservir. Vous le garderez dans votre dossier de planification plutôt que de le laisser prendre la poussière sur une étagère. Il vous transmet un savoir-faire réutilisable, pas seulement la promesse d’un repas parfait.\n\nPrêt à cesser de courir partout et à tout organiser avec méthode ? Procurez-vous **La Méthode Thanksgiving** et transformez cette fête : d’une source de stress, elle deviendra un moment de gratitude et de partage."
+        "description": "**Ne subissez plus Thanksgiving. Organisez cette journée avec méthode.**\n\nVous connaissez cette sensation. Le jour arrive et vous êtes déjà épuisé. La dinde est au four, les invités arrivent dans une heure, et vous êtes encore en train de couper les légumes, de mettre la table et d’essayer de vous rappeler si vous avez salé l’eau des pommes de terre. La journée passe dans un tourbillon de cuisine et de ménage. Lorsque vous vous asseyez enfin — si vous vous asseyez — le repas est presque terminé et vous êtes trop fatigué pour en profiter. Vous vous demandez pourquoi vous vous infligez cela chaque année.\n\nLa plupart des conseils pour Thanksgiving sont un assemblage de recettes, d’astuces et de règles résumées en une phrase. C’est une liste, pas un système. Voilà pourquoi vous pouvez suivre une centaine de recettes et avoir malgré tout l’impression de courir dans tous les sens. On vous a appris à suivre un scénario, alors qu’organiser un repas est un événement complexe, limité dans le temps et impliquant de nombreuses personnes, qu’aucune recette ne peut vous apprendre à gérer. Cela entraîne des résultats inégaux, du stress familial et une fête qui ressemble à une épreuve d’endurance plutôt qu’à une célébration de la gratitude.\n\n**La Méthode Thanksgiving** est un système complet conçu pour vous sortir de la course annuelle. Ce n’est pas un livre de recettes, mais une méthodologie. Elle remplace le chaos par une pratique reproductible et améliorable, fondée sur les principes qui permettent à tout rassemblement de bien se dérouler.\n\nVous y trouverez des outils d’aide à la décision qui vous expliquent non seulement *quoi* faire, mais aussi *pourquoi* et *quand*.\n\n**Ce que vous allez maîtriser :**\n\n- **Le système F.E.A.S.T. :** un cadre en cinq phases — Fondations, Organisation, Ambiance, Repas et Mise en scène — qui suit le déroulement réel de l’accueil.\n- **Le calendrier à rebours :** planifiez à partir du moment où le repas sera servi, plutôt qu’à partir de votre réveil. Ce simple changement révèle plusieurs semaines à l’avance les tâches qui risquent de se chevaucher.\n- **Le plan de capacité :** découvrez pourquoi aucun plat ne doit monopoliser le four pendant la cuisson de la dinde, sauf s’il peut y cuire en même temps. Cette règle évite la plupart des problèmes de Thanksgiving.\n- **La matrice de délégation :** apprenez à confier des tâches précises à des personnes précises, à des moments précis. Les propositions vagues d’aide ne sont pas utiles le jour même.\n- **Le système d’organisation du menu :** une répartition en quatre quadrants qui permet de nourrir chaque invité, de répondre aux besoins alimentaires et de répartir la charge de préparation.\n- **La pratique de gratitude :** un système en cinq étapes, fondé sur la recherche, qui transforme la gratitude d’une formalité en une pratique porteuse de sens.\n- **Le protocole CALM :** une séquence en quatre gestes pour désamorcer les moments difficiles sans prendre parti.\n- **Le plan de reprise :** considérez les imprévus comme un résultat à anticiper, et non comme un échec personnel.\n\n**Ce qui est inclus :**\n\n- Le guide numérique complet **La Méthode Thanksgiving** aux formats PDF et EPUB.\n- Une analyse approfondie de 86 pages sur les principes d’un accueil réussi.\n- Des matrices essentielles, des feuilles de travail et des tableaux de référence rapide pour la planification.\n- Un **programme de mise en pratique sur 8 semaines** pour intégrer durablement le système.\n- Des outils imprimables : matrice des invités, feuille de budget, matrice de délégation, tableau de réussite et feuille de suivi sur cinq ans.\n\n**À qui s’adresse ce guide :**\n\n- Aux personnes qui organisent leur premier repas et veulent partir sur de bonnes bases.\n- Aux hôtes expérimentés qui en ont assez de la course annuelle.\n- Aux personnes qui doivent composer avec des relations familiales difficiles ou une liste d’invités complexe.\n- À toute personne qui souhaite cesser de compter sur l’adrénaline et recevoir avec assurance.\n\nCe livre ne vous demande pas de mémoriser davantage de recettes : il vous aide à comprendre les principes qui permettent de réussir un rassemblement. Il a été conçu pour resservir. Vous le garderez dans votre dossier de planification plutôt que de le laisser prendre la poussière sur une étagère. Il vous transmet un savoir-faire réutilisable, pas seulement la promesse d’un repas parfait.\n\nPrêt à cesser de courir partout et à tout organiser avec méthode ? Procurez-vous **La Méthode Thanksgiving** et transformez cette fête : d’une source de stress, elle deviendra un moment de gratitude et de partage.",
+        "subcategory": "HOLIDAYS"
       }
     }
   },
@@ -547,7 +551,7 @@
     "shortDescription": "An Excel travel planner for organizing your itinerary, budget, packing, and trip checklist.",
     "description": "**Plan your next trip in one organized Excel workbook.**\n\nVacation Planner Pro is a digital Excel travel planner for keeping your trip information together. The listing covers general trip details, itinerary, budget, packing, a checklist, and emergency contacts.\n\n**Your download includes two localized workbooks:**\n\n- The English version with USD and GBP currency options.\n- The French version with EUR currency options.\n\nBoth files are provided in XLSX format.",
     "category": "Planning & Tracking",
-    "subcategory": "TRAVEL",
+    "subcategory": "LIFESTYLE & TRAVEL",
     "productGroup": "Planning & Tracking",
     "productFamily": "planning-tracking",
     "productType": "planners",
@@ -570,7 +574,8 @@
       "fr": {
         "title": "Organisateur de Voyage Pro",
         "shortDescription": "Un planificateur Excel pour organiser itinéraire, budget, bagages et checklist.",
-        "description": "**Organisez votre prochain voyage dans un seul classeur Excel.**\n\nOrganisateur de Voyage Pro est un planificateur de voyage numérique au format Excel qui rassemble les informations de votre séjour. La fiche présente les renseignements généraux du voyage, l’itinéraire, le budget, les bagages, une checklist et les contacts d’urgence.\n\n**Votre téléchargement comprend deux classeurs adaptés à leur langue et à leur devise :**\n\n- La version anglaise avec les options de devise USD et GBP.\n- La version française avec l’option de devise EUR.\n\nLes deux fichiers sont au format XLSX."
+        "description": "**Organisez votre prochain voyage dans un seul classeur Excel.**\n\nOrganisateur de Voyage Pro est un planificateur de voyage numérique au format Excel qui rassemble les informations de votre séjour. La fiche présente les renseignements généraux du voyage, l’itinéraire, le budget, les bagages, une checklist et les contacts d’urgence.\n\n**Votre téléchargement comprend deux classeurs adaptés à leur langue et à leur devise :**\n\n- La version anglaise avec les options de devise USD et GBP.\n- La version française avec l’option de devise EUR.\n\nLes deux fichiers sont au format XLSX.",
+        "subcategory": "LIFESTYLE & TRAVEL"
       }
     }
   },
@@ -580,11 +585,11 @@
     "shortDescription": "A free content toolkit with 30 days of hooks and captions, 100 B-roll ideas, and adaptable templates.",
     "description": "You know the feeling. You open Instagram, TikTok, or YouTube Shorts. You know you need to post. You know your audience is waiting. But you stare at the blank screen and think: **What do I even say?**\n\nOr worse—you post something, and it gets 12 views. You wonder if anyone even saw it.\n\nThe problem is not your product. The problem is your hook.\n\nIn a world where the average attention span is 3 seconds, the first line of your Reel, TikTok, or Short can make the difference between 12 views and 12,000.\n\n**This vault helps close that gap.**\n\nMost creators and marketers struggle with three things:\n\n- What to post — the blank screen problem.\n- How to hook — the first 3 seconds problem.\n- How to make it look good — the production value problem.\n\nYou can have the best product in the world, but if your content does not stop the scroll, people may never see it. The gap is not your product. The gap is your content engine.\n\n**The Digital Marketer’s Bonus Vault** is a content toolkit with 30 days of hooks and captions, plus 100 B-roll ideas to help make your content look professional. It is a working toolkit, not a theory book.\n\n## 30 days of hooks and captions\n\nThe collection is organized into four weekly themes:\n\n**Week 1: Attention Hooks**\n\n- “Transform your laptop into a money-making machine!”\n- “Swipe to unlock your first $1,000 online!”\n- “No stock? No problem!”\n- “Make money while you sleep!”\n- “One product, endless sales!”\n- “Turn your hobby into your paycheck!”\n- “Increase your income, not your hours!”\n\n**Week 2: Educational Hooks**\n\n- “Stop trading your time for money!”\n- “Why digital products are the future!”\n- “Your email list is gold!”\n- “From zero to launch in 30 days!”\n- “The secret recipe for high conversions!”\n- “How to price your digital products!”\n- “Why testimonials are your best salespeople!”\n\n**Week 3: Engagement Hooks**\n\n- “Don’t ignore this metric!”\n- “The power of upselling!”\n- “Why you need a sales funnel!”\n- “Content is king!”\n- “Beat the algorithm!”\n- “Why niches pay off!”\n- “SEO for digital products!”\n\n**Week 4: Conversion Hooks**\n\n- “Turn refunds into revenue!”\n- “How to go viral!”\n- “The art of storytelling!”\n- “The power of scarcity!”\n- “Why you need an affiliate program!”\n- “Don’t forget follow-ups!”\n- “Celebrate your wins!”\n\nEach day includes a hook to catch attention, a caption to encourage engagement, a call to action, and relevant hashtags.\n\n## 100 B-roll ideas in 10 categories\n\n- Product and screen shots: animated mockups, scrolling eBooks, and download buttons.\n- Workspace and lifestyle: aesthetic flat lays, morning routines, and productive workspaces.\n- Data and analytics: animated stats, market tickers, charts, and graphs.\n- Creative process: design work, mind maps, and mood boards.\n- Customer and community: testimonials, chat windows, and notifications.\n- Conceptual and abstract: digital waves, puzzle pieces, and network nodes.\n- Transitions and motion: loading bars, countdowns, and file syncing.\n- Technology and devices: multiple devices, notifications, and smart watches.\n- Visual metaphors: digital bridges, network webs, and light bulbs.\n- And more: additional visual concepts.\n\nEach B-roll idea includes a visual description you can shoot yourself or source.\n\n## Adaptable hook formulas\n\nUse fill-in-the-blank prompts to adapt ideas to your niche:\n\n- “Here’s a shortcut to __”\n- “How to __ in (x) minutes”\n- “The fastest way to __”\n- “Top 5 __”\n- “The biggest mistakes most __ make”\n- “Step-by-step guide to __”\n- And more.\n\n## What this toolkit can help you do\n\n- Save planning time with a month of hooks and captions.\n- Open videos with ideas designed to catch attention quickly.\n- Encourage comments, messages, and conversations.\n- Add calls to action to your captions.\n- Find B-roll concepts to give content a more polished look.\n- Keep a supply of ideas and templates close at hand.\n\nThis toolkit is for creators who post Reels, TikToks, or Shorts; sell products, courses, or services; are building an audience; or want a more consistent social media presence.\n\nYou get a content toolkit with hooks and captions, a library of 100 B-roll ideas, adaptable hook templates, and time back for other parts of your business. The listed download contains the two PDF files **Bonus Insta.pdf** and **100 B-Roll & 30 Hooks.pdf**.\n\nThe hook is the first 3 seconds. If you lose those, you lose attention.\n\nDownload **The Digital Marketer’s Bonus Vault** and start planning content with more confidence.",
     "category": "Libraries & Collections",
-    "subcategory": "SOCIAL MEDIA",
+    "subcategory": "SOCIAL MEDIA & NETWORKING",
     "productGroup": "Libraries & Collections",
     "productFamily": "libraries-collections",
     "productType": "swipe-file",
-    "audience": "Business Builder",
+    "audience": "Digital Creators",
     "price": 0,
     "currency": "EUR",
     "isFree": true,
@@ -599,7 +604,8 @@
       "fr": {
         "title": "Bonus Instagram : 100 B-Roll et 30 accroches",
         "shortDescription": "Un kit de contenu gratuit avec 30 jours d’accroches et de légendes, 100 idées de B-roll et des templates à adapter.",
-        "description": "Vous connaissez cette situation. Vous ouvrez Instagram, TikTok ou YouTube Shorts. Vous savez que vous devez publier et que votre audience attend votre contenu. Mais vous restez devant l’écran vide en vous demandant : **Qu’est-ce que je peux bien dire ?**\n\nOu, pire encore, vous publiez quelque chose et obtenez 12 vues. Vous vous demandez si quelqu’un l’a seulement vu.\n\nLe problème ne vient pas de votre produit. Il vient de votre accroche.\n\nÀ une époque où l’attention moyenne ne dure que quelques secondes, la première phrase de votre Reel, TikTok ou Short peut faire la différence entre 12 vues et 12 000.\n\n**Ce coffre à outils vous aide à combler cet écart.**\n\nLes créateurs et les spécialistes du marketing rencontrent souvent trois difficultés :\n\n- Trouver quoi publier : le problème de l’écran vide.\n- Trouver une accroche : le défi des trois premières secondes.\n- Créer un rendu visuel soigné : la question de la qualité de production.\n\nVous pouvez avoir le meilleur produit du monde, mais si votre contenu n’arrête pas le défilement, les gens risquent de ne jamais le voir. Le manque ne vient pas de votre produit, mais de votre moteur de contenu.\n\n**The Digital Marketer’s Bonus Vault** est un kit pratique comprenant 30 jours d’accroches et de légendes, ainsi que 100 idées de B-roll pour donner à vos contenus une apparence plus professionnelle. C’est un outil de travail, pas un livre théorique.\n\n## 30 jours d’accroches et de légendes\n\nLa collection est organisée autour de quatre thèmes hebdomadaires :\n\n**Semaine 1 : attirer l’attention**\n\n- « Transformez votre ordinateur portable en machine à générer des revenus ! »\n- « Faites défiler pour débloquer vos premiers 1 000 $ en ligne ! »\n- « Pas de stock ? Aucun problème ! »\n- « Gagnez de l’argent pendant votre sommeil ! »\n- « Un produit, des ventes à l’infini ! »\n- « Transformez votre passion en revenu ! »\n- « Augmentez vos revenus, pas vos heures de travail ! »\n\n**Semaine 2 : informer**\n\n- « Arrêtez d’échanger votre temps contre de l’argent ! »\n- « Pourquoi les produits numériques sont l’avenir ! »\n- « Votre liste e-mail vaut de l’or ! »\n- « De zéro au lancement en 30 jours ! »\n- « La recette secrète des conversions ! »\n- « Comment fixer le prix de vos produits numériques ? »\n- « Pourquoi les témoignages sont vos meilleurs vendeurs ! »\n\n**Semaine 3 : susciter l’engagement**\n\n- « Ne négligez pas cette statistique ! »\n- « Le pouvoir de la vente additionnelle ! »\n- « Pourquoi vous avez besoin d’un tunnel de vente ! »\n- « Le contenu est roi ! »\n- « Prenez l’algorithme de vitesse ! »\n- « Pourquoi les niches sont rentables ! »\n- « Le SEO pour les produits numériques ! »\n\n**Semaine 4 : convertir**\n\n- « Transformez les remboursements en revenus ! »\n- « Comment devenir viral ! »\n- « L’art du storytelling ! »\n- « Le pouvoir de la rareté ! »\n- « Pourquoi créer un programme d’affiliation ? »\n- « N’oubliez pas les relances ! »\n- « Célébrez vos réussites ! »\n\nChaque jour comprend une accroche pour capter l’attention, une légende pour encourager les échanges, un appel à l’action et des hashtags pertinents.\n\n## 100 idées de B-roll en 10 catégories\n\n- Produits et captures d’écran : maquettes animées, eBooks que l’on fait défiler et boutons de téléchargement.\n- Espace de travail et style de vie : compositions esthétiques, routines matinales et espaces de travail productifs.\n- Données et analyses : statistiques animées, indicateurs de marché, graphiques et courbes.\n- Processus créatif : travail de conception, cartes mentales et planches d’inspiration.\n- Clients et communauté : témoignages, fenêtres de discussion et notifications.\n- Concepts et abstractions : vagues numériques, pièces de puzzle et nœuds de réseau.\n- Transitions et mouvement : barres de chargement, comptes à rebours et synchronisation de fichiers.\n- Technologie et appareils : appareils multiples, notifications et montres connectées.\n- Métaphores visuelles : ponts numériques, réseaux et ampoules.\n- Et bien plus : d’autres idées visuelles.\n\nChaque idée de B-roll comprend une description visuelle que vous pouvez filmer ou rechercher dans une banque d’images.\n\n## Des formules d’accroche à adapter\n\nComplétez ces templates pour les adapter à votre niche :\n\n- « Voici un raccourci pour __ »\n- « Comment __ en (x) minutes »\n- « La façon la plus rapide de __ »\n- « Les 5 meilleurs __ »\n- « Les erreurs les plus fréquentes des __ »\n- « Guide étape par étape pour __ »\n- Et bien d’autres.\n\n## Ce que ce kit peut vous aider à faire\n\n- Gagner du temps avec un mois d’accroches et de légendes.\n- Commencer vos vidéos par des idées conçues pour capter rapidement l’attention.\n- Encourager les commentaires, les messages et les conversations.\n- Ajouter des appels à l’action à vos légendes.\n- Trouver des idées de B-roll pour donner un rendu plus soigné à vos contenus.\n- Garder sous la main des idées et des templates prêts à adapter.\n\nCe kit s’adresse aux créateurs qui publient des Reels, des TikToks ou des Shorts, aux personnes qui vendent des produits, des formations ou des services, à celles qui développent une audience et à toute personne qui souhaite publier plus régulièrement sur les réseaux sociaux.\n\nVous disposez d’un kit de contenu avec des accroches et des légendes, d’une bibliothèque de 100 idées de B-roll, de templates d’accroche à adapter et de plus de temps pour les autres activités de votre entreprise. Le téléchargement indiqué comprend les deux fichiers PDF **Bonus Insta.pdf** et **100 B-Roll & 30 Hooks.pdf**.\n\nL’accroche se joue dans les premières secondes. Si vous perdez l’attention à ce moment-là, le reste risque de ne pas être vu.\n\nTéléchargez **The Digital Marketer’s Bonus Vault** et planifiez vos contenus avec plus d’assurance."
+        "description": "Vous connaissez cette situation. Vous ouvrez Instagram, TikTok ou YouTube Shorts. Vous savez que vous devez publier et que votre audience attend votre contenu. Mais vous restez devant l’écran vide en vous demandant : **Qu’est-ce que je peux bien dire ?**\n\nOu, pire encore, vous publiez quelque chose et obtenez 12 vues. Vous vous demandez si quelqu’un l’a seulement vu.\n\nLe problème ne vient pas de votre produit. Il vient de votre accroche.\n\nÀ une époque où l’attention moyenne ne dure que quelques secondes, la première phrase de votre Reel, TikTok ou Short peut faire la différence entre 12 vues et 12 000.\n\n**Ce coffre à outils vous aide à combler cet écart.**\n\nLes créateurs et les spécialistes du marketing rencontrent souvent trois difficultés :\n\n- Trouver quoi publier : le problème de l’écran vide.\n- Trouver une accroche : le défi des trois premières secondes.\n- Créer un rendu visuel soigné : la question de la qualité de production.\n\nVous pouvez avoir le meilleur produit du monde, mais si votre contenu n’arrête pas le défilement, les gens risquent de ne jamais le voir. Le manque ne vient pas de votre produit, mais de votre moteur de contenu.\n\n**The Digital Marketer’s Bonus Vault** est un kit pratique comprenant 30 jours d’accroches et de légendes, ainsi que 100 idées de B-roll pour donner à vos contenus une apparence plus professionnelle. C’est un outil de travail, pas un livre théorique.\n\n## 30 jours d’accroches et de légendes\n\nLa collection est organisée autour de quatre thèmes hebdomadaires :\n\n**Semaine 1 : attirer l’attention**\n\n- « Transformez votre ordinateur portable en machine à générer des revenus ! »\n- « Faites défiler pour débloquer vos premiers 1 000 $ en ligne ! »\n- « Pas de stock ? Aucun problème ! »\n- « Gagnez de l’argent pendant votre sommeil ! »\n- « Un produit, des ventes à l’infini ! »\n- « Transformez votre passion en revenu ! »\n- « Augmentez vos revenus, pas vos heures de travail ! »\n\n**Semaine 2 : informer**\n\n- « Arrêtez d’échanger votre temps contre de l’argent ! »\n- « Pourquoi les produits numériques sont l’avenir ! »\n- « Votre liste e-mail vaut de l’or ! »\n- « De zéro au lancement en 30 jours ! »\n- « La recette secrète des conversions ! »\n- « Comment fixer le prix de vos produits numériques ? »\n- « Pourquoi les témoignages sont vos meilleurs vendeurs ! »\n\n**Semaine 3 : susciter l’engagement**\n\n- « Ne négligez pas cette statistique ! »\n- « Le pouvoir de la vente additionnelle ! »\n- « Pourquoi vous avez besoin d’un tunnel de vente ! »\n- « Le contenu est roi ! »\n- « Prenez l’algorithme de vitesse ! »\n- « Pourquoi les niches sont rentables ! »\n- « Le SEO pour les produits numériques ! »\n\n**Semaine 4 : convertir**\n\n- « Transformez les remboursements en revenus ! »\n- « Comment devenir viral ! »\n- « L’art du storytelling ! »\n- « Le pouvoir de la rareté ! »\n- « Pourquoi créer un programme d’affiliation ? »\n- « N’oubliez pas les relances ! »\n- « Célébrez vos réussites ! »\n\nChaque jour comprend une accroche pour capter l’attention, une légende pour encourager les échanges, un appel à l’action et des hashtags pertinents.\n\n## 100 idées de B-roll en 10 catégories\n\n- Produits et captures d’écran : maquettes animées, eBooks que l’on fait défiler et boutons de téléchargement.\n- Espace de travail et style de vie : compositions esthétiques, routines matinales et espaces de travail productifs.\n- Données et analyses : statistiques animées, indicateurs de marché, graphiques et courbes.\n- Processus créatif : travail de conception, cartes mentales et planches d’inspiration.\n- Clients et communauté : témoignages, fenêtres de discussion et notifications.\n- Concepts et abstractions : vagues numériques, pièces de puzzle et nœuds de réseau.\n- Transitions et mouvement : barres de chargement, comptes à rebours et synchronisation de fichiers.\n- Technologie et appareils : appareils multiples, notifications et montres connectées.\n- Métaphores visuelles : ponts numériques, réseaux et ampoules.\n- Et bien plus : d’autres idées visuelles.\n\nChaque idée de B-roll comprend une description visuelle que vous pouvez filmer ou rechercher dans une banque d’images.\n\n## Des formules d’accroche à adapter\n\nComplétez ces templates pour les adapter à votre niche :\n\n- « Voici un raccourci pour __ »\n- « Comment __ en (x) minutes »\n- « La façon la plus rapide de __ »\n- « Les 5 meilleurs __ »\n- « Les erreurs les plus fréquentes des __ »\n- « Guide étape par étape pour __ »\n- Et bien d’autres.\n\n## Ce que ce kit peut vous aider à faire\n\n- Gagner du temps avec un mois d’accroches et de légendes.\n- Commencer vos vidéos par des idées conçues pour capter rapidement l’attention.\n- Encourager les commentaires, les messages et les conversations.\n- Ajouter des appels à l’action à vos légendes.\n- Trouver des idées de B-roll pour donner un rendu plus soigné à vos contenus.\n- Garder sous la main des idées et des templates prêts à adapter.\n\nCe kit s’adresse aux créateurs qui publient des Reels, des TikToks ou des Shorts, aux personnes qui vendent des produits, des formations ou des services, à celles qui développent une audience et à toute personne qui souhaite publier plus régulièrement sur les réseaux sociaux.\n\nVous disposez d’un kit de contenu avec des accroches et des légendes, d’une bibliothèque de 100 idées de B-roll, de templates d’accroche à adapter et de plus de temps pour les autres activités de votre entreprise. Le téléchargement indiqué comprend les deux fichiers PDF **Bonus Insta.pdf** et **100 B-Roll & 30 Hooks.pdf**.\n\nL’accroche se joue dans les premières secondes. Si vous perdez l’attention à ce moment-là, le reste risque de ne pas être vu.\n\nTéléchargez **The Digital Marketer’s Bonus Vault** et planifiez vos contenus avec plus d’assurance.",
+        "subcategory": "SOCIAL MEDIA & NETWORKING"
       }
     },
     "cover": "/assets/images/bonus-ig.png"
@@ -633,13 +639,13 @@
         "title": "Beauty Business Studio — Complete Beauty Business Template Collection",
         "shortDescription": "A complete toolkit with 10 digital products in French and English, delivered as 20 editable PowerPoint files.",
         "description": "**Your beauty business deserves tools that work together.**\n\nBeauty Business Studio brings together resources to help you build your brand identity, present your services, plan Instagram content, organize your studio, and improve the client experience.\n\nThe collection includes 10 digital products in French and English, delivered in 20 editable PowerPoint files. Choose the resources you need now and adapt the fictional examples to your own business.\n\nDigital download delivered by Payhip after purchase. No physical product is shipped.",
-        "subcategory": "BEAUTY BUSINESS"
+        "subcategory": "FASHION & BEAUTY"
       },
       "fr": {
         "title": "Beauty Business Studio — Collection complète de templates pour les professionnels de la beauté",
         "shortDescription": "Une collection complète de 10 produits numériques bilingues, fournis dans 20 fichiers PowerPoint modifiables.",
         "description": "**Votre activité beauté mérite des supports qui fonctionnent ensemble.**\n\nBeauty Business Studio réunit des ressources pour construire votre identité de marque, présenter vos prestations, planifier vos contenus Instagram, organiser votre studio et soigner l’expérience client.\n\nLa collection comprend 10 produits numériques en français et en anglais, fournis dans 20 fichiers PowerPoint modifiables. Choisissez les ressources dont vous avez besoin et adaptez les exemples fictifs à votre activité.\n\nTéléchargement numérique fourni par Payhip après l’achat. Aucun article physique n’est expédié.",
-        "subcategory": "BEAUTÉ ET BIEN-ÊTRE"
+        "subcategory": "FASHION & BEAUTY"
       }
     }
   },
@@ -672,7 +678,8 @@
       "fr": {
         "title": "Beauty Instagram Kit : 160 templates personnalisables pour les professionnels de la beauté (FR/EN)",
         "shortDescription": "80 publications, 80 stories, six identités de marque et les versions française et anglaise pour les professionnels de la beauté.",
-        "description": "**80 publications · 80 stories · 6 identités de marque · français / anglais**\n\nVous ouvrez votre studio de beauté ou vous souhaitez refaire votre feed sans y passer des semaines ? Ce kit est conçu pour vous.\n\n**Ce que vous recevez :**\n\n- 80 publications au format 4:5 (1080 × 1350 px) et 80 stories au format 9:16 (1080 × 1920 px), prêtes à personnaliser dans PowerPoint ou Canva.\n- Six identités de marque complètes, chacune avec sa palette de couleurs, ses typographies et son ambiance : Botanique (spa et soin du visage), Studio pop (ongles et univers créatif), Luxe nocturne (coiffure haut de gamme), Cerise (cils et mariage), Nude éditorial (soin intimiste) et Monochrome (polyvalent).\n- Les versions française et anglaise du kit, pour toucher les deux marchés avec un seul achat.\n- Des instructions d’export claires : dimensions exactes, recadrage 4:5, substitutions de polices et vérification sur téléphone avant publication.\n- Des exemples de marques fictives, comme Maison Éclat et The Lash Social, pour vous aider à vous projeter dans chaque univers.\n\n**À qui s’adresse ce kit :** aux esthéticiennes, prothésistes ongulaires, lash artists, coiffeuses, maquilleuses de mariée, praticiennes en soin du visage et responsables de spa qui souhaitent un feed cohérent sans embaucher un graphiste.\n\n**Comment l’utiliser :** choisissez l’identité adaptée à votre activité ; le guide vous aide à décider en environ deux minutes. Remplacez les photos de démonstration par les vôtres, adaptez les textes à vos prestations, tarifs, offres et coordonnées, puis exportez. Le kit donne une direction visuelle cohérente à vos publications.\n\n**Format et téléchargement :** fichiers PPTX en français et en anglais, disponibles en téléchargement numérique instantané après achat. Aucun article physique n’est envoyé. Les instructions d’utilisation et d’export sont incluses.\n\nCe kit contient 160 fichiers, six directions artistiques et deux langues. Il est conçu comme un outil professionnel complet, plutôt que comme un petit lot de templates génériques. Si vous cherchez un template unique, ce produit ne correspondra peut-être pas à votre besoin ; si vous souhaitez un mois de contenu cohérent, il est conçu pour cela.\n\n**Téléchargez le kit et choisissez votre identité dès aujourd’hui.**"
+        "description": "**80 publications · 80 stories · 6 identités de marque · français / anglais**\n\nVous ouvrez votre studio de beauté ou vous souhaitez refaire votre feed sans y passer des semaines ? Ce kit est conçu pour vous.\n\n**Ce que vous recevez :**\n\n- 80 publications au format 4:5 (1080 × 1350 px) et 80 stories au format 9:16 (1080 × 1920 px), prêtes à personnaliser dans PowerPoint ou Canva.\n- Six identités de marque complètes, chacune avec sa palette de couleurs, ses typographies et son ambiance : Botanique (spa et soin du visage), Studio pop (ongles et univers créatif), Luxe nocturne (coiffure haut de gamme), Cerise (cils et mariage), Nude éditorial (soin intimiste) et Monochrome (polyvalent).\n- Les versions française et anglaise du kit, pour toucher les deux marchés avec un seul achat.\n- Des instructions d’export claires : dimensions exactes, recadrage 4:5, substitutions de polices et vérification sur téléphone avant publication.\n- Des exemples de marques fictives, comme Maison Éclat et The Lash Social, pour vous aider à vous projeter dans chaque univers.\n\n**À qui s’adresse ce kit :** aux esthéticiennes, prothésistes ongulaires, lash artists, coiffeuses, maquilleuses de mariée, praticiennes en soin du visage et responsables de spa qui souhaitent un feed cohérent sans embaucher un graphiste.\n\n**Comment l’utiliser :** choisissez l’identité adaptée à votre activité ; le guide vous aide à décider en environ deux minutes. Remplacez les photos de démonstration par les vôtres, adaptez les textes à vos prestations, tarifs, offres et coordonnées, puis exportez. Le kit donne une direction visuelle cohérente à vos publications.\n\n**Format et téléchargement :** fichiers PPTX en français et en anglais, disponibles en téléchargement numérique instantané après achat. Aucun article physique n’est envoyé. Les instructions d’utilisation et d’export sont incluses.\n\nCe kit contient 160 fichiers, six directions artistiques et deux langues. Il est conçu comme un outil professionnel complet, plutôt que comme un petit lot de templates génériques. Si vous cherchez un template unique, ce produit ne correspondra peut-être pas à votre besoin ; si vous souhaitez un mois de contenu cohérent, il est conçu pour cela.\n\n**Téléchargez le kit et choisissez votre identité dès aujourd’hui.**",
+        "subcategory": "FASHION & BEAUTY"
       }
     }
   },
@@ -708,7 +715,7 @@
         "title": "Pack de templates de formation pour académie de beauté",
         "shortDescription": "180 templates PowerPoint modifiables pour créer des supports de formation en beauté. Édition anglaise.",
         "description": "Structurez les supports de votre académie de beauté grâce à 180 templates PowerPoint modifiables répartis en 10 collections. Le pack comprend l’architecture du programme, des pages de théorie et de démonstration, des exercices, des évaluations, le suivi des élèves, des références de sécurité, un portfolio, des pages de fin de formation, des corrigés formateur et un guide d’utilisation. Il s’agit de templates à compléter, et non d’un cours déjà rédigé. Les fichiers sont en anglais et sont disponibles en téléchargement numérique instantané après achat sur Etsy.",
-        "subcategory": "BEAUTÉ ET BIEN-ÊTRE"
+        "subcategory": "FASHION & BEAUTY"
       }
     },
     "cover": "/assets/images/beauty-academy-workbook-cover-en.png",
@@ -747,12 +754,14 @@
       "fr": {
         "title": "Beauty Business Studio : 150 modèles modifiables",
         "shortDescription": "Une collection de 150 modèles pour l’identité, les réseaux sociaux, les supports clients et l’organisation d’un studio de beauté.",
-        "description": "**150 modèles modifiables pour votre activité beauté**\n\nBeauty Business Studio est une collection numérique destinée aux professionnelles de la beauté qui souhaitent présenter et organiser leur activité de façon cohérente. La couverture présente des modèles pour l’identité visuelle, les réseaux sociaux, les cartes de prestations, les consultations clients et l’organisation des rendez-vous.\n\nLa couverture indique PowerPoint et Canva comme outils de modification et présente la collection pour un usage professionnel. Il s’agit d’un produit numérique ; aucun article physique ne sera envoyé."
+        "description": "**150 modèles modifiables pour votre activité beauté**\n\nBeauty Business Studio est une collection numérique destinée aux professionnelles de la beauté qui souhaitent présenter et organiser leur activité de façon cohérente. La couverture présente des modèles pour l’identité visuelle, les réseaux sociaux, les cartes de prestations, les consultations clients et l’organisation des rendez-vous.\n\nLa couverture indique PowerPoint et Canva comme outils de modification et présente la collection pour un usage professionnel. Il s’agit d’un produit numérique ; aucun article physique ne sera envoyé.",
+        "subcategory": "FASHION & BEAUTY"
       },
       "en": {
         "title": "Beauty Business Studio: 150 Editable Templates",
         "shortDescription": "A 150-template collection for shaping a beauty studio’s brand, social content, client materials and organisation.",
-        "description": "**150 editable templates for a beauty business**\n\nBeauty Business Studio is a digital template collection for beauty professionals who want a more consistent way to present and organise their business. The product cover presents templates for visual identity, social media, beauty service cards, client consultations and appointment organisation.\n\nThe cover identifies PowerPoint and Canva as editing tools and describes the collection for professional use. This is a digital product; no physical item is shipped."
+        "description": "**150 editable templates for a beauty business**\n\nBeauty Business Studio is a digital template collection for beauty professionals who want a more consistent way to present and organise their business. The product cover presents templates for visual identity, social media, beauty service cards, client consultations and appointment organisation.\n\nThe cover identifies PowerPoint and Canva as editing tools and describes the collection for professional use. This is a digital product; no physical item is shipped.",
+        "subcategory": "FASHION & BEAUTY"
       }
     }
   }
