@@ -1,3 +1,21 @@
+/* Register Trustpilot's site-wide invitation integration. */
+if (!window.__cdbTrustpilotRegistered) {
+    window.__cdbTrustpilotRegistered = true;
+    (function (w, d, s, r, n) {
+        w.TrustpilotObject = n;
+        w[n] = w[n] || function () {
+            (w[n].q = w[n].q || []).push(arguments);
+        };
+        const script = d.createElement(s);
+        script.async = true;
+        script.src = r;
+        script.type = 'text/javascript';
+        const firstScript = d.getElementsByTagName(s)[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    })(window, document, 'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+    window.tp('register', 'Za5MBexQazChn391');
+}
+
 /* Load the shared privacy controls automatically on future pages using the site-wide script. */
 if (!document.querySelector('script[src="/js/cookie-consent.js"]')) {
     const consentScript = document.createElement('script');
