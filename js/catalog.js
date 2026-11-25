@@ -25,22 +25,22 @@
     ['lifestyle-hobbyist', 'Lifestyle & Hobbyist'],
     ['digital-creators', 'Digital Creators'],
     ['specialists', 'Specialists'],
-        ['love-relationships', 'Love & Relationships'],
+    ['love-relationships', 'Love & Relationships'],
     ['personal-growth', 'Personal Growth'],
     ['spirituality', 'Spirituality']
   ];
 
-  const subcategories = [
-    'AFFILIATE MARKETING', 'AUDIOBOOKS', 'BLOGGING', 'BUSINESS & MONEY',
-    'CANVA PLANNERS', 'COMPUTER & TECHNOLOGY', 'COOKING & RECIPES',
-    'CRAFTS & HOBBIES', 'EMAIL MARKETING', 'ENTERTAINMENT', 'FAMILY & PARENTING',
-    'FASHION & BEAUTY', 'FREELANCE', 'HEALTH & FITNESS', 'HOLIDAYS',
-    'HOME & GARDEN', 'INTERNET MARKETING', 'KIDS COLLECTION', 'LANGUAGE LEARNING',
-    'LOVE & RELATIONSHIPS', 'MARKETING', 'MONEY & FINANCE', 'MUSIC', 'NEW AGE',
-    'PET & ANIMALS', 'PLR & PRINT ON DEMAND', 'REFERENCE & LEARNING',
-    'SELF IMPROVEMENT & PERSONAL DEVELOPMENT', 'SOCIAL MEDIA', 'SPIRITUALITY',
-    'SPORTS & OUTDOORS', 'TRAFFIC & SEO', 'TRAVEL', 'WRITING & PUBLISHING'
-  ];
+  const subcategoriesByAudience = {
+    'business-builder': ['AFFILIATE MARKETING', 'BUSINESS & MONEY', 'FREELANCE', 'MARKETING', 'INTERNET MARKETING', 'ECOMMERCE'],
+    'family-niches-market': ['ENTERTAINMENT', 'HOLIDAYS', 'PARENTING', 'PETS & ANIMALS'],
+    'lifestyle-hobbyist': ['COOKING & RECIPES', 'MUSIC', 'DIET & COOKING', 'LIFESTYLE & TRAVEL', 'HOBBIES & FREE TIME', 'SPORTS & OUTDOORS', 'FASHION & BEAUTY'],
+    'digital-creators': ['BLOGGING', 'SOCIAL MEDIA & NETWORKING', 'WRITING & PUBLISHING', 'SEO'],
+    'specialists': ['PLR & PRINT ON DEMAND', 'INTERNET', 'LANGUAGE LEARNING', 'AUDIOBOOKS', 'TECHNOLOGY & LEARNING', 'CANVA PLANNERS'],
+    'personal-growth': ['SELF IMPROVEMENT', 'HEALTH & FITNESS'],
+    'love-relationships': [],
+    'spirituality': []
+  };
+  const subcategories = [...new Set(Object.values(subcategoriesByAudience).flat())];
   const productLanguages = [['en', 'English'], ['fr', 'French']];
   const fashionBeautyProductIds = new Set([
     'etsy-4624836019', 'etsy-4624733718', 'etsy-4623813287', 'etsy-4623387359', 'etsy-4623375699',
@@ -88,9 +88,9 @@
 
   function fillSelect(select, values, firstLabel) {
     if (!select) return;
-    select.innerHTML = `<option value="">${escapeHtml(firstLabel)}</option>` + values.map((item) => {
+    select.innerHTML = `<option value="">${escapeHtml(t(firstLabel))}</option>` + values.map((item) => {
       const value = typeof item === 'string' ? item : item[0];
-      const label = typeof item === 'string' ? item : item[1];
+      const label = t(typeof item === 'string' ? item : item[1]);
       return `<option value="${escapeHtml(slug(value))}">${escapeHtml(label)}</option>`;
     }).join('');
   }
@@ -106,7 +106,14 @@
   }
 
   fillSelect(audienceSelect, audiences, 'All audiences');
-  fillSelect(subcategorySelect, subcategories, 'All subcategories');
+  const fillSubcategorySelect = (audienceId = '', selectedValue = '') => {
+    const values = audienceId ? (subcategoriesByAudience[audienceId] || []) : subcategories;
+    fillSelect(subcategorySelect, values, 'All subcategories');
+    if (selectedValue && [...(subcategorySelect?.options || [])].some((option) => option.value === selectedValue)) {
+      subcategorySelect.value = selectedValue;
+    }
+  };
+  fillSubcategorySelect();
   fillSelect(languageSelect, productLanguages, 'All languages');
 
   function matches(product) {
@@ -136,7 +143,8 @@
       : '<div class="catalog-card-placeholder" aria-hidden="true">CDB</div>';
     const cardDescription = translation.shortDescription || translation.description || product.shortDescription || product.description;
     const description = cardDescription ? `<p>${escapeHtml(t(cardDescription))}</p>` : '';
-    const category = t(translation.subcategory || product.subcategory || product.productGroup || '');
+    const displayAudience = Array.isArray(product.audience) ? product.audience[0] : product.audience;
+    const category = t(translation.subcategory || product.subcategory || displayAudience || product.productGroup || '');
     const paidPrice = product.isFree !== true && product.price !== undefined && Number(product.price) > 0;
     const promoActive = paidPrice && window.CDL_PROMOTION_PRICING?.isActive();
     const regularPrice = product.price !== undefined ? formatPrice(product.price, product.currency) : '';
@@ -283,7 +291,12 @@
         }
         return { ...product, audience: 'Lifestyle & Hobbyist', subcategory: 'FASHION & BEAUTY', translations };
       });
-      const products = await syncEtsyPrices(normalizedProducts);
+      const products = await syncEtsyPrices(normalizedProducts.map((product) => {
+        if (product.id === 'the-bible-explained-a-complete-guide-to-the-66-books') {
+          return { ...product, audience: ['Personal Growth', 'Spirituality'], subcategory: null };
+        }
+        return product;
+      }));
       catalogProducts = products;
       productTypeFamilies = families;
 
@@ -291,14 +304,20 @@
 
       const params = new URLSearchParams(location.search);
       if (audienceSelect && params.has('audience')) audienceSelect.value = slug(params.get('audience'));
-      if (subcategorySelect && params.has('subcategory')) subcategorySelect.value = slug(params.get('subcategory'));
+      if (subcategorySelect && params.has('subcategory')) fillSubcategorySelect(audienceSelect?.value || '', slug(params.get('subcategory')));
       if (typeSelect && params.has('type')) typeSelect.value = slug(params.get('type'));
       if (languageSelect && params.has('language')) languageSelect.value = slug(params.get('language'));
 
-      [audienceSelect, subcategorySelect, typeSelect, languageSelect, sortSelect].forEach((select) => select?.addEventListener('change', () => { currentPage = 1; render(products); }));
+      audienceSelect?.addEventListener('change', () => {
+        currentPage = 1;
+        fillSubcategorySelect(audienceSelect.value);
+        render(products);
+      });
+      [subcategorySelect, typeSelect, languageSelect, sortSelect].forEach((select) => select?.addEventListener('change', () => { currentPage = 1; render(products); }));
       clearButton?.addEventListener('click', () => {
         currentPage = 1;
-        [audienceSelect, subcategorySelect, typeSelect, languageSelect].forEach((select) => { if (select) select.value = ''; });
+        [audienceSelect, typeSelect, languageSelect].forEach((select) => { if (select) select.value = ''; });
+        fillSubcategorySelect();
         if (sortSelect) sortSelect.value = 'newest';
         render(products);
       });
