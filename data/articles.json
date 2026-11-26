@@ -1,5 +1,283 @@
 [
   {
+    "id": "valider-idee-entreprise-methode-fondations",
+    "audience": "business-builder",
+    "title": {
+      "fr": "Comment valider son idée d'entreprise : la méthode pour poser des fondations solides",
+      "en": "How to Validate a Business Idea and Build Strong Foundations"
+    },
+    "seoTitle": {
+      "fr": "Valider son idée d'entreprise : méthode et outils pour se lancer",
+      "en": "Validate a Business Idea: A Practical Method and Tools"
+    },
+    "metaDescription": {
+      "fr": "Découvrez une méthode concrète pour valider votre idée d'entreprise, de l'analyse de vos compétences à la sélection de la meilleure opportunité.",
+      "en": "Learn a practical way to validate a business idea, from reviewing your skills and resources to testing the strongest opportunity."
+    },
+    "summary": {
+      "fr": "Une méthode progressive pour examiner vos ressources, repérer un problème client, comparer des idées et tester la plus prometteuse avant d’investir.",
+      "en": "A practical method to review your resources, identify a customer problem, compare ideas and test the strongest option before investing."
+    },
+    "category": {
+      "fr": "Entrepreneuriat & Business",
+      "en": "Entrepreneurship & Business"
+    },
+    "publishedAt": "2026-11-26",
+    "url": {
+      "fr": "/valider-idee-entreprise-methode-fondations.html",
+      "en": "/valider-idee-entreprise-methode-fondations.html"
+    },
+    "status": "published",
+    "image": "/assets/images/valider-idee-entreprise-cover.jpeg",
+    "imageAlt": {
+      "fr": "Une entrepreneuse examine des documents de projet à son bureau.",
+      "en": "An entrepreneur reviews project documents at her desk."
+    },
+    "productUrl": {
+      "fr": "https://cdbprojects.com/product.html?id=etsy-4626092201",
+      "en": "https://cdbprojects.com/product.html?id=etsy-4626092201"
+    },
+    "sections": [
+      {
+        "type": "lead",
+        "text": {
+          "fr": "Vous avez une idée d’entreprise, mais vous ne savez pas encore si elle répond à un besoin réel ni si elle correspond à vos moyens. Avant de créer un site ou d’investir dans une offre, vérifiez vos fondations personnelles et les preuves d’un problème client. Cette démarche transforme une intuition en hypothèse que vous pouvez examiner, comparer et tester.",
+          "en": "You have a business idea, but you do not yet know whether it solves a real need or fits your resources. Before building a website or investing in an offer, review your personal foundations and the evidence of a customer problem. This turns an intuition into a hypothesis you can examine, compare and test."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Valider une idée ne signifie pas obtenir la certitude qu’elle réussira. Il s’agit de réduire les inconnues avant d’engager trop de temps ou d’argent, puis de décider si vous devez poursuivre, ajuster ou abandonner cette piste.",
+          "en": "Validating an idea does not mean becoming certain it will succeed. It means reducing uncertainty before committing too much time or money, then deciding whether to continue, adjust or drop the idea."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Pourquoi vérifier une idée avant de se lancer",
+          "en": "Why validate an idea before starting"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Une idée prometteuse reste une hypothèse tant que vous n’avez pas vérifié qui rencontre le problème, comment cette personne le résout aujourd’hui et si elle cherche réellement une meilleure solution. La validation permet aussi de confronter le projet à vos compétences, à votre temps disponible et à vos contraintes financières.",
+          "en": "A promising idea is still a hypothesis until you check who experiences the problem, how they solve it today and whether they are looking for a better solution. Validation also helps you compare the project with your skills, available time and financial constraints."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "1. Faire le point sur vos fondations",
+          "en": "1. Review your foundations"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Commencez par décrire ce que vous voulez construire et pourquoi. Quelle évolution souhaitez-vous apporter à un public précis ? Qu’est-ce qui vous motivera quand le lancement sera plus difficile que prévu ? Notez aussi vos limites : horaires, budget, lieu, responsabilités ou rythme de croissance.",
+          "en": "Start by describing what you want to build and why. What change do you want to create for a specific audience? What will keep you motivated when launching becomes harder than expected? Also record your limits: hours, budget, location, responsibilities or pace of growth."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Dressez l’inventaire de vos compétences et ressources. Pour chaque compétence utile, associez une preuve concrète : expérience, réalisation, formation ou retour client. Ajoutez le temps que vous pouvez réellement consacrer au projet, votre budget de départ, votre réseau et les compétences à acquérir ou à trouver auprès d’un partenaire.",
+          "en": "List your skills and resources. For each relevant skill, add concrete evidence: experience, work completed, training or customer feedback. Include the time you can realistically give the project, your starting budget, your network and any skills you need to learn or find through a partner."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Évaluez votre préparation sur quelques critères simples : temps disponible, marge financière, connaissance du secteur et soutien autour de vous. Une faiblesse n’interdit pas le projet ; elle indique ce qu’il faut sécuriser en premier.",
+          "en": "Assess your readiness against a few simple criteria: available time, financial runway, industry knowledge and support around you. A weak area does not rule out the project; it shows what to address first."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "2. Partir d’un problème observé",
+          "en": "2. Start with an observed problem"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Les idées les plus utiles viennent souvent d’une difficulté récurrente plutôt que d’un concept spectaculaire. Choisissez un public que vous connaissez et demandez-vous : qu’est-ce qui lui fait perdre du temps, de l’argent ou de l’énergie ? Comment s’en sort-il aujourd’hui ? Quelles conséquences le problème entraîne-t-il ?",
+          "en": "Useful ideas often grow from a recurring difficulty rather than a spectacular concept. Choose an audience you understand and ask: what costs them time, money or energy? How do they cope today? What consequences does the problem create?"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Cherchez des preuves avant de proposer votre solution : conversations, demandes déjà formulées, solutions de fortune, avis clients ou comportements observables. Distinguez ce que les personnes disent vouloir de ce qu’elles font réellement. Quelques échanges ne représentent pas tout un marché, mais ils peuvent révéler les questions à approfondir.",
+          "en": "Look for evidence before proposing your solution: conversations, existing requests, workarounds, customer reviews or observable behavior. Separate what people say they want from what they actually do. A few conversations do not represent an entire market, but they can reveal which questions to investigate next."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "3. Générer plusieurs pistes et les comparer",
+          "en": "3. Generate several options and compare them"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Évitez de vous attacher trop tôt à une seule idée. Formulez plusieurs façons de résoudre le même problème, puis comparez-les avec une grille courte : intensité du besoin, public identifiable, solutions actuelles, volonté de payer, concurrence, coûts de départ, compétences nécessaires et contraintes réglementaires éventuelles.",
+          "en": "Avoid committing too early to one idea. Come up with several ways to solve the same problem, then compare them using a short scorecard: strength of need, identifiable audience, current alternatives, willingness to pay, competition, start-up costs, required skills and any regulatory constraints."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Pondérez les critères selon votre situation. Si votre budget est limité, le coût de lancement compte davantage. Si votre disponibilité est faible, privilégiez une solution testable à petite échelle. La grille structure la décision ; elle ne remplace ni les données du marché ni votre jugement.",
+          "en": "Weight the criteria to fit your circumstances. If your budget is limited, launch cost matters more. If your availability is low, favor an option you can test on a small scale. The scorecard structures your decision; it does not replace market evidence or your judgment."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "4. Tester la faisabilité avant d’investir",
+          "en": "4. Test feasibility before investing"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Pour vos deux pistes les plus solides, écrivez une hypothèse précise : « [public] rencontre [problème] et essaie déjà de [solution actuelle] ». Imaginez ensuite un test modeste qui pourrait invalider cette hypothèse : entretiens ciblés, page de présentation, prototype, précommande conforme aux règles applicables ou offre pilote clairement délimitée.",
+          "en": "For your two strongest options, write a specific hypothesis: “[audience] experiences [problem] and already tries to [current workaround].” Then design a small test that could disprove it: targeted interviews, a landing page, a prototype, a preorder that follows applicable rules or a clearly scoped pilot offer."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Définissez à l’avance un signal utile : demandes de suivi, inscriptions qualifiées, utilisation répétée ou paiement d’un premier client. Fixez aussi une limite de temps et de dépenses. Sans critère de décision, un test risque de confirmer simplement ce que vous espérez déjà.",
+          "en": "Decide in advance what would count as a useful signal: follow-up requests, qualified sign-ups, repeated use or a first customer payment. Set a time and spending limit too. Without decision criteria, a test may merely confirm what you already hope to be true."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Ce que le Kit de création d’entreprise apporte — et ses limites",
+          "en": "What the Business Startup Kit offers—and its limits"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Le Kit de création d’entreprise proposé par CDB Projects est un fichier PowerPoint modifiable. Selon les informations produit fournies, il annonce 200 modèles répartis en 20 collections. Les pages examinées pour préparer cet article couvrent surtout les fondations personnelles et la génération ou la sélection d’idées : vision, motivations, compétences, ressources, problèmes clients, opportunités et matrices de comparaison. Les exemples utilisent une entreprise fictive, FORMA.",
+          "en": "CDB Projects’ Business Startup Kit is an editable PowerPoint file. According to the supplied product information, it includes 200 templates across 20 collections. The pages reviewed for this article focus on personal foundations and idea generation or selection: vision, motivations, skills, resources, customer problems, opportunities and comparison matrices. The examples use a fictional business, FORMA."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Les fiches peuvent éviter de créer vos propres grilles et offrir un cadre de réflexion. Le fichier reste une présentation à modifier ou à imprimer, pas un formulaire interactif. Seules les 20 premières pages ont été examinées ici : le contenu des 180 autres modèles n’est donc pas évalué dans cet article. Remplacez les exemples par vos données ; le kit ne valide pas à lui seul la demande, la rentabilité ni la conformité juridique de votre projet.",
+          "en": "The worksheets can save you from building your own scorecards and provide a framework for reflection. The file is a presentation to edit or print, not an interactive form. Only the first 20 pages were reviewed here, so this article does not assess the remaining 180 templates. Replace the examples with your own information; the kit alone does not validate demand, profitability or legal compliance."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Les erreurs qui faussent la validation",
+          "en": "Mistakes that undermine validation"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Tomber amoureux de la solution avant d’avoir compris le problème conduit à interpréter chaque retour comme une approbation. Posez des questions sur les habitudes actuelles et les expériences passées, pas seulement sur une idée hypothétique.",
+          "en": "Falling in love with a solution before understanding the problem can make every comment sound like approval. Ask about current habits and past experiences, not only about a hypothetical idea."
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Autre piège : confondre intérêt poli et demande réelle, ou vouloir tout planifier avant de parler à un client potentiel. Ne négligez pas non plus vos contraintes personnelles : un projet peut répondre à un besoin et rester irréaliste pour vous dans sa forme actuelle.",
+          "en": "Other traps include confusing polite interest with real demand or planning everything before speaking to a potential customer. Do not overlook personal constraints either: a project may solve a need and still be unrealistic for you in its current form."
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Checklist avant de décider",
+          "en": "A checklist before you decide"
+        }
+      },
+      {
+        "type": "list",
+        "items": {
+          "fr": [
+            "Je peux décrire le public et le problème sans jargon.",
+            "J’ai recueilli des exemples ou des comportements observables, pas seulement des opinions.",
+            "Je connais mes compétences, mes ressources et mes principales lacunes.",
+            "J’ai comparé plusieurs pistes avec des critères adaptés à ma situation.",
+            "J’ai défini un test limité, un budget, une durée et un signal de décision.",
+            "Je connais la prochaine étape si le test confirme — ou invalide — l’hypothèse."
+          ],
+          "en": [
+            "I can describe the audience and problem without jargon.",
+            "I have gathered examples or observable behavior, not just opinions.",
+            "I know my skills, resources and main gaps.",
+            "I have compared several options using criteria suited to my circumstances.",
+            "I have defined a limited test, budget, time frame and decision signal.",
+            "I know what I will do next if the test supports—or disproves—the hypothesis."
+          ]
+        }
+      },
+      {
+        "type": "h2",
+        "text": {
+          "fr": "Conclusion : avancer avec des preuves, pas avec des suppositions",
+          "en": "Conclusion: move forward with evidence, not assumptions"
+        }
+      },
+      {
+        "type": "p",
+        "text": {
+          "fr": "Valider une idée d’entreprise commence par deux questions : ce projet correspond-il à mes fondations, et existe-t-il des preuves que le problème mérite une solution ? Clarifiez vos ressources, observez les besoins, comparez plusieurs options et lancez un test modeste. Vous pourrez alors poursuivre, ajuster ou changer de direction avec de meilleurs repères.",
+          "en": "Validating a business idea starts with two questions: does this project fit your foundations, and is there evidence that the problem deserves a solution? Clarify your resources, observe needs, compare options and run a modest test. You can then continue, adjust or change direction with better information."
+        }
+      },
+      {
+        "type": "cta",
+        "text": {
+          "fr": "Un cadre de fiches modifiables peut vous aider à poser ces premières réflexions. Le Kit de création d’entreprise est une ressource payante ; consultez sa fiche pour vérifier la langue, le contenu et les conditions avant l’achat.",
+          "en": "A set of editable worksheets can help you work through these first questions. The Business Startup Kit is a paid resource; review its listing to confirm language, contents and terms before purchasing."
+        },
+        "button": {
+          "fr": "Découvrir le kit",
+          "en": "Explore the kit"
+        }
+      },
+      {
+        "type": "sources",
+        "title": {
+          "fr": "Documentation et références",
+          "en": "Documentation and references"
+        },
+        "items": [
+          {
+            "label": {
+              "fr": "Fiche éditoriale et informations produit fournies pour la rédaction",
+              "en": "Editorial brief and product information supplied for this article"
+            },
+            "url": "https://cdbprojects.com/product.html?id=etsy-4626092201"
+          },
+          {
+            "label": {
+              "fr": "Fiche produit — Kit de création d’entreprise",
+              "en": "Product listing — Business Startup Kit"
+            },
+            "url": "https://cdbprojects.com/product.html?id=etsy-4626092201"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "consultation-client-facialiste-methode-structurer",
     "audience": "lifestyle-hobbyist",
     "title": {
